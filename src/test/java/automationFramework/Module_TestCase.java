@@ -15,6 +15,7 @@ import utility.SetDriver;
 import static org.junit.Assert.*;
 
 public class Module_TestCase {
+    //driver initialize
     private static WebDriver driver = null;
 
     @Rule

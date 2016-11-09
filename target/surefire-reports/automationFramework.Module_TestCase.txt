@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: automationFramework.Module_TestCase
+-------------------------------------------------------------------------------
+Tests run: 11, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 153.063 sec <<< FAILURE!
+signUpWithoutReview(automationFramework.Module_TestCase)  Time elapsed: 18.874 sec  <<< ERROR!
+java.lang.RuntimeException: Can't find By.cssSelector: a[href="/user/writereview?exloc=b"] after 5000 milliseconds.
+	at utility.FindElementsNewMechanism.findElements(FindElementsNewMechanism.java:29)
+	at pageObjectsElements.SignUpConfirmationPageElements.bttn_WriteAReview(SignUpConfirmationPageElements.java:15)
+	at automationFramework.Module_TestCase.signUpWithoutReview(Module_TestCase.java:86)
+

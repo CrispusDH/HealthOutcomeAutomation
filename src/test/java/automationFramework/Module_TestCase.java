@@ -28,10 +28,10 @@ public class Module_TestCase {
         driver.get(ReadXMLFile.takeConstantFromXML("URL", "Landing Page", "url"));
     }
 
-    /*@After
+    @After
     public void wipeDriver(){
         driver.quit();
-    }*/
+    }
 
 
     @Test

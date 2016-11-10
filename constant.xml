@@ -209,7 +209,7 @@
 	
 	<DriversPath>
 		<ChromeDriver name="ChromeDriver">
-			<path>chromedriver</path>
+			<path></path>
 		</ChromeDriver>
 	</DriversPath>
 </constants>

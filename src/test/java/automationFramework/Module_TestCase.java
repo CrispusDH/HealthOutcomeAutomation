@@ -28,10 +28,10 @@ public class Module_TestCase {
         driver.get(ReadXMLFile.takeConstantFromXML("URL", "Landing Page", "url"));
     }
 
-    /*@After
+    @After
     public void wipeDriver(){
         driver.quit();
-    }*/
+    }
 
 
     @Test
@@ -136,7 +136,7 @@ public class Module_TestCase {
         assertEquals(ReadXMLFile.takeConstantFromXML("URL", "Testimonials", "url"), driver.getCurrentUrl()); //check URL
     }
 
-
+    /*
     //проверка работы, временный тест
     @Test
     public void writeReviewLoggedOutUserTemp(){
@@ -146,6 +146,7 @@ public class Module_TestCase {
         //WriteAReviewPageActions.fillAndPostReview(driver, ReadXMLFile.takeConstantFromXML("BodyArea", "Neck", "name"), ReadXMLFile.takeConstantFromXML("Condition", "Neck pain with radiculopathy", "name"), ReadXMLFile.takeConstantFromXML("Treatment", "NSAIDs - Anti Inflammatory drugs", "name"), ReadXMLFile.takeConstantFromXML("RateChoice", "Cured", "satisfactionLevel"));
 
     }
+    */
 
     //Navigation to Treatment Ratings Condition page from Home page
     @Test
@@ -162,7 +163,7 @@ public class Module_TestCase {
     String expectedURL  = HomePageElements.bttn_GetStarted(driver).getAttribute("href");
     HomePageActions.clickGetStartedButton(driver);
     assertEquals(expectedURL, driver.getCurrentUrl());
-        
+
     }
 
 }

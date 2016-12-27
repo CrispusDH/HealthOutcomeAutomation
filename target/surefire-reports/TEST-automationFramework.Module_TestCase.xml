@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="automationFramework.Module_TestCase" time="161.202" tests="11" errors="2" skipped="0" failures="0">
+<testsuite name="automationFramework.Module_TestCase" time="285.135" tests="14" errors="2" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_91\jre\bin"/>
@@ -64,58 +64,61 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="checkFooterLinkTestimonials" classname="automationFramework.Module_TestCase" time="19.592"/>
-  <testcase name="writeReviewLoggedOutUser" classname="automationFramework.Module_TestCase" time="15.843">
+  <testcase name="checkFooterLinkTestimonials" classname="automationFramework.Module_TestCase" time="13.914"/>
+  <testcase name="writeReviewLoggedOutUser" classname="automationFramework.Module_TestCase" time="16.145">
     <error message="Can&apos;t find By.cssSelector: .field-treatments li after 5000 milliseconds." type="java.lang.RuntimeException">java.lang.RuntimeException: Can't find By.cssSelector: .field-treatments li after 5000 milliseconds.
 	at utility.FindElementsNewMechanism.findElements(FindElementsNewMechanism.java:29)
 	at pageObjectsElements.WriteAReviewPageElements.li_TreatmentsElement(WriteAReviewPageElements.java:37)
 	at pageObjectsActions.WriteAReviewPageActions.fillAndPostReview(WriteAReviewPageActions.java:11)
 	at automationFramework.Module_TestCase.writeReviewLoggedOutUser(Module_TestCase.java:55)
 </error>
-    <system-out>Tue Dec 20 13:55:18 EET 2016: Waited for 1000 milliseconds.[By.cssSelector: .parts-list li]
-Tue Dec 20 13:55:19 EET 2016: Waited for 1000 milliseconds.[By.cssSelector: .field-treatments li]
-Tue Dec 20 13:55:20 EET 2016: Waited for 2000 milliseconds.[By.cssSelector: .field-treatments li]
-Tue Dec 20 13:55:21 EET 2016: Waited for 3000 milliseconds.[By.cssSelector: .field-treatments li]
-Tue Dec 20 13:55:22 EET 2016: Waited for 4000 milliseconds.[By.cssSelector: .field-treatments li]
-Tue Dec 20 13:55:23 EET 2016: Waited for 5000 milliseconds.[By.cssSelector: .field-treatments li]
+    <system-out>Tue Dec 27 20:09:49 EET 2016: Waited for 1000 milliseconds.[By.cssSelector: .parts-list li]
+Tue Dec 27 20:09:50 EET 2016: Waited for 1000 milliseconds.[By.cssSelector: .field-treatments li]
+Tue Dec 27 20:09:51 EET 2016: Waited for 2000 milliseconds.[By.cssSelector: .field-treatments li]
+Tue Dec 27 20:09:52 EET 2016: Waited for 3000 milliseconds.[By.cssSelector: .field-treatments li]
+Tue Dec 27 20:09:53 EET 2016: Waited for 4000 milliseconds.[By.cssSelector: .field-treatments li]
+Tue Dec 27 20:09:54 EET 2016: Waited for 5000 milliseconds.[By.cssSelector: .field-treatments li]
 </system-out>
-    <system-err>Starting ChromeDriver 2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed) on port 24504
+    <system-err>Starting ChromeDriver 2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed) on port 15618
 Only local connections are allowed.
-груд. 20, 2016 1:55:09 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+груд. 27, 2016 8:09:39 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Attempting bi-dialect session, assuming Postel's Law holds true on the remote end
-груд. 20, 2016 1:55:11 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+груд. 27, 2016 8:09:40 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: OSS
 </system-err>
   </testcase>
-  <testcase name="checkFooterLinkBlog" classname="automationFramework.Module_TestCase" time="15.709"/>
-  <testcase name="goToSingleReviewPage" classname="automationFramework.Module_TestCase" time="12.06"/>
-  <testcase name="checkFooterLinkFAQ" classname="automationFramework.Module_TestCase" time="12.06"/>
-  <testcase name="logIn" classname="automationFramework.Module_TestCase" time="12.326"/>
-  <testcase name="writeReviewLoggedInUserConditionIsUnknown" classname="automationFramework.Module_TestCase" time="20.507">
+  <testcase name="goToConditionSelectionPage" classname="automationFramework.Module_TestCase" time="9.884"/>
+  <testcase name="checkFooterLinkBlog" classname="automationFramework.Module_TestCase" time="24.306"/>
+  <testcase name="goToSingleReviewPage" classname="automationFramework.Module_TestCase" time="14.673"/>
+  <testcase name="checkFooterLinkFAQ" classname="automationFramework.Module_TestCase" time="24.099"/>
+  <testcase name="logIn" classname="automationFramework.Module_TestCase" time="25.635"/>
+  <testcase name="writeReviewLoggedInUserConditionIsUnknown" classname="automationFramework.Module_TestCase" time="31.236">
     <error message="Can&apos;t find By.cssSelector: .field-treatments li after 5000 milliseconds." type="java.lang.RuntimeException">java.lang.RuntimeException: Can't find By.cssSelector: .field-treatments li after 5000 milliseconds.
 	at utility.FindElementsNewMechanism.findElements(FindElementsNewMechanism.java:29)
 	at pageObjectsElements.WriteAReviewPageElements.li_TreatmentsElement(WriteAReviewPageElements.java:37)
 	at pageObjectsActions.WriteAReviewPageActions.fillAndPostReview(WriteAReviewPageActions.java:11)
 	at automationFramework.Module_TestCase.writeReviewLoggedInUserConditionIsUnknown(Module_TestCase.java:64)
 </error>
-    <system-out>Tue Dec 20 13:56:29 EET 2016: Waited for 1000 milliseconds.[By.cssSelector: html body div#content div.page.page-home div.page-body div div.share-experience-bar-cta div.bar-body.body-content a.button.button-cta]
-Tue Dec 20 13:56:30 EET 2016: Waited for 1000 milliseconds.[By.cssSelector: .parts-list li]
-Tue Dec 20 13:56:32 EET 2016: Waited for 1000 milliseconds.[By.cssSelector: .field-treatments li]
-Tue Dec 20 13:56:33 EET 2016: Waited for 2000 milliseconds.[By.cssSelector: .field-treatments li]
-Tue Dec 20 13:56:34 EET 2016: Waited for 3000 milliseconds.[By.cssSelector: .field-treatments li]
-Tue Dec 20 13:56:35 EET 2016: Waited for 4000 milliseconds.[By.cssSelector: .field-treatments li]
-Tue Dec 20 13:56:36 EET 2016: Waited for 5000 milliseconds.[By.cssSelector: .field-treatments li]
+    <system-out>Tue Dec 27 20:11:57 EET 2016: Waited for 1000 milliseconds.[By.cssSelector: html body div#content div.page.page-home div.page-body div div.share-experience-bar-cta div.bar-body.body-content a.button.button-cta]
+Tue Dec 27 20:11:58 EET 2016: Waited for 1000 milliseconds.[By.cssSelector: .parts-list li]
+Tue Dec 27 20:12:00 EET 2016: Waited for 1000 milliseconds.[By.cssSelector: .field-treatments li]
+Tue Dec 27 20:12:01 EET 2016: Waited for 2000 milliseconds.[By.cssSelector: .field-treatments li]
+Tue Dec 27 20:12:02 EET 2016: Waited for 3000 milliseconds.[By.cssSelector: .field-treatments li]
+Tue Dec 27 20:12:03 EET 2016: Waited for 4000 milliseconds.[By.cssSelector: .field-treatments li]
+Tue Dec 27 20:12:04 EET 2016: Waited for 5000 milliseconds.[By.cssSelector: .field-treatments li]
 </system-out>
-    <system-err>Starting ChromeDriver 2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed) on port 23333
+    <system-err>Starting ChromeDriver 2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed) on port 13512
 Only local connections are allowed.
-груд. 20, 2016 1:56:17 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+груд. 27, 2016 8:11:35 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Attempting bi-dialect session, assuming Postel's Law holds true on the remote end
-груд. 20, 2016 1:56:18 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+груд. 27, 2016 8:11:44 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: OSS
 </system-err>
   </testcase>
-  <testcase name="checkFooterLinkResources" classname="automationFramework.Module_TestCase" time="11.829"/>
-  <testcase name="forgotPassword" classname="automationFramework.Module_TestCase" time="15.963"/>
-  <testcase name="checkFooterLinkAbout" classname="automationFramework.Module_TestCase" time="11.18"/>
-  <testcase name="signUpWithoutReview" classname="automationFramework.Module_TestCase" time="14.133"/>
+  <testcase name="checkFooterLinkResources" classname="automationFramework.Module_TestCase" time="22.879"/>
+  <testcase name="forgotPassword" classname="automationFramework.Module_TestCase" time="36.344"/>
+  <testcase name="checkFooterLinkAbout" classname="automationFramework.Module_TestCase" time="16.617"/>
+  <testcase name="goToTreatmentRatingsConditionPage" classname="automationFramework.Module_TestCase" time="9.02"/>
+  <testcase name="signUpWithoutReview" classname="automationFramework.Module_TestCase" time="24.112"/>
+  <testcase name="writeReviewLoggedOutUserTemp" classname="automationFramework.Module_TestCase" time="16.271"/>
 </testsuite>

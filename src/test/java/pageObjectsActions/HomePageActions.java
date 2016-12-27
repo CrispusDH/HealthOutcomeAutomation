@@ -23,4 +23,18 @@ public class HomePageActions {
     public static void goToSingleReviewPage(WebDriver driver){
         HomePageElements.frm_SingleReview(driver).click();
     }
+
+    //go to Treatment Ratings Condition page
+    public static void goToFeaturedConditionPage(WebDriver driver){
+
+        HomePageElements.li_FeaturedConditions(driver).click();
+
+    }
+
+    //go to Condition Selection page
+    public static void clickGetStartedButton(WebDriver driver){
+
+        HomePageElements.bttn_GetStarted(driver).click();
+
+    }
 }

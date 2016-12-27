@@ -1,0 +1,47 @@
+{
+  "uid" : "5d92cde07c88094a",
+  "name" : "checkFooterLinkTestimonials",
+  "title" : "Check footer link testimonials",
+  "time" : {
+    "start" : 1482234889149,
+    "stop" : 1482234908523,
+    "duration" : 19374
+  },
+  "summary" : {
+    "attachments" : 0,
+    "steps" : 0
+  },
+  "failure" : null,
+  "description" : null,
+  "severity" : "NORMAL",
+  "status" : "PASSED",
+  "testId" : null,
+  "suite" : {
+    "uid" : "3230a403b32f9ec5",
+    "name" : "automationFramework.Module_TestCase",
+    "title" : "Module test case"
+  },
+  "steps" : [ ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "JUnit"
+  }, {
+    "name" : "language",
+    "value" : "JAVA"
+  }, {
+    "name" : "thread",
+    "value" : "1876@Crispus-PC.main(1)"
+  }, {
+    "name" : "suite-name",
+    "value" : "automationFramework.Module_TestCase"
+  }, {
+    "name" : "suite-title",
+    "value" : null
+  }, {
+    "name" : "host",
+    "value" : "Crispus-PC"
+  } ],
+  "parameters" : [ ]
+}

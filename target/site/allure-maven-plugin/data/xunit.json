@@ -1,0 +1,148 @@
+{
+  "time" : {
+    "start" : 1482234889149,
+    "stop" : 1482235050405,
+    "duration" : 161256
+  },
+  "testSuites" : [ {
+    "uid" : "3230a403b32f9ec5",
+    "name" : "automationFramework.Module_TestCase",
+    "title" : "Module test case",
+    "time" : {
+      "start" : 1482234889149,
+      "stop" : 1482235050405,
+      "duration" : 161256
+    },
+    "statistic" : {
+      "total" : 11,
+      "passed" : 9,
+      "pending" : 0,
+      "canceled" : 0,
+      "failed" : 0,
+      "broken" : 2
+    },
+    "description" : null,
+    "testCases" : [ {
+      "uid" : "5d92cde07c88094a",
+      "name" : "checkFooterLinkTestimonials",
+      "title" : "Check footer link testimonials",
+      "time" : {
+        "start" : 1482234889149,
+        "stop" : 1482234908523,
+        "duration" : 19374
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "957e8ed468eaa7c3",
+      "name" : "writeReviewLoggedOutUser",
+      "title" : "Write review logged out user",
+      "time" : {
+        "start" : 1482234908758,
+        "stop" : 1482234924618,
+        "duration" : 15860
+      },
+      "severity" : "NORMAL",
+      "status" : "BROKEN"
+    }, {
+      "uid" : "5c839c5277b6d30d",
+      "name" : "checkFooterLinkBlog",
+      "title" : "Check footer link blog",
+      "time" : {
+        "start" : 1482234924620,
+        "stop" : 1482234940324,
+        "duration" : 15704
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "78b6fb02b6c95c05",
+      "name" : "goToSingleReviewPage",
+      "title" : "Go to single review page",
+      "time" : {
+        "start" : 1482234940330,
+        "stop" : 1482234952388,
+        "duration" : 12058
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "a4a7db3b216736ac",
+      "name" : "checkFooterLinkFAQ",
+      "title" : "Check footer link FAQ",
+      "time" : {
+        "start" : 1482234952396,
+        "stop" : 1482234964454,
+        "duration" : 12058
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "2c754dd5d074858e",
+      "name" : "logIn",
+      "title" : "Log in",
+      "time" : {
+        "start" : 1482234964463,
+        "stop" : 1482234976788,
+        "duration" : 12325
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "769eea9d4489c613",
+      "name" : "writeReviewLoggedInUserConditionIsUnknown",
+      "title" : "Write review logged in user condition is unknown",
+      "time" : {
+        "start" : 1482234976791,
+        "stop" : 1482234997297,
+        "duration" : 20506
+      },
+      "severity" : "NORMAL",
+      "status" : "BROKEN"
+    }, {
+      "uid" : "d5ca7f2ebfca0754",
+      "name" : "checkFooterLinkResources",
+      "title" : "Check footer link resources",
+      "time" : {
+        "start" : 1482234997298,
+        "stop" : 1482235009125,
+        "duration" : 11827
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "137aae79e6e130c9",
+      "name" : "forgotPassword",
+      "title" : "Forgot password",
+      "time" : {
+        "start" : 1482235009128,
+        "stop" : 1482235025088,
+        "duration" : 15960
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "c67108824439c8e3",
+      "name" : "checkFooterLinkAbout",
+      "title" : "Check footer link about",
+      "time" : {
+        "start" : 1482235025091,
+        "stop" : 1482235036270,
+        "duration" : 11179
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "5bc256c50535b76b",
+      "name" : "signUpWithoutReview",
+      "title" : "Sign up without review",
+      "time" : {
+        "start" : 1482235036273,
+        "stop" : 1482235050405,
+        "duration" : 14132
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    } ]
+  } ]
+}

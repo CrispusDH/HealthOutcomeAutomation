@@ -28,10 +28,10 @@ public class Module_TestCase {
         driver.get(ReadXMLFile.takeConstantFromXML("URL", "Landing Page", "url"));
     }
 
-    @After
+    /*@After
     public void wipeDriver(){
         driver.quit();
-    }
+    }*/
 
 
     @Test
@@ -87,6 +87,8 @@ public class Module_TestCase {
         assertTrue(SignUpConfirmationPageElements.bttn_WriteAReviewOrFindTreatments(driver, ReadXMLFile.takeConstantFromXML("ButtonName", "WriteAReview", "name")).isDisplayed()); // Write a Review button exists
     }
 
+
+    //
     @Test
     public void goToSingleReviewPage(){
         HomePageActions.goToSingleReviewPage(driver);
@@ -132,6 +134,35 @@ public class Module_TestCase {
         assertTrue(!(TestimonialsPageElements.cards(driver).isEmpty()));// check that cards are on that page
         assertTrue(TestimonialsPageElements.cards(driver).size() > 0); // check the same in another way
         assertEquals(ReadXMLFile.takeConstantFromXML("URL", "Testimonials", "url"), driver.getCurrentUrl()); //check URL
+    }
+
+
+    //проверка работы, временный тест
+    @Test
+    public void writeReviewLoggedOutUserTemp(){
+        HomePageActions.goToWriteAReviewPage(driver);
+        WriteAReviewPageActions.chooseBodyArea(driver, "SHOULDER");
+        WriteAReviewPageActions.chooseCondition(driver, "Frozen Shoulder");
+        //WriteAReviewPageActions.fillAndPostReview(driver, ReadXMLFile.takeConstantFromXML("BodyArea", "Neck", "name"), ReadXMLFile.takeConstantFromXML("Condition", "Neck pain with radiculopathy", "name"), ReadXMLFile.takeConstantFromXML("Treatment", "NSAIDs - Anti Inflammatory drugs", "name"), ReadXMLFile.takeConstantFromXML("RateChoice", "Cured", "satisfactionLevel"));
+
+    }
+
+    //Navigation to Treatment Ratings Condition page from Home page
+    @Test
+    public void goToTreatmentRatingsConditionPage(){
+        String expectedURL = HomePageElements.li_FeaturedConditions(driver).getAttribute("href");
+        HomePageActions.goToFeaturedConditionPage(driver);
+        assertEquals(expectedURL, driver.getCurrentUrl());
+    }
+
+    //Navigation to Condition Selection page from Home page
+    @Test
+    public void goToConditionSelectionPage() {
+
+    String expectedURL  = HomePageElements.bttn_GetStarted(driver).getAttribute("href");
+    HomePageActions.clickGetStartedButton(driver);
+    assertEquals(expectedURL, driver.getCurrentUrl());
+        
     }
 
 }

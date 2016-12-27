@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="automationFramework.Module_TestCase" time="382.577" tests="11" errors="4" skipped="0" failures="0">
+<testsuite name="automationFramework.Module_TestCase" time="161.202" tests="11" errors="2" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_91\jre\bin"/>
@@ -64,110 +64,58 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="checkFooterLinkTestimonials" classname="automationFramework.Module_TestCase" time="79.585">
-    <error message="Index: 6, Size: 6" type="java.lang.IndexOutOfBoundsException">java.lang.IndexOutOfBoundsException: Index: 6, Size: 6
-	at java.util.ArrayList.rangeCheck(ArrayList.java:653)
-	at java.util.ArrayList.get(ArrayList.java:429)
-	at pageObjectsElements.FooterElements.lnk_FooterLink(FooterElements.java:18)
-	at pageObjectsActions.FooterActions.clickOnFooterLink(FooterActions.java:9)
-	at automationFramework.Module_TestCase.checkFooterLinkTestimonials(Module_TestCase.java:131)
-</error>
-    <system-err>Starting ChromeDriver 2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed) on port 9090
-Only local connections are allowed.
-лист. 10, 2016 11:46:45 AM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Attempting bi-dialect session, assuming Postel's Law holds true on the remote end
-лист. 10, 2016 11:46:55 AM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: OSS
-</system-err>
-  </testcase>
-  <testcase name="writeReviewLoggedOutUser" classname="automationFramework.Module_TestCase" time="17.873">
+  <testcase name="checkFooterLinkTestimonials" classname="automationFramework.Module_TestCase" time="19.592"/>
+  <testcase name="writeReviewLoggedOutUser" classname="automationFramework.Module_TestCase" time="15.843">
     <error message="Can&apos;t find By.cssSelector: .field-treatments li after 5000 milliseconds." type="java.lang.RuntimeException">java.lang.RuntimeException: Can't find By.cssSelector: .field-treatments li after 5000 milliseconds.
 	at utility.FindElementsNewMechanism.findElements(FindElementsNewMechanism.java:29)
 	at pageObjectsElements.WriteAReviewPageElements.li_TreatmentsElement(WriteAReviewPageElements.java:37)
 	at pageObjectsActions.WriteAReviewPageActions.fillAndPostReview(WriteAReviewPageActions.java:11)
 	at automationFramework.Module_TestCase.writeReviewLoggedOutUser(Module_TestCase.java:55)
 </error>
-    <system-out>Thu Nov 10 11:48:14 EET 2016: Waited for 1000 milliseconds.[By.cssSelector: .parts-list li]
-Thu Nov 10 11:48:16 EET 2016: Waited for 1000 milliseconds.[By.cssSelector: .field-treatments li]
-Thu Nov 10 11:48:17 EET 2016: Waited for 2000 milliseconds.[By.cssSelector: .field-treatments li]
-Thu Nov 10 11:48:18 EET 2016: Waited for 3000 milliseconds.[By.cssSelector: .field-treatments li]
-Thu Nov 10 11:48:19 EET 2016: Waited for 4000 milliseconds.[By.cssSelector: .field-treatments li]
-Thu Nov 10 11:48:20 EET 2016: Waited for 5000 milliseconds.[By.cssSelector: .field-treatments li]
+    <system-out>Tue Dec 20 13:55:18 EET 2016: Waited for 1000 milliseconds.[By.cssSelector: .parts-list li]
+Tue Dec 20 13:55:19 EET 2016: Waited for 1000 milliseconds.[By.cssSelector: .field-treatments li]
+Tue Dec 20 13:55:20 EET 2016: Waited for 2000 milliseconds.[By.cssSelector: .field-treatments li]
+Tue Dec 20 13:55:21 EET 2016: Waited for 3000 milliseconds.[By.cssSelector: .field-treatments li]
+Tue Dec 20 13:55:22 EET 2016: Waited for 4000 milliseconds.[By.cssSelector: .field-treatments li]
+Tue Dec 20 13:55:23 EET 2016: Waited for 5000 milliseconds.[By.cssSelector: .field-treatments li]
 </system-out>
-    <system-err>Starting ChromeDriver 2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed) on port 34340
+    <system-err>Starting ChromeDriver 2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed) on port 24504
 Only local connections are allowed.
-лист. 10, 2016 11:48:02 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+груд. 20, 2016 1:55:09 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Attempting bi-dialect session, assuming Postel's Law holds true on the remote end
-лист. 10, 2016 11:48:04 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+груд. 20, 2016 1:55:11 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: OSS
 </system-err>
   </testcase>
-  <testcase name="checkFooterLinkBlog" classname="automationFramework.Module_TestCase" time="28.109"/>
-  <testcase name="goToSingleReviewPage" classname="automationFramework.Module_TestCase" time="19.184"/>
-  <testcase name="checkFooterLinkFAQ" classname="automationFramework.Module_TestCase" time="26.543"/>
-  <testcase name="logIn" classname="automationFramework.Module_TestCase" time="16.023">
-    <error message="chrome not reachable&#10;  (Session info: chrome=54.0.2840.71)&#10;  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)&#10;Command duration or timeout: 4.01 seconds&#10;Build info: version: &apos;unknown&apos;, revision: &apos;31c43c8&apos;, time: &apos;2016-08-02 21:57:56 -0700&apos;&#10;System info: host: &apos;Crispus-PC&apos;, ip: &apos;192.168.3.15&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_91&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed), userDataDir=C:\Users\Crispus\AppData\Local\Temp\scoped_dir6084_27643}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=54.0.2840.71, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]&#10;Session ID: bed54b938e9a43f2e60263b26f24dbca&#10;*** Element info: {Using=link text, value=Log In}" type="org.openqa.selenium.WebDriverException">org.openqa.selenium.WebDriverException: chrome not reachable
-  (Session info: chrome=54.0.2840.71)
-  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 4.01 seconds
-Build info: version: 'unknown', revision: '31c43c8', time: '2016-08-02 21:57:56 -0700'
-System info: host: 'Crispus-PC', ip: '192.168.3.15', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_91'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed), userDataDir=C:\Users\Crispus\AppData\Local\Temp\scoped_dir6084_27643}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=54.0.2840.71, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: bed54b938e9a43f2e60263b26f24dbca
-*** Element info: {Using=link text, value=Log In}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:631)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:394)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementsByLinkText(RemoteWebDriver.java:430)
-	at org.openqa.selenium.By$ByLinkText.findElements(By.java:241)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:357)
-	at utility.FindElementsNewMechanism.findElements(FindElementsNewMechanism.java:15)
-	at pageObjectsElements.HeaderElements.lnk_LogIn(HeaderElements.java:14)
-	at pageObjectsActions.HeaderActions.clickOnLogIn(HeaderActions.java:9)
-	at automationFramework.Module_TestCase.logIn(Module_TestCase.java:39)
-</error>
-    <system-err>Starting ChromeDriver 2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed) on port 1208
-Only local connections are allowed.
-лист. 10, 2016 11:49:35 AM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Attempting bi-dialect session, assuming Postel's Law holds true on the remote end
-лист. 10, 2016 11:49:37 AM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: OSS
-[8.315][SEVERE]: Unable to receive message from renderer
-</system-err>
-  </testcase>
-  <testcase name="writeReviewLoggedInUserConditionIsUnknown" classname="automationFramework.Module_TestCase" time="111.867">
-    <error message="Can&apos;t find By.cssSelector: button after 5000 milliseconds." type="java.lang.RuntimeException">java.lang.RuntimeException: Can't find By.cssSelector: button after 5000 milliseconds.
+  <testcase name="checkFooterLinkBlog" classname="automationFramework.Module_TestCase" time="15.709"/>
+  <testcase name="goToSingleReviewPage" classname="automationFramework.Module_TestCase" time="12.06"/>
+  <testcase name="checkFooterLinkFAQ" classname="automationFramework.Module_TestCase" time="12.06"/>
+  <testcase name="logIn" classname="automationFramework.Module_TestCase" time="12.326"/>
+  <testcase name="writeReviewLoggedInUserConditionIsUnknown" classname="automationFramework.Module_TestCase" time="20.507">
+    <error message="Can&apos;t find By.cssSelector: .field-treatments li after 5000 milliseconds." type="java.lang.RuntimeException">java.lang.RuntimeException: Can't find By.cssSelector: .field-treatments li after 5000 milliseconds.
 	at utility.FindElementsNewMechanism.findElements(FindElementsNewMechanism.java:29)
-	at pageObjectsElements.WriteAReviewPageElements.bttn_PostReview(WriteAReviewPageElements.java:60)
-	at pageObjectsActions.WriteAReviewPageActions.fillAndPostReview(WriteAReviewPageActions.java:13)
+	at pageObjectsElements.WriteAReviewPageElements.li_TreatmentsElement(WriteAReviewPageElements.java:37)
+	at pageObjectsActions.WriteAReviewPageActions.fillAndPostReview(WriteAReviewPageActions.java:11)
 	at automationFramework.Module_TestCase.writeReviewLoggedInUserConditionIsUnknown(Module_TestCase.java:64)
 </error>
-    <system-out>Thu Nov 10 11:51:24 EET 2016: Waited for 1000 milliseconds.[By.linkText: Log In]
-Thu Nov 10 11:51:33 EET 2016: Waited for 1000 milliseconds.[By.cssSelector: html body div#content div.page.page-home div.page-body div div.share-experience-bar-cta div.bar-body.body-content a.button.button-cta]
-Thu Nov 10 11:51:34 EET 2016: Waited for 1000 milliseconds.[By.cssSelector: .parts-list li]
-Thu Nov 10 11:51:36 EET 2016: Waited for 1000 milliseconds.[By.cssSelector: .field-treatments li]
-Thu Nov 10 11:51:38 EET 2016: Waited for 1000 milliseconds.[By.cssSelector: button]
-Thu Nov 10 11:51:39 EET 2016: Waited for 2000 milliseconds.[By.cssSelector: button]
-Thu Nov 10 11:51:40 EET 2016: Waited for 3000 milliseconds.[By.cssSelector: button]
-Thu Nov 10 11:51:41 EET 2016: Waited for 4000 milliseconds.[By.cssSelector: button]
-Thu Nov 10 11:51:42 EET 2016: Waited for 5000 milliseconds.[By.cssSelector: button]
+    <system-out>Tue Dec 20 13:56:29 EET 2016: Waited for 1000 milliseconds.[By.cssSelector: html body div#content div.page.page-home div.page-body div div.share-experience-bar-cta div.bar-body.body-content a.button.button-cta]
+Tue Dec 20 13:56:30 EET 2016: Waited for 1000 milliseconds.[By.cssSelector: .parts-list li]
+Tue Dec 20 13:56:32 EET 2016: Waited for 1000 milliseconds.[By.cssSelector: .field-treatments li]
+Tue Dec 20 13:56:33 EET 2016: Waited for 2000 milliseconds.[By.cssSelector: .field-treatments li]
+Tue Dec 20 13:56:34 EET 2016: Waited for 3000 milliseconds.[By.cssSelector: .field-treatments li]
+Tue Dec 20 13:56:35 EET 2016: Waited for 4000 milliseconds.[By.cssSelector: .field-treatments li]
+Tue Dec 20 13:56:36 EET 2016: Waited for 5000 milliseconds.[By.cssSelector: .field-treatments li]
 </system-out>
-    <system-err>Starting ChromeDriver 2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed) on port 44957
+    <system-err>Starting ChromeDriver 2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed) on port 23333
 Only local connections are allowed.
-лист. 10, 2016 11:49:50 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+груд. 20, 2016 1:56:17 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Attempting bi-dialect session, assuming Postel's Law holds true on the remote end
-лист. 10, 2016 11:49:52 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+груд. 20, 2016 1:56:18 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: OSS
 </system-err>
   </testcase>
-  <testcase name="checkFooterLinkResources" classname="automationFramework.Module_TestCase" time="11.188"/>
-  <testcase name="forgotPassword" classname="automationFramework.Module_TestCase" time="26.143"/>
-  <testcase name="checkFooterLinkAbout" classname="automationFramework.Module_TestCase" time="17.263"/>
-  <testcase name="signUpWithoutReview" classname="automationFramework.Module_TestCase" time="28.799"/>
+  <testcase name="checkFooterLinkResources" classname="automationFramework.Module_TestCase" time="11.829"/>
+  <testcase name="forgotPassword" classname="automationFramework.Module_TestCase" time="15.963"/>
+  <testcase name="checkFooterLinkAbout" classname="automationFramework.Module_TestCase" time="11.18"/>
+  <testcase name="signUpWithoutReview" classname="automationFramework.Module_TestCase" time="14.133"/>
 </testsuite>

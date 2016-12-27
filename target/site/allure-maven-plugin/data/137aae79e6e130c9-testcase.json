@@ -1,0 +1,47 @@
+{
+  "uid" : "137aae79e6e130c9",
+  "name" : "forgotPassword",
+  "title" : "Forgot password",
+  "time" : {
+    "start" : 1482235009128,
+    "stop" : 1482235025088,
+    "duration" : 15960
+  },
+  "summary" : {
+    "attachments" : 0,
+    "steps" : 0
+  },
+  "failure" : null,
+  "description" : null,
+  "severity" : "NORMAL",
+  "status" : "PASSED",
+  "testId" : null,
+  "suite" : {
+    "uid" : "3230a403b32f9ec5",
+    "name" : "automationFramework.Module_TestCase",
+    "title" : "Module test case"
+  },
+  "steps" : [ ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "JUnit"
+  }, {
+    "name" : "language",
+    "value" : "JAVA"
+  }, {
+    "name" : "thread",
+    "value" : "1876@Crispus-PC.main(1)"
+  }, {
+    "name" : "suite-name",
+    "value" : "automationFramework.Module_TestCase"
+  }, {
+    "name" : "suite-title",
+    "value" : null
+  }, {
+    "name" : "host",
+    "value" : "Crispus-PC"
+  } ],
+  "parameters" : [ ]
+}

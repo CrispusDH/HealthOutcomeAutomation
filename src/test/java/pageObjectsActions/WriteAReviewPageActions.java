@@ -13,4 +13,16 @@ public class WriteAReviewPageActions {
         WriteAReviewPageElements.bttn_PostReview(driver).submit();
     }
 
+    public static void chooseBodyArea(WebDriver driver, String BodyAreaName){
+
+        WriteAReviewPageElements.li_InjuryBodyArea(driver, BodyAreaName).click();
+
+    }
+
+    public static void chooseCondition(WebDriver driver, String ConditionName){
+
+        WriteAReviewPageElements.li_ConditionElement(driver, ConditionName).click();
+
+    }
+
 }

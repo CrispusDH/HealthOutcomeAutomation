@@ -1,0 +1,47 @@
+{
+  "uid" : "48cb4516841a692a",
+  "name" : "checkFooterLinkFAQ",
+  "title" : "Check footer link FAQ",
+  "time" : {
+    "start" : 1482863028979,
+    "stop" : 1482863039843,
+    "duration" : 10864
+  },
+  "summary" : {
+    "attachments" : 0,
+    "steps" : 0
+  },
+  "failure" : null,
+  "description" : null,
+  "severity" : "NORMAL",
+  "status" : "PASSED",
+  "testId" : null,
+  "suite" : {
+    "uid" : "78f9796eb1e8f8d3",
+    "name" : "automationFramework.Module_TestCase",
+    "title" : "Module test case"
+  },
+  "steps" : [ ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "JUnit"
+  }, {
+    "name" : "language",
+    "value" : "JAVA"
+  }, {
+    "name" : "thread",
+    "value" : "9988@Crispus-PC.main(1)"
+  }, {
+    "name" : "suite-name",
+    "value" : "automationFramework.Module_TestCase"
+  }, {
+    "name" : "suite-title",
+    "value" : null
+  }, {
+    "name" : "host",
+    "value" : "Crispus-PC"
+  } ],
+  "parameters" : [ ]
+}

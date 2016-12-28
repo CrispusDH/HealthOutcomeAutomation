@@ -1,0 +1,169 @@
+{
+  "features" : [ {
+    "title" : "Without feature",
+    "statistic" : {
+      "total" : 13,
+      "passed" : 11,
+      "pending" : 0,
+      "canceled" : 0,
+      "failed" : 0,
+      "broken" : 2
+    },
+    "stories" : [ {
+      "uid" : "c670a73af6e9dcee",
+      "title" : "Without story",
+      "statistic" : {
+        "total" : 13,
+        "passed" : 11,
+        "pending" : 0,
+        "canceled" : 0,
+        "failed" : 0,
+        "broken" : 2
+      },
+      "testCases" : [ {
+        "uid" : "115332ebae852b2f",
+        "name" : "checkFooterLinkTestimonials",
+        "title" : "Check footer link testimonials",
+        "time" : {
+          "start" : 1482862958514,
+          "stop" : 1482862974824,
+          "duration" : 16310
+        },
+        "severity" : "NORMAL",
+        "status" : "PASSED"
+      }, {
+        "uid" : "683837036d61c265",
+        "name" : "writeReviewLoggedOutUser",
+        "title" : "Write review logged out user",
+        "time" : {
+          "start" : 1482862975011,
+          "stop" : 1482862995484,
+          "duration" : 20473
+        },
+        "severity" : "NORMAL",
+        "status" : "BROKEN"
+      }, {
+        "uid" : "dc9f26173c416275",
+        "name" : "goToConditionSelectionPage",
+        "title" : "Go to condition selection page",
+        "time" : {
+          "start" : 1482862995484,
+          "stop" : 1482863003822,
+          "duration" : 8338
+        },
+        "severity" : "NORMAL",
+        "status" : "PASSED"
+      }, {
+        "uid" : "69d91a0d9fdde33d",
+        "name" : "checkFooterLinkBlog",
+        "title" : "Check footer link blog",
+        "time" : {
+          "start" : 1482863003838,
+          "stop" : 1482863017778,
+          "duration" : 13940
+        },
+        "severity" : "NORMAL",
+        "status" : "PASSED"
+      }, {
+        "uid" : "44b02905d9f46749",
+        "name" : "goToSingleReviewPage",
+        "title" : "Go to single review page",
+        "time" : {
+          "start" : 1482863017778,
+          "stop" : 1482863028979,
+          "duration" : 11201
+        },
+        "severity" : "NORMAL",
+        "status" : "PASSED"
+      }, {
+        "uid" : "48cb4516841a692a",
+        "name" : "checkFooterLinkFAQ",
+        "title" : "Check footer link FAQ",
+        "time" : {
+          "start" : 1482863028979,
+          "stop" : 1482863039843,
+          "duration" : 10864
+        },
+        "severity" : "NORMAL",
+        "status" : "PASSED"
+      }, {
+        "uid" : "74d8a04517dc5c75",
+        "name" : "logIn",
+        "title" : "Log in",
+        "time" : {
+          "start" : 1482863039843,
+          "stop" : 1482863051738,
+          "duration" : 11895
+        },
+        "severity" : "NORMAL",
+        "status" : "PASSED"
+      }, {
+        "uid" : "6386ceb7a0e72970",
+        "name" : "writeReviewLoggedInUserConditionIsUnknown",
+        "title" : "Write review logged in user condition is unknown",
+        "time" : {
+          "start" : 1482863051738,
+          "stop" : 1482863071782,
+          "duration" : 20044
+        },
+        "severity" : "NORMAL",
+        "status" : "BROKEN"
+      }, {
+        "uid" : "6420c6eed1fcea98",
+        "name" : "checkFooterLinkResources",
+        "title" : "Check footer link resources",
+        "time" : {
+          "start" : 1482863071782,
+          "stop" : 1482863082628,
+          "duration" : 10846
+        },
+        "severity" : "NORMAL",
+        "status" : "PASSED"
+      }, {
+        "uid" : "4692103bb6937fb4",
+        "name" : "forgotPassword",
+        "title" : "Forgot password",
+        "time" : {
+          "start" : 1482863082628,
+          "stop" : 1482863097433,
+          "duration" : 14805
+        },
+        "severity" : "NORMAL",
+        "status" : "PASSED"
+      }, {
+        "uid" : "d0dc94ce41c9b7a3",
+        "name" : "checkFooterLinkAbout",
+        "title" : "Check footer link about",
+        "time" : {
+          "start" : 1482863097433,
+          "stop" : 1482863108602,
+          "duration" : 11169
+        },
+        "severity" : "NORMAL",
+        "status" : "PASSED"
+      }, {
+        "uid" : "476339600ebe3c6f",
+        "name" : "goToTreatmentRatingsConditionPage",
+        "title" : "Go to treatment ratings condition page",
+        "time" : {
+          "start" : 1482863108602,
+          "stop" : 1482863117320,
+          "duration" : 8718
+        },
+        "severity" : "NORMAL",
+        "status" : "PASSED"
+      }, {
+        "uid" : "f9a4caa36cfd413b",
+        "name" : "signUpWithoutReview",
+        "title" : "Sign up without review",
+        "time" : {
+          "start" : 1482863117320,
+          "stop" : 1482863130747,
+          "duration" : 13427
+        },
+        "severity" : "NORMAL",
+        "status" : "PASSED"
+      } ]
+    } ]
+  } ]
+}

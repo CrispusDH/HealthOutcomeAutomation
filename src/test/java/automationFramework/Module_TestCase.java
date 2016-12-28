@@ -166,4 +166,16 @@ public class Module_TestCase {
 
     }
 
+    //Navigation to Treatment Ratings Condition page from the Condition Selection page
+    @Test
+    public void goToTreatmentRatingsConditionPageFromConditionSelectionPage() {
+
+        String expectedURL;
+        HomePageActions.clickGetStartedButton(driver);
+        expectedURL = driver.getCurrentUrl();
+        ConditionSelectionPageActions.goToTreatmentRatingsConditionPage(driver, ReadXMLFile.takeConstantFromXML("BodyArea", "Neck", "name"), ReadXMLFile.takeConstantFromXML("Condition", "Neck pain with radiculopathy", "name"));
+        assertNotEquals(expectedURL, driver.getCurrentUrl());
+
+    }
+
 }

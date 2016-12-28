@@ -2,138 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4ca991d3-ec18-4ace-b08d-b16c63f24db2" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/allure-results/f23574d4-c671-480b-b1cf-d0bfe2a27469-testsuite.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/WEB-INF/web.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/css/app.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/data/137aae79e6e130c9-testcase.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/data/2c754dd5d074858e-testcase.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/data/5bc256c50535b76b-testcase.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/data/5c839c5277b6d30d-testcase.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/data/5d92cde07c88094a-testcase.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/data/769eea9d4489c613-testcase.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/data/78b6fb02b6c95c05-testcase.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/data/957e8ed468eaa7c3-testcase.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/data/a4a7db3b216736ac-testcase.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/data/behaviors.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/data/c67108824439c8e3-testcase.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/data/d5ca7f2ebfca0754-testcase.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/data/defects.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/data/environment.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/data/graph.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/data/plugins.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/data/report.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/data/timeline.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/data/total.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/data/widgets.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/data/xunit.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/flash/clippy.swf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/img/allure-logo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/img/favicon.ico" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/img/tests_passed.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/js/app.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/js/charts/charts.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/js/charts/duration.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/js/charts/pie.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/js/charts/severityMap.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/js/charts/timeline.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/js/controllers.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/js/directives.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/js/filters.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/js/overview/widgets.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/js/pane/pane.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/js/pluginApi.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/js/scrollfix/scrollfix.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/js/services.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/js/table/table.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/js/testcase/list.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/js/testcase/provider.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/js/testcase/statusSwitcher.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/js/testcase/testcase.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/plugins/behaviors/en.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/plugins/behaviors/ptbr.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/plugins/behaviors/ru.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/plugins/behaviors/script.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/plugins/behaviors/tab.tpl.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/plugins/defects/en.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/plugins/defects/ptbr.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/plugins/defects/ru.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/plugins/defects/script.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/plugins/defects/tab.tpl.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/plugins/environment/script.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/plugins/graph/en.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/plugins/graph/ptbr.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/plugins/graph/ru.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/plugins/graph/script.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/plugins/graph/tab.tpl.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/plugins/timeline/en.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/plugins/timeline/ptbr.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/plugins/timeline/ru.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/plugins/timeline/script.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/plugins/timeline/tab.tpl.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/plugins/total/script.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/plugins/xunit/en.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/plugins/xunit/ptbr.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/plugins/xunit/ru.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/plugins/xunit/script.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/plugins/xunit/tab.tpl.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/plugins/xunit/testrun.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/plugins/xunit/testsuite.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/templates/overview.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/templates/overview/defects.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/templates/overview/keyValue.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/templates/overview/statistics.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/templates/overview/total.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/templates/table/table.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/templates/testcase/attachment.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/templates/testcase/list.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/templates/testcase/status-switcher.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/templates/testcase/testcase.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/templates/testcase/testcaseView.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/translations/en.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/translations/ptbr.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/translations/ru.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/vendor/filesize.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/vendor/localstorageprovider.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/vendor/messageformat/en.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/vendor/messageformat/ptbr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/vendor/messageformat/ru.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/webjars/Sortable/1.2.0/Sortable.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/webjars/Sortable/1.2.0/ng-sortable.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/webjars/angular-loading-bar/0.6.0/loading-bar.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/webjars/angular-translate-interpolation-messageformat/0.1.2/angular-translate-interpolation-messageformat.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/webjars/angular-translate-loader-partial/2.6.0/angular-translate-loader-partial.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/webjars/angular-translate/2.6.0/angular-translate.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/webjars/angular-ui-bootstrap/0.11.2/ui-bootstrap-tpls.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/webjars/angular-ui-router/0.2.13/angular-ui-router.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/webjars/angularjs/1.2.26/angular-animate.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/webjars/angularjs/1.2.26/angular.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/webjars/d3js/3.4.11/d3.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/webjars/font-awesome/4.2.0/fonts/FontAwesome.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/webjars/font-awesome/4.2.0/fonts/fontawesome-webfont.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/webjars/font-awesome/4.2.0/fonts/fontawesome-webfont.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/webjars/font-awesome/4.2.0/fonts/fontawesome-webfont.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/webjars/font-awesome/4.2.0/fonts/fontawesome-webfont.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/webjars/highlightjs/8.2-1/highlight.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/webjars/jquery/2.1.1/jquery.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/webjars/messageformat.js/0.1.4/messageformat.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/css/maven-base.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/css/maven-theme.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/css/print.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/css/site.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/images/collapsed.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/images/expanded.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/images/external.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/images/icon_error_sml.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/images/icon_info_sml.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/images/icon_success_sml.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/images/icon_warning_sml.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/images/logos/build-by-maven-black.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/images/logos/build-by-maven-white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/images/logos/maven-feather.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/images/newwindow.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/project-reports.html" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/pageObjectsActions/ConditionSelectionPageActions.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/pageObjectsElements/ConditionSelectionPageElements.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/allure-results/281f942d-6157-48d8-8052-ccea9c83dfb8-testsuite.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/automationFramework/Module_TestCase.class" afterPath="$PROJECT_DIR$/target/test-classes/automationFramework/Module_TestCase.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/automationFramework/Module_TestCase.java" afterPath="$PROJECT_DIR$/src/test/java/automationFramework/Module_TestCase.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-automationFramework.Module_TestCase.xml" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-automationFramework.Module_TestCase.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/automationFramework.Module_TestCase.txt" afterPath="$PROJECT_DIR$/target/surefire-reports/automationFramework.Module_TestCase.txt" />
@@ -161,8 +34,8 @@
       <file leaf-file-name="Module_TestCase.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/automationFramework/Module_TestCase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="148" column="6" selection-start-line="148" selection-start-column="6" selection-end-line="148" selection-end-column="6" />
+            <state relative-caret-position="301">
+              <caret line="33" column="5" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#826#827#0" expanded="true" />
@@ -172,68 +45,79 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="SetDriver.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/utility/SetDriver.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="12" column="91" selection-start-line="12" selection-start-column="91" selection-end-line="12" selection-end-column="91" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ConditionSelectionPageActions.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/pageObjectsActions/ConditionSelectionPageActions.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="17" column="34" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FooterActions.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/pageObjectsActions/FooterActions.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HeaderActions.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/pageObjectsActions/HeaderActions.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+              <folding>
+                <element signature="e#194#195#0" expanded="true" />
+                <element signature="e#250#251#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ConditionSelectionPageElements.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/pageObjectsElements/ConditionSelectionPageElements.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="116">
+              <caret line="28" column="29" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="29" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BlogPageElements.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/pageObjectsElements/BlogPageElements.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="11" selection-end-column="52" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="WriteAReviewPageActions.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/pageObjectsActions/WriteAReviewPageActions.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="183">
-              <caret line="23" column="53" selection-start-line="23" selection-start-column="53" selection-end-line="23" selection-end-column="53" />
+            <state relative-caret-position="357">
+              <caret line="23" column="44" selection-start-line="23" selection-start-column="44" selection-end-line="23" selection-end-column="44" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SignUpConfirmationPageElements.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/pageObjectsElements/SignUpConfirmationPageElements.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="235">
-              <caret line="21" column="23" selection-start-line="14" selection-start-column="8" selection-end-line="21" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SignUpPageElements.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/pageObjectsElements/SignUpPageElements.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SingleReviewPageElements.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/pageObjectsElements/SingleReviewPageElements.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="9" column="45" selection-start-line="9" selection-start-column="45" selection-end-line="9" selection-end-column="45" />
-              <folding>
-                <element signature="imports" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TestimonialsPageElements.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/pageObjectsElements/TestimonialsPageElements.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="16" column="5" selection-start-line="10" selection-start-column="4" selection-end-line="16" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WriteAReviewConfirmationPageElements.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/pageObjectsElements/WriteAReviewConfirmationPageElements.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="27" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="false" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -241,18 +125,8 @@
       <file leaf-file-name="WriteAReviewPageElements.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/pageObjectsElements/WriteAReviewPageElements.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="174">
-              <caret line="25" column="56" selection-start-line="25" selection-start-column="56" selection-end-line="25" selection-end-column="56" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HomePageElements.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/pageObjectsElements/HomePageElements.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="32" column="69" selection-start-line="32" selection-start-column="69" selection-end-line="32" selection-end-column="69" />
+            <state relative-caret-position="346">
+              <caret line="33" column="5" selection-start-line="24" selection-start-column="4" selection-end-line="33" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -261,14 +135,9 @@
       <file leaf-file-name="HomePageActions.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/pageObjectsActions/HomePageActions.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="36" column="35" selection-start-line="36" selection-start-column="35" selection-end-line="36" selection-end-column="35" />
-              <folding>
-                <element signature="e#672#673#0" expanded="true" />
-                <element signature="e#735#736#0" expanded="true" />
-                <element signature="e#799#800#0" expanded="true" />
-                <element signature="e#864#865#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="136">
+              <caret line="10" column="56" selection-start-line="10" selection-start-column="56" selection-end-line="10" selection-end-column="56" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -327,6 +196,9 @@
         <option value="$PROJECT_DIR$/src/test/java/pageObjectsActions/WriteAReviewPageActions.java" />
         <option value="$PROJECT_DIR$/src/test/java/pageObjectsActions/HomePageActions.java" />
         <option value="$PROJECT_DIR$/src/test/java/pageObjectsElements/HomePageElements.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pageObjectsElements/ConditionSelectionPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pageObjectsElements/ConditionSelectionPageElements.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pageObjectsActions/ConditionSelectionPageActions.java" />
         <option value="$PROJECT_DIR$/src/test/java/automationFramework/Module_TestCase.java" />
       </list>
     </option>
@@ -376,7 +248,6 @@
     <panes>
       <pane id="PackagesPane" />
       <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -515,6 +386,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -525,7 +397,7 @@
       <recent name="utility" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.Module_TestCase.goToConditionSelectionPage">
+  <component name="RunManager" selected="JUnit.Module_TestCase.goToTreatmentRatingsConditionPageFromConditionSelectionPage">
     <configuration default="false" name="Module_TestCase.checkFooterLinkTestimonials" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -539,32 +411,6 @@
       <option name="PACKAGE_NAME" value="automationFramework" />
       <option name="MAIN_CLASS_NAME" value="automationFramework.Module_TestCase" />
       <option name="METHOD_NAME" value="checkFooterLinkTestimonials" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="Module_TestCase.writeReviewLoggedInUserConditionIsUnknown" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="automationFramework.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="HealthOutcome" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="automationFramework" />
-      <option name="MAIN_CLASS_NAME" value="automationFramework.Module_TestCase" />
-      <option name="METHOD_NAME" value="writeReviewLoggedInUserConditionIsUnknown" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -643,6 +489,32 @@
       <option name="PACKAGE_NAME" value="automationFramework" />
       <option name="MAIN_CLASS_NAME" value="automationFramework.Module_TestCase" />
       <option name="METHOD_NAME" value="goToConditionSelectionPage" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="Module_TestCase.goToTreatmentRatingsConditionPageFromConditionSelectionPage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="automationFramework.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="HealthOutcome" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="automationFramework" />
+      <option name="MAIN_CLASS_NAME" value="automationFramework.Module_TestCase" />
+      <option name="METHOD_NAME" value="goToTreatmentRatingsConditionPageFromConditionSelectionPage" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -902,18 +774,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="JUnit.Module_TestCase.checkFooterLinkTestimonials" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.Module_TestCase.writeReviewLoggedInUserConditionIsUnknown" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.Module_TestCase.signUpWithoutReview" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.Module_TestCase.writeReviewLoggedOutUserTemp" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.Module_TestCase.goToConditionSelectionPage" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.Module_TestCase.signUpWithoutReview" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.Module_TestCase.writeReviewLoggedOutUserTemp" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.Module_TestCase.goToConditionSelectionPage" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.Module_TestCase.goToTreatmentRatingsConditionPageFromConditionSelectionPage" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.Module_TestCase.goToConditionSelectionPage" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.Module_TestCase.writeReviewLoggedOutUserTemp" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.Module_TestCase.signUpWithoutReview" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.Module_TestCase.checkFooterLinkTestimonials" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.Module_TestCase.writeReviewLoggedInUserConditionIsUnknown" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.Module_TestCase.goToTreatmentRatingsConditionPageFromConditionSelectionPage" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.Module_TestCase.goToConditionSelectionPage" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.Module_TestCase.writeReviewLoggedOutUserTemp" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.Module_TestCase.signUpWithoutReview" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.Module_TestCase.checkFooterLinkTestimonials" />
       </list>
     </recent_temporary>
   </component>
@@ -934,40 +806,40 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Module_TestCase_goToConditionSelectionPage - 2016.12.27 at 19h 25m 29s.xml">
-      <configuration name="Module_TestCase.goToConditionSelectionPage" configurationId="JUnit" />
+    <history-entry file="Module_TestCase_goToTreatmentRatingsConditionPageFromConditionSelectionPage - 2016.12.28 at 18h 40m 56s.xml">
+      <configuration name="Module_TestCase.goToTreatmentRatingsConditionPageFromConditionSelectionPage" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Module_TestCase_goToConditionSelectionPage - 2016.12.27 at 19h 26m 59s.xml">
-      <configuration name="Module_TestCase.goToConditionSelectionPage" configurationId="JUnit" />
+    <history-entry file="Module_TestCase_goToTreatmentRatingsConditionPageFromConditionSelectionPage - 2016.12.28 at 18h 50m 00s.xml">
+      <configuration name="Module_TestCase.goToTreatmentRatingsConditionPageFromConditionSelectionPage" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Module_TestCase_goToConditionSelectionPage - 2016.12.27 at 19h 29m 24s.xml">
-      <configuration name="Module_TestCase.goToConditionSelectionPage" configurationId="JUnit" />
+    <history-entry file="Module_TestCase_goToTreatmentRatingsConditionPageFromConditionSelectionPage - 2016.12.28 at 18h 53m 22s.xml">
+      <configuration name="Module_TestCase.goToTreatmentRatingsConditionPageFromConditionSelectionPage" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Module_TestCase_goToConditionSelectionPage - 2016.12.27 at 19h 37m 02s.xml">
-      <configuration name="Module_TestCase.goToConditionSelectionPage" configurationId="JUnit" />
+    <history-entry file="Module_TestCase_goToTreatmentRatingsConditionPageFromConditionSelectionPage - 2016.12.28 at 18h 58m 27s.xml">
+      <configuration name="Module_TestCase.goToTreatmentRatingsConditionPageFromConditionSelectionPage" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Module_TestCase_goToConditionSelectionPage - 2016.12.27 at 19h 42m 13s.xml">
-      <configuration name="Module_TestCase.goToConditionSelectionPage" configurationId="JUnit" />
+    <history-entry file="Module_TestCase_goToTreatmentRatingsConditionPageFromConditionSelectionPage - 2016.12.28 at 19h 16m 06s.xml">
+      <configuration name="Module_TestCase.goToTreatmentRatingsConditionPageFromConditionSelectionPage" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Module_TestCase_goToConditionSelectionPage - 2016.12.27 at 19h 42m 49s.xml">
-      <configuration name="Module_TestCase.goToConditionSelectionPage" configurationId="JUnit" />
+    <history-entry file="Module_TestCase_goToTreatmentRatingsConditionPageFromConditionSelectionPage - 2016.12.28 at 19h 16m 53s.xml">
+      <configuration name="Module_TestCase.goToTreatmentRatingsConditionPageFromConditionSelectionPage" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Module_TestCase_goToConditionSelectionPage - 2016.12.27 at 19h 57m 09s.xml">
-      <configuration name="Module_TestCase.goToConditionSelectionPage" configurationId="JUnit" />
+    <history-entry file="Module_TestCase_goToTreatmentRatingsConditionPageFromConditionSelectionPage - 2016.12.28 at 19h 18m 51s.xml">
+      <configuration name="Module_TestCase.goToTreatmentRatingsConditionPageFromConditionSelectionPage" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Module_TestCase_goToConditionSelectionPage - 2016.12.27 at 19h 59m 27s.xml">
-      <configuration name="Module_TestCase.goToConditionSelectionPage" configurationId="JUnit" />
+    <history-entry file="Module_TestCase_goToTreatmentRatingsConditionPageFromConditionSelectionPage - 2016.12.28 at 19h 39m 38s.xml">
+      <configuration name="Module_TestCase.goToTreatmentRatingsConditionPageFromConditionSelectionPage" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Module_TestCase_goToConditionSelectionPage - 2016.12.27 at 20h 00m 27s.xml">
-      <configuration name="Module_TestCase.goToConditionSelectionPage" configurationId="JUnit" />
+    <history-entry file="Module_TestCase_goToTreatmentRatingsConditionPageFromConditionSelectionPage - 2016.12.28 at 19h 40m 53s.xml">
+      <configuration name="Module_TestCase.goToTreatmentRatingsConditionPageFromConditionSelectionPage" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Module_TestCase_goToConditionSelectionPage - 2016.12.27 at 20h 03m 18s.xml">
-      <configuration name="Module_TestCase.goToConditionSelectionPage" configurationId="JUnit" />
+    <history-entry file="Module_TestCase_goToTreatmentRatingsConditionPageFromConditionSelectionPage - 2016.12.28 at 19h 42m 04s.xml">
+      <configuration name="Module_TestCase.goToTreatmentRatingsConditionPageFromConditionSelectionPage" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="1" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -976,7 +848,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44409448" sideWeight="0.50292826" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36692914" sideWeight="0.49707174" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36692914" sideWeight="0.49707174" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1017,25 +889,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/automationFramework/Module_TestCase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="18" column="7" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#826#827#0" expanded="true" />
-            <element signature="e#855#856#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/utility/FindElementsNewMechanism.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/pageObjectsElements/HomePageElements.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="578">
@@ -1155,13 +1008,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/utility/RandomNumber.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -1197,14 +1043,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/utility/ReadXMLFile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="40" column="26" selection-start-line="40" selection-start-column="26" selection-end-line="40" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/constant.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3604">
@@ -1213,82 +1051,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/utility/FindElementsNewMechanism.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/utility/Constant.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="530">
-          <caret line="40" column="57" selection-start-line="40" selection-start-column="57" selection-end-line="40" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/utility/SetDriver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="11" column="97" selection-start-line="11" selection-start-column="57" selection-end-line="11" selection-end-column="97" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pageObjectsActions/FooterActions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pageObjectsActions/ForgotPasswordPageActions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pageObjectsActions/HeaderActions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
-          <folding>
-            <element signature="e#194#195#0" expanded="false" />
-            <element signature="e#250#251#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pageObjectsActions/SignUpPageActions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="10" column="37" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pageObjectsActions/WriteAReviewConfirmationPageActions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/pageObjectsElements/AboutUsPageElements.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="13" column="41" selection-start-line="13" selection-start-column="41" selection-end-line="13" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pageObjectsElements/BlogPageElements.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
           <folding />
         </state>
       </provider>
@@ -1308,21 +1074,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pageObjectsElements/ForgotPasswordPageElements.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="9" column="45" selection-start-line="8" selection-start-column="40" selection-end-line="9" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pageObjectsElements/HeaderElements.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/pageObjectsElements/ResourcesPageElemetns.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -1331,23 +1082,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pageObjectsElements/SingleReviewPageElements.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="9" column="45" selection-start-line="9" selection-start-column="45" selection-end-line="9" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/pageObjectsElements/TestimonialsPageElements.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="16" column="5" selection-start-line="10" selection-start-column="4" selection-end-line="16" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1355,23 +1094,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="27" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pageObjectsElements/WriteAReviewPageElements.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="25" column="56" selection-start-line="25" selection-start-column="56" selection-end-line="25" selection-end-column="56" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/pageObjectsElements/SignUpConfirmationPageElements.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
+        <state relative-caret-position="272">
           <caret line="21" column="23" selection-start-line="14" selection-start-column="8" selection-end-line="21" selection-end-column="23" />
           <folding />
         </state>
@@ -1385,39 +1114,177 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pageObjectsActions/WriteAReviewPageActions.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/pageObjectsElements/HomePageElements.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="23" column="53" selection-start-line="23" selection-start-column="53" selection-end-line="23" selection-end-column="53" />
+        <state relative-caret-position="459">
+          <caret line="32" column="69" selection-start-line="32" selection-start-column="69" selection-end-line="32" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/utility/Constant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="530">
+          <caret line="40" column="57" selection-start-line="40" selection-start-column="57" selection-end-line="40" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/utility/RandomNumber.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pageObjectsElements/SingleReviewPageElements.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="9" column="45" selection-start-line="9" selection-start-column="45" selection-end-line="9" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pageObjectsElements/HeaderElements.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/utility/FindElementsNewMechanism.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pageObjectsElements/ForgotPasswordPageElements.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="8" column="56" selection-start-line="8" selection-start-column="56" selection-end-line="8" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/utility/ReadXMLFile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="592">
+          <caret line="40" column="26" selection-start-line="40" selection-start-column="26" selection-end-line="40" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pageObjectsActions/SignUpPageActions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="10" column="37" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pageObjectsActions/ForgotPasswordPageActions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pageObjectsActions/WriteAReviewConfirmationPageActions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/pageObjectsActions/HomePageActions.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="36" column="35" selection-start-line="36" selection-start-column="35" selection-end-line="36" selection-end-column="35" />
+        <state relative-caret-position="136">
+          <caret line="10" column="56" selection-start-line="10" selection-start-column="56" selection-end-line="10" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pageObjectsElements/BlogPageElements.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="11" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pageObjectsActions/WriteAReviewPageActions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="23" column="44" selection-start-line="23" selection-start-column="44" selection-end-line="23" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pageObjectsElements/WriteAReviewPageElements.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="346">
+          <caret line="33" column="5" selection-start-line="24" selection-start-column="4" selection-end-line="33" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pageObjectsActions/HeaderActions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
           <folding>
-            <element signature="e#672#673#0" expanded="true" />
-            <element signature="e#735#736#0" expanded="true" />
-            <element signature="e#799#800#0" expanded="true" />
-            <element signature="e#864#865#0" expanded="true" />
+            <element signature="e#194#195#0" expanded="true" />
+            <element signature="e#250#251#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pageObjectsElements/HomePageElements.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/pageObjectsActions/FooterActions.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="32" column="69" selection-start-line="32" selection-start-column="69" selection-end-line="32" selection-end-column="69" />
+        <state relative-caret-position="119">
+          <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/utility/SetDriver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="12" column="91" selection-start-line="12" selection-start-column="91" selection-end-line="12" selection-end-column="91" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pageObjectsElements/ConditionSelectionPageElements.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="28" column="29" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pageObjectsActions/ConditionSelectionPageActions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="34" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/automationFramework/Module_TestCase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="148" column="6" selection-start-line="148" selection-start-column="6" selection-end-line="148" selection-end-column="6" />
+        <state relative-caret-position="301">
+          <caret line="33" column="5" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#826#827#0" expanded="true" />

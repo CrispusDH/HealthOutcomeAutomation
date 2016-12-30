@@ -7,9 +7,7 @@ import utility.FindElementsNewMechanism;
 
 import java.util.List;
 
-/**
- * Created by Crispus on 28.12.2016.
- */
+
 public class ConditionSelectionPageElements extends FindElementsNewMechanism {
 
     private static WebElement element = null;

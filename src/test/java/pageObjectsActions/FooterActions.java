@@ -6,6 +6,14 @@ import pageObjectsElements.FooterElements;
 public class FooterActions {
 
     public static void clickOnFooterLink(WebDriver driver, String FooterLinkName){
+
         FooterElements.lnk_FooterLink(driver, FooterLinkName).click();
+
+    }
+
+    public static void clickOnFooterCopyright(WebDriver driver, String FooterCopyrightName){
+
+        FooterElements.link_FooterCopyrights(driver, FooterCopyrightName).click();
+
     }
 }

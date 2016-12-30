@@ -1,11 +1,11 @@
 {
-  "uid" : "44b02905d9f46749",
-  "name" : "goToSingleReviewPage",
-  "title" : "Go to single review page",
+  "uid" : "acead120e747f48a",
+  "name" : "goToTreatmentRatingsConditionPageFromConditionSelectionPage",
+  "title" : "Go to treatment ratings condition page from condition selection page",
   "time" : {
-    "start" : 1482863017778,
-    "stop" : 1482863028979,
-    "duration" : 11201
+    "start" : 1483104773840,
+    "stop" : 1483104787462,
+    "duration" : 13622
   },
   "summary" : {
     "attachments" : 0,
@@ -17,9 +17,9 @@
   "status" : "PASSED",
   "testId" : null,
   "suite" : {
-    "uid" : "78f9796eb1e8f8d3",
-    "name" : "automationFramework.Module_TestCase",
-    "title" : "Module test case"
+    "uid" : "37f7bb0814fdb759",
+    "name" : "automationFramework.Navigation_TestCase",
+    "title" : "Navigation test case"
   },
   "steps" : [ ],
   "attachments" : [ ],
@@ -31,17 +31,17 @@
     "name" : "language",
     "value" : "JAVA"
   }, {
-    "name" : "thread",
-    "value" : "9988@Crispus-PC.main(1)"
-  }, {
     "name" : "suite-name",
-    "value" : "automationFramework.Module_TestCase"
+    "value" : "automationFramework.Navigation_TestCase"
   }, {
     "name" : "suite-title",
     "value" : null
   }, {
     "name" : "host",
     "value" : "Crispus-PC"
+  }, {
+    "name" : "thread",
+    "value" : "3960@Crispus-PC.main(1)"
   } ],
   "parameters" : [ ]
 }

@@ -28,6 +28,7 @@ public class Module_TestCase {
         driver.get(ReadXMLFile.takeConstantFromXML("URL", "Landing Page", "url"));
     }
 
+    //execute after each TC
     @After
     public void wipeDriver(){
         driver.quit();
@@ -46,7 +47,7 @@ public class Module_TestCase {
         HeaderActions.clickOnLogIn(driver);
         HomePageActions.goToForgotPasswordPage(driver);
         ForgotPasswordPageActions.forgotPassword_Execute(driver, ReadXMLFile.takeConstantFromXML("Account", "Main", "emailAddress"));
-        assertEquals(ReadXMLFile.takeConstantFromXML("URL", "ForgotPasswordConfirm", "url"), driver.getCurrentUrl());
+        assertEquals(ReadXMLFile.takeConstantFromXML("URL", "Forgot Password Confirm", "url"), driver.getCurrentUrl());
     }
 
     @Test
@@ -72,7 +73,7 @@ public class Module_TestCase {
         WriteAReviewPageActions.fillAndPostReview(driver, ReadXMLFile.takeConstantFromXML("Treatment", "NSAIDs - Anti Inflammatory drugs", "name"));
         HeaderActions.clickOnSignUp(driver);
         SignUpPageActions.SignUp_Execute(driver, ReadXMLFile.takeConstantFromXML("Account", "Main", "password"));
-        assertEquals(ReadXMLFile.takeConstantFromXML("URL", "SignUpConfirmationPage", "url"), driver.getCurrentUrl()); //verify that current URL is correct
+        assertEquals(ReadXMLFile.takeConstantFromXML("URL", "SignUp ConfirmationPage", "url"), driver.getCurrentUrl()); //verify that current URL is correct
         assertTrue(SignUpConfirmationPageElements.bttn_WriteAReviewOrFindTreatments(driver, ReadXMLFile.takeConstantFromXML("ButtonName", "FindTreatments", "name")).isDisplayed()); //Find Treatments button exists
         assertTrue(!(SignUpConfirmationPageElements.bttn_WriteAReviewOrFindTreatments(driver, ReadXMLFile.takeConstantFromXML("ButtonName", "WriteAReview", "name")).isDisplayed())); // Write a Review button should not be
     }*/
@@ -81,62 +82,14 @@ public class Module_TestCase {
     public void signUpWithoutReview(){
         HeaderActions.clickOnSignUp(driver);
         SignUpPageActions.SignUp_Execute(driver, ReadXMLFile.takeConstantFromXML("Account", "Main", "password"));
-        assertEquals(ReadXMLFile.takeConstantFromXML("URL", "SignUpConfirmationPage", "url"), driver.getCurrentUrl()); //verify that current URL is correct
+        assertEquals(ReadXMLFile.takeConstantFromXML("URL", "SignUp Confirmation Page", "url"), driver.getCurrentUrl()); //verify that current URL is correct
         assertEquals(HeaderElements.lnk_Profile(driver).getText(), String.valueOf(RandomNumber.currentRandomNumber())); //verify that current logged user has correct profile user name
         assertTrue(SignUpConfirmationPageElements.bttn_WriteAReviewOrFindTreatments(driver, ReadXMLFile.takeConstantFromXML("ButtonName", "FindTreatments", "name")).isDisplayed()); //Find Treatments button exists
         assertTrue(SignUpConfirmationPageElements.bttn_WriteAReviewOrFindTreatments(driver, ReadXMLFile.takeConstantFromXML("ButtonName", "WriteAReview", "name")).isDisplayed()); // Write a Review button exists
     }
+    
 
-
-    //
-    @Test
-    public void goToSingleReviewPage(){
-        HomePageActions.goToSingleReviewPage(driver);
-        assertTrue(SingleReviewPageElements.div_ReviewInfo(driver).isDisplayed()); //check that div block with review exists and displayed
-    }
-
-    @Test
-    public void checkFooterLinkAbout(){
-        FooterActions.clickOnFooterLink(driver, ReadXMLFile.takeConstantFromXML("FooterLink", "About", "linkName"));
-        assertTrue(!(AboutUsPageElements.paragraphs(driver).isEmpty()));// check that AboutUS body are not empty
-        assertTrue((AboutUsPageElements.paragraphs(driver).size() > 0)); // check the same in another way
-        assertEquals(ReadXMLFile.takeConstantFromXML("URL", "AboutUs", "url"), driver.getCurrentUrl()); //check URL
-
-    }
-
-    @Test
-    public void checkFooterLinkFAQ(){
-        FooterActions.clickOnFooterLink(driver, ReadXMLFile.takeConstantFromXML("FooterLink", "FAQ", "linkName"));
-        assertTrue(!(FAQPageElements.questions(driver).isEmpty()));// check that cards are on that page
-        assertTrue((FAQPageElements.questions(driver).size() > 0)); // check the same in another way (two elements are buttons and other elements should be blogs)
-        assertEquals(ReadXMLFile.takeConstantFromXML("URL", "FAQ", "url"), driver.getCurrentUrl()); //check URL
-    }
-
-    @Test
-    public void checkFooterLinkBlog(){
-        FooterActions.clickOnFooterLink(driver, ReadXMLFile.takeConstantFromXML("FooterLink", "Blog", "linkName"));
-        assertTrue(!(BlogPageElements.blogs(driver).isEmpty()));// check that cards are on that page
-        assertTrue((BlogPageElements.blogs(driver).size() > 2)); // check the same in another way (two elements are buttons and other elements should be blogs)
-        assertEquals(ReadXMLFile.takeConstantFromXML("URL", "Blog", "url"), driver.getCurrentUrl()); //check URL
-    }
-
-    @Test
-    public void checkFooterLinkResources(){
-        FooterActions.clickOnFooterLink(driver, ReadXMLFile.takeConstantFromXML("FooterLink", "Resources", "linkName"));
-        assertTrue(!(ResourcesPageElemetns.resources(driver).isEmpty()));// check that cards are on that page
-        assertTrue((ResourcesPageElemetns.resources(driver).size() > 0)); // check the same in another way
-        assertEquals(ReadXMLFile.takeConstantFromXML("URL", "Resources", "url"), driver.getCurrentUrl()); //check URL
-    }
-
-    @Test
-    public void checkFooterLinkTestimonials(){
-        FooterActions.clickOnFooterLink(driver, ReadXMLFile.takeConstantFromXML("FooterLink", "Testimonials", "linkName"));
-        assertTrue(!(TestimonialsPageElements.cards(driver).isEmpty()));// check that cards are on that page
-        assertTrue(TestimonialsPageElements.cards(driver).size() > 0); // check the same in another way
-        assertEquals(ReadXMLFile.takeConstantFromXML("URL", "Testimonials", "url"), driver.getCurrentUrl()); //check URL
-    }
-
-    /*
+        /*
     //проверка работы, временный тест
     @Test
     public void writeReviewLoggedOutUserTemp(){
@@ -147,46 +100,5 @@ public class Module_TestCase {
 
     }
     */
-
-    //Navigation to Treatment Ratings Condition page from Home page
-    @Test
-    public void goToTreatmentRatingsConditionPage(){
-        String expectedURL = HomePageElements.li_FeaturedConditions(driver).getAttribute("href");
-        HomePageActions.goToFeaturedConditionPage(driver);
-        assertEquals(expectedURL, driver.getCurrentUrl());
-    }
-
-    //Navigation to Condition Selection page from Home page
-    @Test
-    public void goToConditionSelectionPage() {
-
-    String expectedURL  = HomePageElements.bttn_GetStarted(driver).getAttribute("href");
-    HomePageActions.clickGetStartedButton(driver);
-    assertEquals(expectedURL, driver.getCurrentUrl());
-
-    }
-
-    //Navigation to Treatment Ratings Condition page from the Condition Selection page
-    @Test
-    public void goToTreatmentRatingsConditionPageFromConditionSelectionPage() {
-
-        String previousURL;
-        HomePageActions.clickGetStartedButton(driver);
-        previousURL = driver.getCurrentUrl();
-        ConditionSelectionPageActions.goToTreatmentRatingsConditionPage(driver, ReadXMLFile.takeConstantFromXML("BodyArea", "Neck", "name"), ReadXMLFile.takeConstantFromXML("Condition", "Neck pain with radiculopathy", "name"));
-        assertNotEquals(previousURL, driver.getCurrentUrl());
-
-    }
-
-    //Navigation to Condition Selection page from the Treatment Ratings Condition page
-    @Test
-    public void goToConditionSelectionPageFromTreatmentRatingsConditionPage() {
-
-        String previousURL;
-        HomePageActions.goToFeaturedConditionPage(driver);
-        previousURL = driver.getCurrentUrl();
-        TreatmentRatingsConditionPageActions.goToConditionSelectionPage(driver);
-        assertNotEquals(previousURL, driver.getCurrentUrl());
-    }
 
 }

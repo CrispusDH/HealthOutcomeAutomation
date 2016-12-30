@@ -1,11 +1,11 @@
 {
-  "uid" : "f9a4caa36cfd413b",
-  "name" : "signUpWithoutReview",
-  "title" : "Sign up without review",
+  "uid" : "d2e1111c962b83b9",
+  "name" : "logIn",
+  "title" : "Log in",
   "time" : {
-    "start" : 1482863117320,
-    "stop" : 1482863130747,
-    "duration" : 13427
+    "start" : 1483104596176,
+    "stop" : 1483104613178,
+    "duration" : 17002
   },
   "summary" : {
     "attachments" : 0,
@@ -17,7 +17,7 @@
   "status" : "PASSED",
   "testId" : null,
   "suite" : {
-    "uid" : "78f9796eb1e8f8d3",
+    "uid" : "db55801255985806",
     "name" : "automationFramework.Module_TestCase",
     "title" : "Module test case"
   },
@@ -31,9 +31,6 @@
     "name" : "language",
     "value" : "JAVA"
   }, {
-    "name" : "thread",
-    "value" : "9988@Crispus-PC.main(1)"
-  }, {
     "name" : "suite-name",
     "value" : "automationFramework.Module_TestCase"
   }, {
@@ -42,6 +39,9 @@
   }, {
     "name" : "host",
     "value" : "Crispus-PC"
+  }, {
+    "name" : "thread",
+    "value" : "3960@Crispus-PC.main(1)"
   } ],
   "parameters" : [ ]
 }

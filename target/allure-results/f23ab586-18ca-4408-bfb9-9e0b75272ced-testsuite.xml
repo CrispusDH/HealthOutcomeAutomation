@@ -1,17 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<ns2:test-suite start="1482862958467" stop="1482863130747" version="1.4.23.HOTFIX1" xmlns:ns2="urn:model.allure.qatools.yandex.ru">
+<ns2:test-suite start="1483104562852" stop="1483104848014" version="1.4.23.HOTFIX1" xmlns:ns2="urn:model.allure.qatools.yandex.ru">
     <name>automationFramework.Module_TestCase</name>
     <test-cases>
-        <test-case start="1482862958514" stop="1482862974824" status="passed">
-            <name>checkFooterLinkTestimonials</name>
-            <steps/>
-            <attachments/>
-            <labels>
-                <label name="host" value="Crispus-PC"/>
-                <label name="thread" value="9988@Crispus-PC.main(1)"/>
-            </labels>
-        </test-case>
-        <test-case start="1482862975011" stop="1482862995484" status="broken">
+        <test-case start="1483104562867" stop="1483104596176" status="broken">
             <name>writeReviewLoggedOutUser</name>
             <failure>
                 <message>RuntimeException: Can't find By.cssSelector: .field-treatments li after 5000 milliseconds.</message>
@@ -19,7 +10,7 @@
 	at utility.FindElementsNewMechanism.findElements(FindElementsNewMechanism.java:29)
 	at pageObjectsElements.WriteAReviewPageElements.li_TreatmentsElement(WriteAReviewPageElements.java:37)
 	at pageObjectsActions.WriteAReviewPageActions.fillAndPostReview(WriteAReviewPageActions.java:11)
-	at automationFramework.Module_TestCase.writeReviewLoggedOutUser(Module_TestCase.java:55)
+	at automationFramework.Module_TestCase.writeReviewLoggedOutUser(Module_TestCase.java:56)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -59,55 +50,19 @@
             <attachments/>
             <labels>
                 <label name="host" value="Crispus-PC"/>
-                <label name="thread" value="9988@Crispus-PC.main(1)"/>
+                <label name="thread" value="3960@Crispus-PC.main(1)"/>
             </labels>
         </test-case>
-        <test-case start="1482862995484" stop="1482863003822" status="passed">
-            <name>goToConditionSelectionPage</name>
-            <steps/>
-            <attachments/>
-            <labels>
-                <label name="host" value="Crispus-PC"/>
-                <label name="thread" value="9988@Crispus-PC.main(1)"/>
-            </labels>
-        </test-case>
-        <test-case start="1482863003838" stop="1482863017778" status="passed">
-            <name>checkFooterLinkBlog</name>
-            <steps/>
-            <attachments/>
-            <labels>
-                <label name="host" value="Crispus-PC"/>
-                <label name="thread" value="9988@Crispus-PC.main(1)"/>
-            </labels>
-        </test-case>
-        <test-case start="1482863017778" stop="1482863028979" status="passed">
-            <name>goToSingleReviewPage</name>
-            <steps/>
-            <attachments/>
-            <labels>
-                <label name="host" value="Crispus-PC"/>
-                <label name="thread" value="9988@Crispus-PC.main(1)"/>
-            </labels>
-        </test-case>
-        <test-case start="1482863028979" stop="1482863039843" status="passed">
-            <name>checkFooterLinkFAQ</name>
-            <steps/>
-            <attachments/>
-            <labels>
-                <label name="host" value="Crispus-PC"/>
-                <label name="thread" value="9988@Crispus-PC.main(1)"/>
-            </labels>
-        </test-case>
-        <test-case start="1482863039843" stop="1482863051738" status="passed">
+        <test-case start="1483104596176" stop="1483104613178" status="passed">
             <name>logIn</name>
             <steps/>
             <attachments/>
             <labels>
                 <label name="host" value="Crispus-PC"/>
-                <label name="thread" value="9988@Crispus-PC.main(1)"/>
+                <label name="thread" value="3960@Crispus-PC.main(1)"/>
             </labels>
         </test-case>
-        <test-case start="1482863051738" stop="1482863071782" status="broken">
+        <test-case start="1483104613397" stop="1483104635760" status="broken">
             <name>writeReviewLoggedInUserConditionIsUnknown</name>
             <failure>
                 <message>RuntimeException: Can't find By.cssSelector: .field-treatments li after 5000 milliseconds.</message>
@@ -115,7 +70,7 @@
 	at utility.FindElementsNewMechanism.findElements(FindElementsNewMechanism.java:29)
 	at pageObjectsElements.WriteAReviewPageElements.li_TreatmentsElement(WriteAReviewPageElements.java:37)
 	at pageObjectsActions.WriteAReviewPageActions.fillAndPostReview(WriteAReviewPageActions.java:11)
-	at automationFramework.Module_TestCase.writeReviewLoggedInUserConditionIsUnknown(Module_TestCase.java:64)
+	at automationFramework.Module_TestCase.writeReviewLoggedInUserConditionIsUnknown(Module_TestCase.java:65)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -155,52 +110,25 @@
             <attachments/>
             <labels>
                 <label name="host" value="Crispus-PC"/>
-                <label name="thread" value="9988@Crispus-PC.main(1)"/>
+                <label name="thread" value="3960@Crispus-PC.main(1)"/>
             </labels>
         </test-case>
-        <test-case start="1482863071782" stop="1482863082628" status="passed">
-            <name>checkFooterLinkResources</name>
-            <steps/>
-            <attachments/>
-            <labels>
-                <label name="host" value="Crispus-PC"/>
-                <label name="thread" value="9988@Crispus-PC.main(1)"/>
-            </labels>
-        </test-case>
-        <test-case start="1482863082628" stop="1482863097433" status="passed">
+        <test-case start="1483104635760" stop="1483104653827" status="passed">
             <name>forgotPassword</name>
             <steps/>
             <attachments/>
             <labels>
                 <label name="host" value="Crispus-PC"/>
-                <label name="thread" value="9988@Crispus-PC.main(1)"/>
+                <label name="thread" value="3960@Crispus-PC.main(1)"/>
             </labels>
         </test-case>
-        <test-case start="1482863097433" stop="1482863108602" status="passed">
-            <name>checkFooterLinkAbout</name>
-            <steps/>
-            <attachments/>
-            <labels>
-                <label name="host" value="Crispus-PC"/>
-                <label name="thread" value="9988@Crispus-PC.main(1)"/>
-            </labels>
-        </test-case>
-        <test-case start="1482863108602" stop="1482863117320" status="passed">
-            <name>goToTreatmentRatingsConditionPage</name>
-            <steps/>
-            <attachments/>
-            <labels>
-                <label name="host" value="Crispus-PC"/>
-                <label name="thread" value="9988@Crispus-PC.main(1)"/>
-            </labels>
-        </test-case>
-        <test-case start="1482863117320" stop="1482863130747" status="passed">
+        <test-case start="1483104653843" stop="1483104671302" status="passed">
             <name>signUpWithoutReview</name>
             <steps/>
             <attachments/>
             <labels>
                 <label name="host" value="Crispus-PC"/>
-                <label name="thread" value="9988@Crispus-PC.main(1)"/>
+                <label name="thread" value="3960@Crispus-PC.main(1)"/>
             </labels>
         </test-case>
     </test-cases>

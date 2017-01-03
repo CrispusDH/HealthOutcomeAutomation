@@ -14,7 +14,7 @@ import utility.ReadXMLFile;
 import utility.SetDriver;
 import static org.junit.Assert.*;
 
-public class Module_TestCase {
+public class Plot_TestCase {
     //driver initialize
     private static WebDriver driver = null;
 
@@ -50,13 +50,17 @@ public class Module_TestCase {
         assertEquals(ReadXMLFile.takeConstantFromXML("URL", "Forgot Password Confirm", "url"), driver.getCurrentUrl());
     }
 
+
+    /*
     @Test
     public void writeReviewLoggedOutUser(){
         HomePageActions.goToWriteAReviewPage(driver);
         WriteAReviewPageActions.fillAndPostReview(driver, ReadXMLFile.takeConstantFromXML("BodyArea", "Neck", "name"), ReadXMLFile.takeConstantFromXML("Condition", "Neck pain with radiculopathy", "name"), ReadXMLFile.takeConstantFromXML("Treatment", "NSAIDs - Anti Inflammatory drugs", "name"), ReadXMLFile.takeConstantFromXML("RateChoice", "Cured", "satisfactionLevel"));
         assertTrue(WriteAReviewConfirmationPageElements.frm_SignUp(driver).isDisplayed());
-    }
+    }*/
 
+
+    /*
     @Test
     public void writeReviewLoggedInUserConditionIsUnknown(){
         HeaderActions.clickOnLogIn(driver);
@@ -64,7 +68,7 @@ public class Module_TestCase {
         HomePageActions.goToWriteAReviewPage(driver);
         WriteAReviewPageActions.fillAndPostReview(driver, ReadXMLFile.takeConstantFromXML("BodyArea", "Neck", "name"), ReadXMLFile.takeConstantFromXML("Condition", "Neck pain with radiculopathy", "name"),ReadXMLFile.takeConstantFromXML("Treatment", "NSAIDs - Anti Inflammatory drugs", "name"), ReadXMLFile.takeConstantFromXML("RateChoice", "Cured", "satisfactionLevel"));
         assertTrue(WriteAReviewConfirmationPageElements.txt_ReviewUserName(driver, ReadXMLFile.takeConstantFromXML("Account", "Main", "userName")).isDisplayed()); //check that a review by current User exists
-    }
+    }*/
 
 /*
     @Test
@@ -87,7 +91,7 @@ public class Module_TestCase {
         assertTrue(SignUpConfirmationPageElements.bttn_WriteAReviewOrFindTreatments(driver, ReadXMLFile.takeConstantFromXML("ButtonName", "FindTreatments", "name")).isDisplayed()); //Find Treatments button exists
         assertTrue(SignUpConfirmationPageElements.bttn_WriteAReviewOrFindTreatments(driver, ReadXMLFile.takeConstantFromXML("ButtonName", "WriteAReview", "name")).isDisplayed()); // Write a Review button exists
     }
-    
+
 
         /*
     //проверка работы, временный тест

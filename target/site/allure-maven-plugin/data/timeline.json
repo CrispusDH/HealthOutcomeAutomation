@@ -2,202 +2,180 @@
   "hosts" : [ {
     "title" : "Crispus-PC",
     "threads" : [ {
-      "title" : "3960@Crispus-PC.main(1)",
+      "title" : "5820@Crispus-PC.main(1)",
       "testCases" : [ {
-        "uid" : "9c41664d3727e435",
-        "name" : "checkFooterLinkTestimonials",
-        "title" : "Check footer link testimonials",
-        "time" : {
-          "start" : 1483104671302,
-          "stop" : 1483104684892,
-          "duration" : 13590
-        },
-        "severity" : "NORMAL",
-        "status" : "PASSED"
-      }, {
-        "uid" : "2ef1549a6b3fae70",
-        "name" : "goToConditionSelectionPageFromTreatmentRatingsConditionPage",
-        "title" : "Go to condition selection page from treatment ratings condition page",
-        "time" : {
-          "start" : 1483104684892,
-          "stop" : 1483104697931,
-          "duration" : 13039
-        },
-        "severity" : "NORMAL",
-        "status" : "PASSED"
-      }, {
-        "uid" : "abaaf8bccdf84cbb",
-        "name" : "goToConditionSelectionPage",
-        "title" : "Go to condition selection page",
-        "time" : {
-          "start" : 1483104697931,
-          "stop" : 1483104713864,
-          "duration" : 15933
-        },
-        "severity" : "NORMAL",
-        "status" : "PASSED"
-      }, {
-        "uid" : "2720a24053a073c7",
-        "name" : "checkFooterCopyrightPrivacyPolicy",
-        "title" : "Check footer copyright privacy policy",
-        "time" : {
-          "start" : 1483104713864,
-          "stop" : 1483104728319,
-          "duration" : 14455
-        },
-        "severity" : "NORMAL",
-        "status" : "PASSED"
-      }, {
-        "uid" : "c0569f6860e69999",
-        "name" : "checkFooterLinkBlog",
-        "title" : "Check footer link blog",
-        "time" : {
-          "start" : 1483104728319,
-          "stop" : 1483104747390,
-          "duration" : 19071
-        },
-        "severity" : "NORMAL",
-        "status" : "PASSED"
-      }, {
-        "uid" : "61537c98c00a5daa",
-        "name" : "goToSingleReviewPage",
-        "title" : "Go to single review page",
-        "time" : {
-          "start" : 1483104747390,
-          "stop" : 1483104760968,
-          "duration" : 13578
-        },
-        "severity" : "NORMAL",
-        "status" : "PASSED"
-      }, {
-        "uid" : "3d143cd8dc2a1c8b",
-        "name" : "checkFooterLinkFAQ",
-        "title" : "Check footer link FAQ",
-        "time" : {
-          "start" : 1483104760968,
-          "stop" : 1483104773840,
-          "duration" : 12872
-        },
-        "severity" : "NORMAL",
-        "status" : "PASSED"
-      }, {
-        "uid" : "acead120e747f48a",
-        "name" : "goToTreatmentRatingsConditionPageFromConditionSelectionPage",
-        "title" : "Go to treatment ratings condition page from condition selection page",
-        "time" : {
-          "start" : 1483104773840,
-          "stop" : 1483104787462,
-          "duration" : 13622
-        },
-        "severity" : "NORMAL",
-        "status" : "PASSED"
-      }, {
-        "uid" : "859a1120ab57fb1a",
-        "name" : "checkFooterLinkResources",
-        "title" : "Check footer link resources",
-        "time" : {
-          "start" : 1483104787462,
-          "stop" : 1483104802327,
-          "duration" : 14865
-        },
-        "severity" : "NORMAL",
-        "status" : "PASSED"
-      }, {
-        "uid" : "7cbd95199d4942ad",
-        "name" : "checkFooterCopyrightTermsOfService",
-        "title" : "Check footer copyright terms of service",
-        "time" : {
-          "start" : 1483104802327,
-          "stop" : 1483104813277,
-          "duration" : 10950
-        },
-        "severity" : "NORMAL",
-        "status" : "PASSED"
-      }, {
-        "uid" : "883e1ef698be8755",
-        "name" : "checkFooterLinkAbout",
-        "title" : "Check footer link about",
-        "time" : {
-          "start" : 1483104813277,
-          "stop" : 1483104825709,
-          "duration" : 12432
-        },
-        "severity" : "NORMAL",
-        "status" : "PASSED"
-      }, {
-        "uid" : "9b7a6ebe63b58561",
-        "name" : "goToTreatmentRatingsConditionPage",
-        "title" : "Go to treatment ratings condition page",
-        "time" : {
-          "start" : 1483104825709,
-          "stop" : 1483104834522,
-          "duration" : 8813
-        },
-        "severity" : "NORMAL",
-        "status" : "PASSED"
-      }, {
-        "uid" : "1bd5f7261488f527",
-        "name" : "checkFooterLinkContactUs",
-        "title" : "Check footer link contact us",
-        "time" : {
-          "start" : 1483104834522,
-          "stop" : 1483104847421,
-          "duration" : 12899
-        },
-        "severity" : "NORMAL",
-        "status" : "PASSED"
-      }, {
-        "uid" : "d3924e836f1e1efa",
-        "name" : "writeReviewLoggedOutUser",
-        "title" : "Write review logged out user",
-        "time" : {
-          "start" : 1483104562867,
-          "stop" : 1483104596176,
-          "duration" : 33309
-        },
-        "severity" : "NORMAL",
-        "status" : "BROKEN"
-      }, {
-        "uid" : "d2e1111c962b83b9",
+        "uid" : "687b6cc65d952894",
         "name" : "logIn",
         "title" : "Log in",
         "time" : {
-          "start" : 1483104596176,
-          "stop" : 1483104613178,
-          "duration" : 17002
+          "start" : 1483440944614,
+          "stop" : 1483440957693,
+          "duration" : 13079
         },
         "severity" : "NORMAL",
         "status" : "PASSED"
       }, {
-        "uid" : "7dc48ddfd72143e2",
-        "name" : "writeReviewLoggedInUserConditionIsUnknown",
-        "title" : "Write review logged in user condition is unknown",
-        "time" : {
-          "start" : 1483104613397,
-          "stop" : 1483104635760,
-          "duration" : 22363
-        },
-        "severity" : "NORMAL",
-        "status" : "BROKEN"
-      }, {
-        "uid" : "9eac79a80de6f714",
+        "uid" : "224231f6c394997e",
         "name" : "forgotPassword",
         "title" : "Forgot password",
         "time" : {
-          "start" : 1483104635760,
-          "stop" : 1483104653827,
-          "duration" : 18067
+          "start" : 1483440957693,
+          "stop" : 1483440972206,
+          "duration" : 14513
         },
         "severity" : "NORMAL",
         "status" : "PASSED"
       }, {
-        "uid" : "dfdf6b25522fb216",
+        "uid" : "3be884a525a781cc",
         "name" : "signUpWithoutReview",
         "title" : "Sign up without review",
         "time" : {
-          "start" : 1483104653843,
-          "stop" : 1483104671302,
-          "duration" : 17459
+          "start" : 1483440972206,
+          "stop" : 1483440987129,
+          "duration" : 14923
+        },
+        "severity" : "NORMAL",
+        "status" : "PASSED"
+      }, {
+        "uid" : "f562ddfa60e9c4ec",
+        "name" : "checkFooterLinkTestimonials",
+        "title" : "Check footer link testimonials",
+        "time" : {
+          "start" : 1483440783977,
+          "stop" : 1483440805173,
+          "duration" : 21196
+        },
+        "severity" : "NORMAL",
+        "status" : "PASSED"
+      }, {
+        "uid" : "f8cc5d4dff996d4f",
+        "name" : "goToConditionSelectionPageFromTreatmentRatingsConditionPage",
+        "title" : "Go to condition selection page from treatment ratings condition page",
+        "time" : {
+          "start" : 1483440805413,
+          "stop" : 1483440815853,
+          "duration" : 10440
+        },
+        "severity" : "NORMAL",
+        "status" : "PASSED"
+      }, {
+        "uid" : "b427f5fe4c9f7c05",
+        "name" : "goToConditionSelectionPage",
+        "title" : "Go to condition selection page",
+        "time" : {
+          "start" : 1483440815853,
+          "stop" : 1483440824808,
+          "duration" : 8955
+        },
+        "severity" : "NORMAL",
+        "status" : "PASSED"
+      }, {
+        "uid" : "c6085ee557fb4364",
+        "name" : "checkFooterCopyrightPrivacyPolicy",
+        "title" : "Check footer copyright privacy policy",
+        "time" : {
+          "start" : 1483440824808,
+          "stop" : 1483440836401,
+          "duration" : 11593
+        },
+        "severity" : "NORMAL",
+        "status" : "PASSED"
+      }, {
+        "uid" : "ab1d7730ff29fd61",
+        "name" : "checkFooterLinkBlog",
+        "title" : "Check footer link blog",
+        "time" : {
+          "start" : 1483440836401,
+          "stop" : 1483440851043,
+          "duration" : 14642
+        },
+        "severity" : "NORMAL",
+        "status" : "PASSED"
+      }, {
+        "uid" : "7de010d1aa973eac",
+        "name" : "goToSingleReviewPage",
+        "title" : "Go to single review page",
+        "time" : {
+          "start" : 1483440851043,
+          "stop" : 1483440862856,
+          "duration" : 11813
+        },
+        "severity" : "NORMAL",
+        "status" : "PASSED"
+      }, {
+        "uid" : "b59dfdd13f31ed3d",
+        "name" : "checkFooterLinkFAQ",
+        "title" : "Check footer link FAQ",
+        "time" : {
+          "start" : 1483440862856,
+          "stop" : 1483440875380,
+          "duration" : 12524
+        },
+        "severity" : "NORMAL",
+        "status" : "PASSED"
+      }, {
+        "uid" : "d7dc1944f75ae0b8",
+        "name" : "goToTreatmentRatingsConditionPageFromConditionSelectionPage",
+        "title" : "Go to treatment ratings condition page from condition selection page",
+        "time" : {
+          "start" : 1483440875380,
+          "stop" : 1483440886143,
+          "duration" : 10763
+        },
+        "severity" : "NORMAL",
+        "status" : "PASSED"
+      }, {
+        "uid" : "7938f312ecf37e32",
+        "name" : "checkFooterLinkResources",
+        "title" : "Check footer link resources",
+        "time" : {
+          "start" : 1483440886143,
+          "stop" : 1483440897399,
+          "duration" : 11256
+        },
+        "severity" : "NORMAL",
+        "status" : "PASSED"
+      }, {
+        "uid" : "d50353d878f65545",
+        "name" : "checkFooterCopyrightTermsOfService",
+        "title" : "Check footer copyright terms of service",
+        "time" : {
+          "start" : 1483440897399,
+          "stop" : 1483440911119,
+          "duration" : 13720
+        },
+        "severity" : "NORMAL",
+        "status" : "PASSED"
+      }, {
+        "uid" : "b787d13139c2616",
+        "name" : "checkFooterLinkAbout",
+        "title" : "Check footer link about",
+        "time" : {
+          "start" : 1483440911119,
+          "stop" : 1483440922739,
+          "duration" : 11620
+        },
+        "severity" : "NORMAL",
+        "status" : "PASSED"
+      }, {
+        "uid" : "f9a19f02663c50bb",
+        "name" : "goToTreatmentRatingsConditionPage",
+        "title" : "Go to treatment ratings condition page",
+        "time" : {
+          "start" : 1483440922739,
+          "stop" : 1483440932754,
+          "duration" : 10015
+        },
+        "severity" : "NORMAL",
+        "status" : "PASSED"
+      }, {
+        "uid" : "a93ba51152281a5a",
+        "name" : "checkFooterLinkContactUs",
+        "title" : "Check footer link contact us",
+        "time" : {
+          "start" : 1483440932754,
+          "stop" : 1483440944614,
+          "duration" : 11860
         },
         "severity" : "NORMAL",
         "status" : "PASSED"

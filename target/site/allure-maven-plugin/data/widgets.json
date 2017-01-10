@@ -2,17 +2,17 @@
   "hash" : "9ae4a52f46fbba0c959575303f697deb73e72d63",
   "data" : [ {
     "statistic" : {
-      "total" : 18,
+      "total" : 16,
       "passed" : 16,
       "pending" : 0,
       "canceled" : 0,
       "failed" : 0,
-      "broken" : 2
+      "broken" : 0
     },
     "time" : {
-      "start" : 1483104562867,
-      "stop" : 1483104847421,
-      "duration" : 284554
+      "start" : 1483440783977,
+      "stop" : 1483440987129,
+      "duration" : 203152
     },
     "name" : "total",
     "type" : "TOTAL"
@@ -20,28 +20,28 @@
     "name" : "defects",
     "type" : "DEFECTS",
     "data" : [ {
-      "count" : 2,
-      "message" : "RuntimeException: Can't find By.cssSelector: .field-treatments li after 5000 milliseconds.",
-      "status" : "BROKEN"
+      "count" : 0,
+      "message" : "There are no defects!",
+      "status" : "PASSED"
     } ]
   }, {
     "name" : "xunit",
     "type" : "TITLE_STATISTICS",
     "data" : [ {
-      "title" : "Module test case",
-      "statistic" : {
-        "total" : 5,
-        "passed" : 3,
-        "pending" : 0,
-        "canceled" : 0,
-        "failed" : 0,
-        "broken" : 2
-      }
-    }, {
       "title" : "Navigation test case",
       "statistic" : {
         "total" : 13,
         "passed" : 13,
+        "pending" : 0,
+        "canceled" : 0,
+        "failed" : 0,
+        "broken" : 0
+      }
+    }, {
+      "title" : "Plot test case",
+      "statistic" : {
+        "total" : 3,
+        "passed" : 3,
         "pending" : 0,
         "canceled" : 0,
         "failed" : 0,
@@ -54,12 +54,12 @@
     "data" : [ {
       "title" : "Without feature",
       "statistic" : {
-        "total" : 18,
+        "total" : 16,
         "passed" : 16,
         "pending" : 0,
         "canceled" : 0,
         "failed" : 0,
-        "broken" : 2
+        "broken" : 0
       }
     } ]
   }, {

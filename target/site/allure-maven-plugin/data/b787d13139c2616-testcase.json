@@ -1,11 +1,11 @@
 {
-  "uid" : "d2e1111c962b83b9",
-  "name" : "logIn",
-  "title" : "Log in",
+  "uid" : "b787d13139c2616",
+  "name" : "checkFooterLinkAbout",
+  "title" : "Check footer link about",
   "time" : {
-    "start" : 1483104596176,
-    "stop" : 1483104613178,
-    "duration" : 17002
+    "start" : 1483440911119,
+    "stop" : 1483440922739,
+    "duration" : 11620
   },
   "summary" : {
     "attachments" : 0,
@@ -17,9 +17,9 @@
   "status" : "PASSED",
   "testId" : null,
   "suite" : {
-    "uid" : "db55801255985806",
-    "name" : "automationFramework.Module_TestCase",
-    "title" : "Module test case"
+    "uid" : "89015ccfc0048401",
+    "name" : "automationFramework.Navigation_TestCase",
+    "title" : "Navigation test case"
   },
   "steps" : [ ],
   "attachments" : [ ],
@@ -32,16 +32,16 @@
     "value" : "JAVA"
   }, {
     "name" : "suite-name",
-    "value" : "automationFramework.Module_TestCase"
+    "value" : "automationFramework.Navigation_TestCase"
+  }, {
+    "name" : "thread",
+    "value" : "5820@Crispus-PC.main(1)"
   }, {
     "name" : "suite-title",
     "value" : null
   }, {
     "name" : "host",
     "value" : "Crispus-PC"
-  }, {
-    "name" : "thread",
-    "value" : "3960@Crispus-PC.main(1)"
   } ],
   "parameters" : [ ]
 }

@@ -1,11 +1,11 @@
 {
-  "uid" : "1bd5f7261488f527",
-  "name" : "checkFooterLinkContactUs",
-  "title" : "Check footer link contact us",
+  "uid" : "ab1d7730ff29fd61",
+  "name" : "checkFooterLinkBlog",
+  "title" : "Check footer link blog",
   "time" : {
-    "start" : 1483104834522,
-    "stop" : 1483104847421,
-    "duration" : 12899
+    "start" : 1483440836401,
+    "stop" : 1483440851043,
+    "duration" : 14642
   },
   "summary" : {
     "attachments" : 0,
@@ -17,7 +17,7 @@
   "status" : "PASSED",
   "testId" : null,
   "suite" : {
-    "uid" : "37f7bb0814fdb759",
+    "uid" : "89015ccfc0048401",
     "name" : "automationFramework.Navigation_TestCase",
     "title" : "Navigation test case"
   },
@@ -34,14 +34,14 @@
     "name" : "suite-name",
     "value" : "automationFramework.Navigation_TestCase"
   }, {
+    "name" : "thread",
+    "value" : "5820@Crispus-PC.main(1)"
+  }, {
     "name" : "suite-title",
     "value" : null
   }, {
     "name" : "host",
     "value" : "Crispus-PC"
-  }, {
-    "name" : "thread",
-    "value" : "3960@Crispus-PC.main(1)"
   } ],
   "parameters" : [ ]
 }

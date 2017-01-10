@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="automationFramework.Module_TestCase" time="108.371" tests="5" errors="2" skipped="0" failures="0">
+<testsuite name="automationFramework.Plot_TestCase" time="42.495" tests="3" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_91\jre\bin"/>
@@ -64,54 +64,7 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="writeReviewLoggedOutUser" classname="automationFramework.Module_TestCase" time="33.48">
-    <error message="Can&apos;t find By.cssSelector: .field-treatments li after 5000 milliseconds." type="java.lang.RuntimeException">java.lang.RuntimeException: Can't find By.cssSelector: .field-treatments li after 5000 milliseconds.
-	at utility.FindElementsNewMechanism.findElements(FindElementsNewMechanism.java:29)
-	at pageObjectsElements.WriteAReviewPageElements.li_TreatmentsElement(WriteAReviewPageElements.java:37)
-	at pageObjectsActions.WriteAReviewPageActions.fillAndPostReview(WriteAReviewPageActions.java:11)
-	at automationFramework.Module_TestCase.writeReviewLoggedOutUser(Module_TestCase.java:56)
-</error>
-    <system-out>Fri Dec 30 15:29:48 EET 2016: Waited for 1000 milliseconds.[By.cssSelector: .parts-list li]
-Fri Dec 30 15:29:49 EET 2016: Waited for 2000 milliseconds.[By.cssSelector: .parts-list li]
-Fri Dec 30 15:29:50 EET 2016: Waited for 1000 milliseconds.[By.cssSelector: .field-treatments li]
-Fri Dec 30 15:29:51 EET 2016: Waited for 2000 milliseconds.[By.cssSelector: .field-treatments li]
-Fri Dec 30 15:29:52 EET 2016: Waited for 3000 milliseconds.[By.cssSelector: .field-treatments li]
-Fri Dec 30 15:29:53 EET 2016: Waited for 4000 milliseconds.[By.cssSelector: .field-treatments li]
-Fri Dec 30 15:29:54 EET 2016: Waited for 5000 milliseconds.[By.cssSelector: .field-treatments li]
-</system-out>
-    <system-err>Starting ChromeDriver 2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed) on port 28414
-Only local connections are allowed.
-груд. 30, 2016 3:29:25 PM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Attempting bi-dialect session, assuming Postel's Law holds true on the remote end
-груд. 30, 2016 3:29:36 PM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: OSS
-</system-err>
-  </testcase>
-  <testcase name="logIn" classname="automationFramework.Module_TestCase" time="17.002"/>
-  <testcase name="writeReviewLoggedInUserConditionIsUnknown" classname="automationFramework.Module_TestCase" time="22.363">
-    <error message="Can&apos;t find By.cssSelector: .field-treatments li after 5000 milliseconds." type="java.lang.RuntimeException">java.lang.RuntimeException: Can't find By.cssSelector: .field-treatments li after 5000 milliseconds.
-	at utility.FindElementsNewMechanism.findElements(FindElementsNewMechanism.java:29)
-	at pageObjectsElements.WriteAReviewPageElements.li_TreatmentsElement(WriteAReviewPageElements.java:37)
-	at pageObjectsActions.WriteAReviewPageActions.fillAndPostReview(WriteAReviewPageActions.java:11)
-	at automationFramework.Module_TestCase.writeReviewLoggedInUserConditionIsUnknown(Module_TestCase.java:65)
-</error>
-    <system-out>Fri Dec 30 15:30:26 EET 2016: Waited for 1000 milliseconds.[By.cssSelector: html body div#content div.page.page-home div.page-body div div.share-experience-bar-cta div.bar-body.body-content a.button.button-cta]
-Fri Dec 30 15:30:27 EET 2016: Waited for 2000 milliseconds.[By.cssSelector: html body div#content div.page.page-home div.page-body div div.share-experience-bar-cta div.bar-body.body-content a.button.button-cta]
-Fri Dec 30 15:30:29 EET 2016: Waited for 1000 milliseconds.[By.cssSelector: .parts-list li]
-Fri Dec 30 15:30:30 EET 2016: Waited for 1000 milliseconds.[By.cssSelector: .field-treatments li]
-Fri Dec 30 15:30:31 EET 2016: Waited for 2000 milliseconds.[By.cssSelector: .field-treatments li]
-Fri Dec 30 15:30:32 EET 2016: Waited for 3000 milliseconds.[By.cssSelector: .field-treatments li]
-Fri Dec 30 15:30:33 EET 2016: Waited for 4000 milliseconds.[By.cssSelector: .field-treatments li]
-Fri Dec 30 15:30:34 EET 2016: Waited for 5000 milliseconds.[By.cssSelector: .field-treatments li]
-</system-out>
-    <system-err>Starting ChromeDriver 2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed) on port 30205
-Only local connections are allowed.
-груд. 30, 2016 3:30:13 PM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Attempting bi-dialect session, assuming Postel's Law holds true on the remote end
-груд. 30, 2016 3:30:15 PM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: OSS
-</system-err>
-  </testcase>
-  <testcase name="forgotPassword" classname="automationFramework.Module_TestCase" time="18.067"/>
-  <testcase name="signUpWithoutReview" classname="automationFramework.Module_TestCase" time="17.459"/>
+  <testcase name="logIn" classname="automationFramework.Plot_TestCase" time="13.059"/>
+  <testcase name="forgotPassword" classname="automationFramework.Plot_TestCase" time="14.513"/>
+  <testcase name="signUpWithoutReview" classname="automationFramework.Plot_TestCase" time="14.923"/>
 </testsuite>

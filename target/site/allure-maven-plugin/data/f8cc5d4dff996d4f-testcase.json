@@ -1,11 +1,11 @@
 {
-  "uid" : "9c41664d3727e435",
-  "name" : "checkFooterLinkTestimonials",
-  "title" : "Check footer link testimonials",
+  "uid" : "f8cc5d4dff996d4f",
+  "name" : "goToConditionSelectionPageFromTreatmentRatingsConditionPage",
+  "title" : "Go to condition selection page from treatment ratings condition page",
   "time" : {
-    "start" : 1483104671302,
-    "stop" : 1483104684892,
-    "duration" : 13590
+    "start" : 1483440805413,
+    "stop" : 1483440815853,
+    "duration" : 10440
   },
   "summary" : {
     "attachments" : 0,
@@ -17,7 +17,7 @@
   "status" : "PASSED",
   "testId" : null,
   "suite" : {
-    "uid" : "37f7bb0814fdb759",
+    "uid" : "89015ccfc0048401",
     "name" : "automationFramework.Navigation_TestCase",
     "title" : "Navigation test case"
   },
@@ -34,14 +34,14 @@
     "name" : "suite-name",
     "value" : "automationFramework.Navigation_TestCase"
   }, {
+    "name" : "thread",
+    "value" : "5820@Crispus-PC.main(1)"
+  }, {
     "name" : "suite-title",
     "value" : null
   }, {
     "name" : "host",
     "value" : "Crispus-PC"
-  }, {
-    "name" : "thread",
-    "value" : "3960@Crispus-PC.main(1)"
   } ],
   "parameters" : [ ]
 }

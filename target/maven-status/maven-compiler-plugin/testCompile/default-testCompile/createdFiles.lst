@@ -1,4 +1,5 @@
 utility\FindElementsNewMechanism.class
+automationFramework\Plot_TestCase.class
 pageObjectsElements\BlogPageElements.class
 pageObjectsElements\TreatmentRatingsConditionPageElements.class
 utility\SetDriver.class
@@ -23,7 +24,6 @@ pageObjectsActions\HeaderActions.class
 pageObjectsElements\FooterElements.class
 pageObjectsElements\SignUpConfirmationPageElements.class
 pageObjectsActions\WriteAReviewPageActions.class
-automationFramework\Module_TestCase.class
 utility\RandomNumber.class
 pageObjectsActions\ForgotPasswordPageActions.class
 pageObjectsActions\TreatmentRatingsConditionPageActions.class

@@ -178,6 +178,13 @@ public class Navigation_TestCase extends TestCase{
         HomePageActions.clickGetStartedButton(driver);
         previousURL = driver.getCurrentUrl();
         ConditionSelectionPageActions.goToTreatmentRatingsConditionPage(driver, ReadXMLFile.takeConstantFromXML("BodyArea", "Neck", "name"), ReadXMLFile.takeConstantFromXML("Condition", "Neck pain with radiculopathy", "name"));
+
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
         currentURL = driver.getCurrentUrl();
         assertNotEquals(previousURL, currentURL);
 

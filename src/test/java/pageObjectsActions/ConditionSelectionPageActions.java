@@ -18,11 +18,6 @@ public class ConditionSelectionPageActions {
         builder.moveToElement(ConditionSelectionPageElements.li_ConditionElement(driver, ConditionName)).click();
         builder.build().perform();
 
-        try {
-            Thread.sleep(3000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
 
     }
 

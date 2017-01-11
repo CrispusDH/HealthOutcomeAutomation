@@ -148,11 +148,13 @@ public class Navigation_TestCase {
     public void goToTreatmentRatingsConditionPageFromConditionSelectionPage() {
 
         String previousURL;
+        String currentURL;
         HomePageActions.clickGetStartedButton(driver);
         previousURL = driver.getCurrentUrl();
-        System.out.println(previousURL);
         ConditionSelectionPageActions.goToTreatmentRatingsConditionPage(driver, ReadXMLFile.takeConstantFromXML("BodyArea", "Neck", "name"), ReadXMLFile.takeConstantFromXML("Condition", "Neck pain with radiculopathy", "name"));
-        assertNotEquals(previousURL, driver.getCurrentUrl());
+        currentURL = driver.getCurrentUrl();
+        assertNotEquals(previousURL, currentURL);
+
 
     }
 
@@ -161,10 +163,13 @@ public class Navigation_TestCase {
     public void goToConditionSelectionPageFromTreatmentRatingsConditionPage() {
 
         String previousURL;
+        String currentURL;
+
         HomePageActions.goToFeaturedConditionPage(driver);
         previousURL = driver.getCurrentUrl();
         TreatmentRatingsConditionPageActions.goToConditionSelectionPage(driver);
-        assertNotEquals(previousURL, driver.getCurrentUrl());
+        currentURL = driver.getCurrentUrl();
+        assertNotEquals(previousURL, currentURL);
     }
 
     //Navigation to Facebook page from Footer
@@ -195,11 +200,14 @@ public class Navigation_TestCase {
     @Test
     public void goToLinkedinPageFromFooter(){
 
+        String currentURL;
+
         FooterActions.clickOnFootterConnect(driver, "linkedin");
 
         ArrayList<String> currentTab = new ArrayList<String>(driver.getWindowHandles());
         driver.switchTo().window(currentTab.get(1));
-        assertEquals(ReadXMLFile.takeConstantFromXML("URL", "Linkedin", "url" ), driver.getCurrentUrl());
+        currentURL = driver.getCurrentUrl();
+        assertEquals(ReadXMLFile.takeConstantFromXML("URL", "Linkedin", "url" ), currentURL);
 
     }
 

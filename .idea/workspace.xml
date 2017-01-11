@@ -3,8 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="4ca991d3-ec18-4ace-b08d-b16c63f24db2" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/automationFramework/Navigation_TestCase.java" afterPath="$PROJECT_DIR$/src/test/java/automationFramework/Navigation_TestCase.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/automationFramework/Plot_TestCase.java" afterPath="$PROJECT_DIR$/src/test/java/automationFramework/Plot_TestCase.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/utility/SetDriver.java" afterPath="$PROJECT_DIR$/src/test/java/utility/SetDriver.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/pageObjectsActions/ConditionSelectionPageActions.java" afterPath="$PROJECT_DIR$/src/test/java/pageObjectsActions/ConditionSelectionPageActions.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/pageObjectsActions/FooterActions.java" afterPath="$PROJECT_DIR$/src/test/java/pageObjectsActions/FooterActions.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/pageObjectsElements/FooterElements.java" afterPath="$PROJECT_DIR$/src/test/java/pageObjectsElements/FooterElements.java" />
     </list>
     <ignored path="HealthOutcome.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,17 +30,27 @@
       <file leaf-file-name="Navigation_TestCase.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/automationFramework/Navigation_TestCase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="116">
-              <caret line="233" column="0" lean-forward="false" selection-start-line="233" selection-start-column="0" selection-end-line="233" selection-end-column="0" />
+            <state relative-caret-position="3587">
+              <caret line="232" column="38" lean-forward="false" selection-start-line="232" selection-start-column="38" selection-end-line="232" selection-end-column="38" />
               <folding>
                 <element signature="e#1415#1416#0" expanded="true" />
                 <element signature="e#1445#1446#0" expanded="true" />
                 <element signature="e#1811#1812#0" expanded="true" />
                 <element signature="e#1840#1841#0" expanded="true" />
                 <element signature="e#8721#8729#0" expanded="true" />
-                <element signature="e#9143#9151#0" expanded="true" />
-                <element signature="e#9595#9603#0" expanded="true" />
+                <element signature="e#9170#9178#0" expanded="true" />
+                <element signature="e#9655#9663#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TreatmentRatingsConditionPageActions.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/pageObjectsActions/TreatmentRatingsConditionPageActions.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="8" column="23" lean-forward="false" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -49,6 +60,16 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="102">
               <caret line="11" column="42" lean-forward="false" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FooterElements.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/pageObjectsElements/FooterElements.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="65">
+              <caret line="40" column="55" lean-forward="false" selection-start-line="40" selection-start-column="55" selection-end-line="40" selection-end-column="55" />
               <folding />
             </state>
           </provider>
@@ -84,11 +105,24 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="FooterActions.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/pageObjectsActions/FooterActions.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="23" column="31" lean-forward="true" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="31" />
+              <folding>
+                <marker date="1484138883699" expanded="true" signature="36:109" ph="..." />
+                <marker date="1484138883699" expanded="true" signature="651:804" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="ConditionSelectionPageActions.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/pageObjectsActions/ConditionSelectionPageActions.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="18" column="34" lean-forward="false" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
+            <state relative-caret-position="255">
+              <caret line="23" column="12" lean-forward="false" selection-start-line="23" selection-start-column="12" selection-end-line="23" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -113,42 +147,6 @@
             <state relative-caret-position="119">
               <caret line="10" column="37" lean-forward="false" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="37" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HomePageElements.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/pageObjectsElements/HomePageElements.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="141">
-              <caret line="47" column="28" lean-forward="false" selection-start-line="47" selection-start-column="28" selection-end-line="47" selection-end-column="28" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FooterElements.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/pageObjectsElements/FooterElements.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="969">
-              <caret line="62" column="0" lean-forward="false" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FooterActions.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/pageObjectsActions/FooterActions.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="false" />
-                <marker date="1484072799151" expanded="true" signature="36:109" ph="..." />
-                <marker date="1484072799151" expanded="true" signature="651:671" ph="{...}" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -212,12 +210,12 @@
         <option value="$PROJECT_DIR$/src/test/java/pageObjectsElements/PrivacyPolicyPageElements.java" />
         <option value="$PROJECT_DIR$/src/test/java/pageObjectsElements/TermsOfServicePageElements.java" />
         <option value="$PROJECT_DIR$/src/test/java/automationFramework/Module_TestCase.java" />
-        <option value="$PROJECT_DIR$/src/test/java/pageObjectsActions/FooterActions.java" />
-        <option value="$PROJECT_DIR$/src/test/java/pageObjectsElements/FooterElements.java" />
-        <option value="$PROJECT_DIR$/src/test/java/pageObjectsActions/ConditionSelectionPageActions.java" />
-        <option value="$PROJECT_DIR$/src/test/java/automationFramework/Navigation_TestCase.java" />
         <option value="$PROJECT_DIR$/src/test/java/utility/SetDriver.java" />
         <option value="$PROJECT_DIR$/src/test/java/automationFramework/Plot_TestCase.java" />
+        <option value="$PROJECT_DIR$/src/test/java/automationFramework/Navigation_TestCase.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pageObjectsActions/ConditionSelectionPageActions.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pageObjectsActions/FooterActions.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pageObjectsElements/FooterElements.java" />
       </list>
     </option>
   </component>
@@ -787,12 +785,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Navigation_TestCase - 2017.01.11 at 12h 43m 20s.xml">
-      <configuration name="Navigation_TestCase" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Navigation_TestCase - 2017.01.11 at 12h 48m 25s.xml">
-      <configuration name="Navigation_TestCase" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="Navigation_TestCase - 2017.01.11 at 13h 19m 41s.xml">
       <configuration name="Navigation_TestCase" configurationId="JUnit" />
     </history-entry>
@@ -814,8 +806,14 @@
     <history-entry file="Navigation_TestCase - 2017.01.11 at 13h 50m 21s.xml">
       <configuration name="Navigation_TestCase" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Navigation_TestCase_goToTreatmentRatingsConditionPageFromConditionSelectionPage - 2017.01.11 at 12h 28m 09s.xml">
-      <configuration name="Navigation_TestCase.goToTreatmentRatingsConditionPageFromConditionSelectionPage" configurationId="JUnit" />
+    <history-entry file="Navigation_TestCase - 2017.01.11 at 14h 41m 56s.xml">
+      <configuration name="Navigation_TestCase" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Navigation_TestCase - 2017.01.11 at 14h 46m 15s.xml">
+      <configuration name="Navigation_TestCase" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Navigation_TestCase - 2017.01.11 at 14h 52m 41s.xml">
+      <configuration name="Navigation_TestCase" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -1037,13 +1035,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pageObjectsActions/TreatmentRatingsConditionPageActions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="10" column="83" lean-forward="false" selection-start-line="10" selection-start-column="83" selection-end-line="10" selection-end-column="83" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/pageObjectsElements/ResourcesPageElemetns.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -1104,6 +1095,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="13" column="4" lean-forward="false" selection-start-line="13" selection-start-column="4" selection-end-line="16" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1118,6 +1112,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="18" column="5" lean-forward="false" selection-start-line="12" selection-start-column="4" selection-end-line="18" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1125,6 +1122,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="18" column="5" lean-forward="false" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1174,28 +1174,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pageObjectsActions/FooterActions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <marker date="1484072799151" expanded="true" signature="36:109" ph="..." />
-            <marker date="1484072799151" expanded="true" signature="651:671" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pageObjectsElements/FooterElements.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="969">
-          <caret line="62" column="0" lean-forward="false" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/pageObjectsElements/HomePageElements.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="141">
@@ -1208,14 +1186,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="11" column="42" lean-forward="false" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pageObjectsActions/ConditionSelectionPageActions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="18" column="34" lean-forward="false" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
           <folding />
         </state>
       </provider>
@@ -1265,18 +1235,53 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pageObjectsActions/TreatmentRatingsConditionPageActions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="8" column="23" lean-forward="false" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pageObjectsActions/ConditionSelectionPageActions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="23" column="12" lean-forward="false" selection-start-line="23" selection-start-column="12" selection-end-line="23" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pageObjectsActions/FooterActions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="23" column="31" lean-forward="true" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="31" />
+          <folding>
+            <marker date="1484138883699" expanded="true" signature="36:109" ph="..." />
+            <marker date="1484138883699" expanded="true" signature="651:804" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pageObjectsElements/FooterElements.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="65">
+          <caret line="40" column="55" lean-forward="false" selection-start-line="40" selection-start-column="55" selection-end-line="40" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/automationFramework/Navigation_TestCase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="233" column="0" lean-forward="false" selection-start-line="233" selection-start-column="0" selection-end-line="233" selection-end-column="0" />
+        <state relative-caret-position="3587">
+          <caret line="232" column="38" lean-forward="false" selection-start-line="232" selection-start-column="38" selection-end-line="232" selection-end-column="38" />
           <folding>
             <element signature="e#1415#1416#0" expanded="true" />
             <element signature="e#1445#1446#0" expanded="true" />
             <element signature="e#1811#1812#0" expanded="true" />
             <element signature="e#1840#1841#0" expanded="true" />
             <element signature="e#8721#8729#0" expanded="true" />
-            <element signature="e#9143#9151#0" expanded="true" />
-            <element signature="e#9595#9603#0" expanded="true" />
+            <element signature="e#9170#9178#0" expanded="true" />
+            <element signature="e#9655#9663#0" expanded="true" />
           </folding>
         </state>
       </provider>

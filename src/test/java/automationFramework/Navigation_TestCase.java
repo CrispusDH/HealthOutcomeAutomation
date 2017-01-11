@@ -214,11 +214,13 @@ public class Navigation_TestCase extends TestCase{
     @Test
     public void goToTwitterPageFromFooter(){
 
+        String currentURL;
         FooterActions.clickOnFootterConnect(driver, "twitter");
 
         ArrayList<String> currentTab = new ArrayList<String>(driver.getWindowHandles());
         driver.switchTo().window(currentTab.get(1));
-        assertEquals(ReadXMLFile.takeConstantFromXML("URL", "Twitter", "url" ), driver.getCurrentUrl());
+        currentURL = driver.getCurrentUrl();
+        assertEquals(ReadXMLFile.takeConstantFromXML("URL", "Twitter", "url" ), currentURL);
 
     }
 

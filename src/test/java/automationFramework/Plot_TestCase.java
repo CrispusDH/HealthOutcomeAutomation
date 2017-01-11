@@ -1,24 +1,70 @@
 package automationFramework;
 
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Rule;
-import org.junit.Test;
+import junit.framework.TestCase;
+import org.junit.*;
 import org.junit.rules.TestName;
+import org.junit.runner.RunWith;
+import org.junit.runners.JUnit4;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeDriverService;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import pageObjectsActions.*;
 import pageObjectsElements.*;
 import utility.RandomNumber;
 import utility.ReadXMLFile;
 import utility.SetDriver;
+
+import java.io.File;
+import java.io.IOException;
+
 import static org.junit.Assert.*;
 
-public class Plot_TestCase {
+@RunWith(JUnit4.class)
+public class Plot_TestCase extends TestCase {
+
     //driver initialize
     private static WebDriver driver = null;
+    private static ChromeDriverService service = null;
+
+    @BeforeClass
+    public static void createAndStartService() {
+        service = new ChromeDriverService.Builder()
+                .usingDriverExecutable(new File(ReadXMLFile.takeConstantFromXML("ChromeDriver", "ChromeDriver", "path")))
+                .usingAnyFreePort()
+                .build();
+        try {
+            service.start();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+
+    @AfterClass
+    public static void createAndStopService() {
+        service.stop();
+    }
+
 
     @Rule
+    public TestName name = new TestName();
+
+    @Before
+    public void createNewDriver() {
+        driver = new RemoteWebDriver(service.getUrl(),
+                DesiredCapabilities.chrome());
+        driver.get(ReadXMLFile.takeConstantFromXML("URL", "Landing Page", "url"));
+    }
+
+    //execute after each TC
+    @After
+    public void quitDriver() {
+        driver.quit();
+    }
+
+ /*   @Rule
     public TestName name = new TestName();
 
     @Before
@@ -33,6 +79,8 @@ public class Plot_TestCase {
     public void wipeDriver(){
         driver.quit();
     }
+*/
+
 
 
     @Test

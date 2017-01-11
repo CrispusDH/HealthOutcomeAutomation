@@ -11,6 +11,7 @@ public class FooterElements extends FindElementsNewMechanism {
     private static WebElement element = null;
     private static List<WebElement> elements = null;
 
+
     public static WebElement lnk_FooterLink (WebDriver driver, String FooterLinkName){
         elements = findElements(driver, By.cssSelector(".links li"), 5000);
         int i = 0;
@@ -32,4 +33,30 @@ public class FooterElements extends FindElementsNewMechanism {
         } while (!(element.getText().equals(FooterCopyrightName)));
         return element;
     }
+
+
+    //facebook, twitter, linkedin, mailto links
+    public static WebElement link_Connect(WebDriver driver, String name){
+        elements = findElements(driver, By.cssSelector(".connect li a"), 5000);
+
+        switch (name){
+
+            case "facebook":
+                return element = elements.get(0);
+
+            case "twitter":
+                return element = elements.get(1);
+
+            case "linkedin":
+                return element = elements.get(2);
+
+            case "mail":
+                return element = elements.get(3);
+
+        }
+
+        return element;
+    }
+
+
 }

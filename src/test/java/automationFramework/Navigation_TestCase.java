@@ -13,6 +13,10 @@ import pageObjectsElements.*;
 import utility.RandomNumber;
 import utility.ReadXMLFile;
 import utility.SetDriver;
+
+import java.util.ArrayList;
+import java.util.concurrent.TimeUnit;
+
 import static org.junit.Assert.*;
 
 public class Navigation_TestCase {
@@ -146,6 +150,7 @@ public class Navigation_TestCase {
         String previousURL;
         HomePageActions.clickGetStartedButton(driver);
         previousURL = driver.getCurrentUrl();
+        System.out.println(previousURL);
         ConditionSelectionPageActions.goToTreatmentRatingsConditionPage(driver, ReadXMLFile.takeConstantFromXML("BodyArea", "Neck", "name"), ReadXMLFile.takeConstantFromXML("Condition", "Neck pain with radiculopathy", "name"));
         assertNotEquals(previousURL, driver.getCurrentUrl());
 
@@ -160,6 +165,52 @@ public class Navigation_TestCase {
         previousURL = driver.getCurrentUrl();
         TreatmentRatingsConditionPageActions.goToConditionSelectionPage(driver);
         assertNotEquals(previousURL, driver.getCurrentUrl());
+    }
+
+    //Navigation to Facebook page from Footer
+    @Test
+    public void goToFacebookPageFromFooter(){
+
+        FooterActions.clickOnFootterConnect(driver, "facebook");
+
+        ArrayList<String> currentTab = new ArrayList<String>(driver.getWindowHandles());
+        driver.switchTo().window(currentTab.get(1));
+        assertEquals(ReadXMLFile.takeConstantFromXML("URL", "Facebook", "url" ), driver.getCurrentUrl());
+
+    }
+
+    //Navigation to Twitter page from Footer
+    @Test
+    public void goToTwitterPageFromFooter(){
+
+        FooterActions.clickOnFootterConnect(driver, "twitter");
+
+        ArrayList<String> currentTab = new ArrayList<String>(driver.getWindowHandles());
+        driver.switchTo().window(currentTab.get(1));
+        assertEquals(ReadXMLFile.takeConstantFromXML("URL", "Twitter", "url" ), driver.getCurrentUrl());
+
+    }
+
+    //Navigation to Linkedin page from Footer
+    @Test
+    public void goToLinkedinPageFromFooter(){
+
+        FooterActions.clickOnFootterConnect(driver, "linkedin");
+
+        ArrayList<String> currentTab = new ArrayList<String>(driver.getWindowHandles());
+        driver.switchTo().window(currentTab.get(1));
+        assertEquals(ReadXMLFile.takeConstantFromXML("URL", "Linkedin", "url" ), driver.getCurrentUrl());
+
+    }
+
+    //Check mail href service from Footer
+    @Test
+    public void goToMailServiceFromFooter(){
+
+
+        assertEquals(ReadXMLFile.takeConstantFromXML("URL", "Mail", "href" ), FooterElements.link_Connect(driver, "mail").getAttribute("href"));
+
+
     }
 
 }

@@ -224,18 +224,11 @@ public class Navigation_TestCase extends TestCase{
 
     }
 
-    //Navigation to Linkedin page from Footer
+    //Check Linkedin page from Footer
     @Test
     public void goToLinkedinPageFromFooter(){
 
-        String currentURL;
-
-        FooterActions.clickOnFootterConnect(driver, "linkedin");
-
-        ArrayList<String> currentTab = new ArrayList<String>(driver.getWindowHandles());
-        driver.switchTo().window(currentTab.get(1));
-        currentURL = driver.getCurrentUrl();
-        assertEquals(ReadXMLFile.takeConstantFromXML("URL", "Linkedin", "url" ), currentURL);
+        assertEquals(ReadXMLFile.takeConstantFromXML("URL", "Linkedin", "href" ), FooterElements.link_Connect(driver, "linkedin").getAttribute("href"));
 
     }
 

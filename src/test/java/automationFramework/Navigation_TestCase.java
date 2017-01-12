@@ -17,6 +17,7 @@ import pageObjectsActions.*;
 import pageObjectsElements.*;
 import utility.RandomNumber;
 import utility.ReadXMLFile;
+import utility.RetryRule;
 import utility.SetDriver;
 
 import java.io.File;
@@ -77,6 +78,11 @@ public class Navigation_TestCase extends TestCase{
     //Timeout Rule that applies to all test cases in the test class
     @Rule
     public Timeout globalTimeout = Timeout.seconds(300);
+
+    //Rerun failed tests 3 times
+    @Rule
+    public RetryRule retryRule = new RetryRule(3);
+
 
     //Navigation to Single Review page from Home page
     @Test

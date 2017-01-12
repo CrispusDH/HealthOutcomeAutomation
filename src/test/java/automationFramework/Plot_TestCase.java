@@ -48,9 +48,6 @@ public class Plot_TestCase extends TestCase {
     }
 
 
-    @Rule
-    public TestName name = new TestName();
-
     @Before
     public void createNewDriver() {
         driver = new RemoteWebDriver(service.getUrl(),

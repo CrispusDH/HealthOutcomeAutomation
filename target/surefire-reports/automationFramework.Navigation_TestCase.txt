@@ -1,4 +1,12 @@
 -------------------------------------------------------------------------------
 Test set: automationFramework.Navigation_TestCase
 -------------------------------------------------------------------------------
-Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 184.488 sec
+Tests run: 17, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 196.167 sec <<< FAILURE!
+goToTreatmentRatingsConditionPageFromConditionSelectionPage(automationFramework.Navigation_TestCase)  Time elapsed: 13.035 sec  <<< FAILURE!
+java.lang.AssertionError: Values should be different. Actual: https://dev.healthoutcome.org/condition-selection
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failEquals(Assert.java:185)
+	at org.junit.Assert.assertNotEquals(Assert.java:161)
+	at org.junit.Assert.assertNotEquals(Assert.java:175)
+	at automationFramework.Navigation_TestCase.goToTreatmentRatingsConditionPageFromConditionSelectionPage(Navigation_TestCase.java:186)
+

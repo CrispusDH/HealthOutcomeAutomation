@@ -2,8 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4ca991d3-ec18-4ace-b08d-b16c63f24db2" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/allure-results/8a79c008-3c8f-4531-9229-abec3b743284-testsuite.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/allure-results/da616b08-4099-4fe0-be9d-b81f29afe000-testsuite.xml" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/automationFramework/Navigation_TestCase.java" afterPath="$PROJECT_DIR$/src/test/java/automationFramework/Navigation_TestCase.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/pageObjectsActions/ConditionSelectionPageActions.java" afterPath="$PROJECT_DIR$/src/test/java/pageObjectsActions/ConditionSelectionPageActions.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/automationFramework/Plot_TestCase.java" afterPath="$PROJECT_DIR$/src/test/java/automationFramework/Plot_TestCase.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-automationFramework.Navigation_TestCase.xml" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-automationFramework.Navigation_TestCase.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-automationFramework.Plot_TestCase.xml" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-automationFramework.Plot_TestCase.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/automationFramework.Navigation_TestCase.txt" afterPath="$PROJECT_DIR$/target/surefire-reports/automationFramework.Navigation_TestCase.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/automationFramework.Plot_TestCase.txt" afterPath="$PROJECT_DIR$/target/surefire-reports/automationFramework.Plot_TestCase.txt" />
     </list>
     <ignored path="HealthOutcome.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,15 +34,15 @@
       <file leaf-file-name="Navigation_TestCase.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/automationFramework/Navigation_TestCase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="305">
-              <caret line="185" column="9" lean-forward="false" selection-start-line="185" selection-start-column="9" selection-end-line="185" selection-end-column="9" />
+            <state relative-caret-position="510">
+              <caret line="51" column="0" lean-forward="true" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
               <folding>
                 <element signature="e#1415#1416#0" expanded="true" />
                 <element signature="e#1445#1446#0" expanded="true" />
-                <element signature="e#1811#1812#0" expanded="true" />
-                <element signature="e#1840#1841#0" expanded="true" />
-                <element signature="e#8855#8863#0" expanded="true" />
-                <element signature="e#9304#9312#0" expanded="true" />
+                <element signature="e#1757#1758#0" expanded="true" />
+                <element signature="e#1786#1787#0" expanded="true" />
+                <element signature="e#8801#8809#0" expanded="true" />
+                <element signature="e#9250#9258#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -55,8 +61,8 @@
       <file leaf-file-name="FindElementsNewMechanism.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/utility/FindElementsNewMechanism.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="11" column="42" lean-forward="false" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
+            <state relative-caret-position="221">
+              <caret line="18" column="21" lean-forward="true" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -75,16 +81,16 @@
       <file leaf-file-name="Plot_TestCase.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/automationFramework/Plot_TestCase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="121">
-              <caret line="24" column="45" lean-forward="false" selection-start-line="24" selection-start-column="45" selection-end-line="24" selection-end-column="45" />
+            <state relative-caret-position="155">
+              <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1343#1344#0" expanded="true" />
                 <element signature="e#1373#1374#0" expanded="true" />
-                <element signature="e#1739#1740#0" expanded="true" />
-                <element signature="e#1768#1769#0" expanded="true" />
-                <marker date="1484135238375" expanded="false" signature="2106:2116" ph=" { " />
-                <marker date="1484135238375" expanded="false" signature="2130:2136" ph=" }" />
+                <element signature="e#1685#1686#0" expanded="true" />
+                <element signature="e#1714#1715#0" expanded="true" />
+                <marker date="1484154098369" expanded="false" signature="2052:2062" ph=" { " />
+                <marker date="1484154098369" expanded="false" signature="2076:2082" ph=" }" />
               </folding>
             </state>
           </provider>
@@ -208,11 +214,11 @@
         <option value="$PROJECT_DIR$/src/test/java/pageObjectsElements/TermsOfServicePageElements.java" />
         <option value="$PROJECT_DIR$/src/test/java/automationFramework/Module_TestCase.java" />
         <option value="$PROJECT_DIR$/src/test/java/utility/SetDriver.java" />
-        <option value="$PROJECT_DIR$/src/test/java/automationFramework/Plot_TestCase.java" />
         <option value="$PROJECT_DIR$/src/test/java/pageObjectsActions/FooterActions.java" />
         <option value="$PROJECT_DIR$/src/test/java/pageObjectsElements/FooterElements.java" />
         <option value="$PROJECT_DIR$/src/test/java/pageObjectsActions/ConditionSelectionPageActions.java" />
         <option value="$PROJECT_DIR$/src/test/java/automationFramework/Navigation_TestCase.java" />
+        <option value="$PROJECT_DIR$/src/test/java/automationFramework/Plot_TestCase.java" />
       </list>
     </option>
   </component>
@@ -1179,14 +1185,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/utility/FindElementsNewMechanism.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="11" column="42" lean-forward="false" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/pageObjectsActions/HomePageActions.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="141">
@@ -1212,22 +1210,6 @@
           <caret line="49" column="6" lean-forward="false" selection-start-line="49" selection-start-column="6" selection-end-line="49" selection-end-column="6" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/automationFramework/Plot_TestCase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="24" column="45" lean-forward="false" selection-start-line="24" selection-start-column="45" selection-end-line="24" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1343#1344#0" expanded="true" />
-            <element signature="e#1373#1374#0" expanded="true" />
-            <element signature="e#1739#1740#0" expanded="true" />
-            <element signature="e#1768#1769#0" expanded="true" />
-            <marker date="1484135238375" expanded="false" signature="2106:2116" ph=" { " />
-            <marker date="1484135238375" expanded="false" signature="2130:2136" ph=" }" />
           </folding>
         </state>
       </provider>
@@ -1267,17 +1249,41 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/automationFramework/Plot_TestCase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1343#1344#0" expanded="true" />
+            <element signature="e#1373#1374#0" expanded="true" />
+            <element signature="e#1685#1686#0" expanded="true" />
+            <element signature="e#1714#1715#0" expanded="true" />
+            <marker date="1484154098369" expanded="false" signature="2052:2062" ph=" { " />
+            <marker date="1484154098369" expanded="false" signature="2076:2082" ph=" }" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/utility/FindElementsNewMechanism.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="18" column="21" lean-forward="true" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/automationFramework/Navigation_TestCase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="185" column="9" lean-forward="false" selection-start-line="185" selection-start-column="9" selection-end-line="185" selection-end-column="9" />
+        <state relative-caret-position="510">
+          <caret line="51" column="0" lean-forward="true" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
           <folding>
             <element signature="e#1415#1416#0" expanded="true" />
             <element signature="e#1445#1446#0" expanded="true" />
-            <element signature="e#1811#1812#0" expanded="true" />
-            <element signature="e#1840#1841#0" expanded="true" />
-            <element signature="e#8855#8863#0" expanded="true" />
-            <element signature="e#9304#9312#0" expanded="true" />
+            <element signature="e#1757#1758#0" expanded="true" />
+            <element signature="e#1786#1787#0" expanded="true" />
+            <element signature="e#8801#8809#0" expanded="true" />
+            <element signature="e#9250#9258#0" expanded="true" />
           </folding>
         </state>
       </provider>

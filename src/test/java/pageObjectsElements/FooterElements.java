@@ -38,7 +38,7 @@ public class FooterElements extends FindElementsNewMechanism {
     //facebook, twitter, linkedin, mailto links
     public static WebElement link_Connect(WebDriver driver, String name){
         elements = findElements(driver, By.cssSelector(".connect li a"), 5000);
-        System.out.println(elements.get(0).getTagName());
+        //System.out.println(elements.get(0).getTagName());
         switch (name){
 
             case "facebook":

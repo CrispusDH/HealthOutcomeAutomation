@@ -1,0 +1,5 @@
+projectKey=org.healthoutcome.dev:HealthOutcome
+serverUrl=http://localhost:9000
+dashboardUrl=http://localhost:9000/dashboard/index/org.healthoutcome.dev:HealthOutcome
+ceTaskId=AVmSHbCiNVqIhgvj91du
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AVmSHbCiNVqIhgvj91du

@@ -24,7 +24,7 @@ public class FooterActions {
         FooterElements.link_Connect(driver, name).click();
 
         try {
-            Thread.sleep(3000);
+            TimeUnit.SECONDS.sleep(3);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }

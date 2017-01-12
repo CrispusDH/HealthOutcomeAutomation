@@ -7,6 +7,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 public class FindElementsNewMechanism {
         protected static List<WebElement> findElements(WebDriver webDriver, By by, int timeout) {
@@ -17,7 +18,7 @@ public class FindElementsNewMechanism {
                 return oWebElements;
             } else {
                 try {
-                    Thread.sleep(iSleepTime);
+                    TimeUnit.MILLISECONDS.sleep(iSleepTime);
                     System.out.println(String.format("%s: Waited for %d milliseconds.[%s]", new java.util.Date().toString(), i + iSleepTime, by));
                 } catch (InterruptedException ex) {
                     throw new RuntimeException(ex);

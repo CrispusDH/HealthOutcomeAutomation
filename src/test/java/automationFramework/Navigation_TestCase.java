@@ -4,6 +4,7 @@ package automationFramework;
 import junit.framework.TestCase;
 import org.junit.*;
 import org.junit.rules.TestName;
+import org.junit.rules.Timeout;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 import org.openqa.selenium.WebDriver;
@@ -11,6 +12,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeDriverService;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
+import org.openqa.selenium.remote.UnreachableBrowserException;
 import pageObjectsActions.*;
 import pageObjectsElements.*;
 import utility.RandomNumber;
@@ -53,8 +55,16 @@ public class Navigation_TestCase extends TestCase{
 
     @Before
     public void createNewDriver() {
-        driver = new RemoteWebDriver(service.getUrl(),
-                DesiredCapabilities.chrome());
+        try {
+            driver = new RemoteWebDriver(service.getUrl(),
+                    DesiredCapabilities.chrome());
+        } catch (UnreachableBrowserException e) {
+
+            driver = new RemoteWebDriver(service.getUrl(),
+                    DesiredCapabilities.chrome());
+
+        }
+
         driver.get(ReadXMLFile.takeConstantFromXML("URL", "Landing Page", "url"));
     }
 
@@ -63,6 +73,10 @@ public class Navigation_TestCase extends TestCase{
     public void quitDriver() {
         driver.quit();
     }
+
+    //Timeout Rule that applies to all test cases in the test class
+    @Rule
+    public Timeout globalTimeout = Timeout.seconds(300);
 
     //Navigation to Single Review page from Home page
     @Test
@@ -177,7 +191,7 @@ public class Navigation_TestCase extends TestCase{
         ConditionSelectionPageActions.goToTreatmentRatingsConditionPage(driver, ReadXMLFile.takeConstantFromXML("BodyArea", "Neck", "name"), ReadXMLFile.takeConstantFromXML("Condition", "Neck pain with radiculopathy", "name"));
 
         try {
-            Thread.sleep(3000);
+            TimeUnit.SECONDS.sleep(3);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }

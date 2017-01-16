@@ -1,4 +1,6 @@
 utility\FindElementsNewMechanism.class
+pageObjectsActions\BlogPageActions.class
+pageObjectsElements\DetailedBlogPageElements.class
 automationFramework\Plot_TestCase.class
 pageObjectsElements\BlogPageElements.class
 pageObjectsElements\TreatmentRatingsConditionPageElements.class
@@ -17,8 +19,10 @@ pageObjectsElements\ForgotPasswordPageElements.class
 pageObjectsActions\HomePageActions.class
 pageObjectsElements\ResourcesPageElemetns.class
 pageObjectsElements\WriteAReviewPageElements.class
+utility\RetryRule.class
 automationFramework\Navigation_TestCase.class
 pageObjectsActions\ConditionSelectionPageActions.class
+utility\RetryRule$1.class
 pageObjectsElements\PrivacyPolicyPageElements.class
 pageObjectsActions\HeaderActions.class
 pageObjectsElements\FooterElements.class
@@ -26,6 +30,7 @@ pageObjectsElements\SignUpConfirmationPageElements.class
 pageObjectsActions\WriteAReviewPageActions.class
 utility\RandomNumber.class
 pageObjectsActions\ForgotPasswordPageActions.class
+pageObjectsActions\DetailedBlogPageActions.class
 pageObjectsActions\TreatmentRatingsConditionPageActions.class
 pageObjectsElements\HeaderElements.class
 pageObjectsElements\SignUpPageElements.class

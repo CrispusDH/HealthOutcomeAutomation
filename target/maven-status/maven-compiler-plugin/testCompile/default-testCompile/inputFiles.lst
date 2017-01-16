@@ -7,11 +7,13 @@ D:\HealthOutcome\src\test\java\pageObjectsElements\ResourcesPageElemetns.java
 D:\HealthOutcome\src\test\java\pageObjectsElements\SignUpConfirmationPageElements.java
 D:\HealthOutcome\src\test\java\utility\ReadXMLFile.java
 D:\HealthOutcome\src\test\java\pageObjectsActions\ConditionSelectionPageActions.java
+D:\HealthOutcome\src\test\java\pageObjectsElements\DetailedBlogPageElements.java
 D:\HealthOutcome\src\test\java\automationFramework\Navigation_TestCase.java
 D:\HealthOutcome\src\test\java\utility\SetDriver.java
 D:\HealthOutcome\src\test\java\utility\RandomNumber.java
 D:\HealthOutcome\src\test\java\pageObjectsElements\ContactUsPageElements.java
 D:\HealthOutcome\src\test\java\pageObjectsElements\ConditionSelectionPageElements.java
+D:\HealthOutcome\src\test\java\pageObjectsActions\DetailedBlogPageActions.java
 D:\HealthOutcome\src\test\java\pageObjectsElements\BlogPageElements.java
 D:\HealthOutcome\src\test\java\pageObjectsActions\HeaderActions.java
 D:\HealthOutcome\src\test\java\pageObjectsElements\WriteAReviewConfirmationPageElements.java
@@ -33,3 +35,5 @@ D:\HealthOutcome\src\test\java\pageObjectsElements\TestimonialsPageElements.java
 D:\HealthOutcome\src\test\java\pageObjectsActions\WriteAReviewConfirmationPageActions.java
 D:\HealthOutcome\src\test\java\pageObjectsElements\HomePageElements.java
 D:\HealthOutcome\src\test\java\utility\Constant.java
+D:\HealthOutcome\src\test\java\pageObjectsActions\BlogPageActions.java
+D:\HealthOutcome\src\test\java\utility\RetryRule.java

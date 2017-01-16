@@ -1,32 +1,32 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<ns2:test-suite start="1484215067864" stop="1484215107465" version="1.4.23.HOTFIX1" xmlns:ns2="urn:model.allure.qatools.yandex.ru">
+<ns2:test-suite start="1484418826052" stop="1484418868254" version="1.4.23.HOTFIX1" xmlns:ns2="urn:model.allure.qatools.yandex.ru">
     <name>automationFramework.Plot_TestCase</name>
     <test-cases>
-        <test-case start="1484215067866" stop="1484215079091" status="passed">
+        <test-case start="1484418826056" stop="1484418838450" status="passed">
             <name>logIn</name>
             <steps/>
             <attachments/>
             <labels>
                 <label name="host" value="Crispus-PC"/>
-                <label name="thread" value="3312@Crispus-PC.main(1)"/>
+                <label name="thread" value="3436@Crispus-PC.main(1)"/>
             </labels>
         </test-case>
-        <test-case start="1484215079097" stop="1484215093338" status="passed">
+        <test-case start="1484418838492" stop="1484418853168" status="passed">
             <name>forgotPassword</name>
             <steps/>
             <attachments/>
             <labels>
                 <label name="host" value="Crispus-PC"/>
-                <label name="thread" value="3312@Crispus-PC.main(1)"/>
+                <label name="thread" value="3436@Crispus-PC.main(1)"/>
             </labels>
         </test-case>
-        <test-case start="1484215093366" stop="1484215106753" status="passed">
+        <test-case start="1484418853186" stop="1484418867490" status="passed">
             <name>signUpWithoutReview</name>
             <steps/>
             <attachments/>
             <labels>
                 <label name="host" value="Crispus-PC"/>
-                <label name="thread" value="3312@Crispus-PC.main(1)"/>
+                <label name="thread" value="3436@Crispus-PC.main(1)"/>
             </labels>
         </test-case>
     </test-cases>

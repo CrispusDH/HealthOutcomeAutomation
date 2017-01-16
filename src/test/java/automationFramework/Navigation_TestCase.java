@@ -3,22 +3,18 @@ package automationFramework;
 
 import junit.framework.TestCase;
 import org.junit.*;
-import org.junit.rules.TestName;
 import org.junit.rules.Timeout;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeDriverService;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.remote.UnreachableBrowserException;
 import pageObjectsActions.*;
 import pageObjectsElements.*;
-import utility.RandomNumber;
 import utility.ReadXMLFile;
 import utility.RetryRule;
-import utility.SetDriver;
 
 import java.io.File;
 import java.io.IOException;
@@ -180,7 +176,7 @@ public class Navigation_TestCase extends TestCase{
     @Test
     public void goToConditionSelectionPage() {
 
-        String expectedURL  = HomePageElements.bttn_GetStarted(driver).getAttribute("href");
+        String expectedURL  = HomePageElements.button_GetStarted(driver).getAttribute("href");
         HomePageActions.clickGetStartedButton(driver);
         assertEquals(expectedURL, driver.getCurrentUrl());
 
@@ -260,9 +256,47 @@ public class Navigation_TestCase extends TestCase{
     @Test
     public void goToMailServiceFromFooter(){
 
-
         assertEquals(ReadXMLFile.takeConstantFromXML("URL", "Mail", "href" ), FooterElements.link_Connect(driver, "mail").getAttribute("href"));
 
+    }
+
+    //Navigation to Write a Review page from Blog page
+    @Test
+    public void goToWriteAReviewPageFromBlogPage(){
+
+        //go to Blog page
+        FooterActions.clickOnFooterLink(driver, ReadXMLFile.takeConstantFromXML("FooterLink", "Blog", "linkName"));
+
+        //go to Write a Review page
+        BlogPageActions.clickOnStartHereButton(driver);
+
+        //verify that we are at the right page
+        assertEquals(ReadXMLFile.takeConstantFromXML("URL", "Write a Review Page", "fromBlogPage" ), driver.getCurrentUrl());
+
+    }
+
+    //Navigation to Write a Review page from Detailed Blog page
+    @Test
+    public void goToWriteAReviewPageFromDetailedBlogPage(){
+
+        //go to Blog page
+        FooterActions.clickOnFooterLink(driver, ReadXMLFile.takeConstantFromXML("FooterLink", "Blog", "linkName"));
+
+        //go to Detailed Blog page
+        BlogPageActions.clickOnSpecificBlog(driver);
+
+        //wait until page is loaded
+        try {
+            TimeUnit.SECONDS.sleep(3);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        //go to Write a Review page
+        DetailedBlogPageActions.clickOnStartHereButton(driver);
+
+        //verify that we are at the right page
+        assertEquals(ReadXMLFile.takeConstantFromXML("URL", "Write a Review Page", "fromDetailedBlogPage" ), driver.getCurrentUrl());
 
     }
 

@@ -1,5 +1,6 @@
 package pageObjectsElements;
 
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -7,15 +8,10 @@ import utility.FindElementsNewMechanism;
 
 import java.util.List;
 
-public class BlogPageElements extends FindElementsNewMechanism {
+public class DetailedBlogPageElements extends FindElementsNewMechanism {
 
     private static WebElement element = null;
     private static List<WebElement> elements = null;
-
-    public static List<WebElement> blogs (WebDriver driver){
-        elements = findElements(driver, By.cssSelector(".blog-roll li"), 5000);
-        return elements;
-    }
 
     //Start Here button
     public static WebElement button_StartHere (WebDriver driver){
@@ -35,7 +31,7 @@ public class BlogPageElements extends FindElementsNewMechanism {
         int i = 0;
         do {
             element = elements.get(i);
-            //System.out.println(element.getText() + "\n");
+            System.out.println(element.getText() + "\n");
             i++;
         } while (!(element.getText().equals("Find Out More")));
         return element;

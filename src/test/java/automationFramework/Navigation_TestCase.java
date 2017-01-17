@@ -33,7 +33,7 @@ public class Navigation_TestCase extends TestCase{
     @BeforeClass
     public static void createAndStartService() {
         service = new ChromeDriverService.Builder()
-                .usingDriverExecutable(new File(ReadXMLFile.takeConstantFromXML("ChromeDriver", "ChromeDriver", "path")))
+                .usingDriverExecutable(new File(ReadXMLFile.takeConstantFromXML("DriverPath", "ChromeDriver", "path")))
                 .usingAnyFreePort()
                 .build();
         try {

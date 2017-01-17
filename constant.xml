@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<!DOCTYPE doc [
+<!DOCTYPE constants [
 <!ENTITY ChromeDriverPath SYSTEM "ChromeDriverPath.xml">]>
 <constants>
 	<URLs>
@@ -261,9 +261,7 @@
 	</SignUpConfirmationPage>
 	
 	<DriversPath>
-		<ChromeDriver name="ChromeDriver">
-			<path>&ChromeDriverPath;</path>
-		</ChromeDriver>
+		&ChromeDriverPath;
 	</DriversPath>
 	
 	

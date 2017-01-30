@@ -64,8 +64,8 @@
 		</URL>
 		
 		<URL name="Write a Review Page">
-			<fromBlogPage>https://dev.healthoutcome.org/user/writereview?heroId=BLOG&amp;exloc=b</fromBlogPage>
-			<fromDetailedBlogPage>https://dev.healthoutcome.org/user/writereview?exloc=b</fromDetailedBlogPage>
+			<fromBlogPage>https://dev.healthoutcome.org/user/writereview?heroId=BLOG</fromBlogPage>
+			<fromDetailedBlogPage>https://dev.healthoutcome.org/user/writereview</fromDetailedBlogPage>
 		</URL>
 		
 	</URLs>

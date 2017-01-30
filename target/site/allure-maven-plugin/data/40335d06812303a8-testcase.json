@@ -1,0 +1,47 @@
+{
+  "uid" : "40335d06812303a8",
+  "name" : "checkFooterLinkBlog",
+  "title" : "Check footer link blog",
+  "time" : {
+    "start" : 1485801081598,
+    "stop" : 1485801095719,
+    "duration" : 14121
+  },
+  "summary" : {
+    "attachments" : 0,
+    "steps" : 0
+  },
+  "failure" : null,
+  "description" : null,
+  "severity" : "NORMAL",
+  "status" : "PASSED",
+  "testId" : null,
+  "suite" : {
+    "uid" : "d2ae32cab3c70e02",
+    "name" : "automationFramework.Navigation_TestCase",
+    "title" : "Navigation test case"
+  },
+  "steps" : [ ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "JUnit"
+  }, {
+    "name" : "language",
+    "value" : "JAVA"
+  }, {
+    "name" : "suite-name",
+    "value" : "automationFramework.Navigation_TestCase"
+  }, {
+    "name" : "thread",
+    "value" : "4236@Crispus-PC.main(1)"
+  }, {
+    "name" : "suite-title",
+    "value" : null
+  }, {
+    "name" : "host",
+    "value" : "Crispus-PC"
+  } ],
+  "parameters" : [ ]
+}

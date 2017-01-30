@@ -12,4 +12,10 @@ public class TreatmentRatingsConditionPageActions {
 
     }
 
+    public static void goToFirstStepOfCoachingProgram(WebDriver driver){
+
+        TreatmentRatingsConditionPageElements.button_LearnMore(driver).click();
+
+    }
+
 }

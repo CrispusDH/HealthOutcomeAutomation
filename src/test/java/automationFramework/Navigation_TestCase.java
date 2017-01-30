@@ -300,4 +300,23 @@ public class Navigation_TestCase extends TestCase{
 
     }
 
+    //Navigation to 1st step of Coaching Program Write Coaching Request page from Treatment Ratings Condition page
+    @Test
+    public void goToFirstStepOfCoachingProgramFromTreatmentRatingsConditionPage(){
+
+        HomePageActions.goToFeaturedConditionPage(driver);
+
+        //wait until page is loaded
+        try {
+            TimeUnit.SECONDS.sleep(3);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        TreatmentRatingsConditionPageActions.goToFirstStepOfCoachingProgram(driver);
+
+        assertEquals(ReadXMLFile.takeConstantFromXML("URL", "First Step Of Coaching Program", "url" ), driver.getCurrentUrl());
+
+    }
+
 }

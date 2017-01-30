@@ -1,0 +1,47 @@
+{
+  "uid" : "c96d821de1782e6a",
+  "name" : "goToSingleReviewPage",
+  "title" : "Go to single review page",
+  "time" : {
+    "start" : 1485801095742,
+    "stop" : 1485801106159,
+    "duration" : 10417
+  },
+  "summary" : {
+    "attachments" : 0,
+    "steps" : 0
+  },
+  "failure" : null,
+  "description" : null,
+  "severity" : "NORMAL",
+  "status" : "PASSED",
+  "testId" : null,
+  "suite" : {
+    "uid" : "d2ae32cab3c70e02",
+    "name" : "automationFramework.Navigation_TestCase",
+    "title" : "Navigation test case"
+  },
+  "steps" : [ ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "JUnit"
+  }, {
+    "name" : "language",
+    "value" : "JAVA"
+  }, {
+    "name" : "suite-name",
+    "value" : "automationFramework.Navigation_TestCase"
+  }, {
+    "name" : "thread",
+    "value" : "4236@Crispus-PC.main(1)"
+  }, {
+    "name" : "suite-title",
+    "value" : null
+  }, {
+    "name" : "host",
+    "value" : "Crispus-PC"
+  } ],
+  "parameters" : [ ]
+}

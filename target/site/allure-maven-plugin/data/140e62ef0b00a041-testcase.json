@@ -1,0 +1,47 @@
+{
+  "uid" : "140e62ef0b00a041",
+  "name" : "logIn",
+  "title" : "Log in",
+  "time" : {
+    "start" : 1485801262734,
+    "stop" : 1485801274599,
+    "duration" : 11865
+  },
+  "summary" : {
+    "attachments" : 0,
+    "steps" : 0
+  },
+  "failure" : null,
+  "description" : null,
+  "severity" : "NORMAL",
+  "status" : "PASSED",
+  "testId" : null,
+  "suite" : {
+    "uid" : "76d99d5bd9d51754",
+    "name" : "automationFramework.Plot_TestCase",
+    "title" : "Plot test case"
+  },
+  "steps" : [ ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "JUnit"
+  }, {
+    "name" : "language",
+    "value" : "JAVA"
+  }, {
+    "name" : "suite-name",
+    "value" : "automationFramework.Plot_TestCase"
+  }, {
+    "name" : "thread",
+    "value" : "4236@Crispus-PC.main(1)"
+  }, {
+    "name" : "suite-title",
+    "value" : null
+  }, {
+    "name" : "host",
+    "value" : "Crispus-PC"
+  } ],
+  "parameters" : [ ]
+}

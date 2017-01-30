@@ -18,4 +18,16 @@ public class TreatmentRatingsConditionPageElements extends FindElementsNewMechan
         return element;
     }
 
+    //Learn More button
+    public static WebElement button_LearnMore (WebDriver driver){
+        elements = findElements(driver, By.cssSelector(".button-cta span"), 5000);
+        int i = 0;
+        do {
+            element = elements.get(i);
+            //System.out.println(element.getText() + "\n");
+            i++;
+        } while (!(element.getText().equals("LEARN MORE   ")));
+        return element;
+    }
+
 }

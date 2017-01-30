@@ -17,6 +17,7 @@ pageObjectsElements\ConditionSelectionPageElements.class
 pageObjectsElements\AboutUsPageElements.class
 pageObjectsElements\ForgotPasswordPageElements.class
 pageObjectsActions\HomePageActions.class
+pageObjectsElements\FirstStepOfCoachingProgramPageElements.class
 pageObjectsElements\ResourcesPageElemetns.class
 pageObjectsElements\WriteAReviewPageElements.class
 utility\RetryRule.class

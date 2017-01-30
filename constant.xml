@@ -68,6 +68,10 @@
 			<fromDetailedBlogPage>https://dev.healthoutcome.org/user/writereview</fromDetailedBlogPage>
 		</URL>
 		
+		<URL name="First Step Of Coaching Program">
+			<url>https://dev.healthoutcome.org/registration-review?conditionId=5</url>
+		</URL>
+		
 	</URLs>
 	
 	<Accounts>

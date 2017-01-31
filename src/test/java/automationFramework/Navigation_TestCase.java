@@ -65,6 +65,7 @@ public class Navigation_TestCase extends TestCase{
         driver.get(ReadXMLFile.takeConstantFromXML("URL", "Landing Page", "url"));
     }
 
+
     //execute after each TC
     @After
     public void quitDriver() {
@@ -167,8 +168,11 @@ public class Navigation_TestCase extends TestCase{
     //Navigation to Treatment Ratings Condition page from Home page
     @Test
     public void goToTreatmentRatingsConditionPage(){
+
         String expectedURL = HomePageElements.li_FeaturedConditions(driver).getAttribute("href");
+
         HomePageActions.goToFeaturedConditionPage(driver);
+
         assertEquals(expectedURL, driver.getCurrentUrl());
     }
 
@@ -316,6 +320,24 @@ public class Navigation_TestCase extends TestCase{
         TreatmentRatingsConditionPageActions.goToFirstStepOfCoachingProgram(driver);
 
         assertEquals(ReadXMLFile.takeConstantFromXML("URL", "First Step Of Coaching Program", "url" ), driver.getCurrentUrl());
+
+    }
+
+    //Navigation to Videos&Guides Condition page from Treatment Ratings Condition page
+    @Test
+    public void goToVideosAndGuidesConditionPageFromTreatmentRatingsConditionPage(){
+
+        String expectedURL;
+
+        //go to Treatment Ratings Condition page
+        HomePageActions.goToFeaturedConditionPage(driver);
+
+        expectedURL =  driver.getCurrentUrl() + "-videos";
+
+        //go to Videos&Guides Condition page
+        TreatmentRatingsConditionPageActions.clickOnTab(driver, "Videos & Guides");
+
+        assertEquals(expectedURL, driver.getCurrentUrl());
 
     }
 

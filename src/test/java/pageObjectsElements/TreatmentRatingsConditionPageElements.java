@@ -30,4 +30,16 @@ public class TreatmentRatingsConditionPageElements extends FindElementsNewMechan
         return element;
     }
 
+    //Find tab
+    public static WebElement tab (WebDriver driver, String tabName){
+        elements = findElements(driver, By.cssSelector(".hero-tabs li"), 5000);
+        int i = 0;
+        do {
+            element = elements.get(i);
+            System.out.println(element.getText() + "\n");
+            i++;
+        } while (!(element.getText().equals(tabName)));
+        return element;
+    }
+
 }

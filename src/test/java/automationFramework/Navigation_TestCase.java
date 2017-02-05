@@ -43,12 +43,12 @@ public class Navigation_TestCase extends TestCase{
         }
     }
 
-
+/*
     @AfterClass
     public static void createAndStopService() {
         service.stop();
     }
-
+*/
 
     @Before
     public void createNewDriver() {
@@ -65,13 +65,13 @@ public class Navigation_TestCase extends TestCase{
         driver.get(ReadXMLFile.takeConstantFromXML("URL", "Landing Page", "url"));
     }
 
-
+/*
     //execute after each TC
     @After
     public void quitDriver() {
         driver.quit();
     }
-
+*/
     //Timeout Rule that applies to all test cases in the test class
     @Rule
     public Timeout globalTimeout = Timeout.seconds(300);
@@ -338,6 +338,30 @@ public class Navigation_TestCase extends TestCase{
         TreatmentRatingsConditionPageActions.clickOnTab(driver, "Videos & Guides");
 
         assertEquals(expectedURL, driver.getCurrentUrl());
+
+    }
+
+    //Navigation to Sign Up page from Videos&Guides Condition page
+    @Test
+    public void goToSignUpPageFromVideosAndGuidesConditionPage(){
+
+        //go to Treatment Ratings Condition page
+        HomePageActions.goToFeaturedConditionPage(driver);
+
+        //go to Videos&Guides Condition page
+        TreatmentRatingsConditionPageActions.clickOnTab(driver, "Videos & Guides");
+
+        //go to Sign Up page
+        HeaderActions.clickOnSignUp(driver);
+
+        //check URL
+        assertEquals(ReadXMLFile.takeConstantFromXML("URL", "SignUp Page from Videos&Guides Page", "url"), driver.getCurrentUrl());
+
+        //check that Join Now button exists
+        assertTrue(SignUpPageElements.button_JoinNow(driver).isDisplayed());
+
+        //check that Sign up with Facebbok button exists
+        assertTrue(SignUpPageElements.button_SignUpWithFacebook(driver).isDisplayed());
 
     }
 

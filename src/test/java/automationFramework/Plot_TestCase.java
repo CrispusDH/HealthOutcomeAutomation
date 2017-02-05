@@ -81,24 +81,6 @@ public class Plot_TestCase extends TestCase {
     @Rule
     public RetryRule retryRule = new RetryRule(3);
 
- /*   @Rule
-    public TestName name = new TestName();
-
-    @Before
-    public void createNewDriver() {
-        SetDriver.setChromeDriver();
-        driver = new ChromeDriver();
-        driver.get(ReadXMLFile.takeConstantFromXML("URL", "Landing Page", "url"));
-    }
-
-    //execute after each TC
-    @After
-    public void wipeDriver(){
-        driver.quit();
-    }
-*/
-
-
 
     @Test
     public void logIn(){
@@ -149,25 +131,25 @@ public class Plot_TestCase extends TestCase {
 
     @Test
     public void signUpWithoutReview(){
+
+        //click on Sign Up button in the Header
         HeaderActions.clickOnSignUp(driver);
+
+        //Sign Up as aignatiuk@archer-soft.com with 'lytghjgtnhjdcr' password
         SignUpPageActions.SignUp_Execute(driver, ReadXMLFile.takeConstantFromXML("Account", "Main", "password"));
-        assertEquals(ReadXMLFile.takeConstantFromXML("URL", "SignUp Confirmation Page", "url"), driver.getCurrentUrl()); //verify that current URL is correct
-        assertEquals(HeaderElements.lnk_Profile(driver).getText(), String.valueOf(RandomNumber.currentRandomNumber())); //verify that current logged user has correct profile user name
-        assertTrue(SignUpConfirmationPageElements.bttn_WriteAReviewOrFindTreatments(driver, ReadXMLFile.takeConstantFromXML("ButtonName", "FindTreatments", "name")).isDisplayed()); //Find Treatments button exists
-        assertTrue(SignUpConfirmationPageElements.bttn_WriteAReviewOrFindTreatments(driver, ReadXMLFile.takeConstantFromXML("ButtonName", "WriteAReview", "name")).isDisplayed()); // Write a Review button exists
+
+        //verify that current URL is correct
+        assertEquals(ReadXMLFile.takeConstantFromXML("URL", "SignUp Confirmation Page", "url"), driver.getCurrentUrl());
+
+        //verify that current logged user has correct profile user name
+        assertEquals(HeaderElements.lnk_Profile(driver).getText(), String.valueOf(RandomNumber.currentRandomNumber()));
+
+        //Find Treatments button exists
+        assertTrue(SignUpConfirmationPageElements.bttn_WriteAReviewOrFindTreatments(driver, ReadXMLFile.takeConstantFromXML("ButtonName", "FindTreatments", "name")).isDisplayed());
+
+        // Write a Review button exists
+        assertTrue(SignUpConfirmationPageElements.bttn_WriteAReviewOrFindTreatments(driver, ReadXMLFile.takeConstantFromXML("ButtonName", "WriteAReview", "name")).isDisplayed());
     }
 
-
-        /*
-    //проверка работы, временный тест
-    @Test
-    public void writeReviewLoggedOutUserTemp(){
-        HomePageActions.goToWriteAReviewPage(driver);
-        WriteAReviewPageActions.chooseBodyArea(driver, "SHOULDER");
-        WriteAReviewPageActions.chooseCondition(driver, "Frozen Shoulder");
-        //WriteAReviewPageActions.fillAndPostReview(driver, ReadXMLFile.takeConstantFromXML("BodyArea", "Neck", "name"), ReadXMLFile.takeConstantFromXML("Condition", "Neck pain with radiculopathy", "name"), ReadXMLFile.takeConstantFromXML("Treatment", "NSAIDs - Anti Inflammatory drugs", "name"), ReadXMLFile.takeConstantFromXML("RateChoice", "Cured", "satisfactionLevel"));
-
-    }
-    */
 
 }

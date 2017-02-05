@@ -36,7 +36,7 @@ public class TreatmentRatingsConditionPageElements extends FindElementsNewMechan
         int i = 0;
         do {
             element = elements.get(i);
-            System.out.println(element.getText() + "\n");
+            //System.out.println(element.getText() + "\n");
             i++;
         } while (!(element.getText().equals(tabName)));
         return element;

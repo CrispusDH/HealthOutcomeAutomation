@@ -35,6 +35,10 @@
 			<url>https://dev.healthoutcome.org/sign-up-confirmation</url>
 		</URL>
 		
+		<URL name="SignUp Page from Videos&amp;Guides Page">
+			<url>https://dev.healthoutcome.org/signup?conditionId=5&amp;redirect=/condition/5/plantar-fasciitis-treatment-videos</url>
+		</URL>
+		
 		<URL name="Contact Us">
 			<url>https://dev.healthoutcome.org/contact-us</url>
 		</URL>

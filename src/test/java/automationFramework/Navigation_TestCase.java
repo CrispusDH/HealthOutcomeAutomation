@@ -43,12 +43,12 @@ public class Navigation_TestCase extends TestCase{
         }
     }
 
-/*
+
     @AfterClass
     public static void createAndStopService() {
         service.stop();
     }
-*/
+
 
     @Before
     public void createNewDriver() {
@@ -65,13 +65,13 @@ public class Navigation_TestCase extends TestCase{
         driver.get(ReadXMLFile.takeConstantFromXML("URL", "Landing Page", "url"));
     }
 
-/*
+
     //execute after each TC
     @After
     public void quitDriver() {
         driver.quit();
     }
-*/
+
     //Timeout Rule that applies to all test cases in the test class
     @Rule
     public Timeout globalTimeout = Timeout.seconds(300);

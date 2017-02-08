@@ -6,8 +6,9 @@ import org.xml.sax.SAXException;
 import javax.xml.parsers.*;
 import java.io.*;
 
-
+//get data from .xml file
 public class ReadXMLFile {
+
     private static String neededConstant;
 
     public static String takeConstantFromXML(String TagName, String Name, String InnerTagName) {
@@ -19,18 +20,10 @@ public class ReadXMLFile {
             Document doc = dBuilder.parse(fXmlFile);
             doc.getDocumentElement().normalize();
             NodeList nList = doc.getElementsByTagName(TagName);
-            /*for (int temp = 0; temp < nList.getLength(); temp++) {
-                Node nNode = nList.item(temp);
-                if (nNode.getNodeType() == Node.ELEMENT_NODE) {
-                    Element eElement = (Element) nNode;
-                    if (eElement.getAttribute("name").equals(Name)){
-                        neededConstant = eElement.getElementsByTagName(InnerTagName).item(0).getTextContent();
-                    }
-                }
-            }*/
             int temp =0;
             boolean statement = true;
             //System.out.println(TagName + " " + Name + " " + InnerTagName );
+
             do {
                 Node nNode = nList.item(temp);
                 temp +=1;
@@ -47,6 +40,7 @@ public class ReadXMLFile {
         } catch (Exception e) {
             e.printStackTrace();
         }
+
         return neededConstant;
     }
 }

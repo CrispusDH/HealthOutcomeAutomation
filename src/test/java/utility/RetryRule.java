@@ -5,7 +5,9 @@ import org.junit.rules.TestRule;
 import org.junit.runner.Description;
 import org.junit.runners.model.Statement;
 
+//set how many times failed test will be re-run
 public class RetryRule implements TestRule {
+
     private int retryCount;
 
     public RetryRule (int retryCount) {

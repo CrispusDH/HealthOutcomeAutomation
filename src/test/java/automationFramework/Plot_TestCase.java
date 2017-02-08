@@ -2,12 +2,10 @@ package automationFramework;
 
 import junit.framework.TestCase;
 import org.junit.*;
-import org.junit.rules.TestName;
 import org.junit.rules.Timeout;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeDriverService;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
@@ -17,12 +15,9 @@ import pageObjectsElements.*;
 import utility.RandomNumber;
 import utility.ReadXMLFile;
 import utility.RetryRule;
-import utility.SetDriver;
 
 import java.io.File;
 import java.io.IOException;
-
-import static org.junit.Assert.*;
 
 @RunWith(JUnit4.class)
 public class Plot_TestCase extends TestCase {
@@ -44,13 +39,13 @@ public class Plot_TestCase extends TestCase {
         }
     }
 
-
+    //stop service
     @AfterClass
     public static void createAndStopService() {
         service.stop();
     }
 
-
+    //create new driver
     @Before
     public void createNewDriver() {
         try {
@@ -81,54 +76,38 @@ public class Plot_TestCase extends TestCase {
     @Rule
     public RetryRule retryRule = new RetryRule(3);
 
-
+    //log in
     @Test
     public void logIn(){
+
+        //click on Log in link
         HeaderActions.clickOnLogIn(driver);
+
+        //fill all fields and click login button
         HomePageActions.logIn_Execute(driver, ReadXMLFile.takeConstantFromXML("Account", "Main", "emailAddress"), ReadXMLFile.takeConstantFromXML("Account", "Main", "password"));
+
+        //check username
         assertEquals(ReadXMLFile.takeConstantFromXML("Account", "Main", "userName"), HeaderElements.lnk_Profile(driver).getText());
     }
 
+    //check forgot password flow
     @Test
     public void forgotPassword(){
+
+        //click on Log in link
         HeaderActions.clickOnLogIn(driver);
+
+        //go to Forgot password page
         HomePageActions.goToForgotPasswordPage(driver);
+
+        //type email and click on Forgot password button
         ForgotPasswordPageActions.forgotPassword_Execute(driver, ReadXMLFile.takeConstantFromXML("Account", "Main", "emailAddress"));
+
+        //check URL
         assertEquals(ReadXMLFile.takeConstantFromXML("URL", "Forgot Password Confirm", "url"), driver.getCurrentUrl());
     }
 
-
-    /*
-    @Test
-    public void writeReviewLoggedOutUser(){
-        HomePageActions.goToWriteAReviewPage(driver);
-        WriteAReviewPageActions.fillAndPostReview(driver, ReadXMLFile.takeConstantFromXML("BodyArea", "Neck", "name"), ReadXMLFile.takeConstantFromXML("Condition", "Neck pain with radiculopathy", "name"), ReadXMLFile.takeConstantFromXML("Treatment", "NSAIDs - Anti Inflammatory drugs", "name"), ReadXMLFile.takeConstantFromXML("RateChoice", "Cured", "satisfactionLevel"));
-        assertTrue(WriteAReviewConfirmationPageElements.frm_SignUp(driver).isDisplayed());
-    }*/
-
-
-    /*
-    @Test
-    public void writeReviewLoggedInUserConditionIsUnknown(){
-        HeaderActions.clickOnLogIn(driver);
-        HomePageActions.logIn_Execute(driver, ReadXMLFile.takeConstantFromXML("Account", "Main", "emailAddress"), ReadXMLFile.takeConstantFromXML("Account", "Main", "password"));
-        HomePageActions.goToWriteAReviewPage(driver);
-        WriteAReviewPageActions.fillAndPostReview(driver, ReadXMLFile.takeConstantFromXML("BodyArea", "Neck", "name"), ReadXMLFile.takeConstantFromXML("Condition", "Neck pain with radiculopathy", "name"),ReadXMLFile.takeConstantFromXML("Treatment", "NSAIDs - Anti Inflammatory drugs", "name"), ReadXMLFile.takeConstantFromXML("RateChoice", "Cured", "satisfactionLevel"));
-        assertTrue(WriteAReviewConfirmationPageElements.txt_ReviewUserName(driver, ReadXMLFile.takeConstantFromXML("Account", "Main", "userName")).isDisplayed()); //check that a review by current User exists
-    }*/
-
-/*
-    @Test
-    public void signUpAfterWritingReview(){
-        HomePageActions.goToWriteAReviewPage(driver);
-        WriteAReviewPageActions.fillAndPostReview(driver, ReadXMLFile.takeConstantFromXML("Treatment", "NSAIDs - Anti Inflammatory drugs", "name"));
-        HeaderActions.clickOnSignUp(driver);
-        SignUpPageActions.SignUp_Execute(driver, ReadXMLFile.takeConstantFromXML("Account", "Main", "password"));
-        assertEquals(ReadXMLFile.takeConstantFromXML("URL", "SignUp ConfirmationPage", "url"), driver.getCurrentUrl()); //verify that current URL is correct
-        assertTrue(SignUpConfirmationPageElements.bttn_WriteAReviewOrFindTreatments(driver, ReadXMLFile.takeConstantFromXML("ButtonName", "FindTreatments", "name")).isDisplayed()); //Find Treatments button exists
-        assertTrue(!(SignUpConfirmationPageElements.bttn_WriteAReviewOrFindTreatments(driver, ReadXMLFile.takeConstantFromXML("ButtonName", "WriteAReview", "name")).isDisplayed())); // Write a Review button should not be
-    }*/
-
+    //sign up without review flow
     @Test
     public void signUpWithoutReview(){
 
@@ -145,10 +124,10 @@ public class Plot_TestCase extends TestCase {
         assertEquals(HeaderElements.lnk_Profile(driver).getText(), String.valueOf(RandomNumber.currentRandomNumber()));
 
         //Find Treatments button exists
-        assertTrue(SignUpConfirmationPageElements.bttn_WriteAReviewOrFindTreatments(driver, ReadXMLFile.takeConstantFromXML("ButtonName", "FindTreatments", "name")).isDisplayed());
+        assertTrue(SignUpConfirmationPageElements.button_WriteAReviewOrFindTreatments(driver, ReadXMLFile.takeConstantFromXML("ButtonName", "FindTreatments", "name")).isDisplayed());
 
         // Write a Review button exists
-        assertTrue(SignUpConfirmationPageElements.bttn_WriteAReviewOrFindTreatments(driver, ReadXMLFile.takeConstantFromXML("ButtonName", "WriteAReview", "name")).isDisplayed());
+        assertTrue(SignUpConfirmationPageElements.button_WriteAReviewOrFindTreatments(driver, ReadXMLFile.takeConstantFromXML("ButtonName", "WriteAReview", "name")).isDisplayed());
     }
 
 

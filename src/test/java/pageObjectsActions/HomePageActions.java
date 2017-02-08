@@ -5,14 +5,23 @@ import org.openqa.selenium.WebDriver;
 import pageObjectsElements.HomePageElements;
 
 public class HomePageActions {
+
     public static void logIn_Execute(WebDriver driver, String sEmailAddress, String sPassword){
+
+        //type email address
         HomePageElements.input_EmailAddress(driver).sendKeys(sEmailAddress);
+
+        //type password
         HomePageElements.input_Password(driver).sendKeys(sPassword);
+
+        //click on Login button
         HomePageElements.button_Login(driver).click();
         }
 
     public static void goToForgotPasswordPage(WebDriver driver){
-        HomePageElements.lnk_ForgotPassword(driver).click();
+
+        HomePageElements.link_ForgotPassword(driver).click();
+
         }
 
     public static void goToWriteAReviewPage(WebDriver driver){

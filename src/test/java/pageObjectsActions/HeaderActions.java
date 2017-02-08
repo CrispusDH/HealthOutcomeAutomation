@@ -5,15 +5,25 @@ import org.openqa.selenium.WebDriver;
 import pageObjectsElements.HeaderElements;
 
 public class HeaderActions {
+
+    //click on Log in link
     public static void clickOnLogIn(WebDriver driver){
-        HeaderElements.lnk_LogIn(driver).click();
+
+        HeaderElements.link_LogIn(driver).click();
+
     }
 
+    //click on SignUp link
     public static void clickOnSignUp (WebDriver driver){
-        HeaderElements.lnk_SignUp(driver).click();
+
+        HeaderElements.link_SignUp(driver).click();
+
     }
 
+    //click on SignOut link
     public static void clickOnSignOut (WebDriver driver){
-        HeaderElements.lnk_SignOut(driver).click();
+
+        HeaderElements.link_SignOut(driver).click();
+
     }
 }

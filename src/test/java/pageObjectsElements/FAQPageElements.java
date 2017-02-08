@@ -12,7 +12,9 @@ public class FAQPageElements extends FindElementsNewMechanism {
     private static List<WebElement> elements = null;
 
     public static List<WebElement> questions (WebDriver driver){
+
         elements = findElements(driver, By.cssSelector(".questions li"), 5000);
+
         return elements;
     }
 }

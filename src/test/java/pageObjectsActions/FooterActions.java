@@ -10,7 +10,7 @@ public class FooterActions {
     //go to About, FDQ, Blog, Resources, Testimonials, Contact Us pages
     public static void clickOnFooterLink(WebDriver driver, String FooterLinkName){
 
-        FooterElements.lnk_FooterLink(driver, FooterLinkName).click();
+        FooterElements.link_FooterLink(driver, FooterLinkName).click();
 
     }
 
@@ -26,6 +26,7 @@ public class FooterActions {
 
         FooterElements.link_Connect(driver, name).click();
 
+        //wait 3 seconds
         try {
             TimeUnit.SECONDS.sleep(3);
         } catch (InterruptedException e) {

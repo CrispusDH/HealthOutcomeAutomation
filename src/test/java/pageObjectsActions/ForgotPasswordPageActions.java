@@ -2,12 +2,16 @@ package pageObjectsActions;
 
 import org.openqa.selenium.WebDriver;
 import pageObjectsElements.ForgotPasswordPageElements;
-import utility.Constant;
 
 public class ForgotPasswordPageActions {
+
     public static void forgotPassword_Execute(WebDriver driver, String sEmailAddress){
-        ForgotPasswordPageElements.inpt_EmailAddress(driver).sendKeys(sEmailAddress);
-        ForgotPasswordPageElements.bttn_ForgotPassword(driver).click();
+
+        //type email address
+        ForgotPasswordPageElements.input_EmailAddress(driver).sendKeys(sEmailAddress);
+
+        //click on forgot password button
+        ForgotPasswordPageElements.button_ForgotPassword(driver).click();
     }
 
 }

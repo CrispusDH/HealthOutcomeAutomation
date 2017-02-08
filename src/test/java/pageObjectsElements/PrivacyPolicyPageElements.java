@@ -13,8 +13,11 @@ public class PrivacyPolicyPageElements extends FindElementsNewMechanism {
     private static WebElement element = null;
     private static List<WebElement> elements = null;
 
+    //find all paragraphs
     public static List<WebElement> paragraphs (WebDriver driver){
+
         elements = findElements(driver, By.cssSelector(".post p"), 5000);
+
         return elements;
     }
 

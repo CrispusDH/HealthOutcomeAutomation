@@ -12,6 +12,8 @@ import org.openqa.selenium.remote.UnreachableBrowserException;
 import java.io.File;
 import java.io.IOException;
 
+
+//need to be refactored
 public class SetDriver {
 
     private static ChromeDriverService service;

@@ -13,7 +13,6 @@ public class BlogPageActions {
 
         BlogPageElements.button_StartHere(driver).click();
 
-
     }
 
     //go to Detailed Blog page

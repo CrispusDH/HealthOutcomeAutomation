@@ -11,13 +11,17 @@ public class SignUpPageElements extends FindElementsNewMechanism {
 
     //Email Address input field
     public static WebElement input_EmailAddress(WebDriver driver){
+
         element = findElements(driver, By.id("id_username"),5000).get(0);
+
         return element;
     }
 
     //Password input field
     public static WebElement input_Password(WebDriver driver){
+
         element = findElements(driver, By.id("id_password"),5000).get(0);
+
         return element;
     }
 
@@ -29,7 +33,9 @@ public class SignUpPageElements extends FindElementsNewMechanism {
 
     //Sign Up with Facebook button
     public static WebElement button_SignUpWithFacebook(WebDriver driver){
+
         element = findElements(driver, By.cssSelector(".facebook-login-feature a"),5000).get(0);
+
         return element;
     }
 

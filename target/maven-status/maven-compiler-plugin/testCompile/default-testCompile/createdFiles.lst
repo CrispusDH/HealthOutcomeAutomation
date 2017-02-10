@@ -12,7 +12,6 @@ pageObjectsActions\WriteAReviewConfirmationPageActions.class
 pageObjectsElements\TestimonialsPageElements.class
 pageObjectsElements\ContactUsPageElements.class
 pageObjectsElements\TermsOfServicePageElements.class
-utility\Constant.class
 pageObjectsElements\ConditionSelectionPageElements.class
 pageObjectsElements\AboutUsPageElements.class
 pageObjectsElements\ForgotPasswordPageElements.class

@@ -43,4 +43,11 @@ public class ConditionSelectionPageElements extends FindElementsNewMechanism {
         return element;
     }
 
+    public static WebElement forScrolling(WebDriver driver){
+
+        element = findElements(driver, By.cssSelector(".select-step"),5000).get(0);
+
+        return element;
+    }
+
 }

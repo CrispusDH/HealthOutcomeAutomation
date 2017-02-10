@@ -473,4 +473,29 @@ public class Navigation_TestCase extends TestCase{
 
     }
 
+    //Navigation to Write a Review page from Treatment Ratings Condition page
+    @Test
+    public void goToWriteAReviewPageFromTreatmentRatingsConditionPage(){
+
+        //click Get Started button
+        HomePageActions.clickGetStartedButton(driver);
+
+        //go to Treatment Ratings Condition page
+        ConditionSelectionPageActions.goToTreatmentRatingsConditionPage(driver, ReadXMLFile.takeConstantFromXML("BodyArea", "Neck", "name"), ReadXMLFile.takeConstantFromXML("Condition", "Neck pain with radiculopathy", "name"));
+
+        //wait 3 seconds
+        try {
+            TimeUnit.SECONDS.sleep(3);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        //go to Write a Review page
+        TreatmentRatingsConditionPageActions.clickOnShareYourExperienceButton(driver);
+
+        //check URL
+        assertEquals(ReadXMLFile.takeConstantFromXML("URL", "Write a Review page from Treatment Ratings Condition", "url"), driver.getCurrentUrl());
+
+    }
+
 }

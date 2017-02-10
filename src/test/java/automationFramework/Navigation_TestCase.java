@@ -498,4 +498,25 @@ public class Navigation_TestCase extends TestCase{
 
     }
 
+    //Navigation to Treatment Reviews page from Treatment Ratings Condition page
+    @Test
+    public void goToTreatmentReviewsPageFromTreatmentRatingsConditionPage(){
+
+        //create variable
+        String expectedURL;
+
+        //go to Treatment Ratings Condition page
+        HomePageActions.goToFeaturedConditionPage(driver);
+
+        //save expected url
+        expectedURL =  driver.getCurrentUrl() + "-reviews";
+
+        //go to Treatment Reviews page (click on Treatment Reviews tab)
+        TreatmentRatingsConditionPageActions.clickOnTab(driver, "Treatment Reviews");
+
+        //check URL
+        assertEquals(expectedURL, driver.getCurrentUrl());
+
+    }
+
 }

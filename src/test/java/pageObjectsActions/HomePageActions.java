@@ -33,7 +33,7 @@ public class HomePageActions {
     }
 
     //go to Treatment Ratings Condition page
-    public static void goToFeaturedConditionPage(WebDriver driver){
+    public static void goToTreatmentRatingsConditionPage(WebDriver driver){
 
         HomePageElements.li_FeaturedConditions(driver).click();
 

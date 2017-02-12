@@ -13,4 +13,24 @@ public class TreatmentReviewsPageActions {
 
     }
 
+    //click on Tab
+    public static void clickOnTab(WebDriver driver, String tabNames){
+
+        switch (tabNames) {
+
+            case "Treatment Ratings":
+                TreatmentReviewsPageElements.tab(driver, "TREATMENT RATINGS").click();
+                break;
+
+            case "Treatment Reviews":
+                TreatmentReviewsPageElements.tab(driver, "TREATMENT REVIEWS").click();
+                break;
+
+            case "Videos & Guides":
+                TreatmentReviewsPageElements.tab(driver, "VIDEOS & GUIDES").click();
+                break;
+        }
+
+    }
+
 }

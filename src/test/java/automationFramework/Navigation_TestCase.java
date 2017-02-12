@@ -235,7 +235,7 @@ public class Navigation_TestCase extends TestCase{
         String expectedURL = HomePageElements.li_FeaturedConditions(driver).getAttribute("href");
 
         //go to Treatment Ratings Condition page
-        HomePageActions.goToFeaturedConditionPage(driver);
+        HomePageActions.goToTreatmentRatingsConditionPage(driver);
 
         //check URL
         assertEquals(expectedURL, driver.getCurrentUrl());
@@ -297,7 +297,7 @@ public class Navigation_TestCase extends TestCase{
         String currentURL;
 
         //go to Treatment Ratings Condition page
-        HomePageActions.goToFeaturedConditionPage(driver);
+        HomePageActions.goToTreatmentRatingsConditionPage(driver);
 
         //save current URL
         previousURL = driver.getCurrentUrl();
@@ -411,7 +411,7 @@ public class Navigation_TestCase extends TestCase{
     public void goToFirstStepOfCoachingProgramFromTreatmentRatingsConditionPage(){
 
         //go to Treatment Ratings Condition page
-        HomePageActions.goToFeaturedConditionPage(driver);
+        HomePageActions.goToTreatmentRatingsConditionPage(driver);
 
         //wait until page is loaded
         try {
@@ -436,7 +436,7 @@ public class Navigation_TestCase extends TestCase{
         String expectedURL;
 
         //go to Treatment Ratings Condition page
-        HomePageActions.goToFeaturedConditionPage(driver);
+        HomePageActions.goToTreatmentRatingsConditionPage(driver);
 
         //save expected url
         expectedURL =  driver.getCurrentUrl() + "-videos";
@@ -454,7 +454,7 @@ public class Navigation_TestCase extends TestCase{
     public void goToSignUpPageFromVideosAndGuidesConditionPage(){
 
         //go to Treatment Ratings Condition page
-        HomePageActions.goToFeaturedConditionPage(driver);
+        HomePageActions.goToTreatmentRatingsConditionPage(driver);
 
         //go to Videos&Guides Condition page
         TreatmentRatingsConditionPageActions.clickOnTab(driver, "Videos & Guides");
@@ -506,7 +506,7 @@ public class Navigation_TestCase extends TestCase{
         String expectedURL;
 
         //go to Treatment Ratings Condition page
-        HomePageActions.goToFeaturedConditionPage(driver);
+        HomePageActions.goToTreatmentRatingsConditionPage(driver);
 
         //save expected url
         expectedURL =  driver.getCurrentUrl() + "-reviews";
@@ -521,10 +521,10 @@ public class Navigation_TestCase extends TestCase{
 
     //Navigation to Write a Review page from Treatment Reviews page
     @Test
-    public void goToWriteARevirePageFromTreatmentReviewsPage(){
+    public void goToWriteAReviewPageFromTreatmentReviewsPage(){
 
         //go to Treatment Ratings Condition page
-        HomePageActions.goToFeaturedConditionPage(driver);
+        HomePageActions.goToTreatmentRatingsConditionPage(driver);
 
         //go to Treatment Reviews page (click on Treatment Reviews tab)
         TreatmentRatingsConditionPageActions.clickOnTab(driver, "Treatment Reviews");
@@ -540,5 +540,28 @@ public class Navigation_TestCase extends TestCase{
 
     }
 
+    //Navigation to Specific Videos&Guides Treatment page from Treatment Rating -> Specific Treatment Review page
+    @Test
+    public void goToSpecificVideosAndGuidesPageFromSpecificTreatmentReviewPage(){
+
+        //create variable
+        String expectedURL;
+
+        //go to Treatment Ratings Condition page
+        HomePageActions.goToTreatmentRatingsConditionPage(driver);
+
+        //go to Specific Treatment Review page
+        TreatmentRatingsConditionPageActions.goInToSpecificTreatment(driver, "Massage");
+
+        //save expected url
+        expectedURL =  driver.getCurrentUrl() + "-recommendations";
+
+        //go to Specific Videos&Guides Treatment page
+        SpecificTreatmentReviewsPageActions.clickOnTab(driver, "Videos & Guides");
+
+        //check URL
+        assertEquals(expectedURL, driver.getCurrentUrl());
+
+    }
 
 }

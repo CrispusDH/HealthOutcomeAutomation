@@ -47,4 +47,11 @@ public class TreatmentRatingsConditionPageActions {
 
     }
 
+    //go into specific Treatment (go to Specific Treatment Reviews page)
+    public static void goInToSpecificTreatment(WebDriver driver, String treatmentName){
+
+        TreatmentRatingsConditionPageElements.li_Treatment(driver, treatmentName).click();
+
+    }
+
 }

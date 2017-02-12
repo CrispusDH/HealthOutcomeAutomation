@@ -78,6 +78,10 @@
 		
 		<URL name="Write a Review page from Treatment Ratings Condition">
 			<url>https://dev.healthoutcome.org/user/writereview?conditionId=34</url>
+		</URL>	
+		
+		<URL name="Write a Review page from Treatment Reviews">
+			<url>https://dev.healthoutcome.org/user/writereview?conditionId=5</url>
 		</URL>		
 		
 	</URLs>

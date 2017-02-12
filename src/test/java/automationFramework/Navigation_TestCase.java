@@ -519,4 +519,26 @@ public class Navigation_TestCase extends TestCase{
 
     }
 
+    //Navigation to Write a Review page from Treatment Reviews page
+    @Test
+    public void goToWriteARevirePageFromTreatmentReviewsPage(){
+
+        //go to Treatment Ratings Condition page
+        HomePageActions.goToFeaturedConditionPage(driver);
+
+        //go to Treatment Reviews page (click on Treatment Reviews tab)
+        TreatmentRatingsConditionPageActions.clickOnTab(driver, "Treatment Reviews");
+
+        //go to Write a Review page (click on "Share your Experience" button)
+        TreatmentReviewsPageActions.clickOnShareYourExperienceButton(driver);
+
+        //check URL
+        assertEquals(ReadXMLFile.takeConstantFromXML("URL", "Write a Review page from Treatment Reviews", "url"), driver.getCurrentUrl());
+
+        //check group title
+        assertEquals("What is your gender?", WriteAReviewPageElements.text_GroupTitle(driver).getText());
+
+    }
+
+
 }

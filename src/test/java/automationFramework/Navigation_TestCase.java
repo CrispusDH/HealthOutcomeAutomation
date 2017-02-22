@@ -1,6 +1,8 @@
 package automationFramework;
 
 
+import PageObject.HomePage;
+import PageObject.SingleReviewPage;
 import junit.framework.TestCase;
 import org.junit.*;
 import org.junit.rules.Timeout;
@@ -11,8 +13,6 @@ import org.openqa.selenium.chrome.ChromeDriverService;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.remote.UnreachableBrowserException;
-import pageObjectsActions.*;
-import pageObjectsElements.*;
 import utility.ReadXMLFile;
 import utility.RetryRule;
 
@@ -26,9 +26,15 @@ import static org.junit.Assert.*;
 @RunWith(JUnit4.class)
 public class Navigation_TestCase extends TestCase{
 
-    //driver initialize
-    private static WebDriver driver = null;
-    private static ChromeDriverService service = null;
+    //<editor-fold desc="Initialisation block">
+
+    private WebDriver driver;
+    private static ChromeDriverService service;
+
+    private HomePage homePage;
+    private SingleReviewPage singleReviewPage;
+
+    //</editor-fold>
 
     @BeforeClass
     public static void createAndStartService() {
@@ -63,6 +69,9 @@ public class Navigation_TestCase extends TestCase{
         }
 
         driver.get(ReadXMLFile.takeConstantFromXML("URL", "Landing Page", "url"));
+
+        homePage = new HomePage(driver);
+        singleReviewPage = new SingleReviewPage(driver);
     }
 
 
@@ -86,12 +95,13 @@ public class Navigation_TestCase extends TestCase{
     public void goToSingleReviewPage(){
 
         //go to Single Review page from Home page
-        HomePageActions.goToSingleReviewPage(driver);
+        homePage.goToSingleReviewPage();
 
         //check that div block with review exists and displayed
-        assertTrue(SingleReviewPageElements.div_ReviewInfo(driver).isDisplayed());
-    }
+        assertTrue(singleReviewPage.isOnPage());
 
+    }
+/*
     //Navigation to About page from Home page
     @Test
     public void checkFooterLinkAbout(){
@@ -563,5 +573,5 @@ public class Navigation_TestCase extends TestCase{
         assertEquals(expectedURL, driver.getCurrentUrl());
 
     }
-
+*/
 }

@@ -12,7 +12,7 @@ import java.util.concurrent.TimeUnit;
 //improve find elements mechanism
 public class FindElementsNewMechanism {
 
-        protected static List<WebElement> findElements(WebDriver webDriver, By by, int timeout) {
+        protected List<WebElement> findElements(WebDriver webDriver, By by, int timeout) {
 
         int iSleepTime = 1000;
 

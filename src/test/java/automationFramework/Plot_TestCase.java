@@ -10,8 +10,6 @@ import org.openqa.selenium.chrome.ChromeDriverService;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.remote.UnreachableBrowserException;
-import pageObjectsActions.*;
-import pageObjectsElements.*;
 import utility.RandomNumber;
 import utility.ReadXMLFile;
 import utility.RetryRule;
@@ -21,7 +19,7 @@ import java.io.IOException;
 
 @RunWith(JUnit4.class)
 public class Plot_TestCase extends TestCase {
-
+/*
     //driver initialize
     private static WebDriver driver = null;
     private static ChromeDriverService service = null;
@@ -130,5 +128,5 @@ public class Plot_TestCase extends TestCase {
         assertTrue(SignUpConfirmationPageElements.button_WriteAReviewOrFindTreatments(driver, ReadXMLFile.takeConstantFromXML("ButtonName", "WriteAReview", "name")).isDisplayed());
     }
 
-
+*/
 }

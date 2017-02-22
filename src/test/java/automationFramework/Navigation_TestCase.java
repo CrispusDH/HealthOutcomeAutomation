@@ -1,8 +1,7 @@
 package automationFramework;
 
 
-import PageObject.HomePage;
-import PageObject.SingleReviewPage;
+import PageObject.*;
 import junit.framework.TestCase;
 import org.junit.*;
 import org.junit.rules.Timeout;
@@ -18,10 +17,6 @@ import utility.RetryRule;
 
 import java.io.File;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.concurrent.TimeUnit;
-
-import static org.junit.Assert.*;
 
 @RunWith(JUnit4.class)
 public class Navigation_TestCase extends TestCase{
@@ -33,6 +28,9 @@ public class Navigation_TestCase extends TestCase{
 
     private HomePage homePage;
     private SingleReviewPage singleReviewPage;
+    private Footer footer;
+    private AboutUsPage aboutUsPage;
+    private FAQPage faqPage;
 
     //</editor-fold>
 
@@ -72,6 +70,9 @@ public class Navigation_TestCase extends TestCase{
 
         homePage = new HomePage(driver);
         singleReviewPage = new SingleReviewPage(driver);
+        footer = new Footer(driver);
+        aboutUsPage = new AboutUsPage(driver);
+        faqPage = new FAQPage(driver);
     }
 
 
@@ -101,22 +102,22 @@ public class Navigation_TestCase extends TestCase{
         assertTrue(singleReviewPage.isOnPage());
 
     }
-/*
+
     //Navigation to About page from Home page
     @Test
     public void checkFooterLinkAbout(){
 
         //go to About page from Footer
-        FooterActions.clickOnFooterLink(driver, ReadXMLFile.takeConstantFromXML("FooterLink", "About", "linkName"));
+        footer.goToAboutUsPage();
 
-        //check that AboutUS body are not empty
-        assertTrue(!(AboutUsPageElements.paragraphs(driver).isEmpty()));
+        //check that About US body are not empty
+        assertTrue(!aboutUsPage.bodyIsEmpty());
 
-        //check the same in another way
-        assertTrue((AboutUsPageElements.paragraphs(driver).size() > 0));
+        //check that About Us page has paragraphs
+        assertTrue(aboutUsPage.amountOfParagraphs());
 
         //check URL
-        assertEquals(ReadXMLFile.takeConstantFromXML("URL", "About Us", "url"), driver.getCurrentUrl());
+        assertTrue(aboutUsPage.checkUrl());
 
     }
 
@@ -125,18 +126,18 @@ public class Navigation_TestCase extends TestCase{
     public void checkFooterLinkFAQ(){
 
         //go to FAQ page
-        FooterActions.clickOnFooterLink(driver, ReadXMLFile.takeConstantFromXML("FooterLink", "FAQ", "linkName"));
+        footer.goToFAQPage();
 
-        //check that cards are on that page
-        assertTrue(!(FAQPageElements.questions(driver).isEmpty()));
+        //check that FAQ body are not empty
+        assertTrue(!faqPage.bodyIsEmpty());
 
-        //check the same in another way (two elements are buttons and other elements should be blogs)
-        assertTrue((FAQPageElements.questions(driver).size() > 0));
+        //check that FAQ page has paragraphs
+        assertTrue(faqPage.amountOfQustions());
 
         //check URL
-        assertEquals(ReadXMLFile.takeConstantFromXML("URL", "FAQ", "url"), driver.getCurrentUrl());
+        assertTrue(faqPage.checkUrl());
     }
-
+/*
     //Navigation to Blog page from Home page
     @Test
     public void checkFooterLinkBlog(){

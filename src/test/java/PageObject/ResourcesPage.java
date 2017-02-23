@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import utility.FindElementsNewMechanism;
+import utility.ReadXMLFile;
 
 import java.util.List;
 
@@ -36,7 +37,26 @@ public class ResourcesPage extends FindElementsNewMechanism{
 
     //<editor-fold desc="Base actions with elements">
 
+    //check that Resources page is not empty
+    public boolean bodyIsEmpty(){
 
+        return resources().isEmpty();
+
+    }
+
+    //check that Resources page has resources
+    public boolean checkAmountOfResources(){
+
+        return resources().size() > 0;
+
+    }
+
+    //check page url
+    public boolean checkUrl(){
+
+        return ReadXMLFile.takeConstantFromXML("URL", "Resources", "url").equals(driver.getCurrentUrl());
+
+    }
 
     //</editor-fold>
 

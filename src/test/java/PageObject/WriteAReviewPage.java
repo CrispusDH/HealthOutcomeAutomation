@@ -5,6 +5,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import utility.FindElementsNewMechanism;
+import utility.ReadXMLFile;
 
 import java.util.List;
 
@@ -37,7 +38,26 @@ public class WriteAReviewPage extends FindElementsNewMechanism{
 
     //<editor-fold desc="Base actions with elements">
 
+    //check page url
+    public boolean checkUrl(){
 
+        return ReadXMLFile.takeConstantFromXML("URL", "Write a Review Page", "fromBlogPage" ).equals(driver.getCurrentUrl());
+
+    }
+
+    //get current url
+    public String getCurrentUrl(){
+
+        return driver.getCurrentUrl();
+
+    }
+
+    //get group title
+    public String getGroupTitle(){
+
+        return text_GroupTitle().getText();
+
+    }
 
     //</editor-fold>
 

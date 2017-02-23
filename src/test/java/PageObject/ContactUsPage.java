@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import utility.FindElementsNewMechanism;
+import utility.ReadXMLFile;
 
 import java.util.List;
 
@@ -43,7 +44,26 @@ public class ContactUsPage extends FindElementsNewMechanism{
 
     //<editor-fold desc="Base actions with elements">
 
+    //check that Contact Form on the page
+    public boolean bodyIsEmpty(){
 
+        return div_ContactForm().isDisplayed();
+
+    }
+
+    ////check that all items are on page
+    public boolean checkAmountOfItems(){
+
+        return contactItems().size() == 3;
+
+    }
+
+    //check page url
+    public boolean checkUrl(){
+
+        return ReadXMLFile.takeConstantFromXML("URL", "Contact Us", "url").equals(driver.getCurrentUrl());
+
+    }
 
     //</editor-fold>
 

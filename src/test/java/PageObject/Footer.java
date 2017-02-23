@@ -182,13 +182,6 @@ public class Footer extends FindElementsNewMechanism {
         //click on Facebook link
         link_Connect("facebook").click();
 
-        //wait 3 seconds
-        try {
-            TimeUnit.SECONDS.sleep(3);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-
         //switch to new window
         ArrayList<String> currentTab = new ArrayList<String>(driver.getWindowHandles());
         driver.switchTo().window(currentTab.get(1));
@@ -215,6 +208,20 @@ public class Footer extends FindElementsNewMechanism {
         driver.switchTo().window(currentTab.get(1));
 
         return new TwitterPage(driver);
+
+    }
+
+    //check Linkedin href
+    public boolean checkLinkedingUrl(){
+
+        return ReadXMLFile.takeConstantFromXML("URL", "Linkedin", "href" ).equals(getLinkValueFromLinkedinLink());
+
+    }
+
+    //check mail href
+    public boolean checkMailUrl(){
+
+        return ReadXMLFile.takeConstantFromXML("URL", "Mail", "href" ).equals(getLinkValueFromMailLink());
 
     }
 

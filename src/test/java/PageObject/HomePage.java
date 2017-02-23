@@ -6,6 +6,7 @@ import org.openqa.selenium.WebElement;
 import utility.FindElementsNewMechanism;
 
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 public class HomePage extends FindElementsNewMechanism{
     private final WebDriver driver;
@@ -15,6 +16,7 @@ public class HomePage extends FindElementsNewMechanism{
     public HomePage(WebDriver driver){
 
         this.driver = driver;
+
 
     }
 
@@ -30,7 +32,7 @@ public class HomePage extends FindElementsNewMechanism{
     private By link_ForgotPasswordLocator = By.linkText("Forgot password?");
     private By button_StartHereLocator = By.cssSelector(".button-cta span");
     private By form_SingleReviewLocator = By.cssSelector(".review-info");
-    private By li_FeaturedConditionsLocator = By.cssSelector(".condition.left > .condition-link");
+    private By li_FeaturedConditionLocator = By.cssSelector(".condition.left > .condition-link");
 
     //email address input field
     public WebElement input_EmailAddress(){
@@ -90,9 +92,9 @@ public class HomePage extends FindElementsNewMechanism{
     }
 
     //left Condition
-    public WebElement li_FeaturedConditions(){
+    public WebElement li_FeaturedCondition(){
 
-        return findElements(driver, li_FeaturedConditionsLocator,5000).get(0);
+        return findElements(driver, li_FeaturedConditionLocator,5000).get(0);
 
     }
 
@@ -157,7 +159,14 @@ public class HomePage extends FindElementsNewMechanism{
     //click on Featured condition
     public TreatmentRatingsConditionPage clickOnFeaturedCondition(){
 
-        li_FeaturedConditions().click();
+        li_FeaturedCondition().click();
+
+        //wait 3 seconds
+        try {
+            TimeUnit.SECONDS.sleep(3);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
 
         return new TreatmentRatingsConditionPage(driver);
 
@@ -169,6 +178,20 @@ public class HomePage extends FindElementsNewMechanism{
         button_GetStarted().click();
 
         return new ConditionSelectionPage(driver);
+
+    }
+
+    //get Featured Condition url
+    public String getFeaturedConditionUrl(){
+
+        return li_FeaturedCondition().getAttribute("href");
+
+    }
+
+    //get Get Started button url
+    public String getGetStartedButtonUrl(){
+
+        return button_GetStarted().getAttribute("href");
 
     }
 

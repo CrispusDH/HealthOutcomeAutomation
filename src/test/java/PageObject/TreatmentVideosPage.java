@@ -26,7 +26,12 @@ public class TreatmentVideosPage extends FindElementsNewMechanism{
 
     //<editor-fold desc="Base actions with elements">
 
+    //get current url
+    public String getCurrentUrl(){
 
+        return driver.getCurrentUrl();
+
+    }
 
     //</editor-fold>
 

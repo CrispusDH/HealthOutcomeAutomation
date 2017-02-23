@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import utility.FindElementsNewMechanism;
+import utility.ReadXMLFile;
 
 import java.util.List;
 
@@ -36,7 +37,19 @@ public class TermsOfServicePage extends FindElementsNewMechanism{
 
     //<editor-fold desc="Base actions with elements">
 
+    //check that page has text
+    public boolean checkAmountOfParagraphs(){
 
+        return paragraphs().size() > 50;
+
+    }
+
+    //check page url
+    public boolean checkUrl(){
+
+        return ReadXMLFile.takeConstantFromXML("URL", "Terms of Service", "url").equals(driver.getCurrentUrl());
+
+    }
 
     //</editor-fold>
 

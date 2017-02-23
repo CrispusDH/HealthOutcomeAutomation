@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import utility.FindElementsNewMechanism;
+import utility.ReadXMLFile;
 
 import java.util.List;
 
@@ -83,6 +84,27 @@ public class BlogPage extends FindElementsNewMechanism{
         blogs().get(blogNumber);
 
         return new DetailedBlogPage(driver);
+
+    }
+
+    //check that Blog page body are not empty
+    public boolean bodyIsEmpty(){
+
+        return blogs().isEmpty();
+
+    }
+
+    //check that About Us page has paragraphs
+    public boolean checkAmountOfBlogs(){
+
+        return blogs().size() > 2;
+
+    }
+
+    //check page url
+    public boolean checkUrl(){
+
+        return ReadXMLFile.takeConstantFromXML("URL", "Blog", "url").equals(driver.getCurrentUrl());
 
     }
 

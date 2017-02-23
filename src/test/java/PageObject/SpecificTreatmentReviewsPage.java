@@ -87,6 +87,13 @@ public class SpecificTreatmentReviewsPage extends FindElementsNewMechanism{
 
     }
 
+    //get current url
+    public String getCurrentUrl(){
+
+        return driver.getCurrentUrl();
+
+    }
+
     //</editor-fold>
 
     //<editor-fold desc="Final methods">

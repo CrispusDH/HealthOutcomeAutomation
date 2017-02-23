@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import utility.FindElementsNewMechanism;
+import utility.ReadXMLFile;
 
 import java.util.List;
 
@@ -36,7 +37,26 @@ public class TestimonialsPage extends FindElementsNewMechanism{
 
     //<editor-fold desc="Base actions with elements">
 
+    //check that cards are on that page
+    public boolean bodyIsEmpty(){
 
+        return cards().isEmpty();
+
+    }
+
+    //check the same in another way
+    public boolean checkAmountOfCards(){
+
+        return cards().size() > 0;
+
+    }
+
+    //check page url
+    public boolean checkUrl(){
+
+        return ReadXMLFile.takeConstantFromXML("URL", "Testimonials", "url").equals(driver.getCurrentUrl());
+
+    }
 
     //</editor-fold>
 

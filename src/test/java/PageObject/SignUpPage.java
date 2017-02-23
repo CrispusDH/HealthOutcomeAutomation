@@ -89,6 +89,27 @@ public class SignUpPage extends FindElementsNewMechanism{
 
     }
 
+    //check page url
+    public boolean checkUrl(){
+
+        return ReadXMLFile.takeConstantFromXML("URL", "SignUp Page from Videos&Guides Page", "url").equals(driver.getCurrentUrl());
+
+    }
+
+    //check that Join Now button exists
+    public boolean checkJoinNowButtonExists(){
+
+        return button_JoinNow().isDisplayed();
+
+    }
+
+    //check that Sign up with Facebook button exists
+    public boolean checkSignUpWithFacebookButtonExists(){
+
+        return button_SignUpWithFacebook().isDisplayed();
+
+    }
+
     //</editor-fold>
 
     //<editor-fold desc="Final methods">

@@ -11,12 +11,14 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriverService;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
-import org.openqa.selenium.remote.UnreachableBrowserException;
 import utility.ReadXMLFile;
 import utility.RetryRule;
 
 import java.io.File;
 import java.io.IOException;
+
+import static org.junit.Assert.assertNotEquals;
+import static org.junit.Assert.assertTrue;
 
 @RunWith(JUnit4.class)
 public class Navigation_TestCase extends TestCase{
@@ -31,6 +33,24 @@ public class Navigation_TestCase extends TestCase{
     private Footer footer;
     private AboutUsPage aboutUsPage;
     private FAQPage faqPage;
+    private BlogPage blogPage;
+    private ResourcesPage resourcesPage;
+    private TestimonialsPage testimonialsPage;
+    private ContactUsPage contactUsPage;
+    private PrivacyPolicyPage privacyPolicyPage;
+    private TermsOfServicePage termsOfServicePage;
+    private TreatmentRatingsConditionPage treatmentRatingsConditionPage;
+    private ConditionSelectionPage conditionSelectionPage;
+    private FacebookPage facebookPage;
+    private TwitterPage twitterPage;
+    private WriteAReviewPage writeAReviewPage;
+    private FirstStepOfCoachingProgramPage firstStepOfCoachingProgramPage;
+    private TreatmentVideosPage treatmentVideosPage;
+    private Header header;
+    private SignUpPage signUpPage;
+    private TreatmentReviewsPage treatmentReviewsPage;
+    private SpecificTreatmentReviewsPage specificTreatmentReviewsPage;
+    private SpecificTreatmentVideosPage specificTreatmentVideosPage;
 
     //</editor-fold>
 
@@ -56,15 +76,9 @@ public class Navigation_TestCase extends TestCase{
 
     @Before
     public void createNewDriver() {
-        try {
-            driver = new RemoteWebDriver(service.getUrl(),
-                    DesiredCapabilities.chrome());
-        } catch (UnreachableBrowserException e) {
 
-            driver = new RemoteWebDriver(service.getUrl(),
-                    DesiredCapabilities.chrome());
-
-        }
+        driver = new RemoteWebDriver(service.getUrl(),
+                        DesiredCapabilities.chrome());
 
         driver.get(ReadXMLFile.takeConstantFromXML("URL", "Landing Page", "url"));
 
@@ -73,6 +87,24 @@ public class Navigation_TestCase extends TestCase{
         footer = new Footer(driver);
         aboutUsPage = new AboutUsPage(driver);
         faqPage = new FAQPage(driver);
+        blogPage = new BlogPage(driver);
+        resourcesPage = new ResourcesPage(driver);
+        testimonialsPage = new TestimonialsPage(driver);
+        contactUsPage = new ContactUsPage(driver);
+        privacyPolicyPage = new PrivacyPolicyPage(driver);
+        termsOfServicePage = new TermsOfServicePage(driver);
+        treatmentRatingsConditionPage = new TreatmentRatingsConditionPage(driver);
+        conditionSelectionPage = new ConditionSelectionPage(driver);
+        facebookPage = new FacebookPage(driver);
+        twitterPage = new TwitterPage(driver);
+        writeAReviewPage = new WriteAReviewPage(driver);
+        firstStepOfCoachingProgramPage = new FirstStepOfCoachingProgramPage(driver);
+        treatmentVideosPage = new TreatmentVideosPage(driver);
+        header = new Header(driver);
+        signUpPage = new SignUpPage(driver);
+        treatmentReviewsPage = new TreatmentReviewsPage(driver);
+        specificTreatmentReviewsPage = new SpecificTreatmentReviewsPage(driver);
+        specificTreatmentVideosPage = new SpecificTreatmentVideosPage(driver);
     }
 
 
@@ -137,22 +169,22 @@ public class Navigation_TestCase extends TestCase{
         //check URL
         assertTrue(faqPage.checkUrl());
     }
-/*
+
     //Navigation to Blog page from Home page
     @Test
     public void checkFooterLinkBlog(){
 
         //go to Blog page
-        FooterActions.clickOnFooterLink(driver, ReadXMLFile.takeConstantFromXML("FooterLink", "Blog", "linkName"));
+        footer.goToBlogPage();
 
-        //check that cards are on that page
-        assertTrue(!(BlogPageElements.blogs(driver).isEmpty()));
+        //check that blogs are on that page
+        assertTrue(!blogPage.bodyIsEmpty());
 
-        //check the same in another way (two elements are buttons and other elements should be blogs)
-        assertTrue((BlogPageElements.blogs(driver).size() > 2));
+        //check that blogs are more than 0
+        assertTrue(blogPage.checkAmountOfBlogs());
 
         //check URL
-        assertEquals(ReadXMLFile.takeConstantFromXML("URL", "Blog", "url"), driver.getCurrentUrl());
+        assertTrue(blogPage.checkUrl());
     }
 
     //Navigation to Resources page from Home page
@@ -160,16 +192,16 @@ public class Navigation_TestCase extends TestCase{
     public void checkFooterLinkResources(){
 
         //go to Resources page
-        FooterActions.clickOnFooterLink(driver, ReadXMLFile.takeConstantFromXML("FooterLink", "Resources", "linkName"));
+        footer.goToResourcesPage();
 
-        //check that cards are on that page
-        assertTrue(!(ResourcesPageElemetns.resources(driver).isEmpty()));
+        //check that resources are on that page
+        assertTrue(!resourcesPage.bodyIsEmpty());
 
-        //check the same in another way
-        assertTrue((ResourcesPageElemetns.resources(driver).size() > 0));
+        //check that resources more than 0
+        assertTrue(resourcesPage.checkAmountOfResources());
 
         //check URL
-        assertEquals(ReadXMLFile.takeConstantFromXML("URL", "Resources", "url"), driver.getCurrentUrl());
+        assertTrue(resourcesPage.checkUrl());
     }
 
     //Navigation to Testimonials page from Home page
@@ -177,16 +209,16 @@ public class Navigation_TestCase extends TestCase{
     public void checkFooterLinkTestimonials(){
 
         //go to Testimonials page
-        FooterActions.clickOnFooterLink(driver, ReadXMLFile.takeConstantFromXML("FooterLink", "Testimonials", "linkName"));
+        footer.goToTestimonialsPage();
 
         //check that cards are on that page
-        assertTrue(!(TestimonialsPageElements.cards(driver).isEmpty()));
+        assertTrue(!testimonialsPage.bodyIsEmpty());
 
         //check the same in another way
-        assertTrue(TestimonialsPageElements.cards(driver).size() > 0);
+        assertTrue(testimonialsPage.checkAmountOfCards());
 
         //check URL
-        assertEquals(ReadXMLFile.takeConstantFromXML("URL", "Testimonials", "url"), driver.getCurrentUrl());
+        assertTrue(testimonialsPage.checkUrl());
     }
 
     //Navigation to Contact Us page from Home page
@@ -194,16 +226,16 @@ public class Navigation_TestCase extends TestCase{
     public void checkFooterLinkContactUs(){
 
         //go to Contact Us
-        FooterActions.clickOnFooterLink(driver, ReadXMLFile.takeConstantFromXML("FooterLink", "Contact Us", "linkName"));
+        footer.goToContactUsPage();
 
         //check that Contact Form on the page
-        assertTrue((ContactUsPageElements.div_ContactForm(driver).isDisplayed()));
+        assertTrue(contactUsPage.bodyIsEmpty());
 
         //check that all items are on page
-        assertTrue((ContactUsPageElements.contactItems(driver).size() == 3));
+        assertTrue(contactUsPage.checkAmountOfItems());
 
         //check URL
-        assertEquals(ReadXMLFile.takeConstantFromXML("URL", "Contact Us", "url"), driver.getCurrentUrl());
+        assertTrue(contactUsPage.checkUrl());
 
     }
 
@@ -212,13 +244,13 @@ public class Navigation_TestCase extends TestCase{
     public void checkFooterCopyrightPrivacyPolicy(){
 
         //go to Privacy Policy page
-        FooterActions.clickOnFooterCopyright(driver, ReadXMLFile.takeConstantFromXML("FooterCopyright", "Privacy Policy", "copyrightName"));
+        footer.goToPrivacyPolicyPage();
 
         //check that page has text
-        assertTrue((PrivacyPolicyPageElements.paragraphs(driver).size() >  10));
+        assertTrue(privacyPolicyPage.checkAmountOfParagraphs());
 
         //check URL
-        assertEquals(ReadXMLFile.takeConstantFromXML("URL", "Privacy Policy", "url"), driver.getCurrentUrl());
+        assertTrue(privacyPolicyPage.checkUrl());
 
     }
 
@@ -227,29 +259,28 @@ public class Navigation_TestCase extends TestCase{
     public void checkFooterCopyrightTermsOfService(){
 
         //go to Terms of Service page
-        FooterActions.clickOnFooterCopyright(driver, ReadXMLFile.takeConstantFromXML("FooterCopyright", "Terms of Service", "copyrightName"));
+        footer.goToTermsOfServicePage();
 
         //check that page has text
-        assertTrue((TermsOfServicePageElements.paragraphs(driver).size() >  50));
+        assertTrue(termsOfServicePage.checkAmountOfParagraphs());
 
         //check URL
-        assertEquals(ReadXMLFile.takeConstantFromXML("URL", "Terms of Service", "url"), driver.getCurrentUrl());
+        assertTrue(termsOfServicePage.checkUrl());
 
     }
-
 
     //Navigation to Treatment Ratings Condition page from Home page
     @Test
     public void goToTreatmentRatingsConditionPage(){
 
-        //find and save expected url
-        String expectedURL = HomePageElements.li_FeaturedConditions(driver).getAttribute("href");
+        //get Featured Condition url and set it as expected url
+        String expectedUrl = homePage.getFeaturedConditionUrl();
 
         //go to Treatment Ratings Condition page
-        HomePageActions.goToTreatmentRatingsConditionPage(driver);
+        homePage.goToTreatmentRatingsConditionPage();
 
         //check URL
-        assertEquals(expectedURL, driver.getCurrentUrl());
+        assertEquals(expectedUrl, treatmentRatingsConditionPage.getCurrentUrl());
     }
 
     //Navigation to Condition Selection page from Home page
@@ -257,13 +288,13 @@ public class Navigation_TestCase extends TestCase{
     public void goToConditionSelectionPage() {
 
         //find and save expected URL
-        String expectedURL  = HomePageElements.button_GetStarted(driver).getAttribute("href");
+        String expectedURL  = homePage.getGetStartedButtonUrl();
 
-        //click on Get Started button
-        HomePageActions.clickGetStartedButton(driver);
+        //go to Condition Selection page
+        homePage.goToConditionSelectionPage();
 
         //check URL
-        assertEquals(expectedURL, driver.getCurrentUrl());
+        assertEquals(expectedURL, conditionSelectionPage.getCurrentUrl());
 
     }
 
@@ -271,28 +302,21 @@ public class Navigation_TestCase extends TestCase{
     @Test
     public void goToTreatmentRatingsConditionPageFromConditionSelectionPage() {
 
-        //create variables
+        //create local variables
         String previousURL;
         String currentURL;
 
-        //click Get Started button
-        HomePageActions.clickGetStartedButton(driver);
+        //go to Condition Selection page
+        homePage.goToConditionSelectionPage();
 
         //save current URL
-        previousURL = driver.getCurrentUrl();
+        previousURL = conditionSelectionPage.getCurrentUrl();
 
         //go to Treatment Ratings Condition page
-        ConditionSelectionPageActions.goToTreatmentRatingsConditionPage(driver, ReadXMLFile.takeConstantFromXML("BodyArea", "Neck", "name"), ReadXMLFile.takeConstantFromXML("Condition", "Neck pain with radiculopathy", "name"));
-
-        //wait 3 seconds
-        try {
-            TimeUnit.SECONDS.sleep(3);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+        conditionSelectionPage.goToTreatmentRatingsConditionPage(ReadXMLFile.takeConstantFromXML("BodyArea", "Neck", "name"), ReadXMLFile.takeConstantFromXML("Condition", "Neck pain with radiculopathy", "name"));
 
         //save current URL
-        currentURL = driver.getCurrentUrl();
+        currentURL = treatmentRatingsConditionPage.getCurrentUrl();
 
         //check that previous and current URLs are not equals
         assertNotEquals(previousURL, currentURL);
@@ -303,21 +327,21 @@ public class Navigation_TestCase extends TestCase{
     @Test
     public void goToConditionSelectionPageFromTreatmentRatingsConditionPage() {
 
-        //create variables
+        //create local variables
         String previousURL;
         String currentURL;
 
         //go to Treatment Ratings Condition page
-        HomePageActions.goToTreatmentRatingsConditionPage(driver);
+        homePage.goToTreatmentRatingsConditionPage();
 
         //save current URL
-        previousURL = driver.getCurrentUrl();
+        previousURL = treatmentRatingsConditionPage.getCurrentUrl();
 
         //go to Condition Selection page
-        TreatmentRatingsConditionPageActions.goToConditionSelectionPage(driver);
+        treatmentRatingsConditionPage.goToConditionSelectionPage();
 
         //save current URL
-        currentURL = driver.getCurrentUrl();
+        currentURL = conditionSelectionPage.getCurrentUrl();
 
         //check that previous and current URLs are not equals
         assertNotEquals(previousURL, currentURL);
@@ -327,15 +351,11 @@ public class Navigation_TestCase extends TestCase{
     @Test
     public void goToFacebookPageFromFooter(){
 
-        //click on Facebook link
-        FooterActions.clickOnFootterConnect(driver, "facebook");
-
-        //switch to new window
-        ArrayList<String> currentTab = new ArrayList<String>(driver.getWindowHandles());
-        driver.switchTo().window(currentTab.get(1));
+        //go to Facebook
+        footer.goToFacebookPage();
 
         //check URL
-        assertEquals(ReadXMLFile.takeConstantFromXML("URL", "Facebook", "url" ), driver.getCurrentUrl());
+        assertTrue(facebookPage.checkUrl());
 
     }
 
@@ -343,29 +363,19 @@ public class Navigation_TestCase extends TestCase{
     @Test
     public void goToTwitterPageFromFooter(){
 
-        //create variable
-        String currentURL;
-
-        //click on Twitter link
-        FooterActions.clickOnFootterConnect(driver, "twitter");
-
-        //switch to new window
-        ArrayList<String> currentTab = new ArrayList<String>(driver.getWindowHandles());
-        driver.switchTo().window(currentTab.get(1));
-
-        //save current URL
-        currentURL = driver.getCurrentUrl();
+        //go to Twitter
+        footer.goToTwitterPage();
 
         //check URL
-        assertEquals(ReadXMLFile.takeConstantFromXML("URL", "Twitter", "url" ), currentURL);
+        assertTrue(twitterPage.checkUrl());
 
     }
 
-    //Check Linkedin page from Footer
+    //Check Linkedin href from Footer
     @Test
-    public void goToLinkedinPageFromFooter(){
+    public void checkLinkedinUrl(){
 
-        assertEquals(ReadXMLFile.takeConstantFromXML("URL", "Linkedin", "href" ), FooterElements.link_Connect(driver, "linkedin").getAttribute("href"));
+        assertTrue(footer.checkLinkedingUrl());
 
     }
 
@@ -373,7 +383,7 @@ public class Navigation_TestCase extends TestCase{
     @Test
     public void goToMailServiceFromFooter(){
 
-        assertEquals(ReadXMLFile.takeConstantFromXML("URL", "Mail", "href" ), FooterElements.link_Connect(driver, "mail").getAttribute("href"));
+        assertTrue(footer.checkMailUrl());
 
     }
 
@@ -381,14 +391,12 @@ public class Navigation_TestCase extends TestCase{
     @Test
     public void goToWriteAReviewPageFromBlogPage(){
 
-        //go to Blog page
-        FooterActions.clickOnFooterLink(driver, ReadXMLFile.takeConstantFromXML("FooterLink", "Blog", "linkName"));
 
-        //go to Write a Review page
-        BlogPageActions.clickOnStartHereButton(driver);
+        footer.goToBlogPage()            //go to Blog page
+                .goToWriteAReviewPage(); //go to Write a Review page
 
         //verify that we are at the right page
-        assertEquals(ReadXMLFile.takeConstantFromXML("URL", "Write a Review Page", "fromBlogPage" ), driver.getCurrentUrl());
+        assertTrue(writeAReviewPage.checkUrl());
 
     }
 
@@ -396,24 +404,13 @@ public class Navigation_TestCase extends TestCase{
     @Test
     public void goToWriteAReviewPageFromDetailedBlogPage(){
 
-        //go to Blog page
-        FooterActions.clickOnFooterLink(driver, ReadXMLFile.takeConstantFromXML("FooterLink", "Blog", "linkName"));
 
-        //go to Detailed Blog page
-        BlogPageActions.clickOnSpecificBlog(driver);
-
-        //wait until page is loaded
-        try {
-            TimeUnit.SECONDS.sleep(3);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-
-        //go to Write a Review page
-        DetailedBlogPageActions.clickOnStartHereButton(driver);
+        footer.goToBlogPage()                           //go to Blog page
+                .goToDetailedBlogPage(1)    //go to Detailed Blog page
+                .goToWriteAReviewPage();                //go to Write a Review page
 
         //verify that we are at the right page
-        assertEquals(ReadXMLFile.takeConstantFromXML("URL", "Write a Review Page", "fromDetailedBlogPage" ), driver.getCurrentUrl());
+        assertTrue(writeAReviewPage.checkUrl());
 
     }
 
@@ -421,21 +418,11 @@ public class Navigation_TestCase extends TestCase{
     @Test
     public void goToFirstStepOfCoachingProgramFromTreatmentRatingsConditionPage(){
 
-        //go to Treatment Ratings Condition page
-        HomePageActions.goToTreatmentRatingsConditionPage(driver);
-
-        //wait until page is loaded
-        try {
-            TimeUnit.SECONDS.sleep(3);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-
-        //go to 1st step of Coaching Program Write Coaching Request page
-        TreatmentRatingsConditionPageActions.goToFirstStepOfCoachingProgram(driver);
+        homePage.goToTreatmentRatingsConditionPage()    //go to Treatment Ratings Condition page
+                .goToFirstStepOfCoachingProgramPage();  //go to 1st step of Coaching Program Write Coaching Request page
 
         //check URL
-        assertEquals(ReadXMLFile.takeConstantFromXML("URL", "First Step Of Coaching Program", "url" ), driver.getCurrentUrl());
+        assertTrue(firstStepOfCoachingProgramPage.checkUrl());
 
     }
 
@@ -443,20 +430,20 @@ public class Navigation_TestCase extends TestCase{
     @Test
     public void goToVideosAndGuidesConditionPageFromTreatmentRatingsConditionPage(){
 
-        //create variable
+        //create local variable
         String expectedURL;
 
         //go to Treatment Ratings Condition page
-        HomePageActions.goToTreatmentRatingsConditionPage(driver);
+        homePage.goToTreatmentRatingsConditionPage();
 
         //save expected url
-        expectedURL =  driver.getCurrentUrl() + "-videos";
+        expectedURL =  treatmentRatingsConditionPage.getCurrentUrl() + "-videos";
 
         //go to Videos&Guides Condition page
-        TreatmentRatingsConditionPageActions.clickOnTab(driver, "Videos & Guides");
+        treatmentRatingsConditionPage.goToTreatmentVideosPage();
 
         //check URL
-        assertEquals(expectedURL, driver.getCurrentUrl());
+        assertEquals(expectedURL, treatmentVideosPage.getCurrentUrl());
 
     }
 
@@ -464,23 +451,20 @@ public class Navigation_TestCase extends TestCase{
     @Test
     public void goToSignUpPageFromVideosAndGuidesConditionPage(){
 
-        //go to Treatment Ratings Condition page
-        HomePageActions.goToTreatmentRatingsConditionPage(driver);
-
-        //go to Videos&Guides Condition page
-        TreatmentRatingsConditionPageActions.clickOnTab(driver, "Videos & Guides");
+        homePage.goToTreatmentRatingsConditionPage()    //go to Treatment Ratings Condition page
+                .goToTreatmentVideosPage();             //go to Treatment Videos&Guides page
 
         //go to Sign Up page
-        HeaderActions.clickOnSignUp(driver);
+        header.goToSignUpPage();
 
         //check URL
-        assertEquals(ReadXMLFile.takeConstantFromXML("URL", "SignUp Page from Videos&Guides Page", "url"), driver.getCurrentUrl());
+        assertTrue(signUpPage.checkUrl());
 
         //check that Join Now button exists
-        assertTrue(SignUpPageElements.button_JoinNow(driver).isDisplayed());
+        assertTrue(signUpPage.checkJoinNowButtonExists());
 
-        //check that Sign up with Facebbok button exists
-        assertTrue(SignUpPageElements.button_SignUpWithFacebook(driver).isDisplayed());
+        //check that Sign up with Facebook button exists
+        assertTrue(signUpPage.checkSignUpWithFacebookButtonExists());
 
     }
 
@@ -488,24 +472,12 @@ public class Navigation_TestCase extends TestCase{
     @Test
     public void goToWriteAReviewPageFromTreatmentRatingsConditionPage(){
 
-        //click Get Started button
-        HomePageActions.clickGetStartedButton(driver);
-
-        //go to Treatment Ratings Condition page
-        ConditionSelectionPageActions.goToTreatmentRatingsConditionPage(driver, ReadXMLFile.takeConstantFromXML("BodyArea", "Neck", "name"), ReadXMLFile.takeConstantFromXML("Condition", "Neck pain with radiculopathy", "name"));
-
-        //wait 3 seconds
-        try {
-            TimeUnit.SECONDS.sleep(3);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-
-        //go to Write a Review page
-        TreatmentRatingsConditionPageActions.clickOnShareYourExperienceButton(driver);
+        homePage.goToConditionSelectionPage()   //go to Condition Selection page
+                .goToTreatmentRatingsConditionPage( ReadXMLFile.takeConstantFromXML("BodyArea", "Neck", "name"), ReadXMLFile.takeConstantFromXML("Condition", "Neck pain with radiculopathy", "name")) //go to Treatment Ratings Condition page
+                .goToWriteAReviewPage();        //go to Write a Review page
 
         //check URL
-        assertEquals(ReadXMLFile.takeConstantFromXML("URL", "Write a Review page from Treatment Ratings Condition", "url"), driver.getCurrentUrl());
+        assertEquals(ReadXMLFile.takeConstantFromXML("URL", "Write a Review page from Treatment Ratings Condition", "url"), writeAReviewPage.getCurrentUrl());
 
     }
 
@@ -513,20 +485,20 @@ public class Navigation_TestCase extends TestCase{
     @Test
     public void goToTreatmentReviewsPageFromTreatmentRatingsConditionPage(){
 
-        //create variable
+        //create local variable
         String expectedURL;
 
         //go to Treatment Ratings Condition page
-        HomePageActions.goToTreatmentRatingsConditionPage(driver);
+        homePage.goToTreatmentRatingsConditionPage();
 
         //save expected url
-        expectedURL =  driver.getCurrentUrl() + "-reviews";
+        expectedURL =  treatmentRatingsConditionPage.getCurrentUrl() + "-reviews";
 
         //go to Treatment Reviews page (click on Treatment Reviews tab)
-        TreatmentRatingsConditionPageActions.clickOnTab(driver, "Treatment Reviews");
+        treatmentRatingsConditionPage.goToTreatmentReviewsPage();
 
         //check URL
-        assertEquals(expectedURL, driver.getCurrentUrl());
+        assertEquals(expectedURL, treatmentReviewsPage.getCurrentUrl());
 
     }
 
@@ -534,20 +506,15 @@ public class Navigation_TestCase extends TestCase{
     @Test
     public void goToWriteAReviewPageFromTreatmentReviewsPage(){
 
-        //go to Treatment Ratings Condition page
-        HomePageActions.goToTreatmentRatingsConditionPage(driver);
-
-        //go to Treatment Reviews page (click on Treatment Reviews tab)
-        TreatmentRatingsConditionPageActions.clickOnTab(driver, "Treatment Reviews");
-
-        //go to Write a Review page (click on "Share your Experience" button)
-        TreatmentReviewsPageActions.clickOnShareYourExperienceButton(driver);
+        homePage.goToTreatmentRatingsConditionPage()    //go to Treatment Ratings Condition page
+                .goToTreatmentReviewsPage()             //go to Treatment Reviews page (click on Treatment Reviews tab)
+                .goToWriteAReviewPage();                //go to Write a Review page (click on "Share your Experience" button)
 
         //check URL
-        assertEquals(ReadXMLFile.takeConstantFromXML("URL", "Write a Review page from Treatment Reviews", "url"), driver.getCurrentUrl());
+        assertEquals(ReadXMLFile.takeConstantFromXML("URL", "Write a Review page from Treatment Reviews", "url"), writeAReviewPage.getCurrentUrl());
 
         //check group title
-        assertEquals("What is your gender?", WriteAReviewPageElements.text_GroupTitle(driver).getText());
+        assertEquals("What is your gender?", writeAReviewPage.getGroupTitle());
 
     }
 
@@ -555,24 +522,21 @@ public class Navigation_TestCase extends TestCase{
     @Test
     public void goToSpecificVideosAndGuidesPageFromSpecificTreatmentReviewPage(){
 
-        //create variable
+        //create local variable
         String expectedURL;
 
-        //go to Treatment Ratings Condition page
-        HomePageActions.goToTreatmentRatingsConditionPage(driver);
-
-        //go to Specific Treatment Review page
-        TreatmentRatingsConditionPageActions.goInToSpecificTreatment(driver, "Massage");
+        homePage.goToTreatmentRatingsConditionPage()               //go to Treatment Ratings Condition page
+                .goToSpecificTreatment("Massage");  //go to Specific Treatment Review page
 
         //save expected url
-        expectedURL =  driver.getCurrentUrl() + "-recommendations";
+        expectedURL = specificTreatmentReviewsPage.getCurrentUrl() + "-recommendations";
 
         //go to Specific Videos&Guides Treatment page
-        SpecificTreatmentReviewsPageActions.clickOnTab(driver, "Videos & Guides");
+        specificTreatmentReviewsPage.goToSpecificTreatmentVideosPage();
 
         //check URL
-        assertEquals(expectedURL, driver.getCurrentUrl());
+        assertEquals(expectedURL, specificTreatmentVideosPage.getCurrentUrl());
 
     }
-*/
+
 }

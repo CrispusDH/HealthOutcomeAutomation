@@ -67,7 +67,7 @@ public class ForgotPasswordPage extends FindElementsNewMechanism{
     //<editor-fold desc="Final methods">
 
     //Forgot password page offers the user the service of being able to reset password
-    public ForgotPasswordConfirmationPage resetPassword(String sEmailAddress){
+    public ForgotPasswordConfirmationPage goToForgotPasswordConfirmationPage(String sEmailAddress){
 
         //type email address
         typeEmailAddress(sEmailAddress);

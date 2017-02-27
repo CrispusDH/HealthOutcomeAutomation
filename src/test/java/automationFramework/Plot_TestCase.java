@@ -1,5 +1,9 @@
 package automationFramework;
 
+import PageObject.ForgotPasswordConfirmationPage;
+import PageObject.Header;
+import PageObject.HomePage;
+import PageObject.SignUpConfirmationPage;
 import junit.framework.TestCase;
 import org.junit.*;
 import org.junit.rules.Timeout;
@@ -10,7 +14,6 @@ import org.openqa.selenium.chrome.ChromeDriverService;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.remote.UnreachableBrowserException;
-import utility.RandomNumber;
 import utility.ReadXMLFile;
 import utility.RetryRule;
 
@@ -19,10 +22,19 @@ import java.io.IOException;
 
 @RunWith(JUnit4.class)
 public class Plot_TestCase extends TestCase {
-/*
-    //driver initialize
-    private static WebDriver driver = null;
-    private static ChromeDriverService service = null;
+
+    //<editor-fold desc="Initialisation block">
+
+    private WebDriver driver;
+    private static ChromeDriverService service;
+
+    private Header header;
+    private ForgotPasswordConfirmationPage forgotPasswordConfirmationPage;
+    private SignUpConfirmationPage signUpConfirmationPage;
+
+    //</editor-fold>
+
+    //<editor-fold desc="BeforeClass, AfterClass, Before, After annotations">
 
     @BeforeClass
     public static void createAndStartService() {
@@ -57,6 +69,10 @@ public class Plot_TestCase extends TestCase {
         }
 
         driver.get(ReadXMLFile.takeConstantFromXML("URL", "Landing Page", "url"));
+
+        header = new Header(driver);
+        forgotPasswordConfirmationPage = new ForgotPasswordConfirmationPage(driver);
+        signUpConfirmationPage = new SignUpConfirmationPage(driver);
     }
 
     //execute after each TC
@@ -64,6 +80,10 @@ public class Plot_TestCase extends TestCase {
     public void quitDriver() {
         driver.quit();
     }
+
+    //</editor-fold>
+
+    //<editor-fold desc="Rules declaration">
 
     //Timeout Rule that applies to all test cases in the test class
     @Rule
@@ -74,59 +94,52 @@ public class Plot_TestCase extends TestCase {
     @Rule
     public RetryRule retryRule = new RetryRule(3);
 
+    //</editor-fold>
+
     //log in
     @Test
     public void logIn(){
 
-        //click on Log in link
-        HeaderActions.clickOnLogIn(driver);
-
-        //fill all fields and click login button
-        HomePageActions.logIn_Execute(driver, ReadXMLFile.takeConstantFromXML("Account", "Main", "emailAddress"), ReadXMLFile.takeConstantFromXML("Account", "Main", "password"));
+        //log in using "qacrispus@gmail.com" account
+        header.openLogInForm()
+                .loginAs(ReadXMLFile.takeConstantFromXML("Account", "Main", "emailAddress"), ReadXMLFile.takeConstantFromXML("Account", "Main", "password"));
 
         //check username
-        assertEquals(ReadXMLFile.takeConstantFromXML("Account", "Main", "userName"), HeaderElements.lnk_Profile(driver).getText());
+        Assert.assertEquals(ReadXMLFile.takeConstantFromXML("Account", "Main", "userName"), header.getUserName());
+
     }
 
     //check forgot password flow
     @Test
-    public void forgotPassword(){
+    public void forgotPasswordFlow(){
 
-        //click on Log in link
-        HeaderActions.clickOnLogIn(driver);
-
-        //go to Forgot password page
-        HomePageActions.goToForgotPasswordPage(driver);
-
-        //type email and click on Forgot password button
-        ForgotPasswordPageActions.forgotPassword_Execute(driver, ReadXMLFile.takeConstantFromXML("Account", "Main", "emailAddress"));
+        header.openLogInForm()              //click on Log in link
+                .goToForgotPasswordPage()   //go to Forgot password page
+                .goToForgotPasswordConfirmationPage(ReadXMLFile.takeConstantFromXML("Account", "Main", "emailAddress")); //type email and click on Forgot password button
 
         //check URL
-        assertEquals(ReadXMLFile.takeConstantFromXML("URL", "Forgot Password Confirm", "url"), driver.getCurrentUrl());
+        Assert.assertTrue(forgotPasswordConfirmationPage.checkUrl());
     }
 
     //sign up without review flow
     @Test
     public void signUpWithoutReview(){
 
-        //click on Sign Up button in the Header
-        HeaderActions.clickOnSignUp(driver);
-
-        //Sign Up as aignatiuk@archer-soft.com with 'lytghjgtnhjdcr' password
-        SignUpPageActions.SignUp_Execute(driver, ReadXMLFile.takeConstantFromXML("Account", "Main", "password"));
+        header.goToSignUpPage()      //go to Sign Up page
+                .signUpRandom();     //sign Up via random email
 
         //verify that current URL is correct
-        assertEquals(ReadXMLFile.takeConstantFromXML("URL", "SignUp Confirmation Page", "url"), driver.getCurrentUrl());
+        Assert.assertTrue(signUpConfirmationPage.checkUrl());
 
         //verify that current logged user has correct profile user name
-        assertEquals(HeaderElements.lnk_Profile(driver).getText(), String.valueOf(RandomNumber.currentRandomNumber()));
+        Assert.assertTrue(header.checkUserNameForRandomCreatedUser());
 
         //Find Treatments button exists
-        assertTrue(SignUpConfirmationPageElements.button_WriteAReviewOrFindTreatments(driver, ReadXMLFile.takeConstantFromXML("ButtonName", "FindTreatments", "name")).isDisplayed());
+        Assert.assertTrue(signUpConfirmationPage.checkTreatmentsButtonIsDisplayed());
 
         // Write a Review button exists
-        assertTrue(SignUpConfirmationPageElements.button_WriteAReviewOrFindTreatments(driver, ReadXMLFile.takeConstantFromXML("ButtonName", "WriteAReview", "name")).isDisplayed());
+        Assert.assertTrue(signUpConfirmationPage.checkWriteAReviewButtonIsDisplayed());
     }
 
-*/
+
 }

@@ -72,9 +72,9 @@ public class SignUpPage extends FindElementsNewMechanism{
     }
 
     //type password
-    public SignUpPage typePassword(String sPassword){
+    public SignUpPage typePassword(){
 
-        input_Password().sendKeys(sPassword);
+        input_Password().sendKeys(ReadXMLFile.takeConstantFromXML("Account", "Main", "password"));
 
         return this;
 
@@ -115,13 +115,13 @@ public class SignUpPage extends FindElementsNewMechanism{
     //<editor-fold desc="Final methods">
 
     //Sign Up page offers the user the service of being able to Sign Up via email
-    public SignUpConfirmationPage signUpRandom(String sPassword){
+    public SignUpConfirmationPage signUpRandom(){
 
         //type email address
         typeRandomEmailAddress();
 
         //type password
-        typePassword(sPassword);
+        typePassword();
 
         //click on Join Now button
         return clickOnJoinNowButton();

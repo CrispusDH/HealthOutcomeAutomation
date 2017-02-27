@@ -4,7 +4,7 @@ package utility;
 //create random number
 public class RandomNumber {
 
-        private static int randomNumber = 0;
+    private static int randomNumber = 0;
 
     public static int createRandomNumber(int Min, int Max){
 

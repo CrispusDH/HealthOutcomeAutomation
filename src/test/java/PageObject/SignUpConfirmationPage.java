@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import utility.FindElementsNewMechanism;
+import utility.ReadXMLFile;
 
 import java.util.List;
 
@@ -44,7 +45,26 @@ public class SignUpConfirmationPage extends FindElementsNewMechanism{
 
     //<editor-fold desc="Base actions with elements">
 
+    //check page url
+    public boolean checkUrl(){
 
+        return ReadXMLFile.takeConstantFromXML("URL", "SignUp Confirmation Page", "url").equals(driver.getCurrentUrl());
+
+    }
+
+    //check that Treatments button is displayed on page
+    public boolean checkTreatmentsButtonIsDisplayed(){
+
+        return button_WriteAReviewOrFindTreatments(ReadXMLFile.takeConstantFromXML("ButtonName", "FindTreatments", "name")).isDisplayed();
+
+    }
+
+    //check that Write a Review button is displayed on page
+    public boolean checkWriteAReviewButtonIsDisplayed(){
+
+        return button_WriteAReviewOrFindTreatments(ReadXMLFile.takeConstantFromXML("ButtonName", "WriteAReview", "name")).isDisplayed();
+
+    }
 
     //</editor-fold>
 

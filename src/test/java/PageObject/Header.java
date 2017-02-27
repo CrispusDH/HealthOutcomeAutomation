@@ -1,9 +1,11 @@
 package PageObject;
 
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import utility.FindElementsNewMechanism;
+import utility.RandomNumber;
 
 import java.util.List;
 
@@ -51,7 +53,7 @@ public class Header extends FindElementsNewMechanism{
     }
 
     //find Profile link
-    public WebElement lnk_Profile(){
+    public WebElement link_Profile(){
 
         return findElements(driver, lnk_ProfileLocator,5000).get(0);
 
@@ -91,6 +93,20 @@ public class Header extends FindElementsNewMechanism{
         link_SignUp().click();
 
         return new SignUpPage(driver);
+
+    }
+
+    //get current User Name
+    public String getUserName(){
+
+        return link_Profile().getText();
+
+    }
+
+    //check User Name for Random created user
+    public boolean checkUserNameForRandomCreatedUser(){
+
+        return getUserName().equals(String.valueOf(RandomNumber.currentRandomNumber()));
 
     }
 

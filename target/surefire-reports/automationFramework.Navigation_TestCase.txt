@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: automationFramework.Navigation_TestCase
 -------------------------------------------------------------------------------
-Tests run: 23, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 284.848 sec
+Tests run: 26, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 324.143 sec - in automationFramework.Navigation_TestCase

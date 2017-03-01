@@ -3,12 +3,12 @@ package PageObject;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import utility.FindElementsNewMechanism;
+import utility.BaseClass;
 import utility.ReadXMLFile;
 
 import java.util.List;
 
-public class SignUpConfirmationPage extends FindElementsNewMechanism{
+public class SignUpConfirmationPage extends BaseClass {
     private final WebDriver driver;
     private WebElement element;
     private List<WebElement> elements;
@@ -27,7 +27,7 @@ public class SignUpConfirmationPage extends FindElementsNewMechanism{
     private By button_WriteAReviewOrFindTreatmentsLocator = By.cssSelector(".action");
 
     //find Write a review or Find Treatments button
-    public WebElement button_WriteAReviewOrFindTreatments(String sButtonName){
+    private WebElement button_WriteAReviewOrFindTreatments(String sButtonName){
 
         elements = findElements(driver, button_WriteAReviewOrFindTreatmentsLocator, 5000);
 
@@ -43,7 +43,13 @@ public class SignUpConfirmationPage extends FindElementsNewMechanism{
 
     //</editor-fold>
 
-    //<editor-fold desc="Base actions with elements">
+    //<editor-fold desc="Private methods">
+
+
+
+    //</editor-fold>
+
+    //<editor-fold desc="Public methods">
 
     //check page url
     public boolean checkUrl(){
@@ -65,12 +71,6 @@ public class SignUpConfirmationPage extends FindElementsNewMechanism{
         return button_WriteAReviewOrFindTreatments(ReadXMLFile.takeConstantFromXML("ButtonName", "WriteAReview", "name")).isDisplayed();
 
     }
-
-    //</editor-fold>
-
-    //<editor-fold desc="Final methods">
-
-
 
     //</editor-fold>
 

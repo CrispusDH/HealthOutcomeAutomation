@@ -1,10 +1,10 @@
 package PageObject;
 
 import org.openqa.selenium.WebDriver;
-import utility.FindElementsNewMechanism;
+import utility.BaseClass;
 import utility.ReadXMLFile;
 
-public class TwitterPage extends FindElementsNewMechanism {
+public class TwitterPage extends BaseClass {
     private final WebDriver driver;
 
     public TwitterPage(WebDriver driver){
@@ -13,7 +13,7 @@ public class TwitterPage extends FindElementsNewMechanism {
 
     }
 
-    //<editor-fold desc="Base actions with elements">
+    //<editor-fold desc="Public methods">
 
     //check page url
     public boolean checkUrl(){

@@ -3,12 +3,12 @@ package PageObject;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import utility.FindElementsNewMechanism;
+import utility.BaseClass;
 import utility.ReadXMLFile;
 
 import java.util.List;
 
-public class FAQPage extends FindElementsNewMechanism{
+public class FAQPage extends BaseClass {
     private final WebDriver driver;
     private WebElement element;
     private List<WebElement> elements;
@@ -26,7 +26,7 @@ public class FAQPage extends FindElementsNewMechanism{
 
     private By questionsLocator = By.cssSelector(".questions li");
 
-    public List<WebElement> questions (){
+    private List<WebElement> questions(){
 
         return findElements(driver, questionsLocator, 5000);
 
@@ -34,7 +34,11 @@ public class FAQPage extends FindElementsNewMechanism{
 
     //</editor-fold>
 
-    //<editor-fold desc="Base actions with elements">
+    //<editor-fold desc="Private methods">
+
+    //</editor-fold>
+
+    //<editor-fold desc="Public methods">
 
     //check that FAQ are not empty
     public boolean bodyIsEmpty(){
@@ -56,12 +60,6 @@ public class FAQPage extends FindElementsNewMechanism{
         return ReadXMLFile.takeConstantFromXML("URL", "FAQ", "url").equals(driver.getCurrentUrl());
 
     }
-
-    //</editor-fold>
-
-    //<editor-fold desc="Final methods">
-
-
 
     //</editor-fold>
 

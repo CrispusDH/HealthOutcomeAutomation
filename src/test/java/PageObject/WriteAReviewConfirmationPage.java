@@ -4,11 +4,11 @@ package PageObject;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import utility.FindElementsNewMechanism;
+import utility.BaseClass;
 
 import java.util.List;
 
-public class WriteAReviewConfirmationPage extends FindElementsNewMechanism{
+public class WriteAReviewConfirmationPage extends BaseClass {
     private final WebDriver driver;
     private WebElement element;
     private List<WebElement> elements;
@@ -28,14 +28,14 @@ public class WriteAReviewConfirmationPage extends FindElementsNewMechanism{
     private By txt_ReviewUserNameLocator = By.cssSelector(".review-user .user-name");
 
     //find SignUp form
-    public WebElement form_SignUp(){
+    private WebElement form_SignUp(){
 
         return findElements(driver, form_SignUpLocator, 5000).get(0);
 
     }
 
     //find Review user name text field
-    public WebElement txt_ReviewUserName (String UserName){
+    private WebElement txt_ReviewUserName (String UserName){
 
         elements = findElements(driver, txt_ReviewUserNameLocator, 5000);
 
@@ -50,13 +50,13 @@ public class WriteAReviewConfirmationPage extends FindElementsNewMechanism{
 
     //</editor-fold>
 
-    //<editor-fold desc="Base actions with elements">
+    //<editor-fold desc="Private methods">
 
 
 
     //</editor-fold>
 
-    //<editor-fold desc="Final methods">
+    //<editor-fold desc="Public methods">
 
 
 

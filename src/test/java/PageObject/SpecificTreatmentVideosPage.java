@@ -2,11 +2,11 @@ package PageObject;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import utility.FindElementsNewMechanism;
+import utility.BaseClass;
 
 import java.util.List;
 
-public class SpecificTreatmentVideosPage extends FindElementsNewMechanism{
+public class SpecificTreatmentVideosPage extends BaseClass {
     private final WebDriver driver;
     private WebElement element;
     private List<WebElement> elements;
@@ -34,7 +34,7 @@ public class SpecificTreatmentVideosPage extends FindElementsNewMechanism{
 
     //</editor-fold>
 
-    //<editor-fold desc="Final methods">
+    //<editor-fold desc="Public methods">
 
 
 

@@ -3,14 +3,14 @@ package PageObject;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import utility.FindElementsNewMechanism;
+import utility.BaseClass;
 import utility.ReadXMLFile;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
-public class Footer extends FindElementsNewMechanism {
+public class Footer extends BaseClass {
     private final WebDriver driver;
     private WebElement element;
     private List<WebElement> elements;
@@ -32,7 +32,7 @@ public class Footer extends FindElementsNewMechanism {
     private By  link_ConnectLocator = By.cssSelector(".connect li a");
 
     //find all footer links
-    public WebElement link_FooterLink(String footerLinkName){
+    private WebElement link_FooterLink(String footerLinkName){
 
         elements = findElements(driver, link_FooterLinksLocator, 5000);
 
@@ -47,7 +47,7 @@ public class Footer extends FindElementsNewMechanism {
     }
 
     //find all items in copyrights block
-    public WebElement link_FooterCopyrights (String footerCopyrightName){
+    private WebElement link_FooterCopyrights(String footerCopyrightName){
 
         elements = findElements(driver, link_FooterCopyrightsLocator, 5000);
 
@@ -62,7 +62,7 @@ public class Footer extends FindElementsNewMechanism {
     }
 
     //facebook, twitter, linkedin, mailto links
-    public WebElement link_Connect(String name){
+    private WebElement link_Connect(String name){
 
         elements = findElements(driver, link_ConnectLocator, 5000);
 
@@ -88,10 +88,10 @@ public class Footer extends FindElementsNewMechanism {
 
     //</editor-fold>
 
-    //<editor-fold desc="Base actions with elements">
+    //<editor-fold desc="Private methods">
 
     //click on About link
-    public AboutUsPage clickOnAboutLink(){
+    private AboutUsPage clickOnAboutLink(){
 
         link_FooterLink(ReadXMLFile.takeConstantFromXML("FooterLink", "About", "linkName")).click();
 
@@ -100,7 +100,7 @@ public class Footer extends FindElementsNewMechanism {
     }
 
     //click on FAQ link
-    public FAQPage clickOnFAQLink(){
+    private FAQPage clickOnFAQLink(){
 
         link_FooterLink(ReadXMLFile.takeConstantFromXML("FooterLink", "FAQ", "linkName")).click();
 
@@ -109,7 +109,7 @@ public class Footer extends FindElementsNewMechanism {
     }
 
     //click on Blog link
-    public BlogPage clickOnBlogLink(){
+    private BlogPage clickOnBlogLink(){
 
         link_FooterLink(ReadXMLFile.takeConstantFromXML("FooterLink", "Blog", "linkName")).click();
 
@@ -118,7 +118,7 @@ public class Footer extends FindElementsNewMechanism {
     }
 
     //click on Resources link
-    public ResourcesPage clickOnResourcesLink(){
+    private ResourcesPage clickOnResourcesLink(){
 
         link_FooterLink(ReadXMLFile.takeConstantFromXML("FooterLink", "Resources", "linkName")).click();
 
@@ -127,7 +127,7 @@ public class Footer extends FindElementsNewMechanism {
     }
 
     //click on Testimonials link
-    public TestimonialsPage clickOnTestimonialsLink(){
+    private TestimonialsPage clickOnTestimonialsLink(){
 
         link_FooterLink(ReadXMLFile.takeConstantFromXML("FooterLink", "Testimonials", "linkName")).click();
 
@@ -136,7 +136,7 @@ public class Footer extends FindElementsNewMechanism {
     }
 
     //click on Contact Us link
-    public ContactUsPage clickOnContactUsLink(){
+    private ContactUsPage clickOnContactUsLink(){
 
         link_FooterLink(ReadXMLFile.takeConstantFromXML("FooterLink", "Contact Us", "linkName")).click();
 
@@ -145,7 +145,7 @@ public class Footer extends FindElementsNewMechanism {
     }
 
     //click on Privacy Policy link
-    public PrivacyPolicyPage clickOnPrivacyPolicyLink(){
+    private PrivacyPolicyPage clickOnPrivacyPolicyLink(){
 
         link_FooterCopyrights(ReadXMLFile.takeConstantFromXML("FooterCopyright", "Privacy Policy", "copyrightName")).click();
 
@@ -154,7 +154,7 @@ public class Footer extends FindElementsNewMechanism {
     }
 
     //click on Terms of Service link
-    public TermsOfServicePage clickOnTermsOfServiceLink(){
+    private TermsOfServicePage clickOnTermsOfServiceLink(){
 
         link_FooterCopyrights(ReadXMLFile.takeConstantFromXML("FooterCopyright", "Terms of Service", "copyrightName")).click();
 
@@ -163,21 +163,21 @@ public class Footer extends FindElementsNewMechanism {
     }
 
     //get 'href' attribute from linkedin link
-    public String getLinkValueFromLinkedinLink(){
+    private String getLinkValueFromLinkedinLink(){
 
         return link_Connect("linkedin").getAttribute("href");
 
     }
 
     //get 'href' attribute from mail link
-    public String getLinkValueFromMailLink(){
+    private String getLinkValueFromMailLink(){
 
         return link_Connect("mail").getAttribute("href");
 
     }
 
     //click on facebook link and switch to a new Window
-    public FacebookPage clickOnFacebookLink(){
+    private FacebookPage clickOnFacebookLink(){
 
         //click on Facebook link
         link_Connect("facebook").click();
@@ -191,7 +191,7 @@ public class Footer extends FindElementsNewMechanism {
     }
 
     //click on twitter link and switch to a new window
-    public TwitterPage clickOnTwitterLink(){
+    private TwitterPage clickOnTwitterLink(){
 
         //click on Twitter link
         link_Connect("twitter").click();
@@ -211,23 +211,9 @@ public class Footer extends FindElementsNewMechanism {
 
     }
 
-    //check Linkedin href
-    public boolean checkLinkedingUrl(){
-
-        return ReadXMLFile.takeConstantFromXML("URL", "Linkedin", "href" ).equals(getLinkValueFromLinkedinLink());
-
-    }
-
-    //check mail href
-    public boolean checkMailUrl(){
-
-        return ReadXMLFile.takeConstantFromXML("URL", "Mail", "href" ).equals(getLinkValueFromMailLink());
-
-    }
-
     //</editor-fold>
 
-    //<editor-fold desc="Final methods">
+    //<editor-fold desc="Public methods">
 
     //go to About Us page
     public AboutUsPage goToAboutUsPage(){
@@ -296,6 +282,19 @@ public class Footer extends FindElementsNewMechanism {
     public TwitterPage goToTwitterPage(){
 
         return clickOnTwitterLink();
+
+    }
+    //check Linkedin href
+    public boolean checkLinkedingUrl(){
+
+        return ReadXMLFile.takeConstantFromXML("URL", "Linkedin", "href" ).equals(getLinkValueFromLinkedinLink());
+
+    }
+
+    //check mail href
+    public boolean checkMailUrl(){
+
+        return ReadXMLFile.takeConstantFromXML("URL", "Mail", "href" ).equals(getLinkValueFromMailLink());
 
     }
 

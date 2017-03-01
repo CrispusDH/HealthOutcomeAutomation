@@ -3,11 +3,11 @@ package PageObject;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import utility.FindElementsNewMechanism;
+import utility.BaseClass;
 
 import java.util.List;
 
-public class TreatmentRatingsConditionPage extends FindElementsNewMechanism{
+public class TreatmentRatingsConditionPage extends BaseClass {
     private final WebDriver driver;
     private WebElement element;
     private List<WebElement> elements;
@@ -30,14 +30,14 @@ public class TreatmentRatingsConditionPage extends FindElementsNewMechanism{
     private By li_TreatmentLocator = By.cssSelector(".treatment-link");
 
     //find Change condition link
-    public WebElement link_ChangeCondition(){
+    private WebElement link_ChangeCondition(){
 
         return findElements(driver, link_ChangeConditionLocator,5000).get(0);
 
     }
 
     //Learn More button
-    public WebElement button_LearnMore (){
+    private WebElement button_LearnMore(){
 
         elements = findElements(driver, button_LearnMoreLocator, 5000);
 
@@ -52,7 +52,7 @@ public class TreatmentRatingsConditionPage extends FindElementsNewMechanism{
     }
 
     //Share your experience button
-    public WebElement button_ShareYourExperience (){
+    private WebElement button_ShareYourExperience(){
 
         elements = findElements(driver, button_ShareYourExperienceLocator, 5000);
 
@@ -67,7 +67,7 @@ public class TreatmentRatingsConditionPage extends FindElementsNewMechanism{
     }
 
     //Find tab
-    public WebElement tab (String sTabName){
+    private WebElement tab(String sTabName){
 
         elements = findElements(driver, tabLocator, 5000);
 
@@ -82,7 +82,7 @@ public class TreatmentRatingsConditionPage extends FindElementsNewMechanism{
     }
 
     //find specific Treatment
-    public WebElement li_Treatment(String sTreatmentName){
+    private WebElement li_Treatment(String sTreatmentName){
 
         elements = findElements(driver, li_TreatmentLocator,5000);
 
@@ -98,10 +98,10 @@ public class TreatmentRatingsConditionPage extends FindElementsNewMechanism{
 
     //</editor-fold>
 
-    //<editor-fold desc="Base actions with elements">
+    //<editor-fold desc="Private methods">
 
     //click on Change Condition link
-    public ConditionSelectionPage clickOnChangeConditionLink(){
+    private ConditionSelectionPage clickOnChangeConditionLink(){
 
         link_ChangeCondition().click();
 
@@ -110,7 +110,7 @@ public class TreatmentRatingsConditionPage extends FindElementsNewMechanism{
     }
 
     //click on Lear More button
-    public FirstStepOfCoachingProgramPage clickOnLearnMoreButton(){
+    private FirstStepOfCoachingProgramPage clickOnLearnMoreButton(){
 
         button_LearnMore().click();
 
@@ -119,7 +119,7 @@ public class TreatmentRatingsConditionPage extends FindElementsNewMechanism{
     }
 
     //click on Share Your Experience button
-    public WriteAReviewPage clickOnShareYourExperienceButton(){
+    private WriteAReviewPage clickOnShareYourExperienceButton(){
 
         button_ShareYourExperience().click();
 
@@ -128,7 +128,7 @@ public class TreatmentRatingsConditionPage extends FindElementsNewMechanism{
     }
 
     //click on Specific tab
-    public FindElementsNewMechanism clickOnSpecificTab(String sTabNames){
+    private BaseClass clickOnSpecificTab(String sTabNames){
 
         switch (sTabNames) {
 
@@ -150,7 +150,7 @@ public class TreatmentRatingsConditionPage extends FindElementsNewMechanism{
     }
 
     //click on Specific Treatment block
-    public SpecificTreatmentReviewsPage clickOnSpecificTreatment(String sTreatmentName){
+    private SpecificTreatmentReviewsPage clickOnSpecificTreatment(String sTreatmentName){
 
         li_Treatment(sTreatmentName).click();
 
@@ -158,17 +158,10 @@ public class TreatmentRatingsConditionPage extends FindElementsNewMechanism{
 
     }
 
-    //get current url
-    public String getCurrentUrl(){
-
-        return driver.getCurrentUrl();
-
-    }
 
     //</editor-fold>
 
-    //<editor-fold desc="Final methods">
-
+    //<editor-fold desc="Public methods">
     //go to Condition Selection page
     public ConditionSelectionPage goToConditionSelectionPage(){
 
@@ -215,6 +208,13 @@ public class TreatmentRatingsConditionPage extends FindElementsNewMechanism{
     public TreatmentVideosPage goToTreatmentVideosPage(){
 
         return (TreatmentVideosPage) clickOnSpecificTab("Videos & Guides");
+
+    }
+
+    //get current url
+    public String getCurrentUrl(){
+
+        return driver.getCurrentUrl();
 
     }
 

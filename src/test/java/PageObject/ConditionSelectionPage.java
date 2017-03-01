@@ -4,12 +4,12 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
-import utility.FindElementsNewMechanism;
+import utility.BaseClass;
 
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
-public class ConditionSelectionPage extends FindElementsNewMechanism{
+public class ConditionSelectionPage extends BaseClass {
     private final WebDriver driver;
     private WebElement element;
     private List<WebElement> elements;
@@ -30,7 +30,7 @@ public class ConditionSelectionPage extends FindElementsNewMechanism{
     private By forScrollingLocator = By.cssSelector(".select-step");
 
     //find all body areas
-    public WebElement li_InjuryBodyArea (String bodyAreaName){
+    private WebElement li_InjuryBodyArea(String bodyAreaName){
 
         elements = findElements(driver, injuryBodyAreaLocator, 5000);
 
@@ -45,7 +45,7 @@ public class ConditionSelectionPage extends FindElementsNewMechanism{
     }
 
     //find all conditions
-    public WebElement li_ConditionElement (String ConditionName){
+    private WebElement li_ConditionElement(String ConditionName){
 
         elements = findElements(driver, conditionElementLocator, 5000);
 
@@ -59,7 +59,7 @@ public class ConditionSelectionPage extends FindElementsNewMechanism{
         return element;
     }
 
-    public WebElement forScrolling(){
+    private WebElement forScrolling(){
 
         return findElements(driver, forScrollingLocator,5000).get(0);
 
@@ -67,10 +67,10 @@ public class ConditionSelectionPage extends FindElementsNewMechanism{
 
     //</editor-fold>
 
-    //<editor-fold desc="Base actions with elements">
+    //<editor-fold desc="Private methods">
 
     //choose Body area name and click on it block
-    public ConditionSelectionPage chooseBodyAreaName(String bodyAreaName){
+    private ConditionSelectionPage chooseBodyAreaName(String bodyAreaName){
 
         li_InjuryBodyArea(bodyAreaName).click();
 
@@ -87,7 +87,7 @@ public class ConditionSelectionPage extends FindElementsNewMechanism{
     }
 
     //choose Condition and click
-    public TreatmentRatingsConditionPage clickOnSpecificConditionName(String conditionName){
+    private TreatmentRatingsConditionPage clickOnSpecificConditionName(String conditionName){
 
         //create new Action builder
         Actions builder = new Actions(driver);
@@ -105,16 +105,9 @@ public class ConditionSelectionPage extends FindElementsNewMechanism{
 
     }
 
-    //get current url
-    public String getCurrentUrl(){
-
-        return driver.getCurrentUrl();
-
-    }
-
     //</editor-fold>
 
-    //<editor-fold desc="Final methods">
+    //<editor-fold desc="Public methods">
 
     public TreatmentRatingsConditionPage goToTreatmentRatingsConditionPage(String bodyAreaName, String conditionName){
 
@@ -123,6 +116,13 @@ public class ConditionSelectionPage extends FindElementsNewMechanism{
 
         //choose Condition and click
         return clickOnSpecificConditionName(conditionName);
+
+    }
+
+    //get current url
+    public String getCurrentUrl(){
+
+        return driver.getCurrentUrl();
 
     }
 

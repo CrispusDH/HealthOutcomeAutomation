@@ -10,7 +10,7 @@ import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 //improve find elements mechanism
-public class FindElementsNewMechanism {
+public class BaseClass {
 
         protected List<WebElement> findElements(WebDriver webDriver, By by, int timeout) {
 

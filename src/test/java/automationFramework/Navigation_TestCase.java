@@ -150,10 +150,10 @@ public class Navigation_TestCase extends TestCase{
         footer.goToAboutUsPage();
 
         //check that About US body are not empty
-        Assert.assertTrue(!aboutUsPage.bodyIsEmpty());
+        Assert.assertTrue(!aboutUsPage.checkIsEmpty());
 
         //check that About Us page has paragraphs
-        Assert.assertTrue(aboutUsPage.amountOfParagraphs());
+        Assert.assertTrue(aboutUsPage.checkAmountOfParagraphs());
 
         //check URL
         Assert.assertTrue(aboutUsPage.checkUrl());
@@ -185,7 +185,7 @@ public class Navigation_TestCase extends TestCase{
         footer.goToBlogPage();
 
         //check that blogs are on that page
-        Assert.assertTrue(!blogPage.bodyIsEmpty());
+        Assert.assertTrue(!blogPage.checkIsEmpty());
 
         //check that blogs are more than 0
         Assert.assertTrue(blogPage.checkAmountOfBlogs());

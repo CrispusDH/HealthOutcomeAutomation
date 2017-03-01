@@ -3,12 +3,12 @@ package PageObject;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import utility.FindElementsNewMechanism;
+import utility.BaseClass;
 import utility.ReadXMLFile;
 
 import java.util.List;
 
-public class BlogPage extends FindElementsNewMechanism{
+public class BlogPage extends BaseClass {
     private final WebDriver driver;
     private WebElement element;
     private List<WebElement> elements;
@@ -29,14 +29,14 @@ public class BlogPage extends FindElementsNewMechanism{
     private By button_FindOutMoreLocator = By.cssSelector(".button-cta span");
 
     //find all blogs on page
-    public List<WebElement> blogs (){
+    private List<WebElement> blogs(){
 
         return findElements(driver, blogsLocator, 5000);
 
     }
 
     //Start Here button
-    public WebElement button_StartHere (){
+    private WebElement button_StartHere(){
 
         elements = findElements(driver, button_StartHere, 5000);
 
@@ -51,7 +51,7 @@ public class BlogPage extends FindElementsNewMechanism{
     }
 
     //Find Out More button
-    public WebElement button_FindOutMore (){
+    private WebElement button_FindOutMore(){
 
         elements = findElements(driver, button_FindOutMoreLocator, 5000);
 
@@ -67,10 +67,10 @@ public class BlogPage extends FindElementsNewMechanism{
 
     //</editor-fold>
 
-    //<editor-fold desc="Base actions with elements">
+    //<editor-fold desc="Private methods">
 
     //click on Start Here button
-    public WriteAReviewPage clickOnStartHereButton(){
+    private WriteAReviewPage clickOnStartHereButton(){
 
         button_StartHere().click();
 
@@ -79,7 +79,7 @@ public class BlogPage extends FindElementsNewMechanism{
     }
 
     //click on Specific Blog
-    public DetailedBlogPage clickOnSpecificBlog(Integer blogNumber){
+    private DetailedBlogPage clickOnSpecificBlog(Integer blogNumber){
 
         blogs().get(blogNumber);
 
@@ -87,8 +87,24 @@ public class BlogPage extends FindElementsNewMechanism{
 
     }
 
+    //</editor-fold>
+
+    //<editor-fold desc="Public methods">
+
+    public WriteAReviewPage goToWriteAReviewPage (){
+
+        return clickOnStartHereButton();
+
+    }
+
+    public DetailedBlogPage goToDetailedBlogPage(Integer blogNumber){
+
+        return clickOnSpecificBlog(blogNumber);
+
+    }
+
     //check that Blog page body are not empty
-    public boolean bodyIsEmpty(){
+    public boolean checkIsEmpty(){
 
         return blogs().isEmpty();
 
@@ -105,22 +121,6 @@ public class BlogPage extends FindElementsNewMechanism{
     public boolean checkUrl(){
 
         return ReadXMLFile.takeConstantFromXML("URL", "Blog", "url").equals(driver.getCurrentUrl());
-
-    }
-
-    //</editor-fold>
-
-    //<editor-fold desc="Final methods">
-
-    public WriteAReviewPage goToWriteAReviewPage (){
-
-        return clickOnStartHereButton();
-
-    }
-
-    public DetailedBlogPage goToDetailedBlogPage(Integer blogNumber){
-
-        return clickOnSpecificBlog(blogNumber);
 
     }
 

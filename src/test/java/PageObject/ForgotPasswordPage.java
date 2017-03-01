@@ -3,11 +3,11 @@ package PageObject;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import utility.FindElementsNewMechanism;
+import utility.BaseClass;
 
 import java.util.List;
 
-public class ForgotPasswordPage extends FindElementsNewMechanism{
+public class ForgotPasswordPage extends BaseClass {
     private final WebDriver driver;
     private WebElement element;
     private List<WebElement> elements;
@@ -27,14 +27,14 @@ public class ForgotPasswordPage extends FindElementsNewMechanism{
     private By button_ForgotPasswordLocator = By.cssSelector("button");
 
     //find email address input field
-    public WebElement input_EmailAddress(){
+    private WebElement input_EmailAddress(){
 
         return findElements(driver, input_EmailAddressLocator, 5000).get(0);
 
     }
 
     //find forgot password button
-    public WebElement button_ForgotPassword(){
+    private WebElement button_ForgotPassword(){
 
         return findElements(driver, button_ForgotPasswordLocator,5000).get(0);
 
@@ -42,10 +42,10 @@ public class ForgotPasswordPage extends FindElementsNewMechanism{
 
     //</editor-fold>
 
-    //<editor-fold desc="Base actions with elements">
+    //<editor-fold desc="Private methods">
 
     //type email address
-    public ForgotPasswordPage typeEmailAddress(String sEmailAddress){
+    private ForgotPasswordPage typeEmailAddress(String sEmailAddress){
 
         input_EmailAddress().sendKeys(sEmailAddress);
 
@@ -54,7 +54,7 @@ public class ForgotPasswordPage extends FindElementsNewMechanism{
     }
 
     //click on forgot password button
-    public ForgotPasswordConfirmationPage clickOnForgotPasswordButton(){
+    private ForgotPasswordConfirmationPage clickOnForgotPasswordButton(){
 
         button_ForgotPassword().click();
 
@@ -64,7 +64,7 @@ public class ForgotPasswordPage extends FindElementsNewMechanism{
 
     //</editor-fold>
 
-    //<editor-fold desc="Final methods">
+    //<editor-fold desc="Public methods">
 
     //Forgot password page offers the user the service of being able to reset password
     public ForgotPasswordConfirmationPage goToForgotPasswordConfirmationPage(String sEmailAddress){

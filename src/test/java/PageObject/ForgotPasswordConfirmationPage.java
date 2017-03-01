@@ -1,13 +1,10 @@
 package PageObject;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import utility.FindElementsNewMechanism;
+import utility.BaseClass;
 import utility.ReadXMLFile;
 
-import java.util.List;
-
-public class ForgotPasswordConfirmationPage extends FindElementsNewMechanism {
+public class ForgotPasswordConfirmationPage extends BaseClass {
     private final WebDriver driver;
 
     public ForgotPasswordConfirmationPage(WebDriver driver){
@@ -15,6 +12,8 @@ public class ForgotPasswordConfirmationPage extends FindElementsNewMechanism {
         this.driver = driver;
 
     }
+
+    //<editor-fold desc="Public methods">
 
     public String getCurrentUrl(){
 
@@ -28,5 +27,7 @@ public class ForgotPasswordConfirmationPage extends FindElementsNewMechanism {
         return ReadXMLFile.takeConstantFromXML("URL", "Forgot Password Confirm", "url").equals(driver.getCurrentUrl());
 
     }
+
+    //</editor-fold>
 
 }

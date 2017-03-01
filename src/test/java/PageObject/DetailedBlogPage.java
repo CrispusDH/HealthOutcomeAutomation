@@ -3,11 +3,11 @@ package PageObject;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import utility.FindElementsNewMechanism;
+import utility.BaseClass;
 
 import java.util.List;
 
-public class DetailedBlogPage extends FindElementsNewMechanism {
+public class DetailedBlogPage extends BaseClass {
     private final WebDriver driver;
     private WebElement element;
     private List<WebElement> elements;
@@ -27,7 +27,7 @@ public class DetailedBlogPage extends FindElementsNewMechanism {
     private By button_FindOutMoreLocator = By.cssSelector(".button-cta span");
 
     //Start Here button
-    public WebElement button_StartHere (){
+    private WebElement button_StartHere(){
 
         elements = findElements(driver, button_StartHereLocator, 5000);
 
@@ -42,7 +42,7 @@ public class DetailedBlogPage extends FindElementsNewMechanism {
     }
 
     //Find Out More button
-    public WebElement button_FindOutMore (){
+    private WebElement button_FindOutMore(){
 
         elements = findElements(driver, button_FindOutMoreLocator, 5000);
 
@@ -58,10 +58,10 @@ public class DetailedBlogPage extends FindElementsNewMechanism {
 
     //</editor-fold>
 
-    //<editor-fold desc="Base actions with elements">
+    //<editor-fold desc="Private methods">
 
     //click on Start Here button
-    public WriteAReviewPage clickOnStartHereButton(){
+    private WriteAReviewPage clickOnStartHereButton(){
 
          button_StartHere().click();
 
@@ -71,7 +71,7 @@ public class DetailedBlogPage extends FindElementsNewMechanism {
 
     //</editor-fold>
 
-    //<editor-fold desc="Final methods">
+    //<editor-fold desc="Public methods">
 
     //go to Write a Review Page
     public WriteAReviewPage goToWriteAReviewPage(){

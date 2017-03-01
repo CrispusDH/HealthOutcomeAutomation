@@ -3,12 +3,12 @@ package PageObject;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import utility.FindElementsNewMechanism;
+import utility.BaseClass;
 import utility.ReadXMLFile;
 
 import java.util.List;
 
-public class TestimonialsPage extends FindElementsNewMechanism{
+public class TestimonialsPage extends BaseClass {
     private final WebDriver driver;
     private WebElement element;
     private List<WebElement> elements;
@@ -27,7 +27,7 @@ public class TestimonialsPage extends FindElementsNewMechanism{
     private By cardsLocator = By.cssSelector(".body-content");
 
     //find all cards on a page
-    public List<WebElement> cards (){
+    private List<WebElement> cards(){
 
         return findElements(driver, cardsLocator, 5000);
 
@@ -35,14 +35,13 @@ public class TestimonialsPage extends FindElementsNewMechanism{
 
     //</editor-fold>
 
-    //<editor-fold desc="Base actions with elements">
+    //<editor-fold desc="Private methods">
 
-    //check that cards are on that page
-    public boolean bodyIsEmpty(){
 
-        return cards().isEmpty();
 
-    }
+    //</editor-fold>
+
+    //<editor-fold desc="Public methods">
 
     //check the same in another way
     public boolean checkAmountOfCards(){
@@ -58,11 +57,12 @@ public class TestimonialsPage extends FindElementsNewMechanism{
 
     }
 
-    //</editor-fold>
+    //check that cards are on that page
+    public boolean bodyIsEmpty(){
 
-    //<editor-fold desc="Final methods">
+        return cards().isEmpty();
 
-
+    }
 
     //</editor-fold>
 

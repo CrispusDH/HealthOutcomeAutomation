@@ -3,11 +3,11 @@ package PageObject;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import utility.FindElementsNewMechanism;
+import utility.BaseClass;
 
 import java.util.List;
 
-public class SpecificTreatmentReviewsPage extends FindElementsNewMechanism{
+public class SpecificTreatmentReviewsPage extends BaseClass {
     private final WebDriver driver;
     private WebElement element;
     private List<WebElement> elements;
@@ -27,7 +27,7 @@ public class SpecificTreatmentReviewsPage extends FindElementsNewMechanism{
     private By tabLocator = By.cssSelector(".hero-tabs li");
 
     //Share your experience button
-    public WebElement button_ShareYourExperience (){
+    private WebElement button_ShareYourExperience(){
 
         elements = findElements(driver, button_ShareYourExperienceLocator, 5000);
 
@@ -42,7 +42,7 @@ public class SpecificTreatmentReviewsPage extends FindElementsNewMechanism{
     }
 
     //Find tab
-    public WebElement tab (String tabName){
+    private WebElement tab(String tabName){
 
         elements = findElements(driver, tabLocator, 5000);
 
@@ -58,10 +58,10 @@ public class SpecificTreatmentReviewsPage extends FindElementsNewMechanism{
 
     //</editor-fold>
 
-    //<editor-fold desc="Base actions with elements">
+    //<editor-fold desc="Private methods">
 
     //click on Share your experience button
-    public WriteAReviewPage clickOnShareYourButton(){
+    private WriteAReviewPage clickOnShareYourButton(){
 
         button_ShareYourExperience().click();
 
@@ -70,7 +70,7 @@ public class SpecificTreatmentReviewsPage extends FindElementsNewMechanism{
     }
 
     //click on specific tab
-    public FindElementsNewMechanism clickOnTab(String sTabName){
+    private BaseClass clickOnTab(String sTabName){
 
         switch (sTabName){
 
@@ -87,21 +87,21 @@ public class SpecificTreatmentReviewsPage extends FindElementsNewMechanism{
 
     }
 
-    //get current url
-    public String getCurrentUrl(){
-
-        return driver.getCurrentUrl();
-
-    }
-
     //</editor-fold>
 
-    //<editor-fold desc="Final methods">
+    //<editor-fold desc="Public methods">
 
     //go to Write a Review page
     public WriteAReviewPage goToWriteAReviewPage(){
 
         return clickOnShareYourButton();
+
+    }
+
+    //get current url
+    public String getCurrentUrl(){
+
+        return driver.getCurrentUrl();
 
     }
 

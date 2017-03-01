@@ -2,16 +2,38 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4ca991d3-ec18-4ace-b08d-b16c63f24db2" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/allure-results/15fa3640-6e7e-42e5-a074-33097ddac973-testsuite.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/allure-results/3521d2f5-4856-41a3-a782-5abd44a144a5-testsuite.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/automationFramework/Navigation_TestCase.class" afterPath="$PROJECT_DIR$/target/test-classes/automationFramework/Navigation_TestCase.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/automationFramework/Plot_TestCase.class" afterPath="$PROJECT_DIR$/target/test-classes/automationFramework/Plot_TestCase.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-automationFramework.Navigation_TestCase.xml" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-automationFramework.Navigation_TestCase.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-automationFramework.Plot_TestCase.xml" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-automationFramework.Plot_TestCase.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/automationFramework.Navigation_TestCase.txt" afterPath="$PROJECT_DIR$/target/surefire-reports/automationFramework.Navigation_TestCase.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/automationFramework.Plot_TestCase.txt" afterPath="$PROJECT_DIR$/target/surefire-reports/automationFramework.Plot_TestCase.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/PageObject/AboutUsPage.java" afterPath="$PROJECT_DIR$/src/test/java/PageObject/AboutUsPage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/PageObject/BlogPage.java" afterPath="$PROJECT_DIR$/src/test/java/PageObject/BlogPage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/PageObject/ConditionSelectionPage.java" afterPath="$PROJECT_DIR$/src/test/java/PageObject/ConditionSelectionPage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/PageObject/ContactUsPage.java" afterPath="$PROJECT_DIR$/src/test/java/PageObject/ContactUsPage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/PageObject/DetailedBlogPage.java" afterPath="$PROJECT_DIR$/src/test/java/PageObject/DetailedBlogPage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/PageObject/FAQPage.java" afterPath="$PROJECT_DIR$/src/test/java/PageObject/FAQPage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/PageObject/FacebookPage.java" afterPath="$PROJECT_DIR$/src/test/java/PageObject/FacebookPage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/PageObject/FirstStepOfCoachingProgramPage.java" afterPath="$PROJECT_DIR$/src/test/java/PageObject/FirstStepOfCoachingProgramPage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/PageObject/Footer.java" afterPath="$PROJECT_DIR$/src/test/java/PageObject/Footer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/PageObject/ForgotPasswordConfirmationPage.java" afterPath="$PROJECT_DIR$/src/test/java/PageObject/ForgotPasswordConfirmationPage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/PageObject/ForgotPasswordPage.java" afterPath="$PROJECT_DIR$/src/test/java/PageObject/ForgotPasswordPage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/PageObject/Header.java" afterPath="$PROJECT_DIR$/src/test/java/PageObject/Header.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/PageObject/HomePage.java" afterPath="$PROJECT_DIR$/src/test/java/PageObject/HomePage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/PageObject/PrivacyPolicyPage.java" afterPath="$PROJECT_DIR$/src/test/java/PageObject/PrivacyPolicyPage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/PageObject/ResourcesPage.java" afterPath="$PROJECT_DIR$/src/test/java/PageObject/ResourcesPage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/PageObject/SignUpConfirmationPage.java" afterPath="$PROJECT_DIR$/src/test/java/PageObject/SignUpConfirmationPage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/PageObject/SignUpPage.java" afterPath="$PROJECT_DIR$/src/test/java/PageObject/SignUpPage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/PageObject/SingleReviewPage.java" afterPath="$PROJECT_DIR$/src/test/java/PageObject/SingleReviewPage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/PageObject/SpecificTreatmentReviewsPage.java" afterPath="$PROJECT_DIR$/src/test/java/PageObject/SpecificTreatmentReviewsPage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/PageObject/SpecificTreatmentVideosPage.java" afterPath="$PROJECT_DIR$/src/test/java/PageObject/SpecificTreatmentVideosPage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/PageObject/TermsOfServicePage.java" afterPath="$PROJECT_DIR$/src/test/java/PageObject/TermsOfServicePage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/PageObject/TestimonialsPage.java" afterPath="$PROJECT_DIR$/src/test/java/PageObject/TestimonialsPage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/PageObject/TreatmentRatingsConditionPage.java" afterPath="$PROJECT_DIR$/src/test/java/PageObject/TreatmentRatingsConditionPage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/PageObject/TreatmentReviewsPage.java" afterPath="$PROJECT_DIR$/src/test/java/PageObject/TreatmentReviewsPage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/PageObject/TreatmentVideosPage.java" afterPath="$PROJECT_DIR$/src/test/java/PageObject/TreatmentVideosPage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/PageObject/TwitterPage.java" afterPath="$PROJECT_DIR$/src/test/java/PageObject/TwitterPage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/PageObject/WriteAReviewConfirmationPage.java" afterPath="$PROJECT_DIR$/src/test/java/PageObject/WriteAReviewConfirmationPage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/PageObject/WriteAReviewPage.java" afterPath="$PROJECT_DIR$/src/test/java/PageObject/WriteAReviewPage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/automationFramework/Navigation_TestCase.java" afterPath="$PROJECT_DIR$/src/test/java/automationFramework/Navigation_TestCase.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/automationFramework/Plot_TestCase.java" afterPath="$PROJECT_DIR$/src/test/java/automationFramework/Plot_TestCase.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/utility/FindElementsNewMechanism.java" afterPath="$PROJECT_DIR$/src/test/java/utility/BaseClass.java" />
     </list>
     <ignored path="HealthOutcome.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -33,56 +55,161 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Navigation_TestCase.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/automationFramework/Navigation_TestCase.java">
+      <file leaf-file-name="SpecificTreatmentReviewsPage.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/PageObject/SpecificTreatmentReviewsPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="867">
-              <caret line="152" column="26" lean-forward="false" selection-start-line="152" selection-start-column="26" selection-end-line="152" selection-end-column="26" />
+            <state relative-caret-position="167">
+              <caret line="60" column="4" lean-forward="false" selection-start-line="60" selection-start-column="4" selection-end-line="60" selection-end-column="4" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#636#679#0" expanded="false" />
-                <element signature="e#1858#1931#0" expanded="false" />
-                <element signature="e#4136#4176#0" expanded="false" />
+                <element signature="e#452#496#0" expanded="false" />
+                <element signature="method#button_ShareYourExperience#0;class#SpecificTreatmentReviewsPage#0" expanded="false" />
+                <element signature="method#tab#0;class#SpecificTreatmentReviewsPage#0" expanded="false" />
+                <element signature="e#1643#1681#0" expanded="false" />
+                <element signature="method#clickOnShareYourButton#0;class#SpecificTreatmentReviewsPage#0" expanded="false" />
+                <element signature="method#clickOnTab#0;class#SpecificTreatmentReviewsPage#0" expanded="false" />
+                <element signature="e#2359#2396#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Plot_TestCase.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/automationFramework/Plot_TestCase.java">
+      <file leaf-file-name="SpecificTreatmentVideosPage.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/PageObject/SpecificTreatmentVideosPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="291">
-              <caret line="85" column="4" lean-forward="false" selection-start-line="85" selection-start-column="4" selection-end-line="85" selection-end-column="4" />
+            <state relative-caret-position="301">
+              <caret line="36" column="4" lean-forward="false" selection-start-line="36" selection-start-column="4" selection-end-line="36" selection-end-column="4" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#768#811#0" expanded="false" />
-                <element signature="e#1080#1153#0" expanded="false" />
-                <element signature="e#2473#2513#0" expanded="false" />
-                <marker date="1488188124262" expanded="false" signature="1662:1673" ph=" { " />
-                <marker date="1488188124262" expanded="false" signature="1688:1694" ph=" }" />
-                <marker date="1488188124262" expanded="false" signature="2414:2425" ph=" { " />
-                <marker date="1488188124262" expanded="false" signature="2439:2445" ph=" }" />
+                <element signature="e#419#463#0" expanded="false" />
+                <element signature="e#493#542#0" expanded="false" />
+                <element signature="e#675#712#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SignUpConfirmationPage.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/PageObject/SignUpConfirmationPage.java">
+      <file leaf-file-name="TermsOfServicePage.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/PageObject/TermsOfServicePage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="309">
-              <caret line="64" column="121" lean-forward="false" selection-start-line="64" selection-start-column="121" selection-end-line="64" selection-end-column="121" />
-              <folding />
+            <state relative-caret-position="201">
+              <caret line="43" column="4" lean-forward="false" selection-start-line="43" selection-start-column="4" selection-end-line="43" selection-end-column="4" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#460#504#0" expanded="false" />
+                <element signature="method#paragraphs#0;class#TermsOfServicePage#0" expanded="false" />
+                <element signature="e#904#942#0" expanded="false" />
+                <element signature="e#972#1009#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Header.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/PageObject/Header.java">
+      <file leaf-file-name="TestimonialsPage.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/PageObject/TestimonialsPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="269">
-              <caret line="108" column="88" lean-forward="false" selection-start-line="108" selection-start-column="88" selection-end-line="108" selection-end-column="88" />
-              <folding />
+            <state relative-caret-position="182">
+              <caret line="21" column="4" lean-forward="false" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
+              <folding>
+                <element signature="e#456#500#0" expanded="false" />
+                <element signature="method#cards#0;class#TestimonialsPage#0" expanded="false" />
+                <element signature="e#892#930#0" expanded="false" />
+                <element signature="e#960#997#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TreatmentRatingsConditionPage.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/PageObject/TreatmentRatingsConditionPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="227">
+              <caret line="163" column="4" lean-forward="false" selection-start-line="163" selection-start-column="4" selection-end-line="163" selection-end-column="4" />
+              <folding>
+                <element signature="e#454#498#0" expanded="false" />
+                <element signature="method#link_ChangeCondition#0;class#TreatmentRatingsConditionPage#0" expanded="false" />
+                <element signature="method#button_LearnMore#0;class#TreatmentRatingsConditionPage#0" expanded="false" />
+                <element signature="method#button_ShareYourExperience#0;class#TreatmentRatingsConditionPage#0" expanded="false" />
+                <element signature="method#tab#0;class#TreatmentRatingsConditionPage#0" expanded="false" />
+                <element signature="method#li_Treatment#0;class#TreatmentRatingsConditionPage#0" expanded="false" />
+                <element signature="e#2834#2872#0" expanded="false" />
+                <element signature="method#clickOnChangeConditionLink#0;class#TreatmentRatingsConditionPage#0" expanded="false" />
+                <element signature="method#clickOnLearnMoreButton#0;class#TreatmentRatingsConditionPage#0" expanded="false" />
+                <element signature="method#clickOnShareYourExperienceButton#0;class#TreatmentRatingsConditionPage#0" expanded="false" />
+                <element signature="method#clickOnSpecificTab#0;class#TreatmentRatingsConditionPage#0" expanded="false" />
+                <element signature="method#clickOnSpecificTreatment#0;class#TreatmentRatingsConditionPage#0" expanded="false" />
+                <element signature="n#!!doc;n#goToConditionSelectionPage#0;n#TreatmentRatingsConditionPage#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TreatmentReviewsPage.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/PageObject/TreatmentReviewsPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="227">
+              <caret line="95" column="4" lean-forward="false" selection-start-line="95" selection-start-column="4" selection-end-line="95" selection-end-column="4" />
+              <folding>
+                <element signature="e#436#480#0" expanded="false" />
+                <element signature="e#1619#1657#0" expanded="false" />
+                <element signature="method#clickOnSpecificTab#0;class#TreatmentReviewsPage#0" expanded="false" />
+                <element signature="e#2495#2532#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TreatmentVideosPage.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/PageObject/TreatmentVideosPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="218">
+              <caret line="32" column="4" lean-forward="false" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="4" />
+              <folding>
+                <element signature="e#404#448#0" expanded="false" />
+                <element signature="e#478#516#0" expanded="false" />
+                <element signature="e#546#583#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TwitterPage.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/PageObject/TwitterPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="201">
+              <caret line="15" column="4" lean-forward="false" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
+              <folding>
+                <element signature="e#281#318#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WriteAReviewConfirmationPage.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/PageObject/WriteAReviewConfirmationPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="222">
+              <caret line="58" column="4" lean-forward="false" selection-start-line="58" selection-start-column="4" selection-end-line="58" selection-end-column="4" />
+              <folding>
+                <element signature="e#453#497#0" expanded="false" />
+                <element signature="method#form_SignUp#0;class#WriteAReviewConfirmationPage#0" expanded="false" />
+                <element signature="method#txt_ReviewUserName#0;class#WriteAReviewConfirmationPage#0" expanded="false" />
+                <element signature="e#1355#1393#0" expanded="false" />
+                <element signature="e#1423#1460#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WriteAReviewPage.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/PageObject/WriteAReviewPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="154">
+              <caret line="22" column="4" lean-forward="false" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
+              <folding>
+                <element signature="e#457#501#0" expanded="false" />
+                <element signature="method#text_GroupTitle#0;class#WriteAReviewPage#0" expanded="false" />
+                <element signature="e#930#968#0" expanded="false" />
+                <element signature="e#998#1035#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -117,6 +244,9 @@
       <find>assertEquals</find>
       <find>check</find>
       <find>assertTrue</find>
+      <find>//&lt;editor-fold desc=&quot;Rules declaration&quot;&gt;</find>
+      <find>swi</find>
+      <find>switch</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -130,7 +260,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/test/java/utility/ReadXMLFile.java" />
         <option value="$PROJECT_DIR$/src/test/java/utility/RetryRule.java" />
         <option value="$PROJECT_DIR$/src/test/java/utility/SetDriver.java" />
         <option value="$PROJECT_DIR$/src/test/java/pageObjectsElements/ConditionSelectionPageElements.java" />
@@ -145,42 +274,43 @@
         <option value="$PROJECT_DIR$/src/test/java/pageObjectsActions/SpecificTreatmentReviewsPageActions.java" />
         <option value="$PROJECT_DIR$/src/test/java/pageObjectsElements/TreatmentRatingsConditionPageElements.java" />
         <option value="$PROJECT_DIR$/src/test/java/pageObjectsElements/TreatmentReviewsPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/utility/FindElementsNewMechanism.java" />
         <option value="$PROJECT_DIR$/src/test/java/pageObjectsElements/FooterElements.java" />
         <option value="$PROJECT_DIR$/src/test/java/PageObject/FAQPageElements.java" />
-        <option value="$PROJECT_DIR$/src/test/java/PageObject/DetailedBlogPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/PageObject/ForgotPasswordConfirmation.java" />
-        <option value="$PROJECT_DIR$/src/test/java/PageObject/WriteAReviewConfirmationPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/PageObject/SingleReviewPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/PageObject/AboutUsPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/PageObject/FAQPage.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/PageObject/BlogPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/PageObject/ResourcesPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/PageObject/TestimonialsPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/utility/RandomNumber.java" />
+        <option value="$PROJECT_DIR$/src/test/java/automationFramework/Navigation_TestCase.java" />
+        <option value="$PROJECT_DIR$/src/test/java/utility/FindElementsNewMechanism.java" />
+        <option value="$PROJECT_DIR$/src/test/java/utility/BaseClass.java" />
+        <option value="$PROJECT_DIR$/src/test/java/PageObject/AboutUsPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/PageObject/ContactUsPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/PageObject/PrivacyPolicyPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/PageObject/TermsOfServicePage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/PageObject/TwitterPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/PageObject/FirstStepOfCoachingProgramPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/PageObject/TreatmentRatingsConditionPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/PageObject/ConditionSelectionPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/PageObject/Footer.java" />
+        <option value="$PROJECT_DIR$/src/test/java/PageObject/BlogPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/PageObject/DetailedBlogPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/PageObject/FacebookPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/PageObject/TreatmentVideosPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/PageObject/FAQPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/PageObject/Footer.java" />
+        <option value="$PROJECT_DIR$/src/test/java/PageObject/Header.java" />
+        <option value="$PROJECT_DIR$/src/test/java/PageObject/TreatmentRatingsConditionPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/automationFramework/Plot_TestCase.java" />
         <option value="$PROJECT_DIR$/src/test/java/PageObject/TreatmentReviewsPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/PageObject/WriteAReviewPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/PageObject/FirstStepOfCoachingProgramPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/PageObject/ForgotPasswordConfirmationPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/PageObject/ForgotPasswordPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/PageObject/HomePage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/PageObject/PrivacyPolicyPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/PageObject/ResourcesPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/PageObject/SignUpConfirmationPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/PageObject/SignUpPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/PageObject/SingleReviewPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/PageObject/SpecificTreatmentReviewsPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/PageObject/SpecificTreatmentVideosPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/PageObject/HomePage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/PageObject/ForgotPasswordPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/PageObject/ForgotPasswordConfirmationPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/PageObject/SignUpPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/utility/RandomNumber.java" />
-        <option value="$PROJECT_DIR$/src/test/java/PageObject/Header.java" />
-        <option value="$PROJECT_DIR$/src/test/java/PageObject/SignUpConfirmationPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/automationFramework/Navigation_TestCase.java" />
-        <option value="$PROJECT_DIR$/src/test/java/automationFramework/Plot_TestCase.java" />
+        <option value="$PROJECT_DIR$/src/test/java/PageObject/TermsOfServicePage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/PageObject/TestimonialsPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/PageObject/TreatmentVideosPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/PageObject/TwitterPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/PageObject/WriteAReviewConfirmationPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/PageObject/WriteAReviewPage.java" />
       </list>
     </option>
   </component>
@@ -760,7 +890,7 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="784" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -769,21 +899,21 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32740742" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44409448" sideWeight="0.50292826" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3614815" sideWeight="0.49707174" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37423313" sideWeight="0.49707174" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35431919" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36081696" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3288889" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -806,7 +936,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="30" />
+      <option name="time" value="32" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -815,26 +945,10 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/pageObjectsActions/SignUpPageActions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/pageObjectsElements/SingleReviewPageElements.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="18" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/utility/FindElementsNewMechanism.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="12" column="25" lean-forward="true" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
           <folding />
         </state>
       </provider>
@@ -927,16 +1041,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/PageObject/SingleReviewPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="481">
-          <caret line="44" column="0" lean-forward="false" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
-          <folding>
-            <element signature="e#1127#1163#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/pageObjectsElements/ContactUsPageElements.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -977,184 +1081,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/PageObject/ResourcesPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="47" column="25" lean-forward="false" selection-start-line="47" selection-start-column="25" selection-end-line="47" selection-end-column="25" />
-          <folding>
-            <element signature="e#479#523#0" expanded="false" />
-            <element signature="e#1423#1459#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/PageObject/WriteAReviewConfirmationPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="26" selection-end-column="69" />
-          <folding>
-            <element signature="e#1382#1431#0" expanded="false" />
-            <element signature="e#1461#1497#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/PageObject/FirstStepOfCoachingProgramPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="34" column="95" lean-forward="false" selection-start-line="34" selection-start-column="95" selection-end-line="34" selection-end-column="95" />
-          <folding>
-            <element signature="e#513#557#0" expanded="false" />
-            <element signature="e#1035#1071#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/PageObject/TermsOfServicePage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="10" lean-forward="false" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
-          <folding>
-            <element signature="e#1311#1347#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/PageObject/TestimonialsPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="47" column="19" lean-forward="false" selection-start-line="47" selection-start-column="19" selection-end-line="47" selection-end-column="19" />
-          <folding>
-            <element signature="e#485#529#0" expanded="false" />
-            <element signature="e#1406#1442#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/PageObject/Footer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-638">
-          <caret line="179" column="24" lean-forward="false" selection-start-line="179" selection-start-column="24" selection-end-line="179" selection-end-column="24" />
-          <folding>
-            <element signature="e#533#577#0" expanded="false" />
-            <element signature="method#link_FooterCopyrights#0;class#Footer#0" expanded="false" />
-            <element signature="e#6082#6118#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/PageObject/PrivacyPolicyPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="51" selection-end-column="5" />
-          <folding>
-            <element signature="e#487#531#0" expanded="false" />
-            <element signature="e#1305#1341#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/PageObject/TwitterPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="20" column="62" lean-forward="false" selection-start-line="20" selection-start-column="62" selection-end-line="20" selection-end-column="62" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/PageObject/TreatmentVideosPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="33" selection-end-column="5" />
-          <folding>
-            <element signature="e#433#477#0" expanded="false" />
-            <element signature="e#689#725#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/PageObject/TreatmentReviewsPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="343">
-          <caret line="98" column="5" lean-forward="false" selection-start-line="98" selection-start-column="5" selection-end-line="98" selection-end-column="5" />
-          <folding>
-            <element signature="e#465#509#0" expanded="false" />
-            <element signature="e#2653#2689#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/PageObject/WriteAReviewPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="52" selection-end-column="5" />
-          <folding>
-            <element signature="e#486#530#0" expanded="false" />
-            <element signature="e#1422#1458#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/PageObject/SpecificTreatmentReviewsPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="343">
-          <caret line="94" column="5" lean-forward="true" selection-start-line="94" selection-start-column="5" selection-end-line="94" selection-end-column="5" />
-          <folding>
-            <element signature="e#481#525#0" expanded="false" />
-            <element signature="e#2517#2553#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/PageObject/SpecificTreatmentVideosPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="343">
-          <caret line="32" column="5" lean-forward="false" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
-          <folding>
-            <element signature="e#448#492#0" expanded="false" />
-            <element signature="e#704#740#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/PageObject/TreatmentRatingsConditionPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="90" column="0" lean-forward="false" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/PageObject/HomePage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret line="202" column="68" lean-forward="false" selection-start-line="202" selection-start-column="68" selection-end-line="202" selection-end-column="68" />
-          <folding>
-            <element signature="e#480#524#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/Assert.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/PageObject/ForgotPasswordPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="69" column="76" lean-forward="false" selection-start-line="69" selection-start-column="76" selection-end-line="69" selection-end-column="76" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/PageObject/ForgotPasswordConfirmationPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="29" selection-end-column="5" />
           <folding />
         </state>
       </provider>
@@ -1167,105 +1097,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/PageObject/ConditionSelectionPage.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/utility/BaseClass.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="82">
-          <caret line="76" column="0" lean-forward="false" selection-start-line="76" selection-start-column="0" selection-end-line="81" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#556#600#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/PageObject/BlogPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="103" column="0" lean-forward="false" selection-start-line="103" selection-start-column="0" selection-end-line="108" selection-end-column="5" />
-          <folding>
-            <element signature="e#2668#2704#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/PageObject/AboutUsPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="58" selection-end-column="5" />
+        <state relative-caret-position="102">
+          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/PageObject/ContactUsPage.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-api/3.1.0/selenium-api-3.1.0.jar!/org/openqa/selenium/By.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="60" column="0" lean-forward="false" selection-start-line="60" selection-start-column="0" selection-end-line="65" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/PageObject/DetailedBlogPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/PageObject/FacebookPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="23" column="63" lean-forward="false" selection-start-line="23" selection-start-column="63" selection-end-line="23" selection-end-column="63" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/PageObject/FAQPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="38" column="20" lean-forward="false" selection-start-line="38" selection-start-column="20" selection-end-line="38" selection-end-column="20" />
-          <folding>
-            <element signature="e#467#511#0" expanded="false" />
-            <element signature="method#questions#0;class#FAQPage#0" expanded="false" />
-            <element signature="e#1357#1393#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/PageObject/SignUpPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="123" column="21" lean-forward="false" selection-start-line="123" selection-start-column="21" selection-end-line="123" selection-end-column="21" />
-          <folding>
-            <element signature="e#502#546#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/PageObject/Header.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="108" column="88" lean-forward="false" selection-start-line="108" selection-start-column="88" selection-end-line="108" selection-end-column="88" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/PageObject/SignUpConfirmationPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="64" column="121" lean-forward="false" selection-start-line="64" selection-start-column="121" selection-end-line="64" selection-end-column="121" />
+        <state relative-caret-position="85">
+          <caret line="6" column="22" lean-forward="false" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/automationFramework/Navigation_TestCase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="867">
-          <caret line="152" column="26" lean-forward="false" selection-start-line="152" selection-start-column="26" selection-end-line="152" selection-end-column="26" />
+        <state relative-caret-position="-214">
+          <caret line="105" column="44" lean-forward="true" selection-start-line="105" selection-start-column="7" selection-end-line="105" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#636#679#0" expanded="false" />
-            <element signature="e#1858#1931#0" expanded="false" />
             <element signature="e#4136#4176#0" expanded="false" />
           </folding>
         </state>
@@ -1273,17 +1126,385 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/automationFramework/Plot_TestCase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="85" column="4" lean-forward="false" selection-start-line="85" selection-start-column="4" selection-end-line="85" selection-end-column="4" />
+        <state relative-caret-position="304">
+          <caret line="115" column="16" lean-forward="false" selection-start-line="115" selection-start-column="16" selection-end-line="115" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#768#811#0" expanded="false" />
-            <element signature="e#1080#1153#0" expanded="false" />
-            <element signature="e#2473#2513#0" expanded="false" />
-            <marker date="1488188124262" expanded="false" signature="1662:1673" ph=" { " />
-            <marker date="1488188124262" expanded="false" signature="1688:1694" ph=" }" />
-            <marker date="1488188124262" expanded="false" signature="2414:2425" ph=" { " />
-            <marker date="1488188124262" expanded="false" signature="2439:2445" ph=" }" />
+            <element signature="e#740#783#0" expanded="false" />
+            <element signature="e#1052#1125#0" expanded="false" />
+            <element signature="e#2445#2485#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/PageObject/AboutUsPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="43" column="4" lean-forward="false" selection-start-line="43" selection-start-column="4" selection-end-line="43" selection-end-column="4" />
+          <folding>
+            <element signature="e#446#490#0" expanded="false" />
+            <element signature="method#paragraphs#0;class#AboutUsPage#0" expanded="false" />
+            <element signature="e#898#936#0" expanded="false" />
+            <element signature="e#966#1003#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/PageObject/BlogPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="21" column="4" lean-forward="false" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
+          <folding>
+            <element signature="e#440#484#0" expanded="false" />
+            <element signature="method#blogs#0;class#BlogPage#0" expanded="false" />
+            <element signature="method#button_StartHere#0;class#BlogPage#0" expanded="false" />
+            <element signature="method#button_FindOutMore#0;class#BlogPage#0" expanded="false" />
+            <element signature="e#1782#1820#0" expanded="false" />
+            <element signature="e#2214#2251#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/PageObject/ConditionSelectionPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="69" column="4" lean-forward="false" selection-start-line="69" selection-start-column="4" selection-end-line="69" selection-end-column="4" />
+          <folding>
+            <element signature="e#527#571#0" expanded="false" />
+            <element signature="e#1939#1977#0" expanded="false" />
+            <element signature="e#3018#3055#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/PageObject/ContactUsPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="21" column="4" lean-forward="false" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
+          <folding>
+            <element signature="e#450#494#0" expanded="false" />
+            <element signature="e#1125#1163#0" expanded="false" />
+            <element signature="e#1191#1228#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/PageObject/DetailedBlogPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="73" column="4" lean-forward="false" selection-start-line="73" selection-start-column="4" selection-end-line="73" selection-end-column="4" />
+          <folding>
+            <element signature="e#428#472#0" expanded="false" />
+            <element signature="method#button_StartHere#0;class#DetailedBlogPage#0" expanded="false" />
+            <element signature="method#button_FindOutMore#0;class#DetailedBlogPage#0" expanded="false" />
+            <element signature="e#1597#1635#0" expanded="false" />
+            <element signature="method#clickOnStartHereButton#0;class#DetailedBlogPage#0" expanded="false" />
+            <element signature="e#1844#1881#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/PageObject/FacebookPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="17" column="4" lean-forward="false" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#285#322#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/PageObject/FirstStepOfCoachingProgramPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="34" column="4" lean-forward="false" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="4" />
+          <folding>
+            <element signature="e#453#497#0" expanded="false" />
+            <element signature="e#709#747#0" expanded="false" />
+            <element signature="e#777#814#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/PageObject/FAQPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="40" column="4" lean-forward="false" selection-start-line="40" selection-start-column="4" selection-end-line="40" selection-end-column="4" />
+          <folding>
+            <element signature="e#438#482#0" expanded="false" />
+            <element signature="method#questions#0;class#FAQPage#0" expanded="false" />
+            <element signature="e#846#884#0" expanded="false" />
+            <element signature="e#912#949#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/PageObject/Footer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="24" column="4" lean-forward="false" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="4" />
+          <folding>
+            <element signature="e#503#547#0" expanded="false" />
+            <element signature="method#link_FooterLink#0;class#Footer#0" expanded="false" />
+            <element signature="method#link_FooterCopyrights#0;class#Footer#0" expanded="false" />
+            <element signature="method#link_Connect#0;class#Footer#0" expanded="false" />
+            <element signature="e#2410#2448#0" expanded="false" />
+            <element signature="e#5527#5535#0" expanded="true" />
+            <element signature="e#5692#5729#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/PageObject/ForgotPasswordConfirmationPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="15" column="4" lean-forward="false" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
+          <folding>
+            <element signature="e#319#356#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/PageObject/ForgotPasswordPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="20" column="4" lean-forward="false" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
+          <folding>
+            <element signature="e#432#476#0" expanded="false" />
+            <element signature="method#input_EmailAddress#0;class#ForgotPasswordPage#0" expanded="false" />
+            <element signature="method#button_ForgotPassword#0;class#ForgotPasswordPage#0" expanded="false" />
+            <element signature="e#1152#1190#0" expanded="false" />
+            <element signature="e#1621#1658#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/PageObject/Header.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="75" column="20" lean-forward="true" selection-start-line="75" selection-start-column="20" selection-end-line="75" selection-end-column="20" />
+          <folding>
+            <element signature="e#437#481#0" expanded="false" />
+            <element signature="method#link_LogIn#0;class#Header#0" expanded="false" />
+            <element signature="method#link_SignUp#0;class#Header#0" expanded="false" />
+            <element signature="method#link_SignOut#0;class#Header#0" expanded="false" />
+            <element signature="method#link_Profile#0;class#Header#0" expanded="false" />
+            <element signature="e#1979#2017#0" expanded="false" />
+            <element signature="e#2341#2378#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/PageObject/HomePage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="185" column="4" lean-forward="false" selection-start-line="185" selection-start-column="4" selection-end-line="185" selection-end-column="4" />
+          <folding>
+            <element signature="e#451#495#0" expanded="false" />
+            <element signature="e#2718#2756#0" expanded="false" />
+            <element signature="e#4379#4416#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/PageObject/PrivacyPolicyPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="21" column="4" lean-forward="false" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
+          <folding>
+            <element signature="e#458#502#0" expanded="false" />
+            <element signature="e#900#938#0" expanded="false" />
+            <element signature="e#968#1005#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/PageObject/ResourcesPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="43" column="4" lean-forward="false" selection-start-line="43" selection-start-column="4" selection-end-line="43" selection-end-column="4" />
+          <folding>
+            <element signature="e#450#494#0" expanded="false" />
+            <element signature="method#resources#0;class#ResourcesPage#0" expanded="false" />
+            <element signature="e#885#923#0" expanded="false" />
+            <element signature="e#953#989#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/PageObject/SignUpConfirmationPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="51" column="4" lean-forward="false" selection-start-line="51" selection-start-column="4" selection-end-line="51" selection-end-column="4" />
+          <folding>
+            <element signature="e#468#512#0" expanded="false" />
+            <element signature="method#button_WriteAReviewOrFindTreatments#0;class#SignUpConfirmationPage#0" expanded="false" />
+            <element signature="e#1254#1292#0" expanded="false" />
+            <element signature="e#1322#1359#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/PageObject/SignUpPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="22" column="4" lean-forward="false" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
+          <folding>
+            <element signature="e#473#517#0" expanded="false" />
+            <element signature="e#1634#1672#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/PageObject/SingleReviewPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="42" column="4" lean-forward="false" selection-start-line="42" selection-start-column="4" selection-end-line="42" selection-end-column="4" />
+          <folding>
+            <element signature="e#428#472#0" expanded="false" />
+            <element signature="method#div_ReviewInfo#0;class#SingleReviewPage#0" expanded="false" />
+            <element signature="e#882#920#0" expanded="false" />
+            <element signature="e#950#987#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/PageObject/SpecificTreatmentReviewsPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="60" column="4" lean-forward="false" selection-start-line="60" selection-start-column="4" selection-end-line="60" selection-end-column="4" />
+          <folding>
+            <element signature="e#452#496#0" expanded="false" />
+            <element signature="method#button_ShareYourExperience#0;class#SpecificTreatmentReviewsPage#0" expanded="false" />
+            <element signature="method#tab#0;class#SpecificTreatmentReviewsPage#0" expanded="false" />
+            <element signature="e#1643#1681#0" expanded="false" />
+            <element signature="method#clickOnShareYourButton#0;class#SpecificTreatmentReviewsPage#0" expanded="false" />
+            <element signature="method#clickOnTab#0;class#SpecificTreatmentReviewsPage#0" expanded="false" />
+            <element signature="e#2359#2396#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/PageObject/SpecificTreatmentVideosPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="301">
+          <caret line="36" column="4" lean-forward="false" selection-start-line="36" selection-start-column="4" selection-end-line="36" selection-end-column="4" />
+          <folding>
+            <element signature="e#419#463#0" expanded="false" />
+            <element signature="e#493#542#0" expanded="false" />
+            <element signature="e#675#712#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/PageObject/TermsOfServicePage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="43" column="4" lean-forward="false" selection-start-line="43" selection-start-column="4" selection-end-line="43" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#460#504#0" expanded="false" />
+            <element signature="method#paragraphs#0;class#TermsOfServicePage#0" expanded="false" />
+            <element signature="e#904#942#0" expanded="false" />
+            <element signature="e#972#1009#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/PageObject/TestimonialsPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="21" column="4" lean-forward="false" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
+          <folding>
+            <element signature="e#456#500#0" expanded="false" />
+            <element signature="method#cards#0;class#TestimonialsPage#0" expanded="false" />
+            <element signature="e#892#930#0" expanded="false" />
+            <element signature="e#960#997#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/PageObject/TreatmentRatingsConditionPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="163" column="4" lean-forward="false" selection-start-line="163" selection-start-column="4" selection-end-line="163" selection-end-column="4" />
+          <folding>
+            <element signature="e#454#498#0" expanded="false" />
+            <element signature="method#link_ChangeCondition#0;class#TreatmentRatingsConditionPage#0" expanded="false" />
+            <element signature="method#button_LearnMore#0;class#TreatmentRatingsConditionPage#0" expanded="false" />
+            <element signature="method#button_ShareYourExperience#0;class#TreatmentRatingsConditionPage#0" expanded="false" />
+            <element signature="method#tab#0;class#TreatmentRatingsConditionPage#0" expanded="false" />
+            <element signature="method#li_Treatment#0;class#TreatmentRatingsConditionPage#0" expanded="false" />
+            <element signature="e#2834#2872#0" expanded="false" />
+            <element signature="method#clickOnChangeConditionLink#0;class#TreatmentRatingsConditionPage#0" expanded="false" />
+            <element signature="method#clickOnLearnMoreButton#0;class#TreatmentRatingsConditionPage#0" expanded="false" />
+            <element signature="method#clickOnShareYourExperienceButton#0;class#TreatmentRatingsConditionPage#0" expanded="false" />
+            <element signature="method#clickOnSpecificTab#0;class#TreatmentRatingsConditionPage#0" expanded="false" />
+            <element signature="method#clickOnSpecificTreatment#0;class#TreatmentRatingsConditionPage#0" expanded="false" />
+            <element signature="n#!!doc;n#goToConditionSelectionPage#0;n#TreatmentRatingsConditionPage#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/PageObject/TreatmentReviewsPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="95" column="4" lean-forward="false" selection-start-line="95" selection-start-column="4" selection-end-line="95" selection-end-column="4" />
+          <folding>
+            <element signature="e#436#480#0" expanded="false" />
+            <element signature="e#1619#1657#0" expanded="false" />
+            <element signature="method#clickOnSpecificTab#0;class#TreatmentReviewsPage#0" expanded="false" />
+            <element signature="e#2495#2532#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/PageObject/TreatmentVideosPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="32" column="4" lean-forward="false" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="4" />
+          <folding>
+            <element signature="e#404#448#0" expanded="false" />
+            <element signature="e#478#516#0" expanded="false" />
+            <element signature="e#546#583#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/PageObject/TwitterPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="15" column="4" lean-forward="false" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
+          <folding>
+            <element signature="e#281#318#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/PageObject/WriteAReviewConfirmationPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="58" column="4" lean-forward="false" selection-start-line="58" selection-start-column="4" selection-end-line="58" selection-end-column="4" />
+          <folding>
+            <element signature="e#453#497#0" expanded="false" />
+            <element signature="method#form_SignUp#0;class#WriteAReviewConfirmationPage#0" expanded="false" />
+            <element signature="method#txt_ReviewUserName#0;class#WriteAReviewConfirmationPage#0" expanded="false" />
+            <element signature="e#1355#1393#0" expanded="false" />
+            <element signature="e#1423#1460#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/PageObject/WriteAReviewPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="22" column="4" lean-forward="false" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
+          <folding>
+            <element signature="e#457#501#0" expanded="false" />
+            <element signature="method#text_GroupTitle#0;class#WriteAReviewPage#0" expanded="false" />
+            <element signature="e#930#968#0" expanded="false" />
+            <element signature="e#998#1035#0" expanded="false" />
           </folding>
         </state>
       </provider>

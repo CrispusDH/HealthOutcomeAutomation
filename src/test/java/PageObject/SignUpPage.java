@@ -3,13 +3,13 @@ package PageObject;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import utility.FindElementsNewMechanism;
+import utility.BaseClass;
 import utility.RandomNumber;
 import utility.ReadXMLFile;
 
 import java.util.List;
 
-public class SignUpPage extends FindElementsNewMechanism{
+public class SignUpPage extends BaseClass {
     private final WebDriver driver;
     private WebElement element;
     private List<WebElement> elements;
@@ -31,28 +31,28 @@ public class SignUpPage extends FindElementsNewMechanism{
     private By button_SignUpWithFacebookLocator = By.cssSelector(".facebook-login-feature a");
 
     //Email Address input field
-    public WebElement input_EmailAddress(){
+    private WebElement input_EmailAddress(){
 
         return findElements(driver, input_EmailAddressLocator,5000).get(0);
 
     }
 
     //Password input field
-    public WebElement input_Password(){
+    private WebElement input_Password(){
 
         return findElements(driver, input_PasswordLocator,5000).get(0);
 
     }
 
     //Join Now button
-    public WebElement button_JoinNow(){
+    private WebElement button_JoinNow(){
 
         return findElements(driver, button_JoinNowLocator,5000).get(0);
 
     }
 
     //Sign Up with Facebook button
-    public WebElement button_SignUpWithFacebook(){
+    private WebElement button_SignUpWithFacebook(){
 
         return findElements(driver, button_SignUpWithFacebookLocator,5000).get(0);
 
@@ -60,10 +60,10 @@ public class SignUpPage extends FindElementsNewMechanism{
 
     //</editor-fold>
 
-    //<editor-fold desc="Base actions with elements">
+    //<editor-fold desc="Private methods">
 
     //type email address
-    public SignUpPage typeRandomEmailAddress(){
+    private SignUpPage typeRandomEmailAddress(){
 
         input_EmailAddress().sendKeys((RandomNumber.createRandomNumber(Integer.valueOf(ReadXMLFile.takeConstantFromXML("RandomNumberSet", "Main", "minRandomValue")), Integer.valueOf(ReadXMLFile.takeConstantFromXML("RandomNumberSet", "Main", "maxRandomValue"))) + "@gmail.com"));
 
@@ -72,7 +72,7 @@ public class SignUpPage extends FindElementsNewMechanism{
     }
 
     //type password
-    public SignUpPage typePassword(){
+    private SignUpPage typePassword(){
 
         input_Password().sendKeys(ReadXMLFile.takeConstantFromXML("Account", "Main", "password"));
 
@@ -81,12 +81,29 @@ public class SignUpPage extends FindElementsNewMechanism{
     }
 
     //click on Join Now button
-    public SignUpConfirmationPage clickOnJoinNowButton(){
+    private SignUpConfirmationPage clickOnJoinNowButton(){
 
         button_JoinNow().click();
 
         return new SignUpConfirmationPage(driver);
 
+    }
+
+    //</editor-fold>
+
+    //<editor-fold desc="Public methods">
+
+    //Sign Up page offers the user the service of being able to Sign Up via email
+    public SignUpConfirmationPage signUpRandom(){
+
+        //type email address
+        typeRandomEmailAddress();
+
+        //type password
+        typePassword();
+
+        //click on Join Now button
+        return clickOnJoinNowButton();
     }
 
     //check page url
@@ -108,23 +125,6 @@ public class SignUpPage extends FindElementsNewMechanism{
 
         return button_SignUpWithFacebook().isDisplayed();
 
-    }
-
-    //</editor-fold>
-
-    //<editor-fold desc="Final methods">
-
-    //Sign Up page offers the user the service of being able to Sign Up via email
-    public SignUpConfirmationPage signUpRandom(){
-
-        //type email address
-        typeRandomEmailAddress();
-
-        //type password
-        typePassword();
-
-        //click on Join Now button
-        return clickOnJoinNowButton();
     }
 
     //</editor-fold>

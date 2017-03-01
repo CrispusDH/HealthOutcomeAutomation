@@ -3,12 +3,12 @@ package PageObject;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import utility.FindElementsNewMechanism;
+import utility.BaseClass;
 
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
-public class HomePage extends FindElementsNewMechanism{
+public class HomePage extends BaseClass {
     private final WebDriver driver;
     private WebElement element;
     private List<WebElement> elements;
@@ -35,42 +35,42 @@ public class HomePage extends FindElementsNewMechanism{
     private By li_FeaturedConditionLocator = By.cssSelector(".condition.left > .condition-link");
 
     //email address input field
-    public WebElement input_EmailAddress(){
+    private WebElement input_EmailAddress(){
 
         return findElements(driver, input_EmailAddressLocator,5000).get(0);
 
     }
 
     //password input field
-    public WebElement input_Password(){
+    private WebElement input_Password(){
 
         return findElements(driver, input_PasswordLocator,5000).get(0);
 
     }
 
     //login button
-    public WebElement button_Login(){
+    private WebElement button_Login(){
 
         return findElements(driver, button_LoginLocator,5000).get(0);
 
     }
 
     //Get Started button
-    public WebElement button_GetStarted(){
+    private WebElement button_GetStarted(){
 
         return findElements(driver, button_GetStartedLocator,5000).get(0);
 
     }
 
     //forgot password link
-    public WebElement link_ForgotPassword(){
+    private WebElement link_ForgotPassword(){
 
         return findElements(driver, link_ForgotPasswordLocator,5000).get(0);
 
     }
 
     //Start Here button
-    public WebElement button_StartHere (){
+    private WebElement button_StartHere(){
 
         elements = findElements(driver, button_StartHereLocator, 5000);
 
@@ -85,14 +85,14 @@ public class HomePage extends FindElementsNewMechanism{
     }
 
     //Single Review form
-    public WebElement form_SingleReview(){
+    private WebElement form_SingleReview(){
 
         return findElements(driver, form_SingleReviewLocator,5000).get(0);
 
     }
 
     //left Condition
-    public WebElement li_FeaturedCondition(){
+    private WebElement li_FeaturedCondition(){
 
         return findElements(driver, li_FeaturedConditionLocator,5000).get(0);
 
@@ -100,10 +100,10 @@ public class HomePage extends FindElementsNewMechanism{
 
     //</editor-fold>
 
-    //<editor-fold desc="Base actions with elements">
+    //<editor-fold desc="Private methods">
 
     //type email address
-    public HomePage typeEmailAddress(String sEmailAddress){
+    private HomePage typeEmailAddress(String sEmailAddress){
 
         input_EmailAddress().sendKeys(sEmailAddress);
 
@@ -112,7 +112,7 @@ public class HomePage extends FindElementsNewMechanism{
     }
 
     //type password
-    public HomePage typePassword(String sPassword){
+    private HomePage typePassword(String sPassword){
 
         input_Password().sendKeys(sPassword);
 
@@ -121,7 +121,7 @@ public class HomePage extends FindElementsNewMechanism{
     }
 
     //click on Login button
-    public HomePage clickOnLoginButton(){
+    private HomePage clickOnLoginButton(){
 
         button_Login().click();
 
@@ -130,7 +130,7 @@ public class HomePage extends FindElementsNewMechanism{
     }
 
     //click on Forgot password link
-    public ForgotPasswordPage clickOnForgotPasswordLink(){
+    private ForgotPasswordPage clickOnForgotPasswordLink(){
 
         link_ForgotPassword().click();
 
@@ -139,7 +139,7 @@ public class HomePage extends FindElementsNewMechanism{
     }
 
     //click on Start Here button
-    public WriteAReviewPage clickOnStartHereButton(){
+    private WriteAReviewPage clickOnStartHereButton(){
 
         button_StartHere().click();
 
@@ -148,7 +148,7 @@ public class HomePage extends FindElementsNewMechanism{
     }
 
     //click on Single Review form
-    public SingleReviewPage clickOnSingleReviewForm(){
+    private SingleReviewPage clickOnSingleReviewForm(){
 
         form_SingleReview().click();
 
@@ -157,7 +157,7 @@ public class HomePage extends FindElementsNewMechanism{
     }
 
     //click on Featured condition
-    public TreatmentRatingsConditionPage clickOnFeaturedCondition(){
+    private TreatmentRatingsConditionPage clickOnFeaturedCondition(){
 
         li_FeaturedCondition().click();
 
@@ -173,7 +173,7 @@ public class HomePage extends FindElementsNewMechanism{
     }
 
     //click on Get Started button
-    public ConditionSelectionPage clickOnGetStartedButton(){
+    private ConditionSelectionPage clickOnGetStartedButton(){
 
         button_GetStarted().click();
 
@@ -181,23 +181,9 @@ public class HomePage extends FindElementsNewMechanism{
 
     }
 
-    //get Featured Condition url
-    public String getFeaturedConditionUrl(){
-
-        return li_FeaturedCondition().getAttribute("href");
-
-    }
-
-    //get Get Started button url
-    public String getGetStartedButtonUrl(){
-
-        return button_GetStarted().getAttribute("href");
-
-    }
-
     //</editor-fold>
 
-    //<editor-fold desc="Final methods">
+    //<editor-fold desc="Public methods">
 
     //Home page offers the user the service of being able to "log into"
     public HomePage loginAs(String sEmailAddress, String sPassword){
@@ -245,6 +231,20 @@ public class HomePage extends FindElementsNewMechanism{
     public ConditionSelectionPage goToConditionSelectionPage(){
 
         return clickOnGetStartedButton();
+
+    }
+
+    //get Featured Condition url
+    public String getFeaturedConditionUrl(){
+
+        return li_FeaturedCondition().getAttribute("href");
+
+    }
+
+    //get Get Started button url
+    public String getGetStartedButtonUrl(){
+
+        return button_GetStarted().getAttribute("href");
 
     }
 

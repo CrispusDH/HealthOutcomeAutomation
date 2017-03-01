@@ -3,12 +3,12 @@ package PageObject;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import utility.FindElementsNewMechanism;
+import utility.BaseClass;
 import utility.ReadXMLFile;
 
 import java.util.List;
 
-public class AboutUsPage extends FindElementsNewMechanism{
+public class AboutUsPage extends BaseClass {
     private final WebDriver driver;
     private WebElement element;
     private List<WebElement> elements;
@@ -27,7 +27,7 @@ public class AboutUsPage extends FindElementsNewMechanism{
     private By paragraphsLocator = By.cssSelector(".post p");
 
     //find all paragraphs on page
-    public List<WebElement> paragraphs (){
+    private List<WebElement> paragraphs(){
 
         return findElements(driver, By.cssSelector(".post p"), 5000);
 
@@ -35,21 +35,13 @@ public class AboutUsPage extends FindElementsNewMechanism{
 
     //</editor-fold>
 
-    //<editor-fold desc="Base actions with elements">
+    //<editor-fold desc="Private methods">
 
-    //check that AboutUS body are not empty
-    public boolean bodyIsEmpty(){
 
-        return paragraphs().isEmpty();
 
-    }
+    //</editor-fold>
 
-    //check that About Us page has paragraphs
-    public boolean amountOfParagraphs(){
-
-        return paragraphs().size() > 0;
-
-    }
+    //<editor-fold desc="Public methods">
 
     //check page url
     public boolean checkUrl(){
@@ -58,11 +50,19 @@ public class AboutUsPage extends FindElementsNewMechanism{
 
     }
 
-    //</editor-fold>
+    //check that About Us page has paragraphs
+    public boolean checkAmountOfParagraphs(){
 
-    //<editor-fold desc="Final methods">
+        return paragraphs().size() > 0;
 
+    }
 
+    //check that AboutUS body are not empty
+    public boolean checkIsEmpty(){
+
+        return paragraphs().isEmpty();
+
+    }
 
     //</editor-fold>
 

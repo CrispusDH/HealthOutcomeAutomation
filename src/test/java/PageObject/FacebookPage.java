@@ -2,12 +2,11 @@ package PageObject;
 
 
 import org.openqa.selenium.WebDriver;
-import utility.FindElementsNewMechanism;
+import utility.BaseClass;
 import utility.ReadXMLFile;
 
-import java.util.concurrent.TimeUnit;
+public class FacebookPage extends BaseClass {
 
-public class FacebookPage extends FindElementsNewMechanism{
     private final WebDriver driver;
 
     public FacebookPage(WebDriver driver){
@@ -16,7 +15,7 @@ public class FacebookPage extends FindElementsNewMechanism{
 
     }
 
-    //<editor-fold desc="Base actions with elements">
+    //<editor-fold desc="Public methods">
 
     //check page url
     public boolean checkUrl(){

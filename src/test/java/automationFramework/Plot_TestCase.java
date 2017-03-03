@@ -2,6 +2,7 @@ package automationFramework;
 
 import PageObject.ForgotPasswordConfirmationPage;
 import PageObject.Header;
+import PageObject.HomePage;
 import PageObject.SignUpConfirmationPage;
 import junit.framework.TestCase;
 import org.junit.*;
@@ -30,6 +31,7 @@ public class Plot_TestCase extends TestCase {
     private Header header;
     private ForgotPasswordConfirmationPage forgotPasswordConfirmationPage;
     private SignUpConfirmationPage signUpConfirmationPage;
+    private HomePage homePage;
 
     //</editor-fold>
 
@@ -72,6 +74,7 @@ public class Plot_TestCase extends TestCase {
         header = new Header(driver);
         forgotPasswordConfirmationPage = new ForgotPasswordConfirmationPage(driver);
         signUpConfirmationPage = new SignUpConfirmationPage(driver);
+        homePage = new HomePage(driver);
     }
 
     //execute after each TC
@@ -140,5 +143,17 @@ public class Plot_TestCase extends TestCase {
         Assert.assertTrue(signUpConfirmationPage.checkWriteAReviewButtonIsDisplayed());
     }
 
+    //Write a Review, logged out user, condition is unknown
+    @Test
+    public void writeAReviewLoggedOutUserConditionIsUnknown(){
+
+        homePage.goToWriteAReviewPage()
+                .writeAReview(
+                        ReadXMLFile.takeConstantFromXML("BodyArea", "Neck", "name"),
+                        ReadXMLFile.takeConstantFromXML("Condition", "Neck pain with radiculopathy", "name"),
+                        "Male"
+                );
+
+    }
 
 }

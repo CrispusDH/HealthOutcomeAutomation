@@ -30,7 +30,7 @@ public class HomePage extends BaseClass {
     private By button_LoginLocator = By.tagName("button");
     private By button_GetStartedLocator = By.cssSelector(".hero-titles a");
     private By link_ForgotPasswordLocator = By.linkText("Forgot password?");
-    private By button_StartHereLocator = By.cssSelector(".button-cta span");
+    private By button_StartHereLocator = By.cssSelector(".body-content .button-cta span");
     private By form_SingleReviewLocator = By.cssSelector(".review-info");
     private By li_FeaturedConditionLocator = By.cssSelector(".condition.left > .condition-link");
 

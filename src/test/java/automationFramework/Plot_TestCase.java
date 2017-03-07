@@ -151,8 +151,11 @@ public class Plot_TestCase extends TestCase {
                 .writeAReview(
                         ReadXMLFile.takeConstantFromXML("BodyArea", "Neck", "name"),
                         ReadXMLFile.takeConstantFromXML("Condition", "Neck pain with radiculopathy", "name"),
-                        "Male"
-                );
+                        "Male",
+                        "0 - 6 Months",
+                        "0 - 4 hours",
+                        "Yes");
+
 
     }
 

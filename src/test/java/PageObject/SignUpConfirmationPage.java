@@ -45,11 +45,30 @@ public class SignUpConfirmationPage extends BaseClass {
 
     //<editor-fold desc="Private methods">
 
+    //check page url
+    public boolean checkUrl(){
 
+        return ReadXMLFile.takeConstantFromXML("URL", "SignUp Confirmation Page", "url").equals(driver.getCurrentUrl());
+
+    }
+
+    //check that Treatments button is displayed on page
+    public boolean checkTreatmentsButtonIsDisplayed(){
+
+        return button_WriteAReviewOrFindTreatments(ReadXMLFile.takeConstantFromXML("ButtonName", "FindTreatments", "name")).isDisplayed();
+
+    }
+
+    //check that Write a Review button is displayed on page
+    public boolean checkWriteAReviewButtonIsDisplayed(){
+
+        return button_WriteAReviewOrFindTreatments(ReadXMLFile.takeConstantFromXML("ButtonName", "WriteAReview", "name")).isDisplayed();
+
+    }
 
     //</editor-fold>
 
-    //<editor-fold desc="Public methods">
+    //<editor-fold desc="Final methods">
 
 
 

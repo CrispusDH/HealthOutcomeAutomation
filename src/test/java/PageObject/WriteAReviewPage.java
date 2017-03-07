@@ -8,7 +8,6 @@ import utility.BaseClass;
 import utility.ReadXMLFile;
 
 import java.util.List;
-import java.util.concurrent.TimeUnit;
 
 public class WriteAReviewPage extends BaseClass {
     private final WebDriver driver;
@@ -29,9 +28,16 @@ public class WriteAReviewPage extends BaseClass {
     private By text_GroupTitleLocator = By.cssSelector(".group-title");
     private By li_InjuryBodyAreaLocator = By.cssSelector(".parts-list li");
     private By li_ConditionLocator = By.cssSelector(".conditions ul li");
-    //I do not why cssSelector does not see classes inside section tag
     private By li_GenderMaleLocator = By.cssSelector(".form-content > div > div > div:nth-child(3) > section > div > ul > li.option-1");
     private By li_GenderFemaleLocator = By.cssSelector(".form-content > div > div > div:nth-child(3) > section > div > ul > li.option-2");
+    private By li_SufferedTime0_6Locator = By.cssSelector(".form-content > div > div > div:nth-child(4) > section > div > ul > li.option-1");
+    private By li_SufferedTime6_18Locator = By.cssSelector(".form-content > div > div > div:nth-child(4) > section > div > ul > li.option-2");
+    private By li_SufferedTime18_Locator = By.cssSelector(".form-content > div > div > div:nth-child(4) > section > div > ul > li.option-3");
+    private By li_PhysicalActivity0_4Locator = By.cssSelector(".form-content > div > div > div:nth-child(5) > section > div > ul > li.option-1");
+    private By li_PhysicalActivity4_8Locator = By.cssSelector(".form-content > div > div > div:nth-child(5) > section > div > ul > li.option-2");
+    private By li_PhysicalActivity8_Locator = By.cssSelector(".form-content > div > div > div:nth-child(5) > section > div > ul > li.option-3");
+    private By li_isRepeatYes_Locator = By.cssSelector(".form-content > div > div > div:nth-child(6) > section > div > ul > li.option-1");
+    private By li_isRepeatNo_Locator = By.cssSelector(".form-content > div > div > div:nth-child(6) > section > div > ul > li.option-2");
 
     //group title name
     private WebElement text_GroupTitle(){
@@ -84,6 +90,62 @@ public class WriteAReviewPage extends BaseClass {
 
     }
 
+    //find 0 - 6 Months
+    private WebElement li_SufferedTime0_6(){
+
+        return findElements(driver, li_SufferedTime0_6Locator,5000).get(0);
+
+    }
+
+    //find 6 - 18 Months
+    private WebElement li_SufferedTime6_18(){
+
+        return findElements(driver, li_SufferedTime6_18Locator,5000).get(0);
+
+    }
+
+    //find 18+ Months
+    private WebElement li_SufferedTime18_(){
+
+        return findElements(driver, li_SufferedTime18_Locator,5000).get(0);
+
+    }
+
+    //find 0 - 4 hours
+    private WebElement li_PhysicalActivity0_4(){
+
+        return findElements(driver, li_PhysicalActivity0_4Locator,5000).get(0);
+
+    }
+
+    //find 4 - 8 hours
+    private WebElement li_PhysicalActivity4_8(){
+
+        return findElements(driver, li_PhysicalActivity4_8Locator,5000).get(0);
+
+    }
+
+    //find 8+ hours
+    private WebElement li_PhysicalActivity8_(){
+
+        return findElements(driver, li_PhysicalActivity8_Locator, 5000).get(0);
+
+    }
+
+    //is repeat Yes
+    private WebElement li_isRepeatYes(){
+
+        return findElements(driver, li_isRepeatYes_Locator, 5000).get(0);
+
+    }
+
+    //is repeat No
+    private WebElement li_isRepeatNo(){
+
+        return findElements(driver, li_isRepeatNo_Locator, 5000).get(0);
+
+    }
+
     //</editor-fold>
 
     //<editor-fold desc="Private methods">
@@ -107,7 +169,7 @@ public class WriteAReviewPage extends BaseClass {
     }
 
     //click on gender
-    public WriteAReviewPage clickOnGender(String sGender){
+    private WriteAReviewPage clickOnGender(String sGender){
 
         switch (sGender){
 
@@ -117,6 +179,72 @@ public class WriteAReviewPage extends BaseClass {
 
             case "Female":
                 li_GenderFemale().click();
+                return new WriteAReviewPage(driver);
+
+        }
+
+        return new WriteAReviewPage(driver);
+
+    }
+
+    //choose suffered time option
+    private WriteAReviewPage chooseSufferedTimeOption(String sOption){
+
+        switch (sOption){
+
+            case "0 - 6 Months":
+                li_SufferedTime0_6().click();
+                return new WriteAReviewPage(driver);
+
+            case "6 - 18 Months":
+                li_SufferedTime6_18().click();
+                return new WriteAReviewPage(driver);
+
+            case "18+ Months":
+                li_SufferedTime18_().click();
+                return new WriteAReviewPage(driver);
+
+        }
+
+        return new WriteAReviewPage(driver);
+
+    }
+
+    //choose is this a repeat injury or condition
+    private WriteAReviewPage chooseIsRepeatOption(String sOption){
+
+        switch (sOption){
+
+            case "Yes":
+                li_isRepeatYes().click();
+                return new WriteAReviewPage(driver);
+
+            case "No":
+                li_isRepeatNo().click();
+                return new WriteAReviewPage(driver);
+
+        }
+
+        return new WriteAReviewPage(driver);
+
+    }
+
+
+    //choose level of physical activity
+    private WriteAReviewPage choosePhysicalActivity(String sOption){
+
+        switch (sOption){
+
+            case "0 - 4 hours":
+                li_PhysicalActivity0_4().click();
+                return new WriteAReviewPage(driver);
+
+            case "4 - 8 hours":
+                li_PhysicalActivity4_8().click();
+                return new WriteAReviewPage(driver);
+
+            case "8+ hours":
+                li_PhysicalActivity8_().click();
                 return new WriteAReviewPage(driver);
 
         }
@@ -150,11 +278,14 @@ public class WriteAReviewPage extends BaseClass {
 
     }
 
-    public void writeAReview(String sBodyArea, String sCondition, String sGender){
+    public void writeAReview(String sBodyArea, String sCondition, String sGender, String sSufferedTimeOption, String sPhysicalActivityOption, String sIsRepeatOption){
 
         clickOnSpecificBodyArea(sBodyArea)
                 .clickOnSpecificCondition(sCondition)
-                .clickOnGender(sGender);
+                .clickOnGender(sGender)
+                .chooseSufferedTimeOption(sSufferedTimeOption)
+                .choosePhysicalActivity(sPhysicalActivityOption)
+                .chooseIsRepeatOption(sIsRepeatOption);
 
     }
 

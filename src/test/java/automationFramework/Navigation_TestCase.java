@@ -69,12 +69,12 @@ public class Navigation_TestCase extends TestCase{
         }
     }
 
-/*
+
     @AfterClass
     public static void createAndStopService() {
         service.stop();
     }
-*/
+
 
     @Before
     public void createNewDriver() {
@@ -109,13 +109,12 @@ public class Navigation_TestCase extends TestCase{
         specificTreatmentVideosPage = new SpecificTreatmentVideosPage(driver);
     }
 
-/*
     //execute after each TC
     @After
     public void quitDriver() {
         driver.quit();
     }
-*/
+
     //</editor-fold>
 
     //<editor-fold desc="Rules declaration">

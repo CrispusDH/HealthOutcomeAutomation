@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:test-suite start="1488889763464" stop="1488889814461" version="1.5.2" xmlns:ns2="urn:model.allure.qatools.yandex.ru">
+    <name>automationFramework.Plot_TestCase</name>
+    <test-cases>
+        <test-case start="1488889763466" stop="1488889773804" status="passed">
+            <name>writeAReviewLoggedOutUserConditionIsUnknown</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Crispus-PC"/>
+                <label name="thread" value="6612@Crispus-PC.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1488889773805" stop="1488889785040" status="passed">
+            <name>logIn</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Crispus-PC"/>
+                <label name="thread" value="6612@Crispus-PC.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1488889785042" stop="1488889799050" status="passed">
+            <name>forgotPasswordFlow</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Crispus-PC"/>
+                <label name="thread" value="6612@Crispus-PC.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1488889799055" stop="1488889813754" status="passed">
+            <name>signUpWithoutReview</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Crispus-PC"/>
+                <label name="thread" value="6612@Crispus-PC.main(1)"/>
+            </labels>
+        </test-case>
+    </test-cases>
+    <labels>
+        <label name="framework" value="JUnit"/>
+        <label name="language" value="JAVA"/>
+    </labels>
+</ns2:test-suite>

@@ -64,12 +64,6 @@ public class Footer extends BaseClass {
     //facebook, twitter, linkedin, mailto links
     private WebElement link_Connect(String name){
 
-        try {
-            TimeUnit.SECONDS.sleep(2);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-
         elements = findElements(driver, link_ConnectLocator, 5000);
 
         //System.out.println(elements.get(0).getTagName());

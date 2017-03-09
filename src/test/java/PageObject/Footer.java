@@ -69,8 +69,6 @@ public class Footer extends BaseClass {
 
             elements = findElements(driver, link_ConnectLocator, 5000);
 
-            System.out.println(elements.size());
-
             counter++;
 
         } while ((elements.size() == 1) && (counter < 10));
@@ -201,8 +199,6 @@ public class Footer extends BaseClass {
 
             counter++;
 
-            System.out.println(counter);
-
         } while ((currentTab.size() == 1) && (counter < 10));
 
         driver.switchTo().window(currentTab.get(1));
@@ -225,7 +221,18 @@ public class Footer extends BaseClass {
         }
 
         //switch to new window
-        ArrayList<String> currentTab = new ArrayList<String>(driver.getWindowHandles());
+        ArrayList<String> currentTab;
+        int counter = 1;
+        do {
+
+            currentTab = new ArrayList<String>(driver.getWindowHandles());
+
+            System.out.println(currentTab.size());
+
+            counter++;
+
+        } while ((currentTab.size() == 1) && (counter < 10));
+        
         driver.switchTo().window(currentTab.get(1));
 
         return new TwitterPage(driver);

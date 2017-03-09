@@ -73,8 +73,6 @@ public class Footer extends BaseClass {
 
             counter++;
 
-            //System.out.println(counter);
-
         } while ((elements.size() == 1) && (counter < 10));
 
         switch (name){
@@ -193,7 +191,20 @@ public class Footer extends BaseClass {
         link_Connect("facebook").click();
 
         //switch to new window
-        ArrayList<String> currentTab = new ArrayList<String>(driver.getWindowHandles());
+        ArrayList<String> currentTab;
+        int counter = 1;
+        do {
+
+            currentTab = new ArrayList<String>(driver.getWindowHandles());
+
+            System.out.println(currentTab.size());
+
+            counter++;
+
+            System.out.println(counter);
+
+        } while ((currentTab.size() == 1) && (counter < 10));
+
         driver.switchTo().window(currentTab.get(1));
 
         return new FacebookPage(driver);

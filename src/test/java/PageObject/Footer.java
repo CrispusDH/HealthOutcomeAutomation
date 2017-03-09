@@ -64,8 +64,6 @@ public class Footer extends BaseClass {
     //facebook, twitter, linkedin, mailto links
     private WebElement link_Connect(String name){
 
-       // elements = findElements(driver, link_ConnectLocator, 5000);
-
         int counter = 1;
         do {
 
@@ -75,7 +73,7 @@ public class Footer extends BaseClass {
 
             counter++;
 
-            System.out.println(counter);
+            //System.out.println(counter);
 
         } while ((elements.size() == 1) && (counter < 10));
 

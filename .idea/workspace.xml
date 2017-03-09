@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4ca991d3-ec18-4ace-b08d-b16c63f24db2" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/PageObject/Footer.class" afterPath="$PROJECT_DIR$/target/test-classes/PageObject/Footer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/PageObject/Footer.java" afterPath="$PROJECT_DIR$/src/test/java/PageObject/Footer.java" />
     </list>
     <ignored path="HealthOutcome.iws" />
@@ -46,8 +44,8 @@
       <file leaf-file-name="Footer.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/PageObject/Footer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="265">
-              <caret line="80" column="0" lean-forward="false" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
+            <state relative-caret-position="176">
+              <caret line="71" column="12" lean-forward="false" selection-start-line="71" selection-start-column="12" selection-end-line="71" selection-end-column="12" />
               <folding>
                 <element signature="method#link_FooterLink#0;class#Footer#0" expanded="false" />
                 <element signature="method#link_FooterCopyrights#0;class#Footer#0" expanded="false" />
@@ -754,11 +752,11 @@
     <history-entry file="Navigation_TestCase - 2017.03.09 at 11h 00m 53s.xml">
       <configuration name="Navigation_TestCase" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="Navigation_TestCase - 2017.03.09 at 12h 26m 27s.xml">
+      <configuration name="Navigation_TestCase" configurationId="JUnit" />
+    </history-entry>
     <history-entry file="Navigation_TestCase_checkLinkedinUrl - 2017.03.09 at 10h 52m 14s.xml">
       <configuration name="Navigation_TestCase.checkLinkedinUrl" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Navigation_TestCase_goToFacebookPageFromFooter - 2017.03.07 at 19h 10m 37s.xml">
-      <configuration name="Navigation_TestCase.goToFacebookPageFromFooter" configurationId="JUnit" />
     </history-entry>
     <history-entry file="Navigation_TestCase_goToFacebookPageFromFooter - 2017.03.07 at 19h 12m 46s.xml">
       <configuration name="Navigation_TestCase.goToFacebookPageFromFooter" configurationId="JUnit" />
@@ -775,7 +773,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -792,7 +790,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29425114" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29425114" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3288889" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1390,8 +1388,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/PageObject/Footer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="80" column="0" lean-forward="false" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
+        <state relative-caret-position="176">
+          <caret line="71" column="12" lean-forward="false" selection-start-line="71" selection-start-column="12" selection-end-line="71" selection-end-column="12" />
           <folding>
             <element signature="method#link_FooterLink#0;class#Footer#0" expanded="false" />
             <element signature="method#link_FooterCopyrights#0;class#Footer#0" expanded="false" />

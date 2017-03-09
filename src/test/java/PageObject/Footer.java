@@ -195,7 +195,7 @@ public class Footer extends BaseClass {
 
             currentTab = new ArrayList<String>(driver.getWindowHandles());
 
-            System.out.println(currentTab.size());
+            //System.out.println(currentTab.size());
 
             counter++;
 
@@ -213,13 +213,6 @@ public class Footer extends BaseClass {
         //click on Twitter link
         link_Connect("twitter").click();
 
-        //wait 3 seconds
-        try {
-            TimeUnit.SECONDS.sleep(3);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-
         //switch to new window
         ArrayList<String> currentTab;
         int counter = 1;
@@ -227,12 +220,12 @@ public class Footer extends BaseClass {
 
             currentTab = new ArrayList<String>(driver.getWindowHandles());
 
-            System.out.println(currentTab.size());
+            //System.out.println(currentTab.size());
 
             counter++;
 
         } while ((currentTab.size() == 1) && (counter < 10));
-        
+
         driver.switchTo().window(currentTab.get(1));
 
         return new TwitterPage(driver);

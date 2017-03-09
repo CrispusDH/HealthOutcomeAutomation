@@ -44,8 +44,8 @@
       <file leaf-file-name="Footer.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/PageObject/Footer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="296">
-              <caret line="234" column="8" lean-forward="false" selection-start-line="234" selection-start-column="8" selection-end-line="234" selection-end-column="8" />
+            <state relative-caret-position="668">
+              <caret line="213" column="40" lean-forward="false" selection-start-line="213" selection-start-column="40" selection-end-line="213" selection-end-column="40" />
               <folding>
                 <element signature="method#link_FooterLink#0;class#Footer#0" expanded="false" />
                 <element signature="method#link_FooterCopyrights#0;class#Footer#0" expanded="false" />
@@ -1388,8 +1388,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/PageObject/Footer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="234" column="8" lean-forward="false" selection-start-line="234" selection-start-column="8" selection-end-line="234" selection-end-column="8" />
+        <state relative-caret-position="668">
+          <caret line="213" column="40" lean-forward="false" selection-start-line="213" selection-start-column="40" selection-end-line="213" selection-end-column="40" />
           <folding>
             <element signature="method#link_FooterLink#0;class#Footer#0" expanded="false" />
             <element signature="method#link_FooterCopyrights#0;class#Footer#0" expanded="false" />

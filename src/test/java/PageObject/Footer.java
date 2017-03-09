@@ -29,7 +29,7 @@ public class Footer extends BaseClass {
 
     private By  link_FooterLinksLocator = By.cssSelector(".links li");
     private By  link_FooterCopyrightsLocator = By.cssSelector(".copyright a");
-    private By  link_ConnectLocator = By.cssSelector(".connect li");
+    private By  link_ConnectLocator = By.cssSelector(".connect li a");
 
     //find all footer links
     private WebElement link_FooterLink(String footerLinkName){
@@ -64,12 +64,18 @@ public class Footer extends BaseClass {
     //facebook, twitter, linkedin, mailto links
     private WebElement link_Connect(String name){
 
+       // elements = findElements(driver, link_ConnectLocator, 5000);
+
         int counter = 1;
         do {
 
             elements = findElements(driver, link_ConnectLocator, 5000);
 
+            System.out.println(elements.size());
+
             counter++;
+
+            System.out.println(counter);
 
         } while ((elements.size() == 1) && (counter < 10));
 

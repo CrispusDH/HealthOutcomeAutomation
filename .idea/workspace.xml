@@ -29,8 +29,8 @@
       <file leaf-file-name="Navigation_TestCase.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/automationFramework/Navigation_TestCase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="664">
-              <caret line="360" column="22" lean-forward="true" selection-start-line="360" selection-start-column="22" selection-end-line="360" selection-end-column="22" />
+            <state relative-caret-position="5569">
+              <caret line="383" column="0" lean-forward="false" selection-start-line="383" selection-start-column="0" selection-end-line="383" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#4135#4175#0" expanded="false" />
@@ -46,8 +46,8 @@
       <file leaf-file-name="Footer.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/PageObject/Footer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="69" column="71" lean-forward="false" selection-start-line="69" selection-start-column="71" selection-end-line="69" selection-end-column="71" />
+            <state relative-caret-position="265">
+              <caret line="80" column="0" lean-forward="false" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
               <folding>
                 <element signature="method#link_FooterLink#0;class#Footer#0" expanded="false" />
                 <element signature="method#link_FooterCopyrights#0;class#Footer#0" expanded="false" />
@@ -349,33 +349,7 @@
       <recent name="utility" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.Navigation_TestCase.goToFacebookPageFromFooter">
-    <configuration default="false" name="Plot_TestCase.signUpWithoutReview" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="automationFramework.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="HealthOutcome" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="automationFramework" />
-      <option name="MAIN_CLASS_NAME" value="automationFramework.Plot_TestCase" />
-      <option name="METHOD_NAME" value="signUpWithoutReview" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JUnit.Navigation_TestCase">
     <configuration default="false" name="Plot_TestCase.writeAReviewLoggedOutUserConditionIsUnknown" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -389,32 +363,6 @@
       <option name="PACKAGE_NAME" value="automationFramework" />
       <option name="MAIN_CLASS_NAME" value="automationFramework.Plot_TestCase" />
       <option name="METHOD_NAME" value="writeAReviewLoggedOutUserConditionIsUnknown" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="Navigation_TestCase.goToConditionSelectionPage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="automationFramework.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="HealthOutcome" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="automationFramework" />
-      <option name="MAIN_CLASS_NAME" value="automationFramework.Navigation_TestCase" />
-      <option name="METHOD_NAME" value="goToConditionSelectionPage" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -467,6 +415,58 @@
       <option name="PACKAGE_NAME" value="automationFramework" />
       <option name="MAIN_CLASS_NAME" value="automationFramework.Navigation_TestCase" />
       <option name="METHOD_NAME" value="goToFacebookPageFromFooter" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="Navigation_TestCase" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="automationFramework.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="HealthOutcome" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="automationFramework" />
+      <option name="MAIN_CLASS_NAME" value="automationFramework.Navigation_TestCase" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="Navigation_TestCase.checkLinkedinUrl" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="automationFramework.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="HealthOutcome" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="automationFramework" />
+      <option name="MAIN_CLASS_NAME" value="automationFramework.Navigation_TestCase" />
+      <option name="METHOD_NAME" value="checkLinkedinUrl" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -685,19 +685,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.Plot_TestCase.signUpWithoutReview" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.Plot_TestCase.writeAReviewLoggedOutUserConditionIsUnknown" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.Navigation_TestCase.goToConditionSelectionPage" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.Navigation_TestCase.goToWriteAReviewPageFromTreatmentReviewsPage" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.Navigation_TestCase.goToFacebookPageFromFooter" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.Plot_TestCase.writeAReviewLoggedOutUserConditionIsUnknown" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.Navigation_TestCase.goToWriteAReviewPageFromTreatmentReviewsPage" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.Navigation_TestCase.goToFacebookPageFromFooter" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.Navigation_TestCase" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.Navigation_TestCase.checkLinkedinUrl" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.Navigation_TestCase.goToFacebookPageFromFooter" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.Plot_TestCase.writeAReviewLoggedOutUserConditionIsUnknown" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.Navigation_TestCase.goToWriteAReviewPageFromTreatmentReviewsPage" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.Navigation_TestCase.goToConditionSelectionPage" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.Plot_TestCase.signUpWithoutReview" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.Navigation_TestCase" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.Navigation_TestCase.checkLinkedinUrl" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.Navigation_TestCase.goToFacebookPageFromFooter" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.Plot_TestCase.writeAReviewLoggedOutUserConditionIsUnknown" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.Navigation_TestCase.goToWriteAReviewPageFromTreatmentReviewsPage" />
       </list>
     </recent_temporary>
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
@@ -742,20 +742,20 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Navigation_TestCase_goToFacebookPageFromFooter - 2017.03.07 at 18h 35m 46s.xml">
-      <configuration name="Navigation_TestCase.goToFacebookPageFromFooter" configurationId="JUnit" />
+    <history-entry file="Navigation_TestCase - 2017.03.09 at 10h 24m 13s.xml">
+      <configuration name="Navigation_TestCase" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Navigation_TestCase_goToFacebookPageFromFooter - 2017.03.07 at 18h 39m 12s.xml">
-      <configuration name="Navigation_TestCase.goToFacebookPageFromFooter" configurationId="JUnit" />
+    <history-entry file="Navigation_TestCase - 2017.03.09 at 10h 37m 19s.xml">
+      <configuration name="Navigation_TestCase" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Navigation_TestCase_goToFacebookPageFromFooter - 2017.03.07 at 18h 47m 02s.xml">
-      <configuration name="Navigation_TestCase.goToFacebookPageFromFooter" configurationId="JUnit" />
+    <history-entry file="Navigation_TestCase - 2017.03.09 at 10h 43m 51s.xml">
+      <configuration name="Navigation_TestCase" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Navigation_TestCase_goToFacebookPageFromFooter - 2017.03.07 at 19h 06m 31s.xml">
-      <configuration name="Navigation_TestCase.goToFacebookPageFromFooter" configurationId="JUnit" />
+    <history-entry file="Navigation_TestCase - 2017.03.09 at 11h 00m 53s.xml">
+      <configuration name="Navigation_TestCase" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Navigation_TestCase_goToFacebookPageFromFooter - 2017.03.07 at 19h 07m 57s.xml">
-      <configuration name="Navigation_TestCase.goToFacebookPageFromFooter" configurationId="JUnit" />
+    <history-entry file="Navigation_TestCase_checkLinkedinUrl - 2017.03.09 at 10h 52m 14s.xml">
+      <configuration name="Navigation_TestCase.checkLinkedinUrl" configurationId="JUnit" />
     </history-entry>
     <history-entry file="Navigation_TestCase_goToFacebookPageFromFooter - 2017.03.07 at 19h 10m 37s.xml">
       <configuration name="Navigation_TestCase.goToFacebookPageFromFooter" configurationId="JUnit" />
@@ -775,7 +775,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -787,12 +787,12 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44409448" sideWeight="0.50292826" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37423313" sideWeight="0.49707174" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36656442" sideWeight="0.49707174" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29425114" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29425114" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3288889" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1375,8 +1375,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/automationFramework/Navigation_TestCase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="664">
-          <caret line="360" column="22" lean-forward="true" selection-start-line="360" selection-start-column="22" selection-end-line="360" selection-end-column="22" />
+        <state relative-caret-position="5569">
+          <caret line="383" column="0" lean-forward="false" selection-start-line="383" selection-start-column="0" selection-end-line="383" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#4135#4175#0" expanded="false" />
@@ -1390,8 +1390,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/PageObject/Footer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="69" column="71" lean-forward="false" selection-start-line="69" selection-start-column="71" selection-end-line="69" selection-end-column="71" />
+        <state relative-caret-position="265">
+          <caret line="80" column="0" lean-forward="false" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
           <folding>
             <element signature="method#link_FooterLink#0;class#Footer#0" expanded="false" />
             <element signature="method#link_FooterCopyrights#0;class#Footer#0" expanded="false" />

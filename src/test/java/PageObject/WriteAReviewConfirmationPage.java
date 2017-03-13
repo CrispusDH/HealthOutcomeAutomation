@@ -1,6 +1,7 @@
 package PageObject;
 
 
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -58,7 +59,11 @@ public class WriteAReviewConfirmationPage extends BaseClass {
 
     //<editor-fold desc="Public methods">
 
+    public void isSignUpFormVisible(){
 
+        Assert.assertTrue(form_SignUp().isDisplayed());
+
+    }
 
     //</editor-fold>
 

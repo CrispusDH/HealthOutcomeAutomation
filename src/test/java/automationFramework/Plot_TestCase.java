@@ -154,8 +154,8 @@ public class Plot_TestCase extends TestCase {
                         "Male",
                         "0 - 6 Months",
                         "0 - 4 hours",
-                        "Yes");
-
+                        "Yes")
+                .isSignUpFormVisible();
 
     }
 

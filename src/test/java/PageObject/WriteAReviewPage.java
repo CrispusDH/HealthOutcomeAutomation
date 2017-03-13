@@ -25,6 +25,10 @@ public class WriteAReviewPage extends BaseClass {
     // The Write a Review Confirmation page contains several elements that will be represented as WebElements.
     // The locators for these elements should only be defined once.
 
+    private static int sNextCounter = 7;
+
+    private By button_Next = By.cssSelector("div.review-form.body-content > div > div > div > div > div:nth-child(" + sNextCounter + ") > section > div.buttons > button");
+    private By button_PostReview = By.cssSelector("div.review-form.body-content > div > div > div > div > div:nth-child(" + sNextCounter + ") > section > div.buttons > button");
     private By text_GroupTitleLocator = By.cssSelector(".group-title");
     private By li_InjuryBodyAreaLocator = By.cssSelector(".parts-list li");
     private By li_ConditionLocator = By.cssSelector(".conditions ul li");
@@ -43,6 +47,20 @@ public class WriteAReviewPage extends BaseClass {
     private WebElement text_GroupTitle(){
 
         return findElements(driver, text_GroupTitleLocator, 5000).get(0);
+
+    }
+
+    //Next button
+    private WebElement button_Next(){
+
+        return findElements(driver, button_Next, 5000).get(0);
+
+    }
+
+    //Post Review button
+    private WebElement button_PostReview(){
+
+        return findElements(driver, button_PostReview, 5000).get(0);
 
     }
 
@@ -149,6 +167,26 @@ public class WriteAReviewPage extends BaseClass {
     //</editor-fold>
 
     //<editor-fold desc="Private methods">
+
+    //click on Next button
+    private WriteAReviewPage clickOnNextButton(){
+
+        button_Next().click();
+
+        sNextCounter++;
+
+        return new WriteAReviewPage(driver);
+
+    }
+
+    //click on Next button
+    private WriteAReviewConfirmationPage clickOnPostReviewButton(){
+
+        button_PostReview().click();
+
+        return new WriteAReviewConfirmationPage(driver);
+
+    }
 
     //click on specific body area
     private WriteAReviewPage clickOnSpecificBodyArea(String sBodyArea){
@@ -278,14 +316,22 @@ public class WriteAReviewPage extends BaseClass {
 
     }
 
-    public void writeAReview(String sBodyArea, String sCondition, String sGender, String sSufferedTimeOption, String sPhysicalActivityOption, String sIsRepeatOption){
+    public WriteAReviewConfirmationPage writeAReview(String sBodyArea, String sCondition, String sGender, String sSufferedTimeOption, String sPhysicalActivityOption, String sIsRepeatOption){
 
-        clickOnSpecificBodyArea(sBodyArea)
+        return clickOnSpecificBodyArea(sBodyArea)
                 .clickOnSpecificCondition(sCondition)
                 .clickOnGender(sGender)
                 .chooseSufferedTimeOption(sSufferedTimeOption)
                 .choosePhysicalActivity(sPhysicalActivityOption)
-                .chooseIsRepeatOption(sIsRepeatOption);
+                .chooseIsRepeatOption(sIsRepeatOption)
+                .clickOnNextButton()
+                .clickOnNextButton()
+                .clickOnNextButton()
+                .clickOnNextButton()
+                .clickOnNextButton()
+                .clickOnNextButton()
+                .clickOnNextButton()
+                .clickOnPostReviewButton();
 
     }
 

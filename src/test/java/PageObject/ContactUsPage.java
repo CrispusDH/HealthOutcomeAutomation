@@ -1,5 +1,6 @@
 package PageObject;
 
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -49,23 +50,29 @@ public class ContactUsPage extends BaseClass {
     //<editor-fold desc="Public methods">
 
     //check that Contact Form on the page
-    public boolean bodyIsEmpty(){
+    public ContactUsPage checkIsBodyEmpty(){
 
-        return div_ContactForm().isDisplayed();
+        Assert.assertTrue(div_ContactForm().isDisplayed());
+
+        return this;
 
     }
 
     //check that all items are on page
-    public boolean checkAmountOfItems(){
+    public ContactUsPage checkAmountOfItems(){
 
-        return contactItems().size() == 3;
+        Assert.assertTrue(contactItems().size() == 3);
+
+        return this;
 
     }
 
     //check page url
-    public boolean checkUrl(){
+    public ContactUsPage checkUrl(){
 
-        return ReadXMLFile.takeConstantFromXML("URL", "Contact Us", "url").equals(driver.getCurrentUrl());
+        Assert.assertTrue(ReadXMLFile.takeConstantFromXML("URL", "Contact Us", "url").equals(driver.getCurrentUrl()));
+
+        return this;
 
     }
 

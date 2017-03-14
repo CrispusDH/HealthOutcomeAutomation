@@ -12,6 +12,8 @@ public class SpecificTreatmentReviewsPage extends BaseClass {
     private WebElement element;
     private List<WebElement> elements;
 
+    static String expectedSpecificTreatmentVideosPageURL;
+
     public SpecificTreatmentReviewsPage(WebDriver driver){
 
         this.driver = driver;
@@ -116,6 +118,15 @@ public class SpecificTreatmentReviewsPage extends BaseClass {
     public SpecificTreatmentVideosPage goToSpecificTreatmentVideosPage(){
 
         return (SpecificTreatmentVideosPage) clickOnTab("Videos & Guides");
+
+    }
+
+    //get temporary expected specific Treatment Videos page URL
+    public SpecificTreatmentReviewsPage setExpectedSpecificTreatmentVideosPageURL(){
+
+        expectedSpecificTreatmentVideosPageURL = driver.getCurrentUrl() + "-recommendations";
+
+        return this;
 
     }
 

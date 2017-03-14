@@ -1,5 +1,6 @@
 package PageObject;
 
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -44,16 +45,20 @@ public class TermsOfServicePage extends BaseClass {
     //<editor-fold desc="Public methods">
 
     //check that page has text
-    public boolean checkAmountOfParagraphs(){
+    public TermsOfServicePage checkAmountOfParagraphs(){
 
-        return paragraphs().size() > 50;
+        Assert.assertTrue(paragraphs().size() > 50);
+
+        return this;
 
     }
 
     //check page url
-    public boolean checkUrl(){
+    public TermsOfServicePage checkUrl(){
 
-        return ReadXMLFile.takeConstantFromXML("URL", "Terms of Service", "url").equals(driver.getCurrentUrl());
+        Assert.assertTrue(ReadXMLFile.takeConstantFromXML("URL", "Terms of Service", "url").equals(driver.getCurrentUrl()));
+
+        return this;
 
     }
 

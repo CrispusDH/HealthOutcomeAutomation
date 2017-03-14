@@ -1,5 +1,6 @@
 package PageObject;
 
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -44,16 +45,20 @@ public class PrivacyPolicyPage extends BaseClass {
     //<editor-fold desc="Public methods">
 
     //check that page has text
-    public boolean checkAmountOfParagraphs(){
+    public PrivacyPolicyPage checkAmountOfParagraphs(){
 
-        return paragraphs().size() > 10;
+        Assert.assertTrue(paragraphs().size() > 10);
+
+        return this;
 
     }
 
     //check page url
-    public boolean checkUrl(){
+    public PrivacyPolicyPage checkUrl(){
 
-        return ReadXMLFile.takeConstantFromXML("URL", "Privacy Policy", "url").equals(driver.getCurrentUrl());
+        Assert.assertTrue(ReadXMLFile.takeConstantFromXML("URL", "Privacy Policy", "url").equals(driver.getCurrentUrl()));
+
+        return this;
 
     }
 

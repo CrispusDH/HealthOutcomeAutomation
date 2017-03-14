@@ -1,5 +1,6 @@
 package PageObject;
 
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -41,23 +42,29 @@ public class FAQPage extends BaseClass {
     //<editor-fold desc="Public methods">
 
     //check that FAQ are not empty
-    public boolean bodyIsEmpty(){
+    public FAQPage checkIsBodyEmpty(){
 
-        return questions().isEmpty();
+        Assert.assertTrue(!questions().isEmpty());
+
+        return this;
 
     }
 
     //check that FAQ page has paragraphs
-    public boolean amountOfQustions(){
+    public FAQPage checkAmountOfQustions(){
 
-        return questions().size() > 0;
+        Assert.assertTrue(questions().size() > 0);
+
+        return this;
 
     }
 
     //check page url
-    public boolean checkUrl(){
+    public FAQPage checkUrl(){
 
-        return ReadXMLFile.takeConstantFromXML("URL", "FAQ", "url").equals(driver.getCurrentUrl());
+        Assert.assertTrue(ReadXMLFile.takeConstantFromXML("URL", "FAQ", "url").equals(driver.getCurrentUrl()));
+
+        return this;
 
     }
 

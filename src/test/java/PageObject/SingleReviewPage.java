@@ -1,5 +1,6 @@
 package PageObject;
 
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -43,9 +44,11 @@ public class SingleReviewPage extends BaseClass {
     //<editor-fold desc="Public methods">
 
     //check that div_ReviewInfo element is displayed
-    public boolean isOnPage(){
+    public SingleReviewPage isReviewInfoOnPage(){
 
-        return div_ReviewInfo().isDisplayed();
+        Assert.assertTrue(div_ReviewInfo().isDisplayed());
+
+        return this;
 
     }
 

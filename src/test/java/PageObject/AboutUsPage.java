@@ -1,5 +1,6 @@
 package PageObject;
 
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -44,23 +45,29 @@ public class AboutUsPage extends BaseClass {
     //<editor-fold desc="Public methods">
 
     //check page url
-    public boolean checkUrl(){
+    public AboutUsPage checkUrl(){
 
-        return ReadXMLFile.takeConstantFromXML("URL", "About Us", "url").equals(driver.getCurrentUrl());
+        Assert.assertTrue(ReadXMLFile.takeConstantFromXML("URL", "About Us", "url").equals(driver.getCurrentUrl()));
+
+        return this;
 
     }
 
     //check that About Us page has paragraphs
-    public boolean checkAmountOfParagraphs(){
+    public AboutUsPage checkAmountOfParagraphs(){
 
-        return paragraphs().size() > 0;
+        Assert.assertTrue(paragraphs().size() > 0);
+
+        return this;
 
     }
 
     //check that AboutUS body are not empty
-    public boolean checkIsEmpty(){
+    public AboutUsPage checkIsEmpty(){
 
-        return paragraphs().isEmpty();
+        Assert.assertTrue(!paragraphs().isEmpty());
+
+        return this;
 
     }
 

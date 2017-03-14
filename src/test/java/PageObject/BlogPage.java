@@ -1,5 +1,6 @@
 package PageObject;
 
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -104,23 +105,29 @@ public class BlogPage extends BaseClass {
     }
 
     //check that Blog page body are not empty
-    public boolean checkIsEmpty(){
+    public BlogPage checkIsBodyEmpty(){
 
-        return blogs().isEmpty();
+        Assert.assertTrue(!blogs().isEmpty());
+
+        return this;
 
     }
 
-    //check that About Us page has paragraphs
-    public boolean checkAmountOfBlogs(){
+    //check that Blog page has paragraphs
+    public BlogPage checkAmountOfBlogs(){
 
-        return blogs().size() > 2;
+        Assert.assertTrue(blogs().size() > 2);
+
+        return this;
 
     }
 
     //check page url
-    public boolean checkUrl(){
+    public BlogPage checkUrl(){
 
-        return ReadXMLFile.takeConstantFromXML("URL", "Blog", "url").equals(driver.getCurrentUrl());
+        Assert.assertTrue(ReadXMLFile.takeConstantFromXML("URL", "Blog", "url").equals(driver.getCurrentUrl()));
+
+        return this;
 
     }
 

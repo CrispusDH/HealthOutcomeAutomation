@@ -1,6 +1,7 @@
 package PageObject;
 
 
+import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import utility.BaseClass;
@@ -31,6 +32,17 @@ public class TreatmentVideosPage extends BaseClass {
     //</editor-fold>
 
     //<editor-fold desc="Public methods">
+
+    //check URL
+    public TreatmentVideosPage checkURL(){
+
+        Assert.assertEquals(TreatmentRatingsConditionPage.expectedVideosURL, driver.getCurrentUrl());
+
+        return this;
+
+    }
+
+
 
     //get current url
     public String getCurrentUrl(){

@@ -1,9 +1,11 @@
 package PageObject;
 
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import utility.BaseClass;
+import utility.ReadXMLFile;
 
 import java.util.List;
 
@@ -11,6 +13,9 @@ public class TreatmentRatingsConditionPage extends BaseClass {
     private final WebDriver driver;
     private WebElement element;
     private List<WebElement> elements;
+
+    static String expectedVideosURL;
+    static String expectedReviewsURL;
 
     public TreatmentRatingsConditionPage(WebDriver driver){
 
@@ -162,6 +167,25 @@ public class TreatmentRatingsConditionPage extends BaseClass {
     //</editor-fold>
 
     //<editor-fold desc="Public methods">
+
+    //get temporary expected Videos URL
+    public TreatmentRatingsConditionPage setExpectedVideosURL(){
+
+        expectedVideosURL = driver.getCurrentUrl() + "-videos";
+
+        return this;
+
+    }
+
+    //get temporary expected Reviews URL
+    public TreatmentRatingsConditionPage setExpectedReviewsURL(){
+
+        expectedReviewsURL = driver.getCurrentUrl() + "-reviews";
+
+        return this;
+
+    }
+
     //go to Condition Selection page
     public ConditionSelectionPage goToConditionSelectionPage(){
 
@@ -211,10 +235,13 @@ public class TreatmentRatingsConditionPage extends BaseClass {
 
     }
 
-    //get current url
-    public String getCurrentUrl(){
 
-        return driver.getCurrentUrl();
+    //check url
+    public TreatmentRatingsConditionPage checkURL (String sExpectedUrl){
+
+        Assert.assertEquals(sExpectedUrl, driver.getCurrentUrl());
+
+        return this;
 
     }
 

@@ -29,8 +29,6 @@ public class Plot_TestCase extends TestCase {
     private static ChromeDriverService service;
 
     private Header header;
-    private ForgotPasswordConfirmationPage forgotPasswordConfirmationPage;
-    private SignUpConfirmationPage signUpConfirmationPage;
     private HomePage homePage;
 
     //</editor-fold>
@@ -72,8 +70,6 @@ public class Plot_TestCase extends TestCase {
         driver.get(ReadXMLFile.takeConstantFromXML("URL", "Landing Page", "url"));
 
         header = new Header(driver);
-        forgotPasswordConfirmationPage = new ForgotPasswordConfirmationPage(driver);
-        signUpConfirmationPage = new SignUpConfirmationPage(driver);
         homePage = new HomePage(driver);
     }
 
@@ -106,8 +102,8 @@ public class Plot_TestCase extends TestCase {
         header.openLogInForm()
                 .loginAs(ReadXMLFile.takeConstantFromXML("Account", "Main", "emailAddress"), ReadXMLFile.takeConstantFromXML("Account", "Main", "password"));
 
-        //check username
-        Assert.assertEquals(ReadXMLFile.takeConstantFromXML("Account", "Main", "userName"), header.getUserName());
+        //check user name
+        header.checkUserName();
 
     }
 
@@ -117,10 +113,8 @@ public class Plot_TestCase extends TestCase {
 
         header.openLogInForm()              //click on Log in link
                 .goToForgotPasswordPage()   //go to Forgot password page
-                .goToForgotPasswordConfirmationPage(ReadXMLFile.takeConstantFromXML("Account", "Main", "emailAddress")); //type email and click on Forgot password button
-
-        //check URL
-        Assert.assertTrue(forgotPasswordConfirmationPage.checkUrl());
+                .goToForgotPasswordConfirmationPage(ReadXMLFile.takeConstantFromXML("Account", "Main", "emailAddress"))  //type email and click on Forgot password button
+                .checkUrl(); //check url
     }
 
     //sign up without review flow
@@ -128,19 +122,14 @@ public class Plot_TestCase extends TestCase {
     public void signUpWithoutReview(){
 
         header.goToSignUpPage()      //go to Sign Up page
-                .signUpRandom();     //sign Up via random email
-
-        //verify that current URL is correct
-        Assert.assertTrue(signUpConfirmationPage.checkUrl());
+                .signUpRandom()      //sign Up via random email
+                .checkUrl() //verify that current URL is correct
+                .checkIsTreatmentsButtonDisplayed() //check that Find Treatments button exists
+                .checkIsWriteAReviewButtonDisplayed();  //check that Write a Review button exists
 
         //verify that current logged user has correct profile user name
-        Assert.assertTrue(header.checkUserNameForRandomCreatedUser());
+        header.checkUserNameForRandomCreatedUser();
 
-        //Find Treatments button exists
-        Assert.assertTrue(signUpConfirmationPage.checkTreatmentsButtonIsDisplayed());
-
-        // Write a Review button exists
-        Assert.assertTrue(signUpConfirmationPage.checkWriteAReviewButtonIsDisplayed());
     }
 
     //Write a Review, logged out user, condition is unknown

@@ -1,5 +1,6 @@
 package PageObject;
 
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -107,23 +108,29 @@ public class SignUpPage extends BaseClass {
     }
 
     //check page url
-    public boolean checkUrl(){
+    public SignUpPage checkUrl(){
 
-        return ReadXMLFile.takeConstantFromXML("URL", "SignUp Page from Videos&Guides Page", "url").equals(driver.getCurrentUrl());
+        Assert.assertTrue(ReadXMLFile.takeConstantFromXML("URL", "SignUp Page from Videos&Guides Page", "url").equals(driver.getCurrentUrl()));
+
+        return this;
 
     }
 
     //check that Join Now button exists
-    public boolean checkJoinNowButtonExists(){
+    public SignUpPage checkIsJoinNowButtonExists(){
 
-        return button_JoinNow().isDisplayed();
+        Assert.assertTrue(button_JoinNow().isDisplayed());
+
+        return this;
 
     }
 
     //check that Sign up with Facebook button exists
-    public boolean checkSignUpWithFacebookButtonExists(){
+    public SignUpPage checkIsSignUpWithFacebookButtonExists(){
 
-        return button_SignUpWithFacebook().isDisplayed();
+        Assert.assertTrue(button_SignUpWithFacebook().isDisplayed());
+
+        return this;
 
     }
 

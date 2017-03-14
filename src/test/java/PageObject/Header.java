@@ -1,10 +1,12 @@
 package PageObject;
 
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import utility.BaseClass;
 import utility.RandomNumber;
+import utility.ReadXMLFile;
 
 import java.util.List;
 
@@ -113,17 +115,21 @@ public class Header extends BaseClass {
 
     }
 
-    //get current User Name
-    public String getUserName(){
+    //check username
+    public Header checkUserName(){
 
-        return link_Profile().getText();
+        Assert.assertEquals(ReadXMLFile.takeConstantFromXML("Account", "Main", "userName"), link_Profile().getText());
+
+        return this;
 
     }
 
     //check User Name for Random created user
-    public boolean checkUserNameForRandomCreatedUser(){
+    public Header checkUserNameForRandomCreatedUser(){
 
-        return getUserName().equals(String.valueOf(RandomNumber.currentRandomNumber()));
+        Assert.assertTrue(link_Profile().getText().equals(String.valueOf(RandomNumber.currentRandomNumber())));
+
+        return this;
 
     }
 

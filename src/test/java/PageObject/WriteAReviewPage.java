@@ -1,6 +1,7 @@
 package PageObject;
 
 
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -296,25 +297,41 @@ public class WriteAReviewPage extends BaseClass {
     //<editor-fold desc="Public methods">
 
     //check page url
-    public boolean checkUrl(){
+    public WriteAReviewPage checkURLBasic(){
 
-        return ReadXMLFile.takeConstantFromXML("URL", "Write a Review Page", "fromBlogPage" ).equals(driver.getCurrentUrl());
+        Assert.assertTrue(ReadXMLFile.takeConstantFromXML("URL", "Write a Review Page", "fromBlogPage" ).equals(driver.getCurrentUrl()));
 
-    }
-
-    //get current url
-    public String getCurrentUrl(){
-
-        return driver.getCurrentUrl();
+        return this;
 
     }
 
-    //get group title
-    public String getGroupTitle(){
+    //check Write a Review page URL from Treatment Ratings Condition
+    public WriteAReviewPage checkURLFromTreatmentRatingsCondition(){
 
-        return text_GroupTitle().getText();
+        Assert.assertEquals(ReadXMLFile.takeConstantFromXML("URL", "Write a Review page from Treatment Ratings Condition", "url"), driver.getCurrentUrl());
+
+        return this;
 
     }
+
+    //check Write a Review page URL from Treatment Reviews
+    public WriteAReviewPage checkURLFromTreatmentsReviews(){
+
+        Assert.assertEquals(ReadXMLFile.takeConstantFromXML("URL", "Write a Review page from Treatment Reviews", "url"), driver.getCurrentUrl());
+
+        return this;
+
+    }
+
+    //check group title in case of navigation to Write a Review page from Treatment Reviews page
+    public WriteAReviewPage checkGroupTitleInCaseOfFromTreatmentReviewsPage(){
+
+        Assert.assertEquals("What is your gender?", text_GroupTitle().getText());
+
+        return this;
+
+    }
+
 
     public WriteAReviewConfirmationPage writeAReview(String sBodyArea, String sCondition, String sGender, String sSufferedTimeOption, String sPhysicalActivityOption, String sIsRepeatOption){
 

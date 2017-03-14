@@ -1,5 +1,6 @@
 package PageObject;
 
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -123,10 +124,12 @@ public class TreatmentReviewsPage extends BaseClass {
 
     }
 
-    //get current url
-    public String getCurrentUrl(){
+    //check URL
+    public TreatmentReviewsPage checkURL(){
 
-        return driver.getCurrentUrl();
+        Assert.assertEquals(TreatmentRatingsConditionPage.expectedReviewsURL, driver.getCurrentUrl());
+
+        return this;
 
     }
 

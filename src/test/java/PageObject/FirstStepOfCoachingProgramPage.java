@@ -1,5 +1,6 @@
 package PageObject;
 
+import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import utility.BaseClass;
@@ -35,9 +36,11 @@ public class FirstStepOfCoachingProgramPage extends BaseClass {
     //<editor-fold desc="Public methods">
 
     //check page url
-    public boolean checkUrl(){
+    public FirstStepOfCoachingProgramPage checkUrl(){
 
-        return ReadXMLFile.takeConstantFromXML("URL", "First Step Of Coaching Program", "url" ).equals(driver.getCurrentUrl());
+        Assert.assertTrue(ReadXMLFile.takeConstantFromXML("URL", "First Step Of Coaching Program", "url" ).equals(driver.getCurrentUrl()));
+
+        return this;
 
     }
 

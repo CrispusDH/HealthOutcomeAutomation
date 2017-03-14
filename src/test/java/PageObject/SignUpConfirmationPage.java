@@ -1,5 +1,6 @@
 package PageObject;
 
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -46,23 +47,29 @@ public class SignUpConfirmationPage extends BaseClass {
     //<editor-fold desc="Private methods">
 
     //check page url
-    public boolean checkUrl(){
+    public SignUpConfirmationPage checkUrl(){
 
-        return ReadXMLFile.takeConstantFromXML("URL", "SignUp Confirmation Page", "url").equals(driver.getCurrentUrl());
+        Assert.assertTrue(ReadXMLFile.takeConstantFromXML("URL", "SignUp Confirmation Page", "url").equals(driver.getCurrentUrl()));
+
+        return this;
 
     }
 
     //check that Treatments button is displayed on page
-    public boolean checkTreatmentsButtonIsDisplayed(){
+    public SignUpConfirmationPage checkIsTreatmentsButtonDisplayed(){
 
-        return button_WriteAReviewOrFindTreatments(ReadXMLFile.takeConstantFromXML("ButtonName", "FindTreatments", "name")).isDisplayed();
+        Assert.assertTrue(button_WriteAReviewOrFindTreatments(ReadXMLFile.takeConstantFromXML("ButtonName", "FindTreatments", "name")).isDisplayed());
+
+        return this;
 
     }
 
     //check that Write a Review button is displayed on page
-    public boolean checkWriteAReviewButtonIsDisplayed(){
+    public SignUpConfirmationPage checkIsWriteAReviewButtonDisplayed(){
 
-        return button_WriteAReviewOrFindTreatments(ReadXMLFile.takeConstantFromXML("ButtonName", "WriteAReview", "name")).isDisplayed();
+        Assert.assertTrue(button_WriteAReviewOrFindTreatments(ReadXMLFile.takeConstantFromXML("ButtonName", "WriteAReview", "name")).isDisplayed());
+
+        return this;
 
     }
 

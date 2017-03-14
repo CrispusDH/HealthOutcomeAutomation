@@ -1,6 +1,7 @@
 package PageObject;
 
 
+import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import utility.BaseClass;
 import utility.ReadXMLFile;
@@ -18,9 +19,11 @@ public class FacebookPage extends BaseClass {
     //<editor-fold desc="Public methods">
 
     //check page url
-    public boolean checkUrl(){
+    public FacebookPage checkUrl(){
 
-        return ReadXMLFile.takeConstantFromXML("URL", "Facebook", "url" ).equals(driver.getCurrentUrl());
+        Assert.assertTrue(ReadXMLFile.takeConstantFromXML("URL", "Facebook", "url" ).equals(driver.getCurrentUrl()));
+
+        return this;
 
     }
 

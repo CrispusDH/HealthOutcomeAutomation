@@ -1,5 +1,6 @@
 package PageObject;
 
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -44,23 +45,29 @@ public class ResourcesPage extends BaseClass {
     //<editor-fold desc="Final methods">
 
     //check that Resources page is not empty
-    public boolean bodyIsEmpty(){
+    public ResourcesPage checkIsBodyEmpty(){
 
-        return resources().isEmpty();
+        Assert.assertTrue(!resources().isEmpty());
+
+        return this;
 
     }
 
     //check that Resources page has resources
-    public boolean checkAmountOfResources(){
+    public ResourcesPage checkAmountOfResources(){
 
-        return resources().size() > 0;
+        Assert.assertTrue(resources().size() > 0);
+
+        return this;
 
     }
 
     //check page url
-    public boolean checkUrl(){
+    public ResourcesPage checkUrl(){
 
-        return ReadXMLFile.takeConstantFromXML("URL", "Resources", "url").equals(driver.getCurrentUrl());
+        Assert.assertTrue(ReadXMLFile.takeConstantFromXML("URL", "Resources", "url").equals(driver.getCurrentUrl()));
+
+        return this;
 
     }
 

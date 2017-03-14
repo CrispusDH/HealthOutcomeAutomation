@@ -1,5 +1,6 @@
 package PageObject;
 
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -44,23 +45,29 @@ public class TestimonialsPage extends BaseClass {
     //<editor-fold desc="Public methods">
 
     //check the same in another way
-    public boolean checkAmountOfCards(){
+    public TestimonialsPage checkAmountOfCards(){
 
-        return cards().size() > 0;
+        Assert.assertTrue(cards().size() > 0);
+
+        return this;
 
     }
 
     //check page url
-    public boolean checkUrl(){
+    public TestimonialsPage checkUrl(){
 
-        return ReadXMLFile.takeConstantFromXML("URL", "Testimonials", "url").equals(driver.getCurrentUrl());
+        Assert.assertTrue(ReadXMLFile.takeConstantFromXML("URL", "Testimonials", "url").equals(driver.getCurrentUrl()));
+
+        return this;
 
     }
 
     //check that cards are on that page
-    public boolean bodyIsEmpty(){
+    public TestimonialsPage checkIsBodyEmpty(){
 
-        return cards().isEmpty();
+        Assert.assertTrue(!cards().isEmpty());
+
+        return this;
 
     }
 

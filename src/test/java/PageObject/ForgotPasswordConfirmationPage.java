@@ -1,5 +1,6 @@
 package PageObject;
 
+import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import utility.BaseClass;
 import utility.ReadXMLFile;
@@ -22,9 +23,11 @@ public class ForgotPasswordConfirmationPage extends BaseClass {
     }
 
     //check page url
-    public boolean checkUrl(){
+    public ForgotPasswordConfirmationPage checkUrl(){
 
-        return ReadXMLFile.takeConstantFromXML("URL", "Forgot Password Confirm", "url").equals(driver.getCurrentUrl());
+        Assert.assertTrue(ReadXMLFile.takeConstantFromXML("URL", "Forgot Password Confirm", "url").equals(driver.getCurrentUrl()));
+
+        return this;
 
     }
 

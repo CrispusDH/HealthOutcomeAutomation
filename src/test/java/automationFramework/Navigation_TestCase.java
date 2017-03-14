@@ -29,28 +29,8 @@ public class Navigation_TestCase extends TestCase{
     private static ChromeDriverService service;
 
     private HomePage homePage;
-    private SingleReviewPage singleReviewPage;
     private Footer footer;
-    private AboutUsPage aboutUsPage;
-    private FAQPage faqPage;
-    private BlogPage blogPage;
-    private ResourcesPage resourcesPage;
-    private TestimonialsPage testimonialsPage;
-    private ContactUsPage contactUsPage;
-    private PrivacyPolicyPage privacyPolicyPage;
-    private TermsOfServicePage termsOfServicePage;
-    private TreatmentRatingsConditionPage treatmentRatingsConditionPage;
-    private ConditionSelectionPage conditionSelectionPage;
-    private FacebookPage facebookPage;
-    private TwitterPage twitterPage;
-    private WriteAReviewPage writeAReviewPage;
-    private FirstStepOfCoachingProgramPage firstStepOfCoachingProgramPage;
-    private TreatmentVideosPage treatmentVideosPage;
     private Header header;
-    private SignUpPage signUpPage;
-    private TreatmentReviewsPage treatmentReviewsPage;
-    private SpecificTreatmentReviewsPage specificTreatmentReviewsPage;
-    private SpecificTreatmentVideosPage specificTreatmentVideosPage;
 
     //</editor-fold>
 
@@ -85,28 +65,9 @@ public class Navigation_TestCase extends TestCase{
         driver.get(ReadXMLFile.takeConstantFromXML("URL", "Landing Page", "url"));
 
         homePage = new HomePage(driver);
-        singleReviewPage = new SingleReviewPage(driver);
         footer = new Footer(driver);
-        aboutUsPage = new AboutUsPage(driver);
-        faqPage = new FAQPage(driver);
-        blogPage = new BlogPage(driver);
-        resourcesPage = new ResourcesPage(driver);
-        testimonialsPage = new TestimonialsPage(driver);
-        contactUsPage = new ContactUsPage(driver);
-        privacyPolicyPage = new PrivacyPolicyPage(driver);
-        termsOfServicePage = new TermsOfServicePage(driver);
-        treatmentRatingsConditionPage = new TreatmentRatingsConditionPage(driver);
-        conditionSelectionPage = new ConditionSelectionPage(driver);
-        facebookPage = new FacebookPage(driver);
-        twitterPage = new TwitterPage(driver);
-        writeAReviewPage = new WriteAReviewPage(driver);
-        firstStepOfCoachingProgramPage = new FirstStepOfCoachingProgramPage(driver);
-        treatmentVideosPage = new TreatmentVideosPage(driver);
         header = new Header(driver);
-        signUpPage = new SignUpPage(driver);
-        treatmentReviewsPage = new TreatmentReviewsPage(driver);
-        specificTreatmentReviewsPage = new SpecificTreatmentReviewsPage(driver);
-        specificTreatmentVideosPage = new SpecificTreatmentVideosPage(driver);
+
     }
 
     //execute after each TC
@@ -133,11 +94,8 @@ public class Navigation_TestCase extends TestCase{
     @Test
     public void goToSingleReviewPage(){
 
-        //go to Single Review page from Home page
-        homePage.goToSingleReviewPage();
-
-        //check that div block with review exists and displayed
-        Assert.assertTrue(singleReviewPage.isOnPage());
+        homePage.goToSingleReviewPage()     //go to Single Review page from Home page
+                .isReviewInfoOnPage();      //check that div block with review exists and displayed
 
     }
 
@@ -146,16 +104,10 @@ public class Navigation_TestCase extends TestCase{
     public void checkFooterLinkAbout(){
 
         //go to About page from Footer
-        footer.goToAboutUsPage();
-
-        //check that About US body are not empty
-        Assert.assertTrue(!aboutUsPage.checkIsEmpty());
-
-        //check that About Us page has paragraphs
-        Assert.assertTrue(aboutUsPage.checkAmountOfParagraphs());
-
-        //check URL
-        Assert.assertTrue(aboutUsPage.checkUrl());
+        footer.goToAboutUsPage()
+                .checkIsEmpty()    //check that About US body are not empty
+                .checkAmountOfParagraphs()  //check that About Us page has paragraphs
+                .checkUrl();    //check About Us url
 
     }
 
@@ -164,16 +116,11 @@ public class Navigation_TestCase extends TestCase{
     public void checkFooterLinkFAQ(){
 
         //go to FAQ page
-        footer.goToFAQPage();
+        footer.goToFAQPage()
+                .checkIsBodyEmpty()  //check that FAQ body are not empty
+                .checkAmountOfQustions() //check that FAQ page has paragraphs
+                .checkUrl();    //check URL
 
-        //check that FAQ body are not empty
-        Assert.assertTrue(!faqPage.bodyIsEmpty());
-
-        //check that FAQ page has paragraphs
-        Assert.assertTrue(faqPage.amountOfQustions());
-
-        //check URL
-        Assert.assertTrue(faqPage.checkUrl());
     }
 
     //Navigation to Blog page from Home page
@@ -181,16 +128,11 @@ public class Navigation_TestCase extends TestCase{
     public void checkFooterLinkBlog(){
 
         //go to Blog page
-        footer.goToBlogPage();
+        footer.goToBlogPage()
+                .checkIsBodyEmpty() //check that blogs are on that page
+                .checkAmountOfBlogs()   //check that blogs are more than 0
+                .checkUrl();  //check URL
 
-        //check that blogs are on that page
-        Assert.assertTrue(!blogPage.checkIsEmpty());
-
-        //check that blogs are more than 0
-        Assert.assertTrue(blogPage.checkAmountOfBlogs());
-
-        //check URL
-        Assert.assertTrue(blogPage.checkUrl());
     }
 
     //Navigation to Resources page from Home page
@@ -198,16 +140,11 @@ public class Navigation_TestCase extends TestCase{
     public void checkFooterLinkResources(){
 
         //go to Resources page
-        footer.goToResourcesPage();
+        footer.goToResourcesPage()
+                .checkIsBodyEmpty() //check that resources are on that page
+                .checkAmountOfResources()   //check that resources more than 0
+                .checkUrl();   //check URL
 
-        //check that resources are on that page
-        Assert.assertTrue(!resourcesPage.bodyIsEmpty());
-
-        //check that resources more than 0
-        Assert.assertTrue(resourcesPage.checkAmountOfResources());
-
-        //check URL
-        Assert.assertTrue(resourcesPage.checkUrl());
     }
 
     //Navigation to Testimonials page from Home page
@@ -215,16 +152,11 @@ public class Navigation_TestCase extends TestCase{
     public void checkFooterLinkTestimonials(){
 
         //go to Testimonials page
-        footer.goToTestimonialsPage();
+        footer.goToTestimonialsPage()
+                .checkIsBodyEmpty() //check that cards are on that page
+                .checkAmountOfCards()   //check the same in another way
+                .checkUrl();    //check URL
 
-        //check that cards are on that page
-        Assert.assertTrue(!testimonialsPage.bodyIsEmpty());
-
-        //check the same in another way
-        Assert.assertTrue(testimonialsPage.checkAmountOfCards());
-
-        //check URL
-        Assert.assertTrue(testimonialsPage.checkUrl());
     }
 
     //Navigation to Contact Us page from Home page
@@ -232,16 +164,10 @@ public class Navigation_TestCase extends TestCase{
     public void checkFooterLinkContactUs(){
 
         //go to Contact Us
-        footer.goToContactUsPage();
-
-        //check that Contact Form on the page
-        Assert.assertTrue(contactUsPage.bodyIsEmpty());
-
-        //check that all items are on page
-        Assert.assertTrue(contactUsPage.checkAmountOfItems());
-
-        //check URL
-        Assert.assertTrue(contactUsPage.checkUrl());
+        footer.goToContactUsPage()
+                .checkIsBodyEmpty() //check that Contact Form on the page
+                .checkAmountOfItems()   //check that all items are on page
+                .checkUrl();    //check URL
 
     }
 
@@ -250,13 +176,9 @@ public class Navigation_TestCase extends TestCase{
     public void checkFooterCopyrightPrivacyPolicy(){
 
         //go to Privacy Policy page
-        footer.goToPrivacyPolicyPage();
-
-        //check that page has text
-        Assert.assertTrue(privacyPolicyPage.checkAmountOfParagraphs());
-
-        //check URL
-        Assert.assertTrue(privacyPolicyPage.checkUrl());
+        footer.goToPrivacyPolicyPage()
+                .checkAmountOfParagraphs()  //check that page has text
+                .checkUrl();    //check URL
 
     }
 
@@ -265,13 +187,9 @@ public class Navigation_TestCase extends TestCase{
     public void checkFooterCopyrightTermsOfService(){
 
         //go to Terms of Service page
-        footer.goToTermsOfServicePage();
-
-        //check that page has text
-        Assert.assertTrue(termsOfServicePage.checkAmountOfParagraphs());
-
-        //check URL
-        Assert.assertTrue(termsOfServicePage.checkUrl());
+        footer.goToTermsOfServicePage()
+                .checkAmountOfParagraphs()  //check that page has text
+                .checkUrl();    //check URL
 
     }
 
@@ -283,10 +201,9 @@ public class Navigation_TestCase extends TestCase{
         String expectedUrl = homePage.getFeaturedConditionUrl();
 
         //go to Treatment Ratings Condition page
-        homePage.goToTreatmentRatingsConditionPage();
+        homePage.goToTreatmentRatingsConditionPage()
+                .checkURL(expectedUrl); //check URL
 
-        //check URL
-        Assert.assertEquals(expectedUrl, treatmentRatingsConditionPage.getCurrentUrl());
     }
 
     //Navigation to Condition Selection page from Home page
@@ -297,10 +214,8 @@ public class Navigation_TestCase extends TestCase{
         String expectedURL  = homePage.getGetStartedButtonUrl();
 
         //go to Condition Selection page
-        homePage.goToConditionSelectionPage();
-
-        //check URL
-        Assert.assertEquals(expectedURL, conditionSelectionPage.getCurrentUrl());
+        homePage.goToConditionSelectionPage()
+                .checkURL(expectedURL); //check URL
 
     }
 
@@ -308,24 +223,9 @@ public class Navigation_TestCase extends TestCase{
     @Test
     public void goToTreatmentRatingsConditionPageFromConditionSelectionPage() {
 
-        //create local variables
-        String previousURL;
-        String currentURL;
-
         //go to Condition Selection page
-        homePage.goToConditionSelectionPage();
-
-        //save current URL
-        previousURL = conditionSelectionPage.getCurrentUrl();
-
-        //go to Treatment Ratings Condition page
-        conditionSelectionPage.goToTreatmentRatingsConditionPage(ReadXMLFile.takeConstantFromXML("BodyArea", "Neck", "name"), ReadXMLFile.takeConstantFromXML("Condition", "Neck pain with radiculopathy", "name"));
-
-        //save current URL
-        currentURL = treatmentRatingsConditionPage.getCurrentUrl();
-
-        //check that previous and current URLs are not equals
-        assertNotEquals(previousURL, currentURL);
+        homePage.goToConditionSelectionPage()
+                .goToTreatmentRatingsConditionPage(ReadXMLFile.takeConstantFromXML("BodyArea", "Neck", "name"), ReadXMLFile.takeConstantFromXML("Condition", "Neck pain with radiculopathy", "name"));
 
     }
 
@@ -333,24 +233,10 @@ public class Navigation_TestCase extends TestCase{
     @Test
     public void goToConditionSelectionPageFromTreatmentRatingsConditionPage() {
 
-        //create local variables
-        String previousURL;
-        String currentURL;
-
         //go to Treatment Ratings Condition page
-        homePage.goToTreatmentRatingsConditionPage();
+        homePage.goToTreatmentRatingsConditionPage()
+                .goToConditionSelectionPage();  //go to Condition Selection page
 
-        //save current URL
-        previousURL = treatmentRatingsConditionPage.getCurrentUrl();
-
-        //go to Condition Selection page
-        treatmentRatingsConditionPage.goToConditionSelectionPage();
-
-        //save current URL
-        currentURL = conditionSelectionPage.getCurrentUrl();
-
-        //check that previous and current URLs are not equals
-        assertNotEquals(previousURL, currentURL);
     }
 
     //Navigation to Facebook page from Footer
@@ -358,10 +244,8 @@ public class Navigation_TestCase extends TestCase{
     public void goToFacebookPageFromFooter(){
 
         //go to Facebook
-        footer.goToFacebookPage();
-
-        //check URL
-        Assert.assertTrue(facebookPage.checkUrl());
+        footer.goToFacebookPage()
+                .checkUrl();   //check URL
 
     }
 
@@ -370,10 +254,8 @@ public class Navigation_TestCase extends TestCase{
     public void goToTwitterPageFromFooter(){
 
         //go to Twitter
-        footer.goToTwitterPage();
-
-        //check URL
-        Assert.assertTrue(twitterPage.checkUrl());
+        footer.goToTwitterPage()
+                .checkUrl();    //check URL
 
     }
 
@@ -399,10 +281,8 @@ public class Navigation_TestCase extends TestCase{
 
 
         footer.goToBlogPage()            //go to Blog page
-                .goToWriteAReviewPage(); //go to Write a Review page
-
-        //verify that we are at the right page
-        Assert.assertTrue(writeAReviewPage.checkUrl());
+                .goToWriteAReviewPage() //go to Write a Review page
+                .checkURLBasic();    //verify that we are at the right page
 
     }
 
@@ -413,10 +293,8 @@ public class Navigation_TestCase extends TestCase{
 
         footer.goToBlogPage()                           //go to Blog page
                 .goToDetailedBlogPage(1)    //go to Detailed Blog page
-                .goToWriteAReviewPage();                //go to Write a Review page
-
-        //verify that we are at the right page
-        Assert.assertTrue(writeAReviewPage.checkUrl());
+                .goToWriteAReviewPage()                 //go to Write a Review page
+                .checkURLBasic();                            //verify that we are at the right page
 
     }
 
@@ -425,10 +303,8 @@ public class Navigation_TestCase extends TestCase{
     public void goToFirstStepOfCoachingProgramFromTreatmentRatingsConditionPage(){
 
         homePage.goToTreatmentRatingsConditionPage()    //go to Treatment Ratings Condition page
-                .goToFirstStepOfCoachingProgramPage();  //go to 1st step of Coaching Program Write Coaching Request page
-
-        //check URL
-        Assert.assertTrue(firstStepOfCoachingProgramPage.checkUrl());
+                .goToFirstStepOfCoachingProgramPage()   //go to 1st step of Coaching Program Write Coaching Request page
+                .checkUrl();  //check URL
 
     }
 
@@ -436,20 +312,11 @@ public class Navigation_TestCase extends TestCase{
     @Test
     public void goToVideosAndGuidesConditionPageFromTreatmentRatingsConditionPage(){
 
-        //create local variable
-        String expectedURL;
-
         //go to Treatment Ratings Condition page
-        homePage.goToTreatmentRatingsConditionPage();
-
-        //save expected url
-        expectedURL =  treatmentRatingsConditionPage.getCurrentUrl() + "-videos";
-
-        //go to Videos&Guides Condition page
-        treatmentRatingsConditionPage.goToTreatmentVideosPage();
-
-        //check URL
-        Assert.assertEquals(expectedURL, treatmentVideosPage.getCurrentUrl());
+        homePage.goToTreatmentRatingsConditionPage()
+                .setExpectedVideosURL() //set expected url to static variable
+                .goToTreatmentVideosPage()  //go to Videos&Guides Condition page
+                .checkURL();    //check URL
 
     }
 
@@ -461,16 +328,10 @@ public class Navigation_TestCase extends TestCase{
                 .goToTreatmentVideosPage();             //go to Treatment Videos&Guides page
 
         //go to Sign Up page
-        header.goToSignUpPage();
-
-        //check URL
-        Assert.assertTrue(signUpPage.checkUrl());
-
-        //check that Join Now button exists
-        Assert.assertTrue(signUpPage.checkJoinNowButtonExists());
-
-        //check that Sign up with Facebook button exists
-        Assert.assertTrue(signUpPage.checkSignUpWithFacebookButtonExists());
+        header.goToSignUpPage()
+                .checkUrl() //check URL
+                .checkIsJoinNowButtonExists()   //check that Join Now button exists
+                .checkIsSignUpWithFacebookButtonExists();   //check that Sign up with Facebook button exists
 
     }
 
@@ -480,10 +341,8 @@ public class Navigation_TestCase extends TestCase{
 
         homePage.goToConditionSelectionPage()   //go to Condition Selection page
                 .goToTreatmentRatingsConditionPage( ReadXMLFile.takeConstantFromXML("BodyArea", "Neck", "name"), ReadXMLFile.takeConstantFromXML("Condition", "Neck pain with radiculopathy", "name")) //go to Treatment Ratings Condition page
-                .goToWriteAReviewPage();        //go to Write a Review page
-
-        //check URL
-        Assert.assertEquals(ReadXMLFile.takeConstantFromXML("URL", "Write a Review page from Treatment Ratings Condition", "url"), writeAReviewPage.getCurrentUrl());
+                .goToWriteAReviewPage() //go to Write a Review page
+                .checkURLFromTreatmentRatingsCondition();   //check URL
 
     }
 
@@ -491,20 +350,11 @@ public class Navigation_TestCase extends TestCase{
     @Test
     public void goToTreatmentReviewsPageFromTreatmentRatingsConditionPage(){
 
-        //create local variable
-        String expectedURL;
-
         //go to Treatment Ratings Condition page
-        homePage.goToTreatmentRatingsConditionPage();
-
-        //save expected url
-        expectedURL =  treatmentRatingsConditionPage.getCurrentUrl() + "-reviews";
-
-        //go to Treatment Reviews page (click on Treatment Reviews tab)
-        treatmentRatingsConditionPage.goToTreatmentReviewsPage();
-
-        //check URL
-        Assert.assertEquals(expectedURL, treatmentReviewsPage.getCurrentUrl());
+        homePage.goToTreatmentRatingsConditionPage()
+                .setExpectedReviewsURL()    //save expected url
+                .goToTreatmentReviewsPage() //go to Treatment Reviews page (click on Treatment Reviews tab)
+                .checkURL();    //check URL
 
     }
 
@@ -513,16 +363,10 @@ public class Navigation_TestCase extends TestCase{
     public void goToWriteAReviewPageFromTreatmentReviewsPage(){
 
         homePage.goToTreatmentRatingsConditionPage()    //go to Treatment Ratings Condition page
-                .goToTreatmentReviewsPage()             //go to Treatment Reviews page (click on Treatment Reviews tab)
-                .goToWriteAReviewPage();                //go to Write a Review page (click on "Share your Experience" button)
-
-        //check URL
-        Assert.assertEquals(ReadXMLFile.takeConstantFromXML("URL", "Write a Review page from Treatment Reviews", "url"), writeAReviewPage.getCurrentUrl());
-
-        //check group title
-        Assert.assertEquals("What is your gender?", writeAReviewPage.getGroupTitle());
-
-       // writeAReviewPage.clickOnGender("Male");
+                .goToTreatmentReviewsPage() //go to Treatment Reviews page (click on Treatment Reviews tab)
+                .goToWriteAReviewPage()    //go to Write a Review page (click on "Share your Experience" button)
+                .checkURLFromTreatmentsReviews()    //check URL
+                .checkGroupTitleInCaseOfFromTreatmentReviewsPage(); //check group title
 
     }
 
@@ -534,16 +378,10 @@ public class Navigation_TestCase extends TestCase{
         String expectedURL;
 
         homePage.goToTreatmentRatingsConditionPage()               //go to Treatment Ratings Condition page
-                .goToSpecificTreatment("Massage");  //go to Specific Treatment Review page
-
-        //save expected url
-        expectedURL = specificTreatmentReviewsPage.getCurrentUrl() + "-recommendations";
-
-        //go to Specific Videos&Guides Treatment page
-        specificTreatmentReviewsPage.goToSpecificTreatmentVideosPage();
-
-        //check URL
-        Assert.assertEquals(expectedURL, specificTreatmentVideosPage.getCurrentUrl());
+                .goToSpecificTreatment("Massage")   //go to Specific Treatment Review page
+                .setExpectedSpecificTreatmentVideosPageURL()    //save expected url
+                .goToSpecificTreatmentVideosPage()  //go to Specific Videos&Guides Treatment page
+                .checkURL();    //check URL
 
     }
 

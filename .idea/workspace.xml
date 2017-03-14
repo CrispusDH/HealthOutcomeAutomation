@@ -2,30 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4ca991d3-ec18-4ace-b08d-b16c63f24db2" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/PageObject/AboutUsPage.java" afterPath="$PROJECT_DIR$/src/test/java/PageObject/AboutUsPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/PageObject/BlogPage.java" afterPath="$PROJECT_DIR$/src/test/java/PageObject/BlogPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/PageObject/ConditionSelectionPage.java" afterPath="$PROJECT_DIR$/src/test/java/PageObject/ConditionSelectionPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/PageObject/ContactUsPage.java" afterPath="$PROJECT_DIR$/src/test/java/PageObject/ContactUsPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/PageObject/FAQPage.java" afterPath="$PROJECT_DIR$/src/test/java/PageObject/FAQPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/PageObject/FacebookPage.java" afterPath="$PROJECT_DIR$/src/test/java/PageObject/FacebookPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/PageObject/FirstStepOfCoachingProgramPage.java" afterPath="$PROJECT_DIR$/src/test/java/PageObject/FirstStepOfCoachingProgramPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/PageObject/ForgotPasswordConfirmationPage.java" afterPath="$PROJECT_DIR$/src/test/java/PageObject/ForgotPasswordConfirmationPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/PageObject/ForgotPasswordPage.java" afterPath="$PROJECT_DIR$/src/test/java/PageObject/ForgotPasswordPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/PageObject/Header.java" afterPath="$PROJECT_DIR$/src/test/java/PageObject/Header.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/PageObject/PrivacyPolicyPage.java" afterPath="$PROJECT_DIR$/src/test/java/PageObject/PrivacyPolicyPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/PageObject/ResourcesPage.java" afterPath="$PROJECT_DIR$/src/test/java/PageObject/ResourcesPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/PageObject/SignUpConfirmationPage.java" afterPath="$PROJECT_DIR$/src/test/java/PageObject/SignUpConfirmationPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/PageObject/SignUpPage.java" afterPath="$PROJECT_DIR$/src/test/java/PageObject/SignUpPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/PageObject/SingleReviewPage.java" afterPath="$PROJECT_DIR$/src/test/java/PageObject/SingleReviewPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/PageObject/SpecificTreatmentReviewsPage.java" afterPath="$PROJECT_DIR$/src/test/java/PageObject/SpecificTreatmentReviewsPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/PageObject/SpecificTreatmentVideosPage.java" afterPath="$PROJECT_DIR$/src/test/java/PageObject/SpecificTreatmentVideosPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/PageObject/TermsOfServicePage.java" afterPath="$PROJECT_DIR$/src/test/java/PageObject/TermsOfServicePage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/PageObject/TestimonialsPage.java" afterPath="$PROJECT_DIR$/src/test/java/PageObject/TestimonialsPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/PageObject/TreatmentRatingsConditionPage.java" afterPath="$PROJECT_DIR$/src/test/java/PageObject/TreatmentRatingsConditionPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/PageObject/TreatmentReviewsPage.java" afterPath="$PROJECT_DIR$/src/test/java/PageObject/TreatmentReviewsPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/PageObject/TreatmentVideosPage.java" afterPath="$PROJECT_DIR$/src/test/java/PageObject/TreatmentVideosPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/PageObject/TwitterPage.java" afterPath="$PROJECT_DIR$/src/test/java/PageObject/TwitterPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/PageObject/WriteAReviewPage.java" afterPath="$PROJECT_DIR$/src/test/java/PageObject/WriteAReviewPage.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/automationFramework/Navigation_TestCase.java" afterPath="$PROJECT_DIR$/src/test/java/automationFramework/Navigation_TestCase.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/automationFramework/Plot_TestCase.java" afterPath="$PROJECT_DIR$/src/test/java/automationFramework/Plot_TestCase.java" />
     </list>
@@ -52,15 +28,15 @@
       <file leaf-file-name="Navigation_TestCase.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/automationFramework/Navigation_TestCase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1139">
-              <caret line="69" column="0" lean-forward="false" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
+            <state relative-caret-position="295">
+              <caret line="371" column="81" lean-forward="false" selection-start-line="371" selection-start-column="81" selection-end-line="371" selection-end-column="81" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1964#2004#0" expanded="false" />
-                <marker date="1489503053728" expanded="false" signature="1436:1447" ph=" { " />
-                <marker date="1489503053728" expanded="false" signature="1462:1468" ph=" }" />
-                <marker date="1489503053728" expanded="false" signature="1905:1916" ph=" { " />
-                <marker date="1489503053728" expanded="false" signature="1930:1936" ph=" }" />
+                <element signature="e#1914#1954#0" expanded="false" />
+                <marker date="1489505338004" expanded="false" signature="1386:1397" ph=" { " />
+                <marker date="1489505338004" expanded="false" signature="1412:1418" ph=" }" />
+                <marker date="1489505338004" expanded="false" signature="1855:1866" ph=" { " />
+                <marker date="1489505338004" expanded="false" signature="1880:1886" ph=" }" />
               </folding>
             </state>
           </provider>
@@ -69,11 +45,10 @@
       <file leaf-file-name="Plot_TestCase.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/automationFramework/Plot_TestCase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1173">
-              <caret line="71" column="36" lean-forward="false" selection-start-line="71" selection-start-column="36" selection-end-line="71" selection-end-column="36" />
+            <state relative-caret-position="51">
+              <caret line="3" column="27" lean-forward="false" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2257#2297#0" expanded="false" />
+                <element signature="e#2165#2205#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -211,11 +186,11 @@
         <option value="$PROJECT_DIR$/src/test/java/PageObject/SpecificTreatmentReviewsPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/PageObject/TreatmentVideosPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/PageObject/SpecificTreatmentVideosPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/automationFramework/Navigation_TestCase.java" />
         <option value="$PROJECT_DIR$/src/test/java/PageObject/ForgotPasswordPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/PageObject/ForgotPasswordConfirmationPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/PageObject/Header.java" />
         <option value="$PROJECT_DIR$/src/test/java/PageObject/SignUpConfirmationPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/automationFramework/Navigation_TestCase.java" />
         <option value="$PROJECT_DIR$/src/test/java/automationFramework/Plot_TestCase.java" />
       </list>
     </option>
@@ -1317,21 +1292,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/automationFramework/Navigation_TestCase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1139">
-          <caret line="69" column="0" lean-forward="false" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1964#2004#0" expanded="false" />
-            <marker date="1489503053728" expanded="false" signature="1436:1447" ph=" { " />
-            <marker date="1489503053728" expanded="false" signature="1462:1468" ph=" }" />
-            <marker date="1489503053728" expanded="false" signature="1905:1916" ph=" { " />
-            <marker date="1489503053728" expanded="false" signature="1930:1936" ph=" }" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/PageObject/HomePage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="199">
@@ -1384,13 +1344,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/automationFramework/Plot_TestCase.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/automationFramework/Navigation_TestCase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1173">
-          <caret line="71" column="36" lean-forward="false" selection-start-line="71" selection-start-column="36" selection-end-line="71" selection-end-column="36" />
+        <state relative-caret-position="295">
+          <caret line="371" column="81" lean-forward="false" selection-start-line="371" selection-start-column="81" selection-end-line="371" selection-end-column="81" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2257#2297#0" expanded="false" />
+            <element signature="e#1914#1954#0" expanded="false" />
+            <marker date="1489505338004" expanded="false" signature="1386:1397" ph=" { " />
+            <marker date="1489505338004" expanded="false" signature="1412:1418" ph=" }" />
+            <marker date="1489505338004" expanded="false" signature="1855:1866" ph=" { " />
+            <marker date="1489505338004" expanded="false" signature="1880:1886" ph=" }" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/automationFramework/Plot_TestCase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="27" lean-forward="false" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
+          <folding>
+            <element signature="e#2165#2205#0" expanded="false" />
           </folding>
         </state>
       </provider>

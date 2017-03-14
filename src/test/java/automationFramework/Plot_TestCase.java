@@ -1,9 +1,7 @@
 package automationFramework;
 
-import PageObject.ForgotPasswordConfirmationPage;
 import PageObject.Header;
 import PageObject.HomePage;
-import PageObject.SignUpConfirmationPage;
 import junit.framework.TestCase;
 import org.junit.*;
 import org.junit.rules.Timeout;

@@ -13,11 +13,8 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import utility.ReadXMLFile;
 import utility.RetryRule;
-
 import java.io.File;
 import java.io.IOException;
-
-import static org.junit.Assert.assertNotEquals;
 
 
 @RunWith(JUnit4.class)
@@ -373,9 +370,6 @@ public class Navigation_TestCase extends TestCase{
     //Navigation to Specific Videos&Guides Treatment page from Treatment Rating -> Specific Treatment Review page
     @Test
     public void goToSpecificVideosAndGuidesPageFromSpecificTreatmentReviewPage(){
-
-        //create local variable
-        String expectedURL;
 
         homePage.goToTreatmentRatingsConditionPage()               //go to Treatment Ratings Condition page
                 .goToSpecificTreatment("Massage")   //go to Specific Treatment Review page

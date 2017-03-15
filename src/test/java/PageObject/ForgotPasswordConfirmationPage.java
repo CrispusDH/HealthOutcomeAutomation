@@ -6,7 +6,6 @@ import utility.BaseClass;
 import utility.ReadXMLFile;
 
 public class ForgotPasswordConfirmationPage extends BaseClass {
-    private final WebDriver driver;
 
     public ForgotPasswordConfirmationPage(WebDriver driver){
 

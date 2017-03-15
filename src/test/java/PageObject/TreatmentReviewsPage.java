@@ -9,7 +9,6 @@ import utility.BaseClass;
 import java.util.List;
 
 public class TreatmentReviewsPage extends BaseClass {
-    private final WebDriver driver;
     private WebElement element;
     private List<WebElement> elements;
 

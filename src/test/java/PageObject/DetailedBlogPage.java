@@ -8,7 +8,6 @@ import utility.BaseClass;
 import java.util.List;
 
 public class DetailedBlogPage extends BaseClass {
-    private final WebDriver driver;
     private WebElement element;
     private List<WebElement> elements;
 

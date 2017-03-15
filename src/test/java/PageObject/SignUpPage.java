@@ -11,7 +11,6 @@ import utility.ReadXMLFile;
 import java.util.List;
 
 public class SignUpPage extends BaseClass {
-    private final WebDriver driver;
     private WebElement element;
     private List<WebElement> elements;
 

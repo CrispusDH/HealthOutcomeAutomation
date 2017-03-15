@@ -10,9 +10,6 @@ import utility.ReadXMLFile;
 import java.util.List;
 
 public class AboutUsPage extends BaseClass {
-    private final WebDriver driver;
-    private WebElement element;
-    private List<WebElement> elements;
 
     public AboutUsPage(WebDriver driver){
 

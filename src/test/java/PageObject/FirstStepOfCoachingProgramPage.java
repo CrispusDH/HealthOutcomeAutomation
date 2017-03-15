@@ -9,7 +9,6 @@ import utility.ReadXMLFile;
 import java.util.List;
 
 public class FirstStepOfCoachingProgramPage extends BaseClass {
-    private final WebDriver driver;
     private WebElement element;
     private List<WebElement> elements;
 

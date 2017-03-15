@@ -10,7 +10,6 @@ import utility.ReadXMLFile;
 import java.util.List;
 
 public class TermsOfServicePage extends BaseClass {
-    private final WebDriver driver;
     private WebElement element;
     private List<WebElement> elements;
 

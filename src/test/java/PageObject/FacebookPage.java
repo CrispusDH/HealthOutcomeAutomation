@@ -8,8 +8,6 @@ import utility.ReadXMLFile;
 
 public class FacebookPage extends BaseClass {
 
-    private final WebDriver driver;
-
     public FacebookPage(WebDriver driver){
 
         this.driver = driver;

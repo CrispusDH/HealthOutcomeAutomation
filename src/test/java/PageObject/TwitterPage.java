@@ -6,7 +6,6 @@ import utility.BaseClass;
 import utility.ReadXMLFile;
 
 public class TwitterPage extends BaseClass {
-    private final WebDriver driver;
 
     public TwitterPage(WebDriver driver){
 

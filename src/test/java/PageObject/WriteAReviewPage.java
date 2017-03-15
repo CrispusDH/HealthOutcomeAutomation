@@ -11,7 +11,6 @@ import utility.ReadXMLFile;
 import java.util.List;
 
 public class WriteAReviewPage extends BaseClass {
-    private final WebDriver driver;
     private WebElement element;
     private List<WebElement> elements;
 

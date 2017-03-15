@@ -91,8 +91,8 @@ public class Navigation_TestCase extends TestCase{
     @Test
     public void goToSingleReviewPage(){
 
-        homePage.goToSingleReviewPage()     //go to Single Review page from Home page
-                .isReviewInfoOnPage();      //check that div block with review exists and displayed
+        homePage.goToSingleReviewPage()
+                .isReviewInfoOnPage();
 
     }
 
@@ -102,9 +102,9 @@ public class Navigation_TestCase extends TestCase{
 
         //go to About page from Footer
         footer.goToAboutUsPage()
-                .checkIsEmpty()    //check that About US body are not empty
-                .checkAmountOfParagraphs()  //check that About Us page has paragraphs
-                .checkUrl();    //check About Us url
+                .checkIsEmpty()
+                .checkAmountOfParagraphs()
+                .checkUrl();
 
     }
 
@@ -114,9 +114,9 @@ public class Navigation_TestCase extends TestCase{
 
         //go to FAQ page
         footer.goToFAQPage()
-                .checkIsBodyEmpty()  //check that FAQ body are not empty
-                .checkAmountOfQustions() //check that FAQ page has paragraphs
-                .checkUrl();    //check URL
+                .checkIsBodyEmpty()
+                .checkAmountOfQustions()
+                .checkUrl();
 
     }
 
@@ -126,9 +126,9 @@ public class Navigation_TestCase extends TestCase{
 
         //go to Blog page
         footer.goToBlogPage()
-                .checkIsBodyEmpty() //check that blogs are on that page
+                .checkIsBodyEmpty()
                 .checkAmountOfBlogs()   //check that blogs are more than 0
-                .checkUrl();  //check URL
+                .checkUrl();
 
     }
 
@@ -138,9 +138,9 @@ public class Navigation_TestCase extends TestCase{
 
         //go to Resources page
         footer.goToResourcesPage()
-                .checkIsBodyEmpty() //check that resources are on that page
+                .checkIsBodyEmpty()
                 .checkAmountOfResources()   //check that resources more than 0
-                .checkUrl();   //check URL
+                .checkUrl();
 
     }
 
@@ -150,9 +150,9 @@ public class Navigation_TestCase extends TestCase{
 
         //go to Testimonials page
         footer.goToTestimonialsPage()
-                .checkIsBodyEmpty() //check that cards are on that page
-                .checkAmountOfCards()   //check the same in another way
-                .checkUrl();    //check URL
+                .checkIsBodyEmpty()
+                .checkAmountOfCards()
+                .checkUrl();
 
     }
 
@@ -162,9 +162,9 @@ public class Navigation_TestCase extends TestCase{
 
         //go to Contact Us
         footer.goToContactUsPage()
-                .checkIsBodyEmpty() //check that Contact Form on the page
-                .checkAmountOfItems()   //check that all items are on page
-                .checkUrl();    //check URL
+                .checkIsBodyEmpty()
+                .checkAmountOfItems()
+                .checkUrl();
 
     }
 
@@ -174,8 +174,8 @@ public class Navigation_TestCase extends TestCase{
 
         //go to Privacy Policy page
         footer.goToPrivacyPolicyPage()
-                .checkAmountOfParagraphs()  //check that page has text
-                .checkUrl();    //check URL
+                .checkAmountOfParagraphs()
+                .checkUrl();
 
     }
 
@@ -185,8 +185,8 @@ public class Navigation_TestCase extends TestCase{
 
         //go to Terms of Service page
         footer.goToTermsOfServicePage()
-                .checkAmountOfParagraphs()  //check that page has text
-                .checkUrl();    //check URL
+                .checkAmountOfParagraphs()
+                .checkUrl();
 
     }
 
@@ -199,7 +199,7 @@ public class Navigation_TestCase extends TestCase{
 
         //go to Treatment Ratings Condition page
         homePage.goToTreatmentRatingsConditionPage()
-                .checkURL(expectedUrl); //check URL
+                .checkURL(expectedUrl);
 
     }
 
@@ -212,7 +212,7 @@ public class Navigation_TestCase extends TestCase{
 
         //go to Condition Selection page
         homePage.goToConditionSelectionPage()
-                .checkURL(expectedURL); //check URL
+                .checkURL(expectedURL);
 
     }
 
@@ -232,7 +232,7 @@ public class Navigation_TestCase extends TestCase{
 
         //go to Treatment Ratings Condition page
         homePage.goToTreatmentRatingsConditionPage()
-                .goToConditionSelectionPage();  //go to Condition Selection page
+                .goToConditionSelectionPage();
 
     }
 
@@ -242,7 +242,7 @@ public class Navigation_TestCase extends TestCase{
 
         //go to Facebook
         footer.goToFacebookPage()
-                .checkUrl();   //check URL
+                .checkUrl();
 
     }
 
@@ -252,7 +252,7 @@ public class Navigation_TestCase extends TestCase{
 
         //go to Twitter
         footer.goToTwitterPage()
-                .checkUrl();    //check URL
+                .checkUrl();
 
     }
 
@@ -277,9 +277,9 @@ public class Navigation_TestCase extends TestCase{
     public void goToWriteAReviewPageFromBlogPage(){
 
 
-        footer.goToBlogPage()            //go to Blog page
-                .goToWriteAReviewPage() //go to Write a Review page
-                .checkURLBasic();    //verify that we are at the right page
+        footer.goToBlogPage()
+                .goToWriteAReviewPage()
+                .checkURLBasic();
 
     }
 
@@ -288,10 +288,10 @@ public class Navigation_TestCase extends TestCase{
     public void goToWriteAReviewPageFromDetailedBlogPage(){
 
 
-        footer.goToBlogPage()                           //go to Blog page
+        footer.goToBlogPage()
                 .goToDetailedBlogPage(1)    //go to Detailed Blog page
-                .goToWriteAReviewPage()                 //go to Write a Review page
-                .checkURLBasic();                            //verify that we are at the right page
+                .goToWriteAReviewPage()
+                .checkURLBasic();
 
     }
 
@@ -299,9 +299,9 @@ public class Navigation_TestCase extends TestCase{
     @Test
     public void goToFirstStepOfCoachingProgramFromTreatmentRatingsConditionPage(){
 
-        homePage.goToTreatmentRatingsConditionPage()    //go to Treatment Ratings Condition page
-                .goToFirstStepOfCoachingProgramPage()   //go to 1st step of Coaching Program Write Coaching Request page
-                .checkUrl();  //check URL
+        homePage.goToTreatmentRatingsConditionPage()
+                .goToFirstStepOfCoachingProgramPage()
+                .checkUrl();
 
     }
 
@@ -312,8 +312,8 @@ public class Navigation_TestCase extends TestCase{
         //go to Treatment Ratings Condition page
         homePage.goToTreatmentRatingsConditionPage()
                 .setExpectedVideosURL() //set expected url to static variable
-                .goToTreatmentVideosPage()  //go to Videos&Guides Condition page
-                .checkURL();    //check URL
+                .goToTreatmentVideosPage()
+                .checkURL();
 
     }
 
@@ -321,14 +321,14 @@ public class Navigation_TestCase extends TestCase{
     @Test
     public void goToSignUpPageFromVideosAndGuidesConditionPage(){
 
-        homePage.goToTreatmentRatingsConditionPage()    //go to Treatment Ratings Condition page
-                .goToTreatmentVideosPage();             //go to Treatment Videos&Guides page
+        homePage.goToTreatmentRatingsConditionPage()
+                .goToTreatmentVideosPage();
 
         //go to Sign Up page
         header.goToSignUpPage()
-                .checkUrl() //check URL
-                .checkIsJoinNowButtonExists()   //check that Join Now button exists
-                .checkIsSignUpWithFacebookButtonExists();   //check that Sign up with Facebook button exists
+                .checkUrl()
+                .checkIsJoinNowButtonExists()
+                .checkIsSignUpWithFacebookButtonExists();
 
     }
 
@@ -336,10 +336,10 @@ public class Navigation_TestCase extends TestCase{
     @Test
     public void goToWriteAReviewPageFromTreatmentRatingsConditionPage(){
 
-        homePage.goToConditionSelectionPage()   //go to Condition Selection page
+        homePage.goToConditionSelectionPage()
                 .goToTreatmentRatingsConditionPage( ReadXMLFile.takeConstantFromXML("BodyArea", "Neck", "name"), ReadXMLFile.takeConstantFromXML("Condition", "Neck pain with radiculopathy", "name")) //go to Treatment Ratings Condition page
-                .goToWriteAReviewPage() //go to Write a Review page
-                .checkURLFromTreatmentRatingsCondition();   //check URL
+                .goToWriteAReviewPage()
+                .checkURLFromTreatmentRatingsCondition();
 
     }
 
@@ -350,8 +350,8 @@ public class Navigation_TestCase extends TestCase{
         //go to Treatment Ratings Condition page
         homePage.goToTreatmentRatingsConditionPage()
                 .setExpectedReviewsURL()    //save expected url
-                .goToTreatmentReviewsPage() //go to Treatment Reviews page (click on Treatment Reviews tab)
-                .checkURL();    //check URL
+                .goToTreatmentReviewsPage()
+                .checkURL();
 
     }
 
@@ -359,11 +359,11 @@ public class Navigation_TestCase extends TestCase{
     @Test
     public void goToWriteAReviewPageFromTreatmentReviewsPage(){
 
-        homePage.goToTreatmentRatingsConditionPage()    //go to Treatment Ratings Condition page
-                .goToTreatmentReviewsPage() //go to Treatment Reviews page (click on Treatment Reviews tab)
-                .goToWriteAReviewPage()    //go to Write a Review page (click on "Share your Experience" button)
-                .checkURLFromTreatmentsReviews()    //check URL
-                .checkGroupTitleInCaseOfFromTreatmentReviewsPage(); //check group title
+        homePage.goToTreatmentRatingsConditionPage()
+                .goToTreatmentReviewsPage()
+                .goToWriteAReviewPage()
+                .checkURLFromTreatmentsReviews()
+                .checkGroupTitleInCaseOfFromTreatmentReviewsPage();
 
     }
 
@@ -371,11 +371,11 @@ public class Navigation_TestCase extends TestCase{
     @Test
     public void goToSpecificVideosAndGuidesPageFromSpecificTreatmentReviewPage(){
 
-        homePage.goToTreatmentRatingsConditionPage()               //go to Treatment Ratings Condition page
-                .goToSpecificTreatment("Massage")   //go to Specific Treatment Review page
-                .setExpectedSpecificTreatmentVideosPageURL()    //save expected url
-                .goToSpecificTreatmentVideosPage()  //go to Specific Videos&Guides Treatment page
-                .checkURL();    //check URL
+        homePage.goToTreatmentRatingsConditionPage()
+                .goToSpecificTreatment("Massage")
+                .setExpectedSpecificTreatmentVideosPageURL()
+                .goToSpecificTreatmentVideosPage()
+                .checkURL();
 
     }
 

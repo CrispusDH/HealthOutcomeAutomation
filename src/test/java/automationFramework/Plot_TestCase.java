@@ -109,21 +109,21 @@ public class Plot_TestCase extends TestCase {
     @Test
     public void forgotPasswordFlow(){
 
-        header.openLogInForm()              //click on Log in link
-                .goToForgotPasswordPage()   //go to Forgot password page
+        header.openLogInForm()
+                .goToForgotPasswordPage()
                 .goToForgotPasswordConfirmationPage(ReadXMLFile.takeConstantFromXML("Account", "Main", "emailAddress"))  //type email and click on Forgot password button
-                .checkUrl(); //check url
+                .checkUrl();
     }
 
     //sign up without review flow
     @Test
     public void signUpWithoutReview(){
 
-        header.goToSignUpPage()      //go to Sign Up page
-                .signUpRandom()      //sign Up via random email
-                .checkUrl() //verify that current URL is correct
-                .checkIsTreatmentsButtonDisplayed() //check that Find Treatments button exists
-                .checkIsWriteAReviewButtonDisplayed();  //check that Write a Review button exists
+        header.goToSignUpPage()
+                .signUpRandom()
+                .checkUrl()
+                .checkIsTreatmentsButtonDisplayed()
+                .checkIsWriteAReviewButtonDisplayed();
 
         //verify that current logged user has correct profile user name
         header.checkUserNameForRandomCreatedUser();

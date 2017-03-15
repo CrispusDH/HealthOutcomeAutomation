@@ -13,6 +13,8 @@ import java.util.concurrent.TimeUnit;
 //improve find elements mechanism
 public abstract class BaseClass {
 
+        protected WebDriver driver;
+
         protected List<WebElement> findElements(WebDriver webDriver, By by, int timeout) {
 
         int iSleepTime = 1000;

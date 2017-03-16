@@ -10,14 +10,6 @@ import utility.ReadXMLFile;
 import java.util.List;
 
 public class PrivacyPolicyPage extends BaseClass {
-    private WebElement element;
-    private List<WebElement> elements;
-
-    public PrivacyPolicyPage(WebDriver driver){
-
-        this.driver = driver;
-
-    }
 
     //<editor-fold desc="Finding page Elements">
 

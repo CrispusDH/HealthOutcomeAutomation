@@ -2,42 +2,26 @@ package PageObject;
 
 import org.junit.Assert;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import utility.BaseClass;
 import utility.ReadXMLFile;
 
 import java.util.List;
 
+import static utility.WaitConditionForWebElement.visible;
+import static utility.WaitConditionForWebElements.allVisible;
+
 public class ContactUsPage extends BaseClass {
-    private WebElement element;
-    private List<WebElement> elements;
-
-    public ContactUsPage(WebDriver driver){
-
-        this.driver = driver;
-
-    }
 
     //<editor-fold desc="Finding page Elements">
-
-    // The Contact Us page contains several elements that will be represented as WebElements.
-    // The locators for these elements should only be defined once.
 
     private By div_ContactFormLocator = By.cssSelector(".contact-form");
     private By contactItemsLocator = By.cssSelector(".contact-items li");
 
-    //find Contact form
-    private WebElement div_ContactForm(){
-
-        return findElements(driver, div_ContactFormLocator,5000).get(0);
-
-    }
-
     //find all inner items
     private List<WebElement> contactItems(){
 
-        return findElements(driver, contactItemsLocator, 5000);
+        return waitForElements(contactItemsLocator, allVisible);
     }
 
     //</editor-fold>
@@ -51,7 +35,7 @@ public class ContactUsPage extends BaseClass {
     //check that Contact Form on the page
     public ContactUsPage checkIsBodyEmpty(){
 
-        Assert.assertTrue(div_ContactForm().isDisplayed());
+        Assert.assertTrue(waitFor(div_ContactFormLocator, visible).isDisplayed());
 
         return this;
 

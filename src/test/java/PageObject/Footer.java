@@ -1,94 +1,48 @@
 package PageObject;
 
+import lombok.val;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
+import static javaslang.API.*;
 import org.openqa.selenium.WebElement;
 import utility.BaseClass;
 import utility.ReadXMLFile;
-
 import java.util.ArrayList;
-import java.util.List;
-import java.util.concurrent.TimeUnit;
+import static utility.WaitConditionForWebElements.allVisible;
 
 public class Footer extends BaseClass {
-    private WebElement element;
-    private List<WebElement> elements;
-
-
-    public Footer(WebDriver driver){
-
-        this.driver = driver;
-
-    }
 
     //<editor-fold desc="Finding page Elements">
-
-    // The Footer contains several elements that will be represented as WebElements.
-    // The locators for these elements should only be defined once.
 
     private By  link_FooterLinksLocator = By.cssSelector(".links li");
     private By  link_FooterCopyrightsLocator = By.cssSelector(".copyright a");
     private By  link_ConnectLocator = By.cssSelector(".connect li a");
 
     //find all footer links
-    private WebElement link_FooterLink(String footerLinkName){
+    private WebElement link_FooterLink(String sFooterLinkName){
 
-        elements = findElements(driver, link_FooterLinksLocator, 5000);
+        return findElementByText(waitForElements(link_FooterLinksLocator, allVisible), sFooterLinkName);
 
-        int i = 0;
-        do {
-            element = elements.get(i);
-            //System.out.println(element.getText() + "\n");
-            i++;
-        } while (!(element.getText().equals(footerLinkName)));
-
-        return element;
     }
 
     //find all items in copyrights block
-    private WebElement link_FooterCopyrights(String footerCopyrightName){
+    private WebElement link_FooterCopyrights(String sFooterCopyrightName){
 
-        elements = findElements(driver, link_FooterCopyrightsLocator, 5000);
+        return findElementByText(waitForElements(link_FooterCopyrightsLocator, allVisible), sFooterCopyrightName);
 
-        int i = 0;
-        do {
-            element = elements.get(i);
-            //System.out.println(element.getText() + "\n");
-            i++;
-        } while (!(element.getText().equals(footerCopyrightName)));
-
-        return element;
     }
 
     //facebook, twitter, linkedin, mailto links
-    private WebElement link_Connect(String name){
+    private WebElement link_Connect(String sName){
 
-        int counter = 1;
-        do {
+        val elements =  waitForElements(link_ConnectLocator, allVisible);
 
-            elements = findElements(driver, link_ConnectLocator, 5000);
+        return Match(sName).of(
+                Case("facebook", elements.get(0)),
+                Case("twitter", elements.get(1)),
+                Case("linkedin", elements.get(2)),
+                Case("mail", elements.get(3))
+        );
 
-            counter++;
-
-        } while ((elements.size() == 1) && (counter < 10));
-
-        switch (name){
-
-            case "facebook":
-                return element = elements.get(0);
-
-            case "twitter":
-                return element = elements.get(1);
-
-            case "linkedin":
-                return element = elements.get(2);
-
-            case "mail":
-                return element = elements.get(3);
-
-        }
-
-        return element;
     }
 
     //</editor-fold>
@@ -100,70 +54,70 @@ public class Footer extends BaseClass {
 
         link_FooterLink(ReadXMLFile.takeConstantFromXML("FooterLink", "About", "linkName")).click();
 
-        return new AboutUsPage(driver);
+        return new AboutUsPage();
 
     }
 
     //click on FAQ link
     private FAQPage clickOnFAQLink(){
 
-        link_FooterLink(ReadXMLFile.takeConstantFromXML("FooterLink", "FAQ", "linkName")).click();
+        click(link_FooterLink(ReadXMLFile.takeConstantFromXML("FooterLink", "FAQ", "linkName")));
 
-        return new FAQPage(driver);
+        return new FAQPage();
 
     }
 
     //click on Blog link
     private BlogPage clickOnBlogLink(){
 
-        link_FooterLink(ReadXMLFile.takeConstantFromXML("FooterLink", "Blog", "linkName")).click();
+        click(link_FooterLink(ReadXMLFile.takeConstantFromXML("FooterLink", "Blog", "linkName")));
 
-        return new BlogPage(driver);
+        return new BlogPage();
 
     }
 
     //click on Resources link
     private ResourcesPage clickOnResourcesLink(){
 
-        link_FooterLink(ReadXMLFile.takeConstantFromXML("FooterLink", "Resources", "linkName")).click();
+        click(link_FooterLink(ReadXMLFile.takeConstantFromXML("FooterLink", "Resources", "linkName")));
 
-        return new ResourcesPage(driver);
+        return new ResourcesPage();
 
     }
 
     //click on Testimonials link
     private TestimonialsPage clickOnTestimonialsLink(){
 
-        link_FooterLink(ReadXMLFile.takeConstantFromXML("FooterLink", "Testimonials", "linkName")).click();
+        click(link_FooterLink(ReadXMLFile.takeConstantFromXML("FooterLink", "Testimonials", "linkName")));
 
-        return new TestimonialsPage(driver);
+        return new TestimonialsPage();
 
     }
 
     //click on Contact Us link
     private ContactUsPage clickOnContactUsLink(){
 
-        link_FooterLink(ReadXMLFile.takeConstantFromXML("FooterLink", "Contact Us", "linkName")).click();
+        click(link_FooterLink(ReadXMLFile.takeConstantFromXML("FooterLink", "Contact Us", "linkName")));
 
-        return new ContactUsPage(driver);
+        return new ContactUsPage();
 
     }
 
     //click on Privacy Policy link
     private PrivacyPolicyPage clickOnPrivacyPolicyLink(){
 
-        link_FooterCopyrights(ReadXMLFile.takeConstantFromXML("FooterCopyright", "Privacy Policy", "copyrightName")).click();
+        click(link_FooterCopyrights(ReadXMLFile.takeConstantFromXML("FooterCopyright", "Privacy Policy", "copyrightName")));
 
-        return new PrivacyPolicyPage(driver);
+        return new PrivacyPolicyPage();
 
     }
 
     //click on Terms of Service link
     private TermsOfServicePage clickOnTermsOfServiceLink(){
 
-        link_FooterCopyrights(ReadXMLFile.takeConstantFromXML("FooterCopyright", "Terms of Service", "copyrightName")).click();
+        click(link_FooterCopyrights(ReadXMLFile.takeConstantFromXML("FooterCopyright", "Terms of Service", "copyrightName")));
 
-        return new TermsOfServicePage(driver);
+        return new TermsOfServicePage();
 
     }
 
@@ -184,15 +138,14 @@ public class Footer extends BaseClass {
     //click on facebook link and switch to a new Window
     private FacebookPage clickOnFacebookLink(){
 
-        //click on Facebook link
-        link_Connect("facebook").click();
+        click(link_Connect("facebook"));
 
-        //switch to new window
+        //safe switch to new window
         ArrayList<String> currentTab;
         int counter = 1;
         do {
 
-            currentTab = new ArrayList<String>(driver.getWindowHandles());
+            currentTab = new ArrayList<>(driver.getWindowHandles());
 
             //System.out.println(currentTab.size());
 
@@ -202,22 +155,21 @@ public class Footer extends BaseClass {
 
         driver.switchTo().window(currentTab.get(1));
 
-        return new FacebookPage(driver);
+        return new FacebookPage();
 
     }
 
     //click on twitter link and switch to a new window
     private TwitterPage clickOnTwitterLink(){
 
-        //click on Twitter link
-        link_Connect("twitter").click();
+        click(link_Connect("twitter"));
 
         //switch to new window
         ArrayList<String> currentTab;
         int counter = 1;
         do {
 
-            currentTab = new ArrayList<String>(driver.getWindowHandles());
+            currentTab = new ArrayList<>(driver.getWindowHandles());
 
             //System.out.println(currentTab.size());
 
@@ -227,7 +179,7 @@ public class Footer extends BaseClass {
 
         driver.switchTo().window(currentTab.get(1));
 
-        return new TwitterPage(driver);
+        return new TwitterPage();
 
     }
 

@@ -7,12 +7,6 @@ import utility.ReadXMLFile;
 
 public class TwitterPage extends BaseClass {
 
-    public TwitterPage(WebDriver driver){
-
-        this.driver = driver;
-
-    }
-
     //<editor-fold desc="Public methods">
 
     //check page url

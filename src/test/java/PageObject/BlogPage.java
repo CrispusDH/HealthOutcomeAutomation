@@ -1,26 +1,20 @@
 package PageObject;
 
-import lombok.val;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import utility.BaseClass;
 import utility.ReadXMLFile;
 import java.util.List;
 
-import static utility.WaitConditionForWebElement.visible;
 import static utility.WaitConditionForWebElements.allVisible;
 
 public class BlogPage extends BaseClass {
 
     //<editor-fold desc="Finding page Elements">
 
-    // The blog page contains several elements that will be represented as WebElements.
-    // The locators for these elements should only be defined once.
-
     private By blogsLocator = By.cssSelector(".blog-roll li");
-    private By button_StartHere = By.cssSelector(".button-cta span");
+    private By button_StartHereLocator = By.cssSelector(".button-cta span");
     private By button_FindOutMoreLocator = By.cssSelector(".button-cta span");
 
     //find all blogs on page
@@ -33,7 +27,7 @@ public class BlogPage extends BaseClass {
     //Start Here button
     private WebElement button_StartHere(){
 
-        return findElementByText(waitForElements(button_StartHere, allVisible), "START HERE");
+        return findElementByText(waitForElements(button_StartHereLocator, allVisible), "START HERE");
 
     }
 

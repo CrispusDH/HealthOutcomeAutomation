@@ -1,18 +1,13 @@
 package PageObject;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import utility.BaseClass;
-
-import java.util.List;
+import static utility.WaitConditionForWebElements.allVisible;
 
 public class DetailedBlogPage extends BaseClass {
 
     //<editor-fold desc="Finding page Elements">
-
-    // The Detailed blog page contains several elements that will be represented as WebElements.
-    // The locators for these elements should only be defined once.
 
     private By button_StartHereLocator = By.cssSelector(".button-cta span");
     private By button_FindOutMoreLocator = By.cssSelector(".button-cta span");
@@ -20,31 +15,14 @@ public class DetailedBlogPage extends BaseClass {
     //Start Here button
     private WebElement button_StartHere(){
 
-        elements = findElements(driver, button_StartHereLocator, 5000);
-
-        int i = 0;
-        do {
-            element = elements.get(i);
-            //System.out.println(element.getText() + "\n");
-            i++;
-        } while (!(element.getText().equals("START HERE")));
-
-        return element;
+        return findElementByText(waitForElements(button_StartHereLocator, allVisible), "START HERE");
     }
 
     //Find Out More button
     private WebElement button_FindOutMore(){
 
-        elements = findElements(driver, button_FindOutMoreLocator, 5000);
+        return findElementByText(waitForElements(button_FindOutMoreLocator, allVisible), "Find Out More");
 
-        int i = 0;
-        do {
-            element = elements.get(i);
-            //System.out.println(element.getText() + "\n");
-            i++;
-        } while (!(element.getText().equals("Find Out More")));
-
-        return element;
     }
 
     //</editor-fold>
@@ -54,9 +32,9 @@ public class DetailedBlogPage extends BaseClass {
     //click on Start Here button
     private WriteAReviewPage clickOnStartHereButton(){
 
-         button_StartHere().click();
+         click(button_StartHere());
 
-         return new WriteAReviewPage(driver);
+         return new WriteAReviewPage();
 
     }
 

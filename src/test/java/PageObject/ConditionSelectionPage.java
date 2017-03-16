@@ -12,9 +12,6 @@ public class ConditionSelectionPage extends BaseClass {
 
     //<editor-fold desc="Finding page Elements">
 
-    // The Condition Selection page contains several elements that will be represented as WebElements.
-    // The locators for these elements should only be defined once.
-
     private By injuryBodyAreaLocator = By.cssSelector(".parts-list li > span");
     private By conditionElementLocator = By.cssSelector("#select-condition li a > span");
     private By forScrollingLocator = By.cssSelector(".select-step");

@@ -2,17 +2,10 @@ package PageObject;
 
 
 import org.junit.Assert;
-import org.openqa.selenium.WebDriver;
 import utility.BaseClass;
 import utility.ReadXMLFile;
 
 public class FacebookPage extends BaseClass {
-
-    public FacebookPage(WebDriver driver){
-
-        this.driver = driver;
-
-    }
 
     //<editor-fold desc="Public methods">
 

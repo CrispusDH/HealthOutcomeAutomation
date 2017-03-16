@@ -9,26 +9,17 @@ import utility.ReadXMLFile;
 
 import java.util.List;
 
+import static utility.WaitConditionForWebElements.allVisible;
+
 public class FAQPage extends BaseClass {
-    private WebElement element;
-    private List<WebElement> elements;
-
-    public FAQPage(WebDriver driver){
-
-        this.driver = driver;
-
-    }
 
     //<editor-fold desc="Finding page Elements">
-
-    // The FAQ page contains several elements that will be represented as WebElements.
-    // The locators for these elements should only be defined once.
 
     private By questionsLocator = By.cssSelector(".questions li");
 
     private List<WebElement> questions(){
 
-        return findElements(driver, questionsLocator, 5000);
+        return waitForElements(questionsLocator, allVisible);
 
     }
 

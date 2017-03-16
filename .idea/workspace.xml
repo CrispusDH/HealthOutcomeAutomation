@@ -2,57 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4ca991d3-ec18-4ace-b08d-b16c63f24db2" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_16_14.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/utility/Configuration.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/utility/WaitConditionForWebElement.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/utility/WaitConditionForWebElements.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/PageObject/AboutUsPage.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/PageObject/BlogPage.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/PageObject/ConditionSelectionPage.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/PageObject/ContactUsPage.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/PageObject/DetailedBlogPage.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/PageObject/FAQPage.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/PageObject/FacebookPage.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/PageObject/FirstStepOfCoachingProgramPage.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/PageObject/Footer.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/PageObject/ForgotPasswordConfirmationPage.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/PageObject/ForgotPasswordPage.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/PageObject/Header.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/PageObject/HomePage.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/PageObject/PrivacyPolicyPage.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/PageObject/ResourcesPage.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/PageObject/SignUpConfirmationPage.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/PageObject/SignUpPage.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/PageObject/SingleReviewPage.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/PageObject/SpecificTreatmentReviewsPage.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/PageObject/TermsOfServicePage.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/PageObject/TestimonialsPage.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/PageObject/TreatmentRatingsConditionPage.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/PageObject/TreatmentReviewsPage.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/PageObject/TreatmentVideosPage.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/PageObject/TwitterPage.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/PageObject/WriteAReviewConfirmationPage.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/PageObject/WriteAReviewPage.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/automationFramework/Navigation_TestCase.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/automationFramework/Plot_TestCase.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/PageObject/SpecificTreatmentVideosPage.class" afterPath="$PROJECT_DIR$/target/test-classes/PageObject/SpecificTreatmentVideosPage.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/utility/BaseClass.class" afterPath="$PROJECT_DIR$/target/test-classes/utility/BaseClass.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/utility/RandomNumber.class" afterPath="$PROJECT_DIR$/target/test-classes/utility/RandomNumber.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/utility/ReadXMLFile.class" afterPath="$PROJECT_DIR$/target/test-classes/utility/ReadXMLFile.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/utility/RetryRule$1.class" afterPath="$PROJECT_DIR$/target/test-classes/utility/RetryRule$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/utility/RetryRule.class" afterPath="$PROJECT_DIR$/target/test-classes/utility/RetryRule.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/utility/SetDriver.class" afterPath="$PROJECT_DIR$/target/test-classes/utility/SetDriver.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HealthOutcome.iml" afterPath="$PROJECT_DIR$/HealthOutcome.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/PageObject/AboutUsPage.java" afterPath="$PROJECT_DIR$/src/test/java/PageObject/AboutUsPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/PageObject/BlogPage.java" afterPath="$PROJECT_DIR$/src/test/java/PageObject/BlogPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/PageObject/ConditionSelectionPage.java" afterPath="$PROJECT_DIR$/src/test/java/PageObject/ConditionSelectionPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/PageObject/DetailedBlogPage.java" afterPath="$PROJECT_DIR$/src/test/java/PageObject/DetailedBlogPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/PageObject/WriteAReviewPage.java" afterPath="$PROJECT_DIR$/src/test/java/PageObject/WriteAReviewPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/utility/BaseClass.java" afterPath="$PROJECT_DIR$/src/test/java/utility/BaseClass.java" />
     </list>
     <ignored path="HealthOutcome.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -86,7 +36,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Plot_TestCase.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Plot_TestCase.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/automationFramework/Plot_TestCase.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="590">
@@ -98,11 +48,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BlogPage.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="BlogPage.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/PageObject/BlogPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="293">
-              <caret line="38" column="0" lean-forward="true" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+            <state relative-caret-position="564">
+              <caret line="39" column="0" lean-forward="true" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -947,7 +897,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="4" lean-forward="false" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -998,7 +947,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="8" column="45" lean-forward="false" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="45" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1006,10 +954,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="49">
           <caret line="10" column="63" lean-forward="false" selection-start-line="10" selection-start-column="63" selection-end-line="10" selection-end-column="63" />
-          <folding>
-            <element signature="e#442#486#0" expanded="false" />
-            <element signature="e#698#736#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1028,7 +972,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="7" column="63" lean-forward="false" selection-start-line="7" selection-start-column="63" selection-end-line="7" selection-end-column="63" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1090,9 +1033,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="9" column="60" lean-forward="false" selection-start-line="9" selection-start-column="60" selection-end-line="9" selection-end-column="60" />
-          <folding>
-            <element signature="e#408#452#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1124,10 +1064,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="80">
           <caret line="10" column="52" lean-forward="false" selection-start-line="10" selection-start-column="52" selection-end-line="10" selection-end-column="52" />
-          <folding>
-            <element signature="e#393#437#0" expanded="false" />
-            <element signature="e#467#505#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1135,7 +1071,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="7" column="44" lean-forward="false" selection-start-line="7" selection-start-column="44" selection-end-line="7" selection-end-column="44" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1143,7 +1078,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1151,7 +1085,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1159,7 +1092,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="66" column="20" lean-forward="false" selection-start-line="66" selection-start-column="20" selection-end-line="66" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1239,7 +1171,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="423">
           <caret line="39" column="17" lean-forward="false" selection-start-line="39" selection-start-column="17" selection-end-line="39" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1273,7 +1204,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="33" lean-forward="false" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1317,7 +1247,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-168">
           <caret line="48" column="6" lean-forward="false" selection-start-line="48" selection-start-column="6" selection-end-line="48" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1366,27 +1295,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/PageObject/BlogPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="38" column="0" lean-forward="true" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/PageObject/AboutUsPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="28" column="20" lean-forward="true" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#753#791#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/automationFramework/Navigation_TestCase.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2465">
@@ -1403,6 +1311,27 @@
           <caret line="112" column="41" lean-forward="false" selection-start-line="112" selection-start-column="41" selection-end-line="112" selection-end-column="41" />
           <folding>
             <element signature="e#2165#2205#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/PageObject/AboutUsPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="28" column="20" lean-forward="true" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#753#791#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/PageObject/BlogPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="564">
+          <caret line="39" column="0" lean-forward="true" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

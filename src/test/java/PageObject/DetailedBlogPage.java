@@ -8,14 +8,6 @@ import utility.BaseClass;
 import java.util.List;
 
 public class DetailedBlogPage extends BaseClass {
-    private WebElement element;
-    private List<WebElement> elements;
-
-    public DetailedBlogPage(WebDriver driver){
-
-        this.driver = driver;
-
-    }
 
     //<editor-fold desc="Finding page Elements">
 

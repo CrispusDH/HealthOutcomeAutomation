@@ -4,46 +4,67 @@ package utility;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.List;
-import java.util.concurrent.TimeUnit;
+
+import static utility.Configuration.CoreConstants.WAIT_TIMEOUT;
+import static utility.WaitConditionForWebElement.enabled;
+import static utility.WaitConditionForWebElement.visible;
 
 //improve find elements mechanism
 public abstract class BaseClass {
 
-        protected WebDriver driver;
+    protected WebDriverWait wait;
+    protected WebDriver driver;
 
-        protected List<WebElement> findElements(WebDriver webDriver, By by, int timeout) {
+    public BaseClass(){
 
-        int iSleepTime = 1000;
+        this.wait = new WebDriverWait(driver, WAIT_TIMEOUT);
 
-        for (int i = 0; i < timeout; i += iSleepTime) {
-
-            List<WebElement> oWebElements = webDriver.findElements(by);
-
-            if (oWebElements.size() > 0 && oWebElements.get(0).isDisplayed()) {
-
-                return oWebElements;
-
-            } else {
-
-                try {
-                    TimeUnit.MILLISECONDS.sleep(iSleepTime);
-
-                    System.out.println(String.format("%s: Waited for %d milliseconds.[%s]", new java.util.Date().toString(), i + iSleepTime, by));
-
-                } catch (InterruptedException ex) {
-                    throw new RuntimeException(ex);
-                }
-            }
-        }
-
-        // Can't find 'by' element. Therefore throw an exception.
-        String sException = String.format("Can't find %s after %d milliseconds.", by, timeout);
-
-        throw new RuntimeException(sException);
     }
+
+    protected WebElement waitFor(By locator, WaitConditionForWebElement condition) {
+        return wait.until(condition.getType().apply(locator));
+    }
+
+    protected List<WebElement> waitForElements(By locator, WaitConditionForWebElements condition){
+
+        return wait.until(condition.getType().apply(locator));
+
+    }
+
+    protected void click(By locator) {
+        click(locator, enabled);
+    }
+
+    protected void click(By locator, WaitConditionForWebElement condition) {
+        waitFor(locator, condition).click();
+    }
+
+    protected void type(By locator, CharSequence text) {
+        waitFor(locator, visible).sendKeys(text);
+    }
+
+    protected void click(WebElement webElement){
+
+        webElement.click();
+
+    }
+
+    protected WebElement findElementByText(List<WebElement> webElements, String text){
+
+        WebElement element;
+        int i = 0;
+        do {
+            element = webElements.get(i);
+            //System.out.println(element.getText() + "\n");
+            i++;
+        } while (!(element.getText().equals(text)));
+
+        return element;
+
+    }
+
 
 }

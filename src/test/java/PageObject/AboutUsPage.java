@@ -2,20 +2,15 @@ package PageObject;
 
 import org.junit.Assert;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import utility.BaseClass;
 import utility.ReadXMLFile;
 
 import java.util.List;
 
+import static utility.WaitConditionForWebElements.allVisible;
+
 public class AboutUsPage extends BaseClass {
-
-    public AboutUsPage(WebDriver driver){
-
-        this.driver = driver;
-
-    }
 
     //<editor-fold desc="Finding page Elements">
 
@@ -27,7 +22,7 @@ public class AboutUsPage extends BaseClass {
     //find all paragraphs on page
     private List<WebElement> paragraphs(){
 
-        return findElements(driver, By.cssSelector(".post p"), 5000);
+        return waitForElements(paragraphsLocator, allVisible);
 
     }
 

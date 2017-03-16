@@ -11,14 +11,6 @@ import utility.ReadXMLFile;
 import java.util.List;
 
 public class WriteAReviewPage extends BaseClass {
-    private WebElement element;
-    private List<WebElement> elements;
-
-    public WriteAReviewPage(WebDriver driver){
-
-        this.driver = driver;
-
-    }
 
     //<editor-fold desc="Finding page Elements">
 

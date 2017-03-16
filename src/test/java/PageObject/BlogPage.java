@@ -1,23 +1,18 @@
 package PageObject;
 
+import lombok.val;
 import org.junit.Assert;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import utility.BaseClass;
 import utility.ReadXMLFile;
-
 import java.util.List;
 
+import static utility.WaitConditionForWebElement.visible;
+import static utility.WaitConditionForWebElements.allVisible;
+
 public class BlogPage extends BaseClass {
-    private WebElement element;
-    private List<WebElement> elements;
-
-    public BlogPage(WebDriver driver){
-
-        this.driver = driver;
-
-    }
 
     //<editor-fold desc="Finding page Elements">
 
@@ -31,38 +26,22 @@ public class BlogPage extends BaseClass {
     //find all blogs on page
     private List<WebElement> blogs(){
 
-        return findElements(driver, blogsLocator, 5000);
+        return waitForElements(blogsLocator, allVisible);
 
     }
 
     //Start Here button
     private WebElement button_StartHere(){
 
-        elements = findElements(driver, button_StartHere, 5000);
+        return findElementByText(waitForElements(button_StartHere, allVisible), "START HERE");
 
-        int i = 0;
-        do {
-            element = elements.get(i);
-            //System.out.println(element.getText() + "\n");
-            i++;
-        } while (!(element.getText().equals("START HERE")));
-
-        return element;
     }
 
     //Find Out More button
     private WebElement button_FindOutMore(){
 
-        elements = findElements(driver, button_FindOutMoreLocator, 5000);
+        return findElementByText(waitForElements(button_FindOutMoreLocator, allVisible), "Find Out More");
 
-        int i = 0;
-        do {
-            element = elements.get(i);
-            //System.out.println(element.getText() + "\n");
-            i++;
-        } while (!(element.getText().equals("Find Out More")));
-
-        return element;
     }
 
     //</editor-fold>
@@ -72,9 +51,9 @@ public class BlogPage extends BaseClass {
     //click on Start Here button
     private WriteAReviewPage clickOnStartHereButton(){
 
-        button_StartHere().click();
+        click(button_StartHere());
 
-        return new WriteAReviewPage(driver);
+        return new WriteAReviewPage();
 
     }
 
@@ -83,7 +62,7 @@ public class BlogPage extends BaseClass {
 
         blogs().get(blogNumber);
 
-        return new DetailedBlogPage(driver);
+        return new DetailedBlogPage();
 
     }
 

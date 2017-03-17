@@ -4,8 +4,6 @@ import org.junit.Assert;
 import utility.BaseClass;
 import utility.ReadXMLFile;
 
-import java.util.List;
-
 public class FirstStepOfCoachingProgramPage extends BaseClass {
 
     //<editor-fold desc="Finding page Elements">

@@ -10,17 +10,9 @@ import utility.ReadXMLFile;
 import java.util.List;
 
 public class TreatmentRatingsConditionPage extends BaseClass {
-    private WebElement element;
-    private List<WebElement> elements;
 
     static String expectedVideosURL;
     static String expectedReviewsURL;
-
-    public TreatmentRatingsConditionPage(WebDriver driver){
-
-        this.driver = driver;
-
-    }
 
     //<editor-fold desc="Finding page Elements">
 

@@ -2,7 +2,6 @@ package PageObject;
 
 import org.junit.Assert;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import utility.BaseClass;
 import utility.ReadXMLFile;

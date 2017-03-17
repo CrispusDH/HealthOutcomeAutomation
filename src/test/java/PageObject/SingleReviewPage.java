@@ -2,33 +2,15 @@ package PageObject;
 
 import org.junit.Assert;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import utility.BaseClass;
 
-import java.util.List;
+import static utility.WaitConditionForWebElement.visible;
 
 public class SingleReviewPage extends BaseClass {
 
-    public SingleReviewPage(WebDriver driver){
-
-        this.driver = driver;
-
-    }
-
     //<editor-fold desc="Finding page Elements">
 
-    // The Single Review page contains several elements that will be represented as WebElements.
-    // The locators for these elements should only be defined once.
-
     private By div_ReviewInfoLocator = By.cssSelector(".review-info");
-
-    //review info div
-    private WebElement div_ReviewInfo(){
-
-        return findElements(driver, div_ReviewInfoLocator,5000).get(0);
-
-    }
 
     //</editor-fold>
 
@@ -43,7 +25,7 @@ public class SingleReviewPage extends BaseClass {
     //check that div_ReviewInfo element is displayed
     public SingleReviewPage isReviewInfoOnPage(){
 
-        Assert.assertTrue(div_ReviewInfo().isDisplayed());
+        Assert.assertTrue(waitFor(div_ReviewInfoLocator, visible).isDisplayed());
 
         return this;
 

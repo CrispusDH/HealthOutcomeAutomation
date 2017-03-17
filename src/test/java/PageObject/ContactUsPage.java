@@ -5,7 +5,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import utility.BaseClass;
 import utility.ReadXMLFile;
-
 import java.util.List;
 
 import static utility.WaitConditionForWebElement.visible;

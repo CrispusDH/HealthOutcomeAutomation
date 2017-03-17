@@ -58,7 +58,7 @@ public class ConditionSelectionPage extends BaseClass {
         //perform all actions
         builder.build().perform();
 
-        return new TreatmentRatingsConditionPage(driver);
+        return new TreatmentRatingsConditionPage();
 
     }
 

@@ -1,6 +1,5 @@
 package PageObject;
 
-
 import org.junit.Assert;
 import utility.BaseClass;
 import utility.ReadXMLFile;

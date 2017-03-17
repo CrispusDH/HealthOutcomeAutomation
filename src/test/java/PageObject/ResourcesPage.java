@@ -2,26 +2,24 @@ package PageObject;
 
 import org.junit.Assert;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import utility.BaseClass;
 import utility.ReadXMLFile;
 
 import java.util.List;
 
+import static utility.WaitConditionForWebElements.allVisible;
+
 public class ResourcesPage extends BaseClass {
 
     //<editor-fold desc="Finding page Elements">
-
-    // The Resources page contains several elements that will be represented as WebElements.
-    // The locators for these elements should only be defined once.
 
     private By resourcesLocator = By.cssSelector(".resource");
 
     //find all resources
     private List<WebElement> resources(){
 
-        return findElements(driver, resourcesLocator, 5000);
+        return waitForElements(resourcesLocator, allVisible);
 
     }
 

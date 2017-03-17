@@ -61,9 +61,9 @@ public class Navigation_TestCase extends TestCase{
 
         driver.get(ReadXMLFile.takeConstantFromXML("URL", "Landing Page", "url"));
 
-        homePage = new HomePage(driver);
-        footer = new Footer(driver);
-        header = new Header(driver);
+        homePage = new HomePage();
+        footer = new Footer();
+        header = new Header();
 
     }
 

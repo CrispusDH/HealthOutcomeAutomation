@@ -67,8 +67,8 @@ public class Plot_TestCase extends TestCase {
 
         driver.get(ReadXMLFile.takeConstantFromXML("URL", "Landing Page", "url"));
 
-        header = new Header(driver);
-        homePage = new HomePage(driver);
+        header = new Header();
+        homePage = new HomePage();
     }
 
     //execute after each TC

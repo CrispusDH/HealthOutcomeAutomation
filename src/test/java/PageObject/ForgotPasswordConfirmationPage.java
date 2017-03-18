@@ -8,16 +8,10 @@ public class ForgotPasswordConfirmationPage extends BaseClass {
 
     //<editor-fold desc="Public methods">
 
-    public String getCurrentUrl(){
-
-        return driver.getCurrentUrl();
-
-    }
-
     //check page url
     public ForgotPasswordConfirmationPage checkUrl(){
 
-        Assert.assertTrue(ReadXMLFile.takeConstantFromXML("URL", "Forgot Password Confirm", "url").equals(getCurrentUrl()));
+        Assert.assertTrue(ReadXMLFile.takeConstantFromXML("URL", "Forgot Password Confirm", "url").equals(getURL()));
 
         return this;
 

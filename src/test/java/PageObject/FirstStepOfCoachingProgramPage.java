@@ -21,7 +21,7 @@ public class FirstStepOfCoachingProgramPage extends BaseClass {
     //check page url
     public FirstStepOfCoachingProgramPage checkUrl(){
 
-        Assert.assertTrue(ReadXMLFile.takeConstantFromXML("URL", "First Step Of Coaching Program", "url" ).equals(driver.getCurrentUrl()));
+        Assert.assertTrue(ReadXMLFile.takeConstantFromXML("URL", "First Step Of Coaching Program", "url" ).equals(getURL()));
 
         return this;
 

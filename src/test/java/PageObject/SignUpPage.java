@@ -64,7 +64,7 @@ public class SignUpPage extends BaseClass {
     //check page url
     public SignUpPage checkUrl(){
 
-        Assert.assertTrue(ReadXMLFile.takeConstantFromXML("URL", "SignUp Page from Videos&Guides Page", "url").equals(driver.getCurrentUrl()));
+        Assert.assertTrue(ReadXMLFile.takeConstantFromXML("URL", "SignUp Page from Videos&Guides Page", "url").equals(getURL()));
 
         return this;
 

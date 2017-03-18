@@ -52,7 +52,7 @@ public class ContactUsPage extends BaseClass {
     //check page url
     public ContactUsPage checkUrl(){
 
-        Assert.assertTrue(ReadXMLFile.takeConstantFromXML("URL", "Contact Us", "url").equals(driver.getCurrentUrl()));
+        Assert.assertTrue(ReadXMLFile.takeConstantFromXML("URL", "Contact Us", "url").equals(getURL()));
 
         return this;
 

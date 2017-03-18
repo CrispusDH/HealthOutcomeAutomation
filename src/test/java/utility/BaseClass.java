@@ -1,25 +1,24 @@
 package utility;
 
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
 import java.util.List;
-
 import static utility.Configuration.CoreConstants.WAIT_TIMEOUT;
 import static utility.WaitConditionForWebElement.enabled;
 import static utility.WaitConditionForWebElement.visible;
+import static utility.WebDriverProvider.getDriver;
 
 //improve find elements mechanism
 public abstract class BaseClass {
 
-    protected WebDriverWait wait;
-    protected WebDriver driver;
+    private final WebDriver driver;
+    private final WebDriverWait wait;
 
     public BaseClass(){
 
+        this.driver = getDriver();
         this.wait = new WebDriverWait(driver, WAIT_TIMEOUT);
 
     }
@@ -63,6 +62,12 @@ public abstract class BaseClass {
         } while (!(element.getText().equals(text)));
 
         return element;
+
+    }
+
+    protected String getURL(){
+
+        return driver.getCurrentUrl();
 
     }
 

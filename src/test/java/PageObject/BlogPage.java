@@ -97,7 +97,7 @@ public class BlogPage extends BaseClass {
     //check page url
     public BlogPage checkUrl(){
 
-        Assert.assertTrue(ReadXMLFile.takeConstantFromXML("URL", "Blog", "url").equals(driver.getCurrentUrl()));
+        Assert.assertTrue(ReadXMLFile.takeConstantFromXML("URL", "Blog", "url").equals(getURL()));
 
         return this;
 

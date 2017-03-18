@@ -36,7 +36,7 @@ public class AboutUsPage extends BaseClass {
     //check page url
     public AboutUsPage checkUrl(){
 
-        Assert.assertTrue(ReadXMLFile.takeConstantFromXML("URL", "About Us", "url").equals(driver.getCurrentUrl()));
+        Assert.assertTrue(ReadXMLFile.takeConstantFromXML("URL", "About Us", "url").equals(getURL()));
 
         return this;
 

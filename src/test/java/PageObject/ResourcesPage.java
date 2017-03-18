@@ -54,7 +54,7 @@ public class ResourcesPage extends BaseClass {
     //check page url
     public ResourcesPage checkUrl(){
 
-        Assert.assertTrue(ReadXMLFile.takeConstantFromXML("URL", "Resources", "url").equals(driver.getCurrentUrl()));
+        Assert.assertTrue(ReadXMLFile.takeConstantFromXML("URL", "Resources", "url").equals(getURL()));
 
         return this;
 

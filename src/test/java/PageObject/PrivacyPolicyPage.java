@@ -45,7 +45,7 @@ public class PrivacyPolicyPage extends BaseClass {
     //check page url
     public PrivacyPolicyPage checkUrl(){
 
-        Assert.assertTrue(ReadXMLFile.takeConstantFromXML("URL", "Privacy Policy", "url").equals(driver.getCurrentUrl()));
+        Assert.assertTrue(ReadXMLFile.takeConstantFromXML("URL", "Privacy Policy", "url").equals(getURL()));
 
         return this;
 

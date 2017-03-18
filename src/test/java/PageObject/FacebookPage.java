@@ -11,7 +11,7 @@ public class FacebookPage extends BaseClass {
     //check page url
     public FacebookPage checkUrl(){
 
-        Assert.assertTrue(ReadXMLFile.takeConstantFromXML("URL", "Facebook", "url" ).equals(driver.getCurrentUrl()));
+        Assert.assertTrue(ReadXMLFile.takeConstantFromXML("URL", "Facebook", "url" ).equals(getURL()));
 
         return this;
 

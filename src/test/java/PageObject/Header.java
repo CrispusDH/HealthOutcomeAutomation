@@ -8,7 +8,7 @@ import utility.RandomNumber;
 import utility.ReadXMLFile;
 
 import static utility.WaitConditionForWebElement.visible;
-import static utility.WaitConditionForWebElements.allVisible;
+import static utility.WaitConditionForWebElements.allPresence;
 
 public class Header extends BaseClass {
 
@@ -23,7 +23,7 @@ public class Header extends BaseClass {
     //Share Your Experience button
     private WebElement button_ShareYourExperience (){
 
-        return findElementByText(waitForElements(button_ShareYourExperienceLocator, allVisible), "SHARE YOUR EXPERIENCE");
+        return findElementByText(waitForElements(button_ShareYourExperienceLocator, allPresence), "SHARE YOUR EXPERIENCE");
 
     }
 

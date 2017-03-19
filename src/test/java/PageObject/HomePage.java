@@ -5,7 +5,7 @@ import org.openqa.selenium.WebElement;
 import utility.BaseClass;
 
 import static utility.WaitConditionForWebElement.visible;
-import static utility.WaitConditionForWebElements.allVisible;
+import static utility.WaitConditionForWebElements.allPresence;
 
 public class HomePage extends BaseClass {
 
@@ -23,7 +23,7 @@ public class HomePage extends BaseClass {
     //Start Here button
     private WebElement button_StartHere(){
 
-        return findElementByText(waitForElements(button_StartHereLocator, allVisible), "START HERE");
+        return findElementByText(waitForElements(button_StartHereLocator, allPresence), "START HERE");
 
     }
 

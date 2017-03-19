@@ -7,7 +7,7 @@ import utility.BaseClass;
 import utility.ReadXMLFile;
 import java.util.List;
 
-import static utility.WaitConditionForWebElements.allVisible;
+import static utility.WaitConditionForWebElements.allPresence;
 
 public class BlogPage extends BaseClass {
 
@@ -20,21 +20,21 @@ public class BlogPage extends BaseClass {
     //find all blogs on page
     private List<WebElement> blogs(){
 
-        return waitForElements(blogsLocator, allVisible);
+        return waitForElements(blogsLocator, allPresence);
 
     }
 
     //Start Here button
     private WebElement button_StartHere(){
 
-        return findElementByText(waitForElements(button_StartHereLocator, allVisible), "START HERE");
+        return findElementByText(waitForElements(button_StartHereLocator, allPresence), "START HERE");
 
     }
 
     //Find Out More button
     private WebElement button_FindOutMore(){
 
-        return findElementByText(waitForElements(button_FindOutMoreLocator, allVisible), "Find Out More");
+        return findElementByText(waitForElements(button_FindOutMoreLocator, allPresence), "Find Out More");
 
     }
 

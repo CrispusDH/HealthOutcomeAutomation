@@ -3,10 +3,9 @@ package PageObject;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 import utility.BaseClass;
 import static utility.WaitConditionForWebElement.visible;
-import static utility.WaitConditionForWebElements.allVisible;
+import static utility.WaitConditionForWebElements.allPresence;
 
 public class ConditionSelectionPage extends BaseClass {
 
@@ -19,14 +18,14 @@ public class ConditionSelectionPage extends BaseClass {
     //find all body areas
     private WebElement li_InjuryBodyArea(String bodyAreaName){
 
-        return findElementByText(waitForElements(injuryBodyAreaLocator, allVisible), bodyAreaName);
+        return findElementByText(waitForElements(injuryBodyAreaLocator, allPresence), bodyAreaName);
 
     }
 
     //find all conditions
     private WebElement li_ConditionElement(String sConditionName){
 
-        return findElementByText(waitForElements(conditionElementLocator, allVisible), sConditionName);
+        return findElementByText(waitForElements(conditionElementLocator, allPresence), sConditionName);
 
     }
 
@@ -46,17 +45,7 @@ public class ConditionSelectionPage extends BaseClass {
     //choose Condition and click
     private TreatmentRatingsConditionPage clickOnSpecificConditionName(String conditionName){
 
-        //create new Action builder
-        Actions builder = new Actions(driver);
-
-        //scroll to element above
-        builder.moveToElement(waitFor(forScrollingLocator, visible));
-
-        //click on specific Condition
-        builder.click(li_ConditionElement(conditionName));
-
-        //perform all actions
-        builder.build().perform();
+        moveToElementAndClickOnElement(waitFor(forScrollingLocator, visible), li_ConditionElement(conditionName));
 
         return new TreatmentRatingsConditionPage();
 
@@ -79,7 +68,7 @@ public class ConditionSelectionPage extends BaseClass {
     //check URL
     public ConditionSelectionPage checkURL(String sExpectedURL){
 
-        Assert.assertEquals(sExpectedURL, driver.getCurrentUrl());
+        Assert.assertEquals(sExpectedURL, getURL());
 
         return this;
 

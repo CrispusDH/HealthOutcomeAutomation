@@ -3,7 +3,7 @@ package PageObject;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import utility.BaseClass;
-import static utility.WaitConditionForWebElements.allVisible;
+import static utility.WaitConditionForWebElements.allPresence;
 
 public class DetailedBlogPage extends BaseClass {
 
@@ -15,13 +15,13 @@ public class DetailedBlogPage extends BaseClass {
     //Start Here button
     private WebElement button_StartHere(){
 
-        return findElementByText(waitForElements(button_StartHereLocator, allVisible), "START HERE");
+        return findElementByText(waitForElements(button_StartHereLocator, allPresence), "START HERE");
     }
 
     //Find Out More button
     private WebElement button_FindOutMore(){
 
-        return findElementByText(waitForElements(button_FindOutMoreLocator, allVisible), "Find Out More");
+        return findElementByText(waitForElements(button_FindOutMoreLocator, allPresence), "Find Out More");
 
     }
 

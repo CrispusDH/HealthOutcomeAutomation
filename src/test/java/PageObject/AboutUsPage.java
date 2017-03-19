@@ -8,7 +8,7 @@ import utility.ReadXMLFile;
 
 import java.util.List;
 
-import static utility.WaitConditionForWebElements.allVisible;
+import static utility.WaitConditionForWebElements.allPresence;
 
 public class AboutUsPage extends BaseClass {
 
@@ -19,7 +19,7 @@ public class AboutUsPage extends BaseClass {
     //find all paragraphs on page
     private List<WebElement> paragraphs(){
 
-        return waitForElements(paragraphsLocator, allVisible);
+        return waitForElements(paragraphsLocator, allPresence);
 
     }
 

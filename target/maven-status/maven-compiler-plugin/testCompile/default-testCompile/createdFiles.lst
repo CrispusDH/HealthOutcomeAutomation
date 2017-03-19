@@ -1,11 +1,12 @@
 PageObject\ResourcesPage.class
+utility\WaitConditionForWebElements.class
 PageObject\ForgotPasswordPage.class
 automationFramework\Plot_TestCase.class
 PageObject\TwitterPage.class
 PageObject\BlogPage.class
 PageObject\HomePage.class
 PageObject\WriteAReviewConfirmationPage.class
-utility\SetDriver.class
+utility\WaitConditionForWebElement.class
 PageObject\ContactUsPage.class
 PageObject\Header.class
 PageObject\FirstStepOfCoachingProgramPage.class
@@ -13,6 +14,7 @@ PageObject\PrivacyPolicyPage.class
 PageObject\ForgotPasswordConfirmationPage.class
 PageObject\TreatmentRatingsConditionPage.class
 PageObject\TreatmentVideosPage.class
+utility\Configuration$CoreConstants.class
 PageObject\SignUpPage.class
 PageObject\SingleReviewPage.class
 PageObject\TermsOfServicePage.class
@@ -28,6 +30,8 @@ PageObject\SignUpConfirmationPage.class
 PageObject\FAQPage.class
 utility\RandomNumber.class
 PageObject\Footer.class
+utility\WebDriverProvider.class
+utility\Configuration.class
 PageObject\SpecificTreatmentVideosPage.class
 PageObject\DetailedBlogPage.class
 PageObject\WriteAReviewPage.class

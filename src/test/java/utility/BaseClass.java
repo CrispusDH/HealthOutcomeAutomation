@@ -3,7 +3,10 @@ package utility;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.util.ArrayList;
 import java.util.List;
 import static utility.Configuration.CoreConstants.WAIT_TIMEOUT;
 import static utility.WaitConditionForWebElement.enabled;
@@ -71,5 +74,33 @@ public abstract class BaseClass {
 
     }
 
+    protected void moveToElementAndClickOnElement(WebElement moveToElement, WebElement clickOnElement){
+
+        Actions builder = new Actions(driver);
+
+        //scroll to element above
+        builder.moveToElement(moveToElement);
+
+        builder.click(clickOnElement);
+
+        builder.build().perform();
+
+    }
+
+    protected void safeSwitchToNewWindow(){
+
+        ArrayList<String> currentTab;
+        int counter = 1;
+        do {
+
+            currentTab = new ArrayList<>(driver.getWindowHandles());
+
+            //System.out.println(currentTab.size());
+
+            counter++;
+
+        } while ((currentTab.size() == 1) && (counter < 10));
+
+    }
 
 }

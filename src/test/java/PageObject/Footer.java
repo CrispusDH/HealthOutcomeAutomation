@@ -6,8 +6,8 @@ import static javaslang.API.*;
 import org.openqa.selenium.WebElement;
 import utility.BaseClass;
 import utility.ReadXMLFile;
-import java.util.ArrayList;
-import static utility.WaitConditionForWebElements.allVisible;
+
+import static utility.WaitConditionForWebElements.allPresence;
 
 public class Footer extends BaseClass {
 
@@ -20,21 +20,21 @@ public class Footer extends BaseClass {
     //find all footer links
     private WebElement link_FooterLink(String sFooterLinkName){
 
-        return findElementByText(waitForElements(link_FooterLinksLocator, allVisible), sFooterLinkName);
+        return findElementByText(waitForElements(link_FooterLinksLocator, allPresence), sFooterLinkName);
 
     }
 
     //find all items in copyrights block
     private WebElement link_FooterCopyrights(String sFooterCopyrightName){
 
-        return findElementByText(waitForElements(link_FooterCopyrightsLocator, allVisible), sFooterCopyrightName);
+        return findElementByText(waitForElements(link_FooterCopyrightsLocator, allPresence), sFooterCopyrightName);
 
     }
 
     //facebook, twitter, linkedin, mailto links
     private WebElement link_Connect(String sName){
 
-        val elements =  waitForElements(link_ConnectLocator, allVisible);
+        val elements =  waitForElements(link_ConnectLocator, allPresence);
 
         return Match(sName).of(
                 Case("facebook", elements.get(0)),
@@ -140,20 +140,7 @@ public class Footer extends BaseClass {
 
         click(link_Connect("facebook"));
 
-        //safe switch to new window
-        ArrayList<String> currentTab;
-        int counter = 1;
-        do {
-
-            currentTab = new ArrayList<>(driver.getWindowHandles());
-
-            //System.out.println(currentTab.size());
-
-            counter++;
-
-        } while ((currentTab.size() == 1) && (counter < 10));
-
-        driver.switchTo().window(currentTab.get(1));
+        safeSwitchToNewWindow();
 
         return new FacebookPage();
 
@@ -164,20 +151,7 @@ public class Footer extends BaseClass {
 
         click(link_Connect("twitter"));
 
-        //switch to new window
-        ArrayList<String> currentTab;
-        int counter = 1;
-        do {
-
-            currentTab = new ArrayList<>(driver.getWindowHandles());
-
-            //System.out.println(currentTab.size());
-
-            counter++;
-
-        } while ((currentTab.size() == 1) && (counter < 10));
-
-        driver.switchTo().window(currentTab.get(1));
+        safeSwitchToNewWindow();
 
         return new TwitterPage();
 

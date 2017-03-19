@@ -9,14 +9,6 @@ import utility.BaseClass;
 import java.util.List;
 
 public class TreatmentVideosPage extends BaseClass {
-    private WebElement element;
-    private List<WebElement> elements;
-
-    public TreatmentVideosPage(WebDriver driver){
-
-        this.driver = driver;
-
-    }
 
     //<editor-fold desc="Finding page Elements">
 
@@ -35,18 +27,9 @@ public class TreatmentVideosPage extends BaseClass {
     //check URL
     public TreatmentVideosPage checkURL(){
 
-        Assert.assertEquals(TreatmentRatingsConditionPage.expectedVideosURL, driver.getCurrentUrl());
+        Assert.assertEquals(TreatmentRatingsConditionPage.expectedVideosURL, getURL());
 
         return this;
-
-    }
-
-
-
-    //get current url
-    public String getCurrentUrl(){
-
-        return driver.getCurrentUrl();
 
     }
 

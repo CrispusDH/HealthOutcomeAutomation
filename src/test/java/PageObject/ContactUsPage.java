@@ -8,7 +8,7 @@ import utility.ReadXMLFile;
 import java.util.List;
 
 import static utility.WaitConditionForWebElement.visible;
-import static utility.WaitConditionForWebElements.allVisible;
+import static utility.WaitConditionForWebElements.allPresence;
 
 public class ContactUsPage extends BaseClass {
 
@@ -20,7 +20,7 @@ public class ContactUsPage extends BaseClass {
     //find all inner items
     private List<WebElement> contactItems(){
 
-        return waitForElements(contactItemsLocator, allVisible);
+        return waitForElements(contactItemsLocator, allPresence);
     }
 
     //</editor-fold>

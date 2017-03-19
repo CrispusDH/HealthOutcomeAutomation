@@ -14,17 +14,15 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.remote.UnreachableBrowserException;
 import utility.ReadXMLFile;
 import utility.RetryRule;
+import utility.WebDriverProvider;
 
 import java.io.File;
 import java.io.IOException;
 
 @RunWith(JUnit4.class)
-public class Plot_TestCase extends TestCase {
+public class Plot_TestCase extends WebDriverProvider {
 
     //<editor-fold desc="Initialisation block">
-
-    private WebDriver driver;
-    private static ChromeDriverService service;
 
     private Header header;
     private HomePage homePage;
@@ -33,39 +31,13 @@ public class Plot_TestCase extends TestCase {
 
     //<editor-fold desc="BeforeClass, AfterClass, Before, After annotations">
 
-    @BeforeClass
-    public static void createAndStartService() {
-        service = new ChromeDriverService.Builder()
-                .usingDriverExecutable(new File(ReadXMLFile.takeConstantFromXML("DriverPath", "ChromeDriver", "path")))
-                .usingAnyFreePort()
-                .build();
-        try {
-            service.start();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
-
-    //stop service
-    @AfterClass
-    public static void createAndStopService() {
-        service.stop();
-    }
-
     //create new driver
     @Before
     public void createNewDriver() {
-        try {
-            driver = new RemoteWebDriver(service.getUrl(),
-                    DesiredCapabilities.chrome());
-        } catch (UnreachableBrowserException e) {
 
-            driver = new RemoteWebDriver(service.getUrl(),
-                    DesiredCapabilities.chrome());
+        this.setupDriver();
 
-        }
-
-        driver.get(ReadXMLFile.takeConstantFromXML("URL", "Landing Page", "url"));
+        getDriver().get(ReadXMLFile.takeConstantFromXML("URL", "Landing Page", "url"));
 
         header = new Header();
         homePage = new HomePage();
@@ -74,7 +46,9 @@ public class Plot_TestCase extends TestCase {
     //execute after each TC
     @After
     public void quitDriver() {
-        driver.quit();
+
+        this.cleanUp();
+
     }
 
     //</editor-fold>

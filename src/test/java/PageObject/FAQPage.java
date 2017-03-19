@@ -8,7 +8,7 @@ import utility.ReadXMLFile;
 
 import java.util.List;
 
-import static utility.WaitConditionForWebElements.allVisible;
+import static utility.WaitConditionForWebElements.allPresence;
 
 public class FAQPage extends BaseClass {
 
@@ -18,7 +18,7 @@ public class FAQPage extends BaseClass {
 
     private List<WebElement> questions(){
 
-        return waitForElements(questionsLocator, allVisible);
+        return waitForElements(questionsLocator, allPresence);
 
     }
 

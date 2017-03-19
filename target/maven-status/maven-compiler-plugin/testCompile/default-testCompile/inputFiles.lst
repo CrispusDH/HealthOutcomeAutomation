@@ -6,7 +6,7 @@ D:\HealthOutcome\src\test\java\PageObject\ContactUsPage.java
 D:\HealthOutcome\src\test\java\utility\ReadXMLFile.java
 D:\HealthOutcome\src\test\java\PageObject\SingleReviewPage.java
 D:\HealthOutcome\src\test\java\automationFramework\Navigation_TestCase.java
-D:\HealthOutcome\src\test\java\utility\SetDriver.java
+D:\HealthOutcome\src\test\java\utility\Configuration.java
 D:\HealthOutcome\src\test\java\PageObject\ForgotPasswordPage.java
 D:\HealthOutcome\src\test\java\PageObject\FacebookPage.java
 D:\HealthOutcome\src\test\java\utility\RandomNumber.java
@@ -26,10 +26,13 @@ D:\HealthOutcome\src\test\java\utility\BaseClass.java
 D:\HealthOutcome\src\test\java\PageObject\BlogPage.java
 D:\HealthOutcome\src\test\java\PageObject\TreatmentReviewsPage.java
 D:\HealthOutcome\src\test\java\PageObject\Footer.java
+D:\HealthOutcome\src\test\java\utility\WebDriverProvider.java
+D:\HealthOutcome\src\test\java\utility\WaitConditionForWebElements.java
 D:\HealthOutcome\src\test\java\PageObject\AboutUsPage.java
 D:\HealthOutcome\src\test\java\PageObject\FAQPage.java
 D:\HealthOutcome\src\test\java\PageObject\TestimonialsPage.java
 D:\HealthOutcome\src\test\java\PageObject\Header.java
 D:\HealthOutcome\src\test\java\PageObject\TermsOfServicePage.java
 D:\HealthOutcome\src\test\java\utility\RetryRule.java
+D:\HealthOutcome\src\test\java\utility\WaitConditionForWebElement.java
 D:\HealthOutcome\src\test\java\PageObject\FirstStepOfCoachingProgramPage.java

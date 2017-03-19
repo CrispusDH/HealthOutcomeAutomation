@@ -6,7 +6,7 @@ import org.openqa.selenium.WebElement;
 import utility.BaseClass;
 import utility.ReadXMLFile;
 
-import static utility.WaitConditionForWebElements.allVisible;
+import static utility.WaitConditionForWebElements.allPresence;
 
 public class SignUpConfirmationPage extends BaseClass {
 
@@ -17,7 +17,7 @@ public class SignUpConfirmationPage extends BaseClass {
     //find Write a review or Find Treatments button
     private WebElement button_WriteAReviewOrFindTreatments(String sButtonName){
 
-        return findElementByText(waitForElements(button_WriteAReviewOrFindTreatmentsLocator, allVisible), sButtonName);
+        return findElementByText(waitForElements(button_WriteAReviewOrFindTreatmentsLocator, allPresence), sButtonName);
 
     }
 

@@ -8,7 +8,7 @@ import utility.ReadXMLFile;
 
 import java.util.List;
 
-import static utility.WaitConditionForWebElements.allVisible;
+import static utility.WaitConditionForWebElements.allPresence;
 
 public class PrivacyPolicyPage extends BaseClass {
 
@@ -19,7 +19,7 @@ public class PrivacyPolicyPage extends BaseClass {
     //find all paragraphs
     private List<WebElement> paragraphs(){
 
-        return waitForElements(paragraphsLocator, allVisible);
+        return waitForElements(paragraphsLocator, allPresence);
 
     }
 

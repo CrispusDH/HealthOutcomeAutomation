@@ -1,14 +1,17 @@
 package utility;
 
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.ArrayList;
 import java.util.List;
 import static utility.Configuration.CoreConstants.WAIT_TIMEOUT;
+import static utility.WaitConditionForUrl.urlToBe;
 import static utility.WaitConditionForWebElement.enabled;
 import static utility.WaitConditionForWebElement.visible;
 import static utility.WebDriverProvider.getDriver;
@@ -74,6 +77,12 @@ public abstract class BaseClass {
 
     }
 
+    protected boolean checkUrlToBe(String sExpectedUrl, WaitConditionForUrl condition){
+
+        return wait.until(condition.getType().apply(sExpectedUrl));
+
+    }
+
     protected void moveToElementAndClickOnElement(WebElement moveToElement, WebElement clickOnElement){
 
         Actions builder = new Actions(driver);
@@ -87,7 +96,7 @@ public abstract class BaseClass {
 
     }
 
-    protected void safeSwitchToNewWindow(){
+    protected void safeSwitchTab(){
 
         ArrayList<String> currentTab;
         int counter = 1;
@@ -100,6 +109,8 @@ public abstract class BaseClass {
             counter++;
 
         } while ((currentTab.size() == 1) && (counter < 10));
+
+        driver.switchTo().window(currentTab.get(1));
 
     }
 

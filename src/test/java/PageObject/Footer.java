@@ -140,7 +140,7 @@ public class Footer extends BaseClass {
 
         click(link_Connect("facebook"));
 
-        safeSwitchToNewWindow();
+        safeSwitchTab();
 
         return new FacebookPage();
 
@@ -151,7 +151,7 @@ public class Footer extends BaseClass {
 
         click(link_Connect("twitter"));
 
-        safeSwitchToNewWindow();
+        safeSwitchTab();
 
         return new TwitterPage();
 

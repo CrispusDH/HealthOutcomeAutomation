@@ -45,7 +45,7 @@ public class ConditionSelectionPage extends BaseClass {
     //choose Condition and click
     private TreatmentRatingsConditionPage clickOnSpecificConditionName(String conditionName){
 
-        moveToElementAndClickOnElement(waitFor(forScrollingLocator, visible), li_ConditionElement(conditionName));
+        moveToElementAndClickOnElement(li_ConditionElement(conditionName));
 
         return new TreatmentRatingsConditionPage();
 

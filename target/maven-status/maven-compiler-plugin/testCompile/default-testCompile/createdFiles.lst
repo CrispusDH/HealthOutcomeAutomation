@@ -8,6 +8,7 @@ PageObject\HomePage.class
 PageObject\WriteAReviewConfirmationPage.class
 utility\WaitConditionForWebElement.class
 PageObject\ContactUsPage.class
+utility\WaitConditionForUrl.class
 PageObject\Header.class
 PageObject\FirstStepOfCoachingProgramPage.class
 PageObject\PrivacyPolicyPage.class

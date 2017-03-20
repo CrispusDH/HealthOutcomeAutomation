@@ -1,19 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: automationFramework.Plot_TestCase
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 131.787 sec <<< FAILURE! - in automationFramework.Plot_TestCase
-writeAReviewLoggedOutUserConditionIsUnknown(automationFramework.Plot_TestCase)  Time elapsed: 33.941 sec  <<< ERROR!
+Tests run: 4, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 90.295 sec <<< FAILURE! - in automationFramework.Plot_TestCase
+writeAReviewLoggedOutUserConditionIsUnknown(automationFramework.Plot_TestCase)  Time elapsed: 35.584 sec  <<< ERROR!
 java.lang.IndexOutOfBoundsException: Index: 7, Size: 7
 	at automationFramework.Plot_TestCase.writeAReviewLoggedOutUserConditionIsUnknown(Plot_TestCase.java:112)
-
-signUpWithoutReview(automationFramework.Plot_TestCase)  Time elapsed: 64.37 sec  <<< ERROR!
-org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.id: id_username (tried for 10 second(s) with 500 MILLISECONDS interval)
-	at automationFramework.Plot_TestCase.signUpWithoutReview(Plot_TestCase.java:97)
-Caused by: org.openqa.selenium.NoSuchElementException: 
-Cannot locate an element using By.id: id_username
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.1.0', revision: 'b94c902', time: '2017-02-16 12:21:31 -0800'
-System info: host: 'Crispus-PC', ip: '192.168.0.102', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_91'
-Driver info: driver.version: unknown
-	at automationFramework.Plot_TestCase.signUpWithoutReview(Plot_TestCase.java:97)
 

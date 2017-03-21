@@ -1,63 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4ca991d3-ec18-4ace-b08d-b16c63f24db2" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/test-classes/PageObject/AboutUsPage.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/test-classes/PageObject/BlogPage.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/test-classes/PageObject/ConditionSelectionPage.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/test-classes/PageObject/ContactUsPage.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/test-classes/PageObject/DetailedBlogPage.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/test-classes/PageObject/FAQPage.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/test-classes/PageObject/FacebookPage.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/test-classes/PageObject/FirstStepOfCoachingProgramPage.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/test-classes/PageObject/Footer.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/test-classes/PageObject/ForgotPasswordConfirmationPage.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/test-classes/PageObject/ForgotPasswordPage.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/test-classes/PageObject/Header.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/test-classes/PageObject/HomePage.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/test-classes/PageObject/PrivacyPolicyPage.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/test-classes/PageObject/ResourcesPage.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/test-classes/PageObject/SignUpConfirmationPage.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/test-classes/PageObject/SignUpPage.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/test-classes/PageObject/SingleReviewPage.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/test-classes/PageObject/SpecificTreatmentReviewsPage.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/test-classes/PageObject/SpecificTreatmentVideosPage.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/test-classes/PageObject/TermsOfServicePage.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/test-classes/PageObject/TestimonialsPage.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/test-classes/PageObject/TreatmentRatingsConditionPage.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/test-classes/PageObject/TreatmentReviewsPage.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/test-classes/PageObject/TreatmentVideosPage.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/test-classes/PageObject/TwitterPage.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/test-classes/PageObject/WriteAReviewConfirmationPage.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/test-classes/PageObject/WriteAReviewPage.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/test-classes/automationFramework/Navigation_TestCase.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/test-classes/automationFramework/Plot_TestCase.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/test-classes/utility/Configuration$CoreConstants.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/test-classes/utility/Configuration.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/test-classes/utility/RandomNumber.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/test-classes/utility/ReadXMLFile.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/test-classes/utility/RetryRule$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/test-classes/utility/RetryRule.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/test-classes/utility/WaitConditionForUrl.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/test-classes/utility/WaitConditionForWebElement.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/test-classes/utility/WaitConditionForWebElements.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/test-classes/utility/WebDriverProvider.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jooq_joor_0_9_6.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/allure-results/ba1eb536-6ad4-4acc-8f5d-2d0ea988080d-testsuite.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/allure-results/cad8dbe8-9815-4424-8c11-db797f520e18-testsuite.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/utility/BaseClass.class" afterPath="$PROJECT_DIR$/target/test-classes/utility/BaseClass.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HealthOutcome.iml" afterPath="$PROJECT_DIR$/HealthOutcome.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/PageObject/ConditionSelectionPage.java" afterPath="$PROJECT_DIR$/src/test/java/PageObject/ConditionSelectionPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/PageObject/HomePage.java" afterPath="$PROJECT_DIR$/src/test/java/PageObject/HomePage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/automationFramework/Plot_TestCase.java" afterPath="$PROJECT_DIR$/src/test/java/automationFramework/Plot_TestCase.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/utility/BaseClass.java" afterPath="$PROJECT_DIR$/src/test/java/utility/BaseClass.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-automationFramework.Navigation_TestCase.xml" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-automationFramework.Navigation_TestCase.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-automationFramework.Plot_TestCase.xml" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-automationFramework.Plot_TestCase.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/automationFramework.Navigation_TestCase.txt" afterPath="$PROJECT_DIR$/target/surefire-reports/automationFramework.Navigation_TestCase.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/automationFramework.Plot_TestCase.txt" afterPath="$PROJECT_DIR$/target/surefire-reports/automationFramework.Plot_TestCase.txt" />
-    </list>
+    <list default="true" id="4ca991d3-ec18-4ace-b08d-b16c63f24db2" name="Default" comment="" />
     <ignored path="HealthOutcome.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -1266,7 +1210,7 @@
         <state relative-caret-position="134">
           <caret line="43" column="8" lean-forward="false" selection-start-line="43" selection-start-column="8" selection-end-line="43" selection-end-column="8" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1324,7 +1268,7 @@
         <state relative-caret-position="93">
           <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>

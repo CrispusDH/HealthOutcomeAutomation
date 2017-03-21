@@ -2,32 +2,24 @@ package PageObject;
 
 import org.junit.Assert;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import utility.BaseClass;
 import utility.ReadXMLFile;
 
 import java.util.List;
 
+import static utility.WaitConditionForWebElements.allPresence;
+
 public class AboutUsPage extends BaseClass {
 
-    public AboutUsPage(WebDriver driver){
-
-        this.driver = driver;
-
-    }
-
     //<editor-fold desc="Finding page Elements">
-
-    // The About Us page contains several elements that will be represented as WebElements.
-    // The locators for these elements should only be defined once.
 
     private By paragraphsLocator = By.cssSelector(".post p");
 
     //find all paragraphs on page
     private List<WebElement> paragraphs(){
 
-        return findElements(driver, By.cssSelector(".post p"), 5000);
+        return waitForElements(paragraphsLocator, allPresence);
 
     }
 
@@ -44,7 +36,7 @@ public class AboutUsPage extends BaseClass {
     //check page url
     public AboutUsPage checkUrl(){
 
-        Assert.assertTrue(ReadXMLFile.takeConstantFromXML("URL", "About Us", "url").equals(driver.getCurrentUrl()));
+        Assert.assertTrue(ReadXMLFile.takeConstantFromXML("URL", "About Us", "url").equals(getURL()));
 
         return this;
 

@@ -3,27 +3,16 @@ package PageObject;
 
 import org.junit.Assert;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import utility.BaseClass;
 import utility.ReadXMLFile;
 
-import java.util.List;
+import static utility.WaitConditionForWebElement.visible;
+import static utility.WaitConditionForWebElements.allPresence;
 
 public class WriteAReviewPage extends BaseClass {
-    private WebElement element;
-    private List<WebElement> elements;
-
-    public WriteAReviewPage(WebDriver driver){
-
-        this.driver = driver;
-
-    }
 
     //<editor-fold desc="Finding page Elements">
-
-    // The Write a Review Confirmation page contains several elements that will be represented as WebElements.
-    // The locators for these elements should only be defined once.
 
     private static int sNextCounter = 7;
 
@@ -43,124 +32,17 @@ public class WriteAReviewPage extends BaseClass {
     private By li_isRepeatYes_Locator = By.cssSelector(".form-content > div > div > div:nth-child(6) > section > div > ul > li.option-1");
     private By li_isRepeatNo_Locator = By.cssSelector(".form-content > div > div > div:nth-child(6) > section > div > ul > li.option-2");
 
-    //group title name
-    private WebElement text_GroupTitle(){
-
-        return findElements(driver, text_GroupTitleLocator, 5000).get(0);
-
-    }
-
-    //Next button
-    private WebElement button_Next(){
-
-        return findElements(driver, button_Next, 5000).get(0);
-
-    }
-
-    //Post Review button
-    private WebElement button_PostReview(){
-
-        return findElements(driver, button_PostReview, 5000).get(0);
-
-    }
-
     //find specific Body Area
     private WebElement li_InjuryBodyArea(String sInjuryBodyArea){
 
-        elements = findElements(driver, li_InjuryBodyAreaLocator,5000);
+        return findElementByText(waitForElements(li_InjuryBodyAreaLocator, allPresence), sInjuryBodyArea);
 
-        int i = 0;
-        do {
-            element = elements.get(i);
-            //System.out.println(element.getText() + "\n");
-            i++;
-        } while (!(element.getText().equals(sInjuryBodyArea)));
-
-        return element;
     }
 
     //find specific Condition
     private WebElement li_Condition(String sCondition){
 
-        elements = findElements(driver, li_ConditionLocator,5000);
-
-        int i = 0;
-        do {
-            element = elements.get(i);
-            //System.out.println(element.getText() + "\n");
-            i++;
-        } while (!(element.getText().equals(sCondition)));
-
-        return element;
-    }
-
-    //find male gender
-    private WebElement li_GenderMale(){
-
-        return findElements(driver, li_GenderMaleLocator,5000).get(0);
-
-    }
-
-    //find female gender
-    private WebElement li_GenderFemale(){
-
-        return findElements(driver, li_GenderFemaleLocator,5000).get(0);
-
-    }
-
-    //find 0 - 6 Months
-    private WebElement li_SufferedTime0_6(){
-
-        return findElements(driver, li_SufferedTime0_6Locator,5000).get(0);
-
-    }
-
-    //find 6 - 18 Months
-    private WebElement li_SufferedTime6_18(){
-
-        return findElements(driver, li_SufferedTime6_18Locator,5000).get(0);
-
-    }
-
-    //find 18+ Months
-    private WebElement li_SufferedTime18_(){
-
-        return findElements(driver, li_SufferedTime18_Locator,5000).get(0);
-
-    }
-
-    //find 0 - 4 hours
-    private WebElement li_PhysicalActivity0_4(){
-
-        return findElements(driver, li_PhysicalActivity0_4Locator,5000).get(0);
-
-    }
-
-    //find 4 - 8 hours
-    private WebElement li_PhysicalActivity4_8(){
-
-        return findElements(driver, li_PhysicalActivity4_8Locator,5000).get(0);
-
-    }
-
-    //find 8+ hours
-    private WebElement li_PhysicalActivity8_(){
-
-        return findElements(driver, li_PhysicalActivity8_Locator, 5000).get(0);
-
-    }
-
-    //is repeat Yes
-    private WebElement li_isRepeatYes(){
-
-        return findElements(driver, li_isRepeatYes_Locator, 5000).get(0);
-
-    }
-
-    //is repeat No
-    private WebElement li_isRepeatNo(){
-
-        return findElements(driver, li_isRepeatNo_Locator, 5000).get(0);
+        return findElementByText(waitForElements(li_ConditionLocator, allPresence), sCondition);
 
     }
 
@@ -171,38 +53,38 @@ public class WriteAReviewPage extends BaseClass {
     //click on Next button
     private WriteAReviewPage clickOnNextButton(){
 
-        button_Next().click();
+        click(button_Next);
 
         sNextCounter++;
 
-        return new WriteAReviewPage(driver);
+        return new WriteAReviewPage();
 
     }
 
     //click on Next button
     private WriteAReviewConfirmationPage clickOnPostReviewButton(){
 
-        button_PostReview().click();
+        click(button_PostReview);
 
-        return new WriteAReviewConfirmationPage(driver);
+        return new WriteAReviewConfirmationPage();
 
     }
 
     //click on specific body area
     private WriteAReviewPage clickOnSpecificBodyArea(String sBodyArea){
 
-        li_InjuryBodyArea(sBodyArea).click();
+        click(li_InjuryBodyArea(sBodyArea));
 
-        return new WriteAReviewPage(driver);
+        return new WriteAReviewPage();
 
     }
 
     //click on specific condition
     private WriteAReviewPage clickOnSpecificCondition(String sCondition){
 
-        li_Condition(sCondition).click();
+        click(li_Condition(sCondition));
 
-        return new WriteAReviewPage(driver);
+        return new WriteAReviewPage();
 
     }
 
@@ -212,16 +94,16 @@ public class WriteAReviewPage extends BaseClass {
         switch (sGender){
 
             case "Male":
-                li_GenderMale().click();
-                return new WriteAReviewPage(driver);
+                click(li_GenderMaleLocator);
+                return new WriteAReviewPage();
 
             case "Female":
-                li_GenderFemale().click();
-                return new WriteAReviewPage(driver);
+                click(li_GenderFemaleLocator);
+                return new WriteAReviewPage();
 
         }
 
-        return new WriteAReviewPage(driver);
+        return new WriteAReviewPage();
 
     }
 
@@ -231,20 +113,20 @@ public class WriteAReviewPage extends BaseClass {
         switch (sOption){
 
             case "0 - 6 Months":
-                li_SufferedTime0_6().click();
-                return new WriteAReviewPage(driver);
+                click(li_SufferedTime0_6Locator);
+                return new WriteAReviewPage();
 
             case "6 - 18 Months":
-                li_SufferedTime6_18().click();
-                return new WriteAReviewPage(driver);
+                click(li_SufferedTime6_18Locator);
+                return new WriteAReviewPage();
 
             case "18+ Months":
-                li_SufferedTime18_().click();
-                return new WriteAReviewPage(driver);
+                click(li_SufferedTime18_Locator);
+                return new WriteAReviewPage();
 
         }
 
-        return new WriteAReviewPage(driver);
+        return new WriteAReviewPage();
 
     }
 
@@ -254,16 +136,16 @@ public class WriteAReviewPage extends BaseClass {
         switch (sOption){
 
             case "Yes":
-                li_isRepeatYes().click();
-                return new WriteAReviewPage(driver);
+                click(li_isRepeatYes_Locator);
+                return new WriteAReviewPage();
 
             case "No":
-                li_isRepeatNo().click();
-                return new WriteAReviewPage(driver);
+                click(li_isRepeatNo_Locator);
+                return new WriteAReviewPage();
 
         }
 
-        return new WriteAReviewPage(driver);
+        return new WriteAReviewPage();
 
     }
 
@@ -274,20 +156,20 @@ public class WriteAReviewPage extends BaseClass {
         switch (sOption){
 
             case "0 - 4 hours":
-                li_PhysicalActivity0_4().click();
-                return new WriteAReviewPage(driver);
+                click(li_PhysicalActivity0_4Locator);
+                return new WriteAReviewPage();
 
             case "4 - 8 hours":
-                li_PhysicalActivity4_8().click();
-                return new WriteAReviewPage(driver);
+                click(li_PhysicalActivity4_8Locator);
+                return new WriteAReviewPage();
 
             case "8+ hours":
-                li_PhysicalActivity8_().click();
-                return new WriteAReviewPage(driver);
+                click(li_PhysicalActivity8_Locator);
+                return new WriteAReviewPage();
 
         }
 
-        return new WriteAReviewPage(driver);
+        return new WriteAReviewPage();
 
     }
 
@@ -298,7 +180,7 @@ public class WriteAReviewPage extends BaseClass {
     //check page url
     public WriteAReviewPage checkURLBasic(){
 
-        Assert.assertTrue(ReadXMLFile.takeConstantFromXML("URL", "Write a Review Page", "fromBlogPage" ).equals(driver.getCurrentUrl()));
+        Assert.assertTrue(ReadXMLFile.takeConstantFromXML("URL", "Write a Review Page", "fromBlogPage" ).equals(getURL()));
 
         return this;
 
@@ -307,7 +189,7 @@ public class WriteAReviewPage extends BaseClass {
     //check Write a Review page URL from Treatment Ratings Condition
     public WriteAReviewPage checkURLFromTreatmentRatingsCondition(){
 
-        Assert.assertEquals(ReadXMLFile.takeConstantFromXML("URL", "Write a Review page from Treatment Ratings Condition", "url"), driver.getCurrentUrl());
+        Assert.assertEquals(ReadXMLFile.takeConstantFromXML("URL", "Write a Review page from Treatment Ratings Condition", "url"), getURL());
 
         return this;
 
@@ -316,7 +198,7 @@ public class WriteAReviewPage extends BaseClass {
     //check Write a Review page URL from Treatment Reviews
     public WriteAReviewPage checkURLFromTreatmentsReviews(){
 
-        Assert.assertEquals(ReadXMLFile.takeConstantFromXML("URL", "Write a Review page from Treatment Reviews", "url"), driver.getCurrentUrl());
+        Assert.assertEquals(ReadXMLFile.takeConstantFromXML("URL", "Write a Review page from Treatment Reviews", "url"), getURL());
 
         return this;
 
@@ -325,7 +207,7 @@ public class WriteAReviewPage extends BaseClass {
     //check group title in case of navigation to Write a Review page from Treatment Reviews page
     public WriteAReviewPage checkGroupTitleInCaseOfFromTreatmentReviewsPage(){
 
-        Assert.assertEquals("What is your gender?", text_GroupTitle().getText());
+        Assert.assertEquals("What is your gender?", waitFor(text_GroupTitleLocator, visible).getText());
 
         return this;
 

@@ -1,29 +1,18 @@
 package automationFramework;
 
-
 import PageObject.*;
-import junit.framework.TestCase;
 import org.junit.*;
 import org.junit.rules.Timeout;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriverService;
-import org.openqa.selenium.remote.DesiredCapabilities;
-import org.openqa.selenium.remote.RemoteWebDriver;
 import utility.ReadXMLFile;
 import utility.RetryRule;
-import java.io.File;
-import java.io.IOException;
-
+import utility.WebDriverProvider;
 
 @RunWith(JUnit4.class)
-public class Navigation_TestCase extends TestCase{
+public class Navigation_TestCase extends WebDriverProvider{
 
     //<editor-fold desc="Initialisation block">
-
-    private WebDriver driver;
-    private static ChromeDriverService service;
 
     private HomePage homePage;
     private Footer footer;
@@ -33,44 +22,26 @@ public class Navigation_TestCase extends TestCase{
 
     //<editor-fold desc="BeforeClass, AfterClass, Before, After annotations">
 
-    @BeforeClass
-    public static void createAndStartService() {
-        service = new ChromeDriverService.Builder()
-                .usingDriverExecutable(new File(ReadXMLFile.takeConstantFromXML("DriverPath", "ChromeDriver", "path")))
-                .usingAnyFreePort()
-                .build();
-        try {
-            service.start();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
-
-
-    @AfterClass
-    public static void createAndStopService() {
-        service.stop();
-    }
-
 
     @Before
     public void createNewDriver() {
 
-        driver = new RemoteWebDriver(service.getUrl(),
-                        DesiredCapabilities.chrome());
+        this.setupDriver();
 
-        driver.get(ReadXMLFile.takeConstantFromXML("URL", "Landing Page", "url"));
+        getDriver().get(ReadXMLFile.takeConstantFromXML("URL", "Landing Page", "url"));
 
-        homePage = new HomePage(driver);
-        footer = new Footer(driver);
-        header = new Header(driver);
+        homePage = new HomePage();
+        footer = new Footer();
+        header = new Header();
 
     }
 
     //execute after each TC
     @After
     public void quitDriver() {
-        driver.quit();
+
+        this.cleanUp();
+
     }
 
     //</editor-fold>

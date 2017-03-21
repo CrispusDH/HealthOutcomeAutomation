@@ -2,67 +2,40 @@ package PageObject;
 
 import org.junit.Assert;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import utility.BaseClass;
 import utility.ReadXMLFile;
-
 import java.util.List;
 
+import static utility.WaitConditionForWebElements.allPresence;
+
 public class BlogPage extends BaseClass {
-    private WebElement element;
-    private List<WebElement> elements;
-
-    public BlogPage(WebDriver driver){
-
-        this.driver = driver;
-
-    }
 
     //<editor-fold desc="Finding page Elements">
 
-    // The blog page contains several elements that will be represented as WebElements.
-    // The locators for these elements should only be defined once.
-
     private By blogsLocator = By.cssSelector(".blog-roll li");
-    private By button_StartHere = By.cssSelector(".button-cta span");
+    private By button_StartHereLocator = By.cssSelector(".button-cta span");
     private By button_FindOutMoreLocator = By.cssSelector(".button-cta span");
 
     //find all blogs on page
     private List<WebElement> blogs(){
 
-        return findElements(driver, blogsLocator, 5000);
+        return waitForElements(blogsLocator, allPresence);
 
     }
 
     //Start Here button
     private WebElement button_StartHere(){
 
-        elements = findElements(driver, button_StartHere, 5000);
+        return findElementByText(waitForElements(button_StartHereLocator, allPresence), "START HERE");
 
-        int i = 0;
-        do {
-            element = elements.get(i);
-            //System.out.println(element.getText() + "\n");
-            i++;
-        } while (!(element.getText().equals("START HERE")));
-
-        return element;
     }
 
     //Find Out More button
     private WebElement button_FindOutMore(){
 
-        elements = findElements(driver, button_FindOutMoreLocator, 5000);
+        return findElementByText(waitForElements(button_FindOutMoreLocator, allPresence), "Find Out More");
 
-        int i = 0;
-        do {
-            element = elements.get(i);
-            //System.out.println(element.getText() + "\n");
-            i++;
-        } while (!(element.getText().equals("Find Out More")));
-
-        return element;
     }
 
     //</editor-fold>
@@ -72,9 +45,9 @@ public class BlogPage extends BaseClass {
     //click on Start Here button
     private WriteAReviewPage clickOnStartHereButton(){
 
-        button_StartHere().click();
+        click(button_StartHere());
 
-        return new WriteAReviewPage(driver);
+        return new WriteAReviewPage();
 
     }
 
@@ -83,7 +56,7 @@ public class BlogPage extends BaseClass {
 
         blogs().get(blogNumber);
 
-        return new DetailedBlogPage(driver);
+        return new DetailedBlogPage();
 
     }
 
@@ -124,7 +97,7 @@ public class BlogPage extends BaseClass {
     //check page url
     public BlogPage checkUrl(){
 
-        Assert.assertTrue(ReadXMLFile.takeConstantFromXML("URL", "Blog", "url").equals(driver.getCurrentUrl()));
+        Assert.assertTrue(ReadXMLFile.takeConstantFromXML("URL", "Blog", "url").equals(getURL()));
 
         return this;
 

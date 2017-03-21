@@ -1,49 +1,124 @@
 package utility;
 
-
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.util.ArrayList;
 import java.util.List;
-import java.util.concurrent.TimeUnit;
+
+import static utility.Configuration.CoreConstants.WAIT_TIMEOUT;
+import static utility.WaitConditionForWebElement.enabled;
+import static utility.WaitConditionForWebElement.visible;
+import static utility.WebDriverProvider.getDriver;
 
 //improve find elements mechanism
 public abstract class BaseClass {
 
-        protected WebDriver driver;
+    private final WebDriver driver;
+    private final WebDriverWait wait;
 
-        protected List<WebElement> findElements(WebDriver webDriver, By by, int timeout) {
+    public BaseClass(){
 
-        int iSleepTime = 1000;
+        this.driver = getDriver();
+        this.wait = new WebDriverWait(driver, WAIT_TIMEOUT);
 
-        for (int i = 0; i < timeout; i += iSleepTime) {
+    }
 
-            List<WebElement> oWebElements = webDriver.findElements(by);
+    protected WebElement waitFor(By locator, WaitConditionForWebElement condition) {
+        return wait.until(condition.getType().apply(locator));
+    }
 
-            if (oWebElements.size() > 0 && oWebElements.get(0).isDisplayed()) {
+    protected List<WebElement> waitForElements(By locator, WaitConditionForWebElements condition){
 
-                return oWebElements;
+        List<WebElement> elements;
+        int counter = 1;
+        do {
 
-            } else {
+             elements = wait.until(condition.getType().apply(locator));
 
-                try {
-                    TimeUnit.MILLISECONDS.sleep(iSleepTime);
+             //System.out.println(elements.size());
 
-                    System.out.println(String.format("%s: Waited for %d milliseconds.[%s]", new java.util.Date().toString(), i + iSleepTime, by));
+            counter++;
 
-                } catch (InterruptedException ex) {
-                    throw new RuntimeException(ex);
-                }
-            }
+        } while ((elements.size() == 1) && (counter < 30));
+
+        return elements;
+
+    }
+
+    protected void click(By locator) {
+        click(locator, enabled);
+    }
+
+    protected void click(By locator, WaitConditionForWebElement condition) {
+        waitFor(locator, condition).click();
+    }
+
+    protected void type(By locator, CharSequence text) {
+        waitFor(locator, visible).sendKeys(text);
+    }
+
+    protected void click(WebElement webElement){
+
+        webElement.click();
+
+    }
+
+    protected WebElement findElementByText(List<WebElement> webElements, String text){
+
+        for (WebElement webElement : webElements){
+
+            if (webElement.getText().equals(text)){
+
+                return webElement;
+
+            } /*else {
+                System.out.println(webElement.getText() + " does not match " + text + "\n");
+            }*/
+
         }
 
-        // Can't find 'by' element. Therefore throw an exception.
-        String sException = String.format("Can't find %s after %d milliseconds.", by, timeout);
+        return null;
+    }
 
-        throw new RuntimeException(sException);
+    protected String getURL(){
+
+        return driver.getCurrentUrl();
+
+    }
+
+    protected boolean checkUrlToBe(String sExpectedUrl, WaitConditionForUrl condition){
+
+        return wait.until(condition.getType().apply(sExpectedUrl));
+
+    }
+
+    protected void scrollUp(){
+
+        JavascriptExecutor jse = (JavascriptExecutor)driver;
+        jse.executeScript("scroll(250, 0)");
+
+    }
+
+    protected void safeSwitchTab(){
+
+        ArrayList<String> currentTab;
+        int counter = 1;
+        do {
+
+            currentTab = new ArrayList<>(driver.getWindowHandles());
+
+            //System.out.println(currentTab.size());
+
+            counter++;
+
+        } while ((currentTab.size() == 1) && (counter < 30));
+
+        driver.switchTo().window(currentTab.get(1));
+
     }
 
 }

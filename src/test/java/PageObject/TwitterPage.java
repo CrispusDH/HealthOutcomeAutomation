@@ -1,24 +1,22 @@
 package PageObject;
 
 import org.junit.Assert;
-import org.openqa.selenium.WebDriver;
 import utility.BaseClass;
 import utility.ReadXMLFile;
+import utility.WaitConditionForUrl;
+
+import java.util.concurrent.TimeUnit;
+
+import static utility.WaitConditionForUrl.urlToBe;
 
 public class TwitterPage extends BaseClass {
-
-    public TwitterPage(WebDriver driver){
-
-        this.driver = driver;
-
-    }
 
     //<editor-fold desc="Public methods">
 
     //check page url
     public TwitterPage checkUrl(){
 
-        Assert.assertTrue(ReadXMLFile.takeConstantFromXML("URL", "Twitter", "url" ).equals(driver.getCurrentUrl()));
+        checkUrlToBe(ReadXMLFile.takeConstantFromXML("URL", "Twitter", "url" ), urlToBe);
 
         return this;
 

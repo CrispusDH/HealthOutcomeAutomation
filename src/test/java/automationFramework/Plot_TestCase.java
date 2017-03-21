@@ -2,29 +2,21 @@ package automationFramework;
 
 import PageObject.Header;
 import PageObject.HomePage;
-import junit.framework.TestCase;
-import org.junit.*;
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Rule;
+import org.junit.Test;
 import org.junit.rules.Timeout;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriverService;
-import org.openqa.selenium.remote.DesiredCapabilities;
-import org.openqa.selenium.remote.RemoteWebDriver;
-import org.openqa.selenium.remote.UnreachableBrowserException;
 import utility.ReadXMLFile;
 import utility.RetryRule;
-
-import java.io.File;
-import java.io.IOException;
+import utility.WebDriverProvider;
 
 @RunWith(JUnit4.class)
-public class Plot_TestCase extends TestCase {
+public class Plot_TestCase extends WebDriverProvider {
 
     //<editor-fold desc="Initialisation block">
-
-    private WebDriver driver;
-    private static ChromeDriverService service;
 
     private Header header;
     private HomePage homePage;
@@ -33,48 +25,24 @@ public class Plot_TestCase extends TestCase {
 
     //<editor-fold desc="BeforeClass, AfterClass, Before, After annotations">
 
-    @BeforeClass
-    public static void createAndStartService() {
-        service = new ChromeDriverService.Builder()
-                .usingDriverExecutable(new File(ReadXMLFile.takeConstantFromXML("DriverPath", "ChromeDriver", "path")))
-                .usingAnyFreePort()
-                .build();
-        try {
-            service.start();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
-
-    //stop service
-    @AfterClass
-    public static void createAndStopService() {
-        service.stop();
-    }
-
     //create new driver
     @Before
     public void createNewDriver() {
-        try {
-            driver = new RemoteWebDriver(service.getUrl(),
-                    DesiredCapabilities.chrome());
-        } catch (UnreachableBrowserException e) {
 
-            driver = new RemoteWebDriver(service.getUrl(),
-                    DesiredCapabilities.chrome());
+        this.setupDriver();
 
-        }
+        getDriver().get(ReadXMLFile.takeConstantFromXML("URL", "Landing Page", "url"));
 
-        driver.get(ReadXMLFile.takeConstantFromXML("URL", "Landing Page", "url"));
-
-        header = new Header(driver);
-        homePage = new HomePage(driver);
+        header = new Header();
+        homePage = new HomePage();
     }
 
     //execute after each TC
     @After
     public void quitDriver() {
-        driver.quit();
+
+        this.cleanUp();
+
     }
 
     //</editor-fold>

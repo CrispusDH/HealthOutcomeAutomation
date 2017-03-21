@@ -2,28 +2,16 @@ package PageObject;
 
 import org.junit.Assert;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 import utility.BaseClass;
 
-import java.util.List;
 import java.util.concurrent.TimeUnit;
 
+import static utility.WaitConditionForWebElements.allPresence;
+
 public class ConditionSelectionPage extends BaseClass {
-    private WebElement element;
-    private List<WebElement> elements;
-
-    public ConditionSelectionPage(WebDriver driver){
-
-        this.driver = driver;
-
-    }
 
     //<editor-fold desc="Finding page Elements">
-
-    // The Condition Selection page contains several elements that will be represented as WebElements.
-    // The locators for these elements should only be defined once.
 
     private By injuryBodyAreaLocator = By.cssSelector(".parts-list li > span");
     private By conditionElementLocator = By.cssSelector("#select-condition li a > span");
@@ -32,36 +20,14 @@ public class ConditionSelectionPage extends BaseClass {
     //find all body areas
     private WebElement li_InjuryBodyArea(String bodyAreaName){
 
-        elements = findElements(driver, injuryBodyAreaLocator, 5000);
+        return findElementByText(waitForElements(injuryBodyAreaLocator, allPresence), bodyAreaName);
 
-        int i = 0;
-        do {
-            element = elements.get(i);
-            //System.out.println(element.getText() + "\n");
-            i++;
-        } while (!(element.getText().equals(bodyAreaName)));
-
-        return element;
     }
 
     //find all conditions
-    private WebElement li_ConditionElement(String ConditionName){
+    private WebElement li_ConditionElement(String sConditionName){
 
-        elements = findElements(driver, conditionElementLocator, 5000);
-
-        int i = 0;
-        do {
-            element = elements.get(i);
-            //System.out.println(element.getText() + "\n");
-            i++;
-        } while (!(element.getText().equals(ConditionName)));
-
-        return element;
-    }
-
-    private WebElement forScrolling(){
-
-        return findElements(driver, forScrollingLocator,5000).get(0);
+        return findElementByText(waitForElements(conditionElementLocator, allPresence), sConditionName);
 
     }
 
@@ -70,18 +36,18 @@ public class ConditionSelectionPage extends BaseClass {
     //<editor-fold desc="Private methods">
 
     //choose Body area name and click on it block
-    private ConditionSelectionPage chooseBodyAreaName(String bodyAreaName){
+    private ConditionSelectionPage chooseBodyAreaName(String sBodyAreaName){
 
-        li_InjuryBodyArea(bodyAreaName).click();
+        click(li_InjuryBodyArea(sBodyAreaName));
 
-        //wait 3 seconds
+
+
         try {
-            TimeUnit.SECONDS.sleep(3);
+            TimeUnit.SECONDS.sleep(1);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
 
-        // Return the current page object as this action doesn't navigate to a page represented by another PageObject
         return this;
 
     }
@@ -89,19 +55,11 @@ public class ConditionSelectionPage extends BaseClass {
     //choose Condition and click
     private TreatmentRatingsConditionPage clickOnSpecificConditionName(String conditionName){
 
-        //create new Action builder
-        Actions builder = new Actions(driver);
+        scrollUp();
 
-        //scroll to element above
-        builder.moveToElement(forScrolling());
+        click(li_ConditionElement(conditionName));
 
-        //click on specific Condition
-        builder.click(li_ConditionElement(conditionName));
-
-        //perform all actions
-        builder.build().perform();
-
-        return new TreatmentRatingsConditionPage(driver);
+        return new TreatmentRatingsConditionPage();
 
     }
 
@@ -122,7 +80,7 @@ public class ConditionSelectionPage extends BaseClass {
     //check URL
     public ConditionSelectionPage checkURL(String sExpectedURL){
 
-        Assert.assertEquals(sExpectedURL, driver.getCurrentUrl());
+        Assert.assertEquals(sExpectedURL, getURL());
 
         return this;
 

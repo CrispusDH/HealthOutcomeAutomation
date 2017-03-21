@@ -1,28 +1,14 @@
 package PageObject;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import utility.BaseClass;
-
-import java.util.List;
-import java.util.concurrent.TimeUnit;
+import static utility.WaitConditionForWebElement.visible;
+import static utility.WaitConditionForWebElements.allPresence;
 
 public class HomePage extends BaseClass {
-    private WebElement element;
-    private List<WebElement> elements;
-
-    public HomePage(WebDriver driver){
-
-        this.driver = driver;
-
-
-    }
 
     //<editor-fold desc="Finding page Elements">
-
-    // The Home page contains several elements that will be represented as WebElements.
-    // The locators for these elements should only be defined once.
 
     private By input_EmailAddressLocator = By.id("id_username");
     private By input_PasswordLocator = By.id("id_password");
@@ -31,69 +17,12 @@ public class HomePage extends BaseClass {
     private By link_ForgotPasswordLocator = By.linkText("Forgot password?");
     private By button_StartHereLocator = By.cssSelector(".body-content .button-cta span");
     private By form_SingleReviewLocator = By.cssSelector(".review-info");
-    private By li_FeaturedConditionLocator = By.cssSelector(".condition.left > .condition-link");
-
-    //email address input field
-    private WebElement input_EmailAddress(){
-
-        return findElements(driver, input_EmailAddressLocator,5000).get(0);
-
-    }
-
-    //password input field
-    private WebElement input_Password(){
-
-        return findElements(driver, input_PasswordLocator,5000).get(0);
-
-    }
-
-    //login button
-    private WebElement button_Login(){
-
-        return findElements(driver, button_LoginLocator,5000).get(0);
-
-    }
-
-    //Get Started button
-    private WebElement button_GetStarted(){
-
-        return findElements(driver, button_GetStartedLocator,5000).get(0);
-
-    }
-
-    //forgot password link
-    private WebElement link_ForgotPassword(){
-
-        return findElements(driver, link_ForgotPasswordLocator,5000).get(0);
-
-    }
+    private By link_FeaturedConditionLocator = By.cssSelector(".condition.left > .condition-link");
 
     //Start Here button
     private WebElement button_StartHere(){
 
-        elements = findElements(driver, button_StartHereLocator, 5000);
-
-        int i = 0;
-        do {
-            element = elements.get(i);
-            //System.out.println(element.getText() + "\n");
-            i++;
-        } while (!(element.getText().equals("START HERE")));
-
-        return element;
-    }
-
-    //Single Review form
-    private WebElement form_SingleReview(){
-
-        return findElements(driver, form_SingleReviewLocator,5000).get(0);
-
-    }
-
-    //left Condition
-    private WebElement li_FeaturedCondition(){
-
-        return findElements(driver, li_FeaturedConditionLocator,5000).get(0);
+        return findElementByText(waitForElements(button_StartHereLocator, allPresence), "START HERE");
 
     }
 
@@ -104,7 +33,7 @@ public class HomePage extends BaseClass {
     //type email address
     private HomePage typeEmailAddress(String sEmailAddress){
 
-        input_EmailAddress().sendKeys(sEmailAddress);
+        type(input_EmailAddressLocator, sEmailAddress);
 
         return this;
 
@@ -113,7 +42,7 @@ public class HomePage extends BaseClass {
     //type password
     private HomePage typePassword(String sPassword){
 
-        input_Password().sendKeys(sPassword);
+        type(input_PasswordLocator, sPassword);
 
         return this;
 
@@ -122,61 +51,54 @@ public class HomePage extends BaseClass {
     //click on Login button
     private HomePage clickOnLoginButton(){
 
-        button_Login().click();
+        click(button_LoginLocator);
 
-        return new HomePage(driver);
+        return new HomePage();
 
     }
 
     //click on Forgot password link
     private ForgotPasswordPage clickOnForgotPasswordLink(){
 
-        link_ForgotPassword().click();
+        click(link_ForgotPasswordLocator);
 
-        return new ForgotPasswordPage(driver);
+        return new ForgotPasswordPage();
 
     }
 
     //click on Start Here button
     private WriteAReviewPage clickOnStartHereButton(){
 
-        button_StartHere().click();
+        click(button_StartHere());
 
-        return new WriteAReviewPage(driver);
+        return new WriteAReviewPage();
 
     }
 
     //click on Single Review form
     private SingleReviewPage clickOnSingleReviewForm(){
 
-        form_SingleReview().click();
+        click(form_SingleReviewLocator);
 
-        return new SingleReviewPage(driver);
+        return new SingleReviewPage();
 
     }
 
     //click on Featured condition
     private TreatmentRatingsConditionPage clickOnFeaturedCondition(){
 
-        li_FeaturedCondition().click();
+        click(link_FeaturedConditionLocator);
 
-        //wait 3 seconds
-        try {
-            TimeUnit.SECONDS.sleep(3);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-
-        return new TreatmentRatingsConditionPage(driver);
+        return new TreatmentRatingsConditionPage();
 
     }
 
     //click on Get Started button
     private ConditionSelectionPage clickOnGetStartedButton(){
 
-        button_GetStarted().click();
+        click(button_GetStartedLocator);
 
-        return new ConditionSelectionPage(driver);
+        return new ConditionSelectionPage();
 
     }
 
@@ -187,14 +109,9 @@ public class HomePage extends BaseClass {
     //Home page offers the user the service of being able to "log into"
     public HomePage loginAs(String sEmailAddress, String sPassword){
 
-        //type email address
-        typeEmailAddress(sEmailAddress);
-
-        //type password
-        typePassword(sPassword);
-
-        //click login button
-        return clickOnLoginButton();
+        return typeEmailAddress(sEmailAddress)
+                .typePassword(sPassword)
+                .clickOnLoginButton();
 
     }
 
@@ -236,14 +153,14 @@ public class HomePage extends BaseClass {
     //get Featured Condition url
     public String getFeaturedConditionUrl(){
 
-        return li_FeaturedCondition().getAttribute("href");
+        return waitFor(link_FeaturedConditionLocator, visible).getAttribute("href");
 
     }
 
     //get Get Started button url
     public String getGetStartedButtonUrl(){
 
-        return button_GetStarted().getAttribute("href");
+        return waitFor(button_GetStartedLocator, visible).getAttribute("href");
 
     }
 

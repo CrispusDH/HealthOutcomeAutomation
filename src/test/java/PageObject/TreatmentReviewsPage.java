@@ -2,26 +2,14 @@ package PageObject;
 
 import org.junit.Assert;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import utility.BaseClass;
 
-import java.util.List;
+import static utility.WaitConditionForWebElements.allPresence;
 
 public class TreatmentReviewsPage extends BaseClass {
-    private WebElement element;
-    private List<WebElement> elements;
-
-    public TreatmentReviewsPage(WebDriver driver){
-
-        this.driver = driver;
-
-    }
 
     //<editor-fold desc="Finding page Elements">
-
-    // The Treatment Reviews page contains several elements that will be represented as WebElements.
-    // The locators for these elements should only be defined once.
 
     private By button_ShareYourExperienceLocator = By.cssSelector(".banner-cta .button-cta span");
     private By tabLocator = By.cssSelector(".hero-tabs li");
@@ -29,31 +17,15 @@ public class TreatmentReviewsPage extends BaseClass {
     //Share your experience button
     private WebElement button_ShareYourExperience(){
 
-        elements = findElements(driver, button_ShareYourExperienceLocator, 5000);
+        return findElementByText(waitForElements(button_ShareYourExperienceLocator, allPresence), "SHARE YOUR EXPERIENCE");
 
-        int i = 0;
-        do {
-            element = elements.get(i);
-            //System.out.println(element.getText() + "\n");
-            i++;
-        } while (!(element.getText().equals("SHARE YOUR EXPERIENCE")));
-
-        return element;
     }
 
     //Find tab
-    private WebElement tab(String tabName){
+    private WebElement tab(String sTabName){
 
-        elements = findElements(driver, tabLocator, 5000);
+        return findElementByText(waitForElements(tabLocator, allPresence), sTabName);
 
-        int i = 0;
-        do {
-            element = elements.get(i);
-            //System.out.println(element.getText() + "\n");
-            i++;
-        } while (!(element.getText().equals(tabName)));
-
-        return element;
     }
 
     //</editor-fold>
@@ -63,9 +35,9 @@ public class TreatmentReviewsPage extends BaseClass {
     //click on Share Your Experience button
     private WriteAReviewPage clickOnShareYourExperienceButton(){
 
-        button_ShareYourExperience().click();
+        click(button_ShareYourExperience());
 
-        return new WriteAReviewPage(driver);
+        return new WriteAReviewPage();
 
     }
 
@@ -75,16 +47,16 @@ public class TreatmentReviewsPage extends BaseClass {
         switch (sTabNames) {
 
             case "Treatment Ratings":
-                tab("TREATMENT RATINGS").click();
-                return new TreatmentRatingsConditionPage(driver);
+                click(tab("TREATMENT RATINGS"));
+                return new TreatmentRatingsConditionPage();
 
             case "Treatment Reviews":
-                tab("TREATMENT REVIEWS").click();
-                return new TreatmentReviewsPage(driver);
+                click(tab("TREATMENT REVIEWS"));
+                return new TreatmentReviewsPage();
 
             case "Videos & Guides":
-                tab("VIDEOS & GUIDES").click();
-                return new TreatmentVideosPage(driver);
+                click(tab("VIDEOS & GUIDES"));
+                return new TreatmentVideosPage();
         }
 
         return null;
@@ -126,7 +98,7 @@ public class TreatmentReviewsPage extends BaseClass {
     //check URL
     public TreatmentReviewsPage checkURL(){
 
-        Assert.assertEquals(TreatmentRatingsConditionPage.expectedReviewsURL, driver.getCurrentUrl());
+        Assert.assertEquals(TreatmentRatingsConditionPage.expectedReviewsURL, getURL());
 
         return this;
 

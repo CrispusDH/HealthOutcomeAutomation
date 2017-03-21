@@ -1,28 +1,16 @@
 package PageObject;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import utility.BaseClass;
 
-import java.util.List;
+import static utility.WaitConditionForWebElements.allPresence;
 
 public class SpecificTreatmentReviewsPage extends BaseClass {
-    private WebElement element;
-    private List<WebElement> elements;
 
     static String expectedSpecificTreatmentVideosPageURL;
 
-    public SpecificTreatmentReviewsPage(WebDriver driver){
-
-        this.driver = driver;
-
-    }
-
     //<editor-fold desc="Finding page Elements">
-
-    // The Specific Treatment Review page contains several elements that will be represented as WebElements.
-    // The locators for these elements should only be defined once.
 
     private By button_ShareYourExperienceLocator = By.cssSelector(".banner-cta .button-cta span");
     private By tabLocator = By.cssSelector(".hero-tabs li");
@@ -30,31 +18,15 @@ public class SpecificTreatmentReviewsPage extends BaseClass {
     //Share your experience button
     private WebElement button_ShareYourExperience(){
 
-        elements = findElements(driver, button_ShareYourExperienceLocator, 5000);
+        return findElementByText(waitForElements(button_ShareYourExperienceLocator, allPresence), "SHARE YOUR EXPERIENCE");
 
-        int i = 0;
-        do {
-            element = elements.get(i);
-            //System.out.println(element.getText() + "\n");
-            i++;
-        } while (!(element.getText().equals("SHARE YOUR EXPERIENCE")));
-
-        return element;
     }
 
     //Find tab
-    private WebElement tab(String tabName){
+    private WebElement tab(String sTabName){
 
-        elements = findElements(driver, tabLocator, 5000);
+        return findElementByText(waitForElements(tabLocator, allPresence), sTabName);
 
-        int i = 0;
-        do {
-            element = elements.get(i);
-            //System.out.println(element.getText() + "\n");
-            i++;
-        } while (!(element.getText().equals(tabName)));
-
-        return element;
     }
 
     //</editor-fold>
@@ -64,9 +36,9 @@ public class SpecificTreatmentReviewsPage extends BaseClass {
     //click on Share your experience button
     private WriteAReviewPage clickOnShareYourButton(){
 
-        button_ShareYourExperience().click();
+        click(button_ShareYourExperience());
 
-        return new WriteAReviewPage(driver);
+        return new WriteAReviewPage();
 
     }
 
@@ -76,12 +48,12 @@ public class SpecificTreatmentReviewsPage extends BaseClass {
         switch (sTabName){
 
             case "Treatment Reviews":
-                tab("TREATMENT REVIEWS").click();
-                return new SpecificTreatmentReviewsPage(driver);
+                click(tab("TREATMENT REVIEWS"));
+                return new SpecificTreatmentReviewsPage();
 
             case "Videos & Guides":
-                tab("VIDEOS & GUIDES").click();
-                return new SpecificTreatmentVideosPage(driver);
+                click(tab("VIDEOS & GUIDES"));
+                return new SpecificTreatmentVideosPage();
         }
 
         return null;
@@ -96,13 +68,6 @@ public class SpecificTreatmentReviewsPage extends BaseClass {
     public WriteAReviewPage goToWriteAReviewPage(){
 
         return clickOnShareYourButton();
-
-    }
-
-    //get current url
-    public String getCurrentUrl(){
-
-        return driver.getCurrentUrl();
 
     }
 
@@ -123,7 +88,7 @@ public class SpecificTreatmentReviewsPage extends BaseClass {
     //get temporary expected specific Treatment Videos page URL
     public SpecificTreatmentReviewsPage setExpectedSpecificTreatmentVideosPageURL(){
 
-        expectedSpecificTreatmentVideosPageURL = driver.getCurrentUrl() + "-recommendations";
+        expectedSpecificTreatmentVideosPageURL = getURL() + "-recommendations";
 
         return this;
 

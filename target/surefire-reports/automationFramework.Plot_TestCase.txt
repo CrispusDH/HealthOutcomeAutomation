@@ -1,8 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: automationFramework.Plot_TestCase
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 90.295 sec <<< FAILURE! - in automationFramework.Plot_TestCase
-writeAReviewLoggedOutUserConditionIsUnknown(automationFramework.Plot_TestCase)  Time elapsed: 35.584 sec  <<< ERROR!
-java.lang.IndexOutOfBoundsException: Index: 7, Size: 7
-	at automationFramework.Plot_TestCase.writeAReviewLoggedOutUserConditionIsUnknown(Plot_TestCase.java:112)
-
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 63.809 sec - in automationFramework.Plot_TestCase

@@ -4,7 +4,9 @@ import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import utility.BaseClass;
-import static utility.WaitConditionForWebElement.visible;
+
+import java.util.concurrent.TimeUnit;
+
 import static utility.WaitConditionForWebElements.allPresence;
 
 public class ConditionSelectionPage extends BaseClass {
@@ -38,6 +40,14 @@ public class ConditionSelectionPage extends BaseClass {
 
         click(li_InjuryBodyArea(sBodyAreaName));
 
+
+
+        try {
+            TimeUnit.SECONDS.sleep(1);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
         return this;
 
     }
@@ -45,7 +55,9 @@ public class ConditionSelectionPage extends BaseClass {
     //choose Condition and click
     private TreatmentRatingsConditionPage clickOnSpecificConditionName(String conditionName){
 
-        moveToElementAndClickOnElement(li_ConditionElement(conditionName));
+        scrollUp();
+
+        click(li_ConditionElement(conditionName));
 
         return new TreatmentRatingsConditionPage();
 

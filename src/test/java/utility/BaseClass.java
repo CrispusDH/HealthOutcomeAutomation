@@ -1,17 +1,15 @@
 package utility;
 
-import org.junit.Assert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.ArrayList;
 import java.util.List;
+
 import static utility.Configuration.CoreConstants.WAIT_TIMEOUT;
-import static utility.WaitConditionForUrl.urlToBe;
 import static utility.WaitConditionForWebElement.enabled;
 import static utility.WaitConditionForWebElement.visible;
 import static utility.WebDriverProvider.getDriver;
@@ -35,7 +33,19 @@ public abstract class BaseClass {
 
     protected List<WebElement> waitForElements(By locator, WaitConditionForWebElements condition){
 
-        return wait.until(condition.getType().apply(locator));
+        List<WebElement> elements;
+        int counter = 1;
+        do {
+
+             elements = wait.until(condition.getType().apply(locator));
+
+             //System.out.println(elements.size());
+
+            counter++;
+
+        } while ((elements.size() == 1) && (counter < 30));
+
+        return elements;
 
     }
 
@@ -59,16 +69,19 @@ public abstract class BaseClass {
 
     protected WebElement findElementByText(List<WebElement> webElements, String text){
 
-        WebElement element;
-        int i = 0;
-        do {
-            element = webElements.get(i);
-            //System.out.println(element.getText() + "\n");
-            i++;
-        } while (!(element.getText().equals(text)));
+        for (WebElement webElement : webElements){
 
-        return element;
+            if (webElement.getText().equals(text)){
 
+                return webElement;
+
+            } /*else {
+                System.out.println(webElement.getText() + " does not match " + text + "\n");
+            }*/
+
+        }
+
+        return null;
     }
 
     protected String getURL(){
@@ -83,16 +96,10 @@ public abstract class BaseClass {
 
     }
 
-    protected void moveToElementAndClickOnElement(WebElement moveToElement, WebElement clickOnElement){
+    protected void scrollUp(){
 
-        Actions builder = new Actions(driver);
-
-        //scroll to element above
-        builder.moveToElement(moveToElement);
-
-        builder.click(clickOnElement);
-
-        builder.build().perform();
+        JavascriptExecutor jse = (JavascriptExecutor)driver;
+        jse.executeScript("scroll(250, 0)");
 
     }
 
@@ -108,7 +115,7 @@ public abstract class BaseClass {
 
             counter++;
 
-        } while ((currentTab.size() == 1) && (counter < 10));
+        } while ((currentTab.size() == 1) && (counter < 30));
 
         driver.switchTo().window(currentTab.get(1));
 

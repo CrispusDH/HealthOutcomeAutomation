@@ -3,7 +3,6 @@ package PageObject;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import utility.BaseClass;
-
 import static utility.WaitConditionForWebElement.visible;
 import static utility.WaitConditionForWebElements.allPresence;
 
@@ -70,7 +69,7 @@ public class HomePage extends BaseClass {
     //click on Start Here button
     private WriteAReviewPage clickOnStartHereButton(){
 
-        click(button_StartHereLocator);
+        click(button_StartHere());
 
         return new WriteAReviewPage();
 

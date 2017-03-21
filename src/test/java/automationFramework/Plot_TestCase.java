@@ -2,22 +2,16 @@ package automationFramework;
 
 import PageObject.Header;
 import PageObject.HomePage;
-import junit.framework.TestCase;
-import org.junit.*;
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Rule;
+import org.junit.Test;
 import org.junit.rules.Timeout;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriverService;
-import org.openqa.selenium.remote.DesiredCapabilities;
-import org.openqa.selenium.remote.RemoteWebDriver;
-import org.openqa.selenium.remote.UnreachableBrowserException;
 import utility.ReadXMLFile;
 import utility.RetryRule;
 import utility.WebDriverProvider;
-
-import java.io.File;
-import java.io.IOException;
 
 @RunWith(JUnit4.class)
 public class Plot_TestCase extends WebDriverProvider {

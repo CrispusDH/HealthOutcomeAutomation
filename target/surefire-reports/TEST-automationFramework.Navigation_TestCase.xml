@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="automationFramework.Navigation_TestCase" time="460.879" tests="26" errors="2" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="automationFramework.Navigation_TestCase" time="372.819" tests="26" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_91\jre\bin"/>
@@ -62,78 +62,30 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="checkFooterLinkTestimonials" classname="automationFramework.Navigation_TestCase" time="45.037"/>
-  <testcase name="goToConditionSelectionPageFromTreatmentRatingsConditionPage" classname="automationFramework.Navigation_TestCase" time="14.554"/>
-  <testcase name="goToConditionSelectionPage" classname="automationFramework.Navigation_TestCase" time="10.981"/>
-  <testcase name="goToTwitterPageFromFooter" classname="automationFramework.Navigation_TestCase" time="11.093"/>
-  <testcase name="checkFooterCopyrightPrivacyPolicy" classname="automationFramework.Navigation_TestCase" time="13.737"/>
-  <testcase name="goToMailServiceFromFooter" classname="automationFramework.Navigation_TestCase" time="10.42"/>
-  <testcase name="goToWriteAReviewPageFromTreatmentReviewsPage" classname="automationFramework.Navigation_TestCase" time="21.939"/>
-  <testcase name="checkFooterLinkBlog" classname="automationFramework.Navigation_TestCase" time="19.917"/>
-  <testcase name="goToSignUpPageFromVideosAndGuidesConditionPage" classname="automationFramework.Navigation_TestCase" time="13.532"/>
-  <testcase name="goToSingleReviewPage" classname="automationFramework.Navigation_TestCase" time="13.616"/>
-  <testcase name="goToWriteAReviewPageFromTreatmentRatingsConditionPage" classname="automationFramework.Navigation_TestCase" time="69.743">
-    <error message="Expected condition failed: waiting for presence of any elements located by By.cssSelector: .banner-cta .button-cta span (tried for 10 second(s) with 500 MILLISECONDS interval)&#10;Build info: version: &apos;3.1.0&apos;, revision: &apos;b94c902&apos;, time: &apos;2017-02-16 12:21:31 -0800&apos;&#10;System info: host: &apos;Crispus-PC&apos;, ip: &apos;192.168.3.12&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_91&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.28.455520 (cc17746adff54984afff480136733114c6b3704b), userDataDir=C:\Users\Crispus\AppData\Local\Temp\scoped_dir9796_16144}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=56.0.2924.87, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]&#10;Session ID: faaec5fd33e844eb77237a4c9c1941e4" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: 
-Expected condition failed: waiting for presence of any elements located by By.cssSelector: .banner-cta .button-cta span (tried for 10 second(s) with 500 MILLISECONDS interval)
-Build info: version: '3.1.0', revision: 'b94c902', time: '2017-02-16 12:21:31 -0800'
-System info: host: 'Crispus-PC', ip: '192.168.3.12', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_91'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.28.455520 (cc17746adff54984afff480136733114c6b3704b), userDataDir=C:\Users\Crispus\AppData\Local\Temp\scoped_dir9796_16144}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=56.0.2924.87, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
-Session ID: faaec5fd33e844eb77237a4c9c1941e4
-	at automationFramework.Navigation_TestCase.goToWriteAReviewPageFromTreatmentRatingsConditionPage(Navigation_TestCase.java:310)
-</error>
-    <system-err><![CDATA[Starting ChromeDriver 2.28.455520 (cc17746adff54984afff480136733114c6b3704b) on port 24999
-Only local connections are allowed.
-бер. 20, 2017 11:36:41 AM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: OSS
-goToWriteAReviewPageFromTreatmentRatingsConditionPage(automationFramework.Navigation_TestCase): run 1 failed.
-Starting ChromeDriver 2.28.455520 (cc17746adff54984afff480136733114c6b3704b) on port 28131
-Only local connections are allowed.
-бер. 20, 2017 11:37:04 AM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: OSS
-goToWriteAReviewPageFromTreatmentRatingsConditionPage(automationFramework.Navigation_TestCase): run 2 failed.
-Starting ChromeDriver 2.28.455520 (cc17746adff54984afff480136733114c6b3704b) on port 32687
-Only local connections are allowed.
-бер. 20, 2017 11:37:27 AM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: OSS
-goToWriteAReviewPageFromTreatmentRatingsConditionPage(automationFramework.Navigation_TestCase): run 3 failed.
-goToWriteAReviewPageFromTreatmentRatingsConditionPage(automationFramework.Navigation_TestCase): giving up after 3 failures.
-]]></system-err>
-  </testcase>
-  <testcase name="checkFooterLinkFAQ" classname="automationFramework.Navigation_TestCase" time="13.07"/>
-  <testcase name="goToWriteAReviewPageFromDetailedBlogPage" classname="automationFramework.Navigation_TestCase" time="16.545"/>
-  <testcase name="goToTreatmentReviewsPageFromTreatmentRatingsConditionPage" classname="automationFramework.Navigation_TestCase" time="12.117"/>
-  <testcase name="goToTreatmentRatingsConditionPageFromConditionSelectionPage" classname="automationFramework.Navigation_TestCase" time="12.28"/>
-  <testcase name="checkFooterLinkResources" classname="automationFramework.Navigation_TestCase" time="13.319"/>
-  <testcase name="goToSpecificVideosAndGuidesPageFromSpecificTreatmentReviewPage" classname="automationFramework.Navigation_TestCase" time="14.839"/>
-  <testcase name="checkFooterCopyrightTermsOfService" classname="automationFramework.Navigation_TestCase" time="13.592"/>
-  <testcase name="checkFooterLinkAbout" classname="automationFramework.Navigation_TestCase" time="12.676"/>
-  <testcase name="goToVideosAndGuidesConditionPageFromTreatmentRatingsConditionPage" classname="automationFramework.Navigation_TestCase" time="12.325"/>
-  <testcase name="goToTreatmentRatingsConditionPage" classname="automationFramework.Navigation_TestCase" time="10.872"/>
-  <testcase name="goToWriteAReviewPageFromBlogPage" classname="automationFramework.Navigation_TestCase" time="16.526"/>
-  <testcase name="checkLinkedinUrl" classname="automationFramework.Navigation_TestCase" time="11.012"/>
-  <testcase name="goToFacebookPageFromFooter" classname="automationFramework.Navigation_TestCase" time="11.489"/>
-  <testcase name="checkFooterLinkContactUs" classname="automationFramework.Navigation_TestCase" time="13.577"/>
-  <testcase name="goToFirstStepOfCoachingProgramFromTreatmentRatingsConditionPage" classname="automationFramework.Navigation_TestCase" time="31.677">
-    <error message="Index: 1, Size: 1" type="java.lang.IndexOutOfBoundsException">java.lang.IndexOutOfBoundsException: Index: 1, Size: 1
-	at automationFramework.Navigation_TestCase.goToFirstStepOfCoachingProgramFromTreatmentRatingsConditionPage(Navigation_TestCase.java:272)
-</error>
-    <system-err><![CDATA[Starting ChromeDriver 2.28.455520 (cc17746adff54984afff480136733114c6b3704b) on port 32152
-Only local connections are allowed.
-бер. 20, 2017 11:40:53 AM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: OSS
-goToFirstStepOfCoachingProgramFromTreatmentRatingsConditionPage(automationFramework.Navigation_TestCase): run 1 failed.
-Starting ChromeDriver 2.28.455520 (cc17746adff54984afff480136733114c6b3704b) on port 10424
-Only local connections are allowed.
-бер. 20, 2017 11:41:04 AM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: OSS
-goToFirstStepOfCoachingProgramFromTreatmentRatingsConditionPage(automationFramework.Navigation_TestCase): run 2 failed.
-Starting ChromeDriver 2.28.455520 (cc17746adff54984afff480136733114c6b3704b) on port 42223
-Only local connections are allowed.
-бер. 20, 2017 11:41:15 AM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: OSS
-goToFirstStepOfCoachingProgramFromTreatmentRatingsConditionPage(automationFramework.Navigation_TestCase): run 3 failed.
-goToFirstStepOfCoachingProgramFromTreatmentRatingsConditionPage(automationFramework.Navigation_TestCase): giving up after 3 failures.
-]]></system-err>
-  </testcase>
+  <testcase name="checkFooterLinkTestimonials" classname="automationFramework.Navigation_TestCase" time="27.67"/>
+  <testcase name="goToConditionSelectionPageFromTreatmentRatingsConditionPage" classname="automationFramework.Navigation_TestCase" time="11.796"/>
+  <testcase name="goToConditionSelectionPage" classname="automationFramework.Navigation_TestCase" time="10.385"/>
+  <testcase name="goToTwitterPageFromFooter" classname="automationFramework.Navigation_TestCase" time="16.346"/>
+  <testcase name="checkFooterCopyrightPrivacyPolicy" classname="automationFramework.Navigation_TestCase" time="13.577"/>
+  <testcase name="goToMailServiceFromFooter" classname="automationFramework.Navigation_TestCase" time="10.327"/>
+  <testcase name="goToWriteAReviewPageFromTreatmentReviewsPage" classname="automationFramework.Navigation_TestCase" time="23.313"/>
+  <testcase name="checkFooterLinkBlog" classname="automationFramework.Navigation_TestCase" time="20.476"/>
+  <testcase name="goToSignUpPageFromVideosAndGuidesConditionPage" classname="automationFramework.Navigation_TestCase" time="13.195"/>
+  <testcase name="goToSingleReviewPage" classname="automationFramework.Navigation_TestCase" time="12.592"/>
+  <testcase name="goToWriteAReviewPageFromTreatmentRatingsConditionPage" classname="automationFramework.Navigation_TestCase" time="13.001"/>
+  <testcase name="checkFooterLinkFAQ" classname="automationFramework.Navigation_TestCase" time="12.922"/>
+  <testcase name="goToWriteAReviewPageFromDetailedBlogPage" classname="automationFramework.Navigation_TestCase" time="15.028"/>
+  <testcase name="goToTreatmentReviewsPageFromTreatmentRatingsConditionPage" classname="automationFramework.Navigation_TestCase" time="12.036"/>
+  <testcase name="goToTreatmentRatingsConditionPageFromConditionSelectionPage" classname="automationFramework.Navigation_TestCase" time="13.267"/>
+  <testcase name="checkFooterLinkResources" classname="automationFramework.Navigation_TestCase" time="12.012"/>
+  <testcase name="goToSpecificVideosAndGuidesPageFromSpecificTreatmentReviewPage" classname="automationFramework.Navigation_TestCase" time="15.305"/>
+  <testcase name="checkFooterCopyrightTermsOfService" classname="automationFramework.Navigation_TestCase" time="14.904"/>
+  <testcase name="checkFooterLinkAbout" classname="automationFramework.Navigation_TestCase" time="12.917"/>
+  <testcase name="goToVideosAndGuidesConditionPageFromTreatmentRatingsConditionPage" classname="automationFramework.Navigation_TestCase" time="10.889"/>
+  <testcase name="goToTreatmentRatingsConditionPage" classname="automationFramework.Navigation_TestCase" time="13.906"/>
+  <testcase name="goToWriteAReviewPageFromBlogPage" classname="automationFramework.Navigation_TestCase" time="17.361"/>
+  <testcase name="checkLinkedinUrl" classname="automationFramework.Navigation_TestCase" time="10.379"/>
+  <testcase name="goToFacebookPageFromFooter" classname="automationFramework.Navigation_TestCase" time="12.108"/>
+  <testcase name="checkFooterLinkContactUs" classname="automationFramework.Navigation_TestCase" time="13.814"/>
+  <testcase name="goToFirstStepOfCoachingProgramFromTreatmentRatingsConditionPage" classname="automationFramework.Navigation_TestCase" time="12.979"/>
 </testsuite>

@@ -1,18 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: automationFramework.Navigation_TestCase
 -------------------------------------------------------------------------------
-Tests run: 26, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 460.879 sec <<< FAILURE! - in automationFramework.Navigation_TestCase
-goToWriteAReviewPageFromTreatmentRatingsConditionPage(automationFramework.Navigation_TestCase)  Time elapsed: 69.743 sec  <<< ERROR!
-org.openqa.selenium.TimeoutException: 
-Expected condition failed: waiting for presence of any elements located by By.cssSelector: .banner-cta .button-cta span (tried for 10 second(s) with 500 MILLISECONDS interval)
-Build info: version: '3.1.0', revision: 'b94c902', time: '2017-02-16 12:21:31 -0800'
-System info: host: 'Crispus-PC', ip: '192.168.3.12', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_91'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.28.455520 (cc17746adff54984afff480136733114c6b3704b), userDataDir=C:\Users\Crispus\AppData\Local\Temp\scoped_dir9796_16144}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=56.0.2924.87, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
-Session ID: faaec5fd33e844eb77237a4c9c1941e4
-	at automationFramework.Navigation_TestCase.goToWriteAReviewPageFromTreatmentRatingsConditionPage(Navigation_TestCase.java:310)
-
-goToFirstStepOfCoachingProgramFromTreatmentRatingsConditionPage(automationFramework.Navigation_TestCase)  Time elapsed: 31.677 sec  <<< ERROR!
-java.lang.IndexOutOfBoundsException: Index: 1, Size: 1
-	at automationFramework.Navigation_TestCase.goToFirstStepOfCoachingProgramFromTreatmentRatingsConditionPage(Navigation_TestCase.java:272)
-
+Tests run: 26, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 372.819 sec - in automationFramework.Navigation_TestCase

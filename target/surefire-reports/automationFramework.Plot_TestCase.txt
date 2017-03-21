@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: automationFramework.Plot_TestCase
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 63.809 sec - in automationFramework.Plot_TestCase
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 72.187 sec - in automationFramework.Plot_TestCase

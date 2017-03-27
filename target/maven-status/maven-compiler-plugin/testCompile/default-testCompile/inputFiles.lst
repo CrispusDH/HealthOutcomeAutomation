@@ -30,6 +30,7 @@ D:\HealthOutcome\src\test\java\PageObject\Footer.java
 D:\HealthOutcome\src\test\java\utility\WebDriverProvider.java
 D:\HealthOutcome\src\test\java\utility\WaitConditionForWebElements.java
 D:\HealthOutcome\src\test\java\PageObject\AboutUsPage.java
+D:\HealthOutcome\src\test\java\utility\CustomExpectedCondition.java
 D:\HealthOutcome\src\test\java\PageObject\FAQPage.java
 D:\HealthOutcome\src\test\java\PageObject\TestimonialsPage.java
 D:\HealthOutcome\src\test\java\PageObject\Header.java

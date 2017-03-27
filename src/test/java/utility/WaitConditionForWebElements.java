@@ -14,7 +14,8 @@ import java.util.function.Function;
 @RequiredArgsConstructor
 public enum WaitConditionForWebElements {
 
-    allPresence(ExpectedConditions::presenceOfAllElementsLocatedBy);
+    allPresence(ExpectedConditions::presenceOfAllElementsLocatedBy),
+    allPresenceExtended(CustomExpectedCondition::moreThanOne);
 
     private final Function<By, ExpectedCondition<List<WebElement>>> type;
 

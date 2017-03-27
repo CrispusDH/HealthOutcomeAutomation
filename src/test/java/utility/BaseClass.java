@@ -2,6 +2,7 @@ package utility;
 
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
@@ -30,19 +31,7 @@ public abstract class BaseClass {
 
     protected List<WebElement> waitForElements(By locator, WaitConditionForWebElements condition){
 
-        List<WebElement> elements;
-        int counter = 1;
-        do {
-
-             elements = wait.until(condition.getType().apply(locator));
-
-             //System.out.println(elements.size());
-
-            counter++;
-
-        } while ((elements.size() == 1) && (counter < 30));
-
-        return elements;
+        return wait.until(condition.getType().apply(locator));
 
     }
 
@@ -69,7 +58,7 @@ public abstract class BaseClass {
                 .stream()
                 .filter(webElement -> Objects.equals(webElement.getText(), text))
                 .findFirst()
-                .orElseThrow(() -> new NoSuchElementException("No WebElement found containing " + text));
+                .orElseThrow(() -> new NoSuchElementException(webElements.size() + " size, text - " + text));
     }
 
     protected String getURL(){

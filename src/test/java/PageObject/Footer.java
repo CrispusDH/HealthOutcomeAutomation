@@ -1,11 +1,12 @@
 package PageObject;
 
-import lombok.val;
 import org.openqa.selenium.By;
 import static javaslang.API.*;
 import org.openqa.selenium.WebElement;
 import utility.BaseClass;
 import utility.ReadXMLFile;
+
+import java.util.List;
 
 import static utility.WaitConditionForWebElements.allPresence;
 
@@ -34,7 +35,7 @@ public class Footer extends BaseClass {
     //facebook, twitter, linkedin, mailto links
     private WebElement link_Connect(String sName){
 
-        val elements =  waitForElements(link_ConnectLocator, allPresence);
+        List<WebElement> elements =  waitForElements(link_ConnectLocator, allPresence);
 
         return Match(sName).of(
                 Case("facebook", elements.get(0)),

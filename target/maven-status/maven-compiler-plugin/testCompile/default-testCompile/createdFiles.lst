@@ -31,6 +31,7 @@ PageObject\SignUpConfirmationPage.class
 PageObject\FAQPage.class
 utility\RandomNumber.class
 PageObject\Footer.class
+utility\CustomExpectedCondition.class
 utility\WebDriverProvider.class
 utility\Configuration.class
 PageObject\SpecificTreatmentVideosPage.class

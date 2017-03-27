@@ -6,6 +6,7 @@ import org.openqa.selenium.WebElement;
 import utility.BaseClass;
 
 import static utility.WaitConditionForWebElements.allPresence;
+import static utility.WaitConditionForWebElements.allPresenceExtended;
 
 public class TreatmentRatingsConditionPage extends BaseClass {
 
@@ -23,7 +24,7 @@ public class TreatmentRatingsConditionPage extends BaseClass {
     //Learn More button
     private WebElement button_LearnMore(){
 
-        return findElementByText(waitForElements(button_LearnMoreLocator, allPresence), "LEARN MORE   ");
+        return findElementByText(waitForElements(button_LearnMoreLocator, allPresenceExtended), "LEARN MORE   ");
 
     }
 

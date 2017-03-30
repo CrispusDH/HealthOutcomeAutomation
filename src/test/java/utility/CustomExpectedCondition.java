@@ -7,7 +7,9 @@ import org.openqa.selenium.support.ui.ExpectedCondition;
 
 import java.util.List;
 import java.util.function.Function;
+import java.util.function.Predicate;
 
+import static java.util.Optional.ofNullable;
 import static utility.WebDriverProvider.getDriver;
 
 public class CustomExpectedCondition {
@@ -22,3 +24,4 @@ public class CustomExpectedCondition {
     }
 
 }
+

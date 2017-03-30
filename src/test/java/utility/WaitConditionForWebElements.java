@@ -10,12 +10,18 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import java.util.List;
 import java.util.function.Function;
 
+import static java.util.Optional.ofNullable;
+
 @Getter
 @RequiredArgsConstructor
 public enum WaitConditionForWebElements {
 
     allPresence(ExpectedConditions::presenceOfAllElementsLocatedBy),
-    allPresenceExtended(CustomExpectedCondition::moreThanOne);
+    allPresenceExtended(CustomExpectedCondition::moreThanOne),
+    isNotEmpty(locator -> driver -> ofNullable(driver)
+            .map(d -> d.findElements(locator))
+            .filter(list -> !list.isEmpty())
+            .orElse(null));
 
     private final Function<By, ExpectedCondition<List<WebElement>>> type;
 

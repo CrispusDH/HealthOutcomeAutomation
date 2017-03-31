@@ -16,7 +16,6 @@ public class Navigation_TestCase extends WebDriverProvider{
 
     private HomePage homePage;
     private Footer footer;
-    private Header header;
 
     //</editor-fold>
 
@@ -32,7 +31,6 @@ public class Navigation_TestCase extends WebDriverProvider{
 
         homePage = new HomePage();
         footer = new Footer();
-        header = new Header();
 
     }
 
@@ -293,10 +291,9 @@ public class Navigation_TestCase extends WebDriverProvider{
     public void goToSignUpPageFromVideosAndGuidesConditionPage(){
 
         homePage.goToTreatmentRatingsConditionPage()
-                .goToTreatmentVideosPage();
-
-        //go to Sign Up page
-        header.goToSignUpPage()
+                .goToTreatmentVideosPage()
+                .getHeader()
+                .goToSignUpPage()
                 .checkUrl()
                 .checkIsJoinNowButtonExists()
                 .checkIsSignUpWithFacebookButtonExists();

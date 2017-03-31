@@ -1,6 +1,7 @@
 PageObject\ResourcesPage.class
 utility\WaitConditionForWebElements.class
 PageObject\ForgotPasswordPage.class
+utility\HeaderFooter.class
 automationFramework\Plot_TestCase.class
 PageObject\TwitterPage.class
 PageObject\BlogPage.class

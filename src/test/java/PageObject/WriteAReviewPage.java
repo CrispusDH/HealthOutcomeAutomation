@@ -14,10 +14,12 @@ public class WriteAReviewPage extends BaseClass {
 
     //<editor-fold desc="Finding page Elements">
 
-    private static int sNextCounter = 7;
-
-    private By button_Next = By.cssSelector("div.review-form.body-content > div > div > div > div > div:nth-child(" + sNextCounter + ") > section > div.buttons > button");
-    private By button_PostReview = By.cssSelector("div.review-form.body-content > div > div > div > div > div:nth-child(" + sNextCounter + ") > section > div.buttons > button");
+    private By button_Next(final int currentStep){
+        return By.cssSelector("div.review-form.body-content > div > div > div > div > div:nth-child(" + currentStep + ") > section > div.buttons > button");
+    }
+    private By button_PostReview(final int currentStep){
+        return By.cssSelector("div.review-form.body-content > div > div > div > div > div:nth-child(" + currentStep + ") > section > div.buttons > button");
+    }
     private By text_GroupTitleLocator = By.cssSelector(".group-title");
     private By li_InjuryBodyAreaLocator = By.cssSelector(".parts-list li");
     private By li_ConditionLocator = By.cssSelector(".conditions ul li");
@@ -51,20 +53,18 @@ public class WriteAReviewPage extends BaseClass {
     //<editor-fold desc="Private methods">
 
     //click on Next button
-    private WriteAReviewPage clickOnNextButton(){
+    private WriteAReviewPage clickOnNextButton(final int currentStep){
 
-        click(button_Next);
-
-        sNextCounter++;
+        click(button_Next(currentStep));
 
         return new WriteAReviewPage();
 
     }
 
-    //click on Next button
-    private WriteAReviewConfirmationPage clickOnPostReviewButton(){
+    //click on Post Review button
+    private WriteAReviewConfirmationPage clickOnPostReviewButton(final int currentStep){
 
-        click(button_PostReview);
+        click(button_PostReview(currentStep));
 
         return new WriteAReviewConfirmationPage();
 
@@ -222,14 +222,14 @@ public class WriteAReviewPage extends BaseClass {
                 .chooseSufferedTimeOption(sSufferedTimeOption)
                 .choosePhysicalActivity(sPhysicalActivityOption)
                 .chooseIsRepeatOption(sIsRepeatOption)
-                .clickOnNextButton()
-                .clickOnNextButton()
-                .clickOnNextButton()
-                .clickOnNextButton()
-                .clickOnNextButton()
-                .clickOnNextButton()
-                .clickOnNextButton()
-                .clickOnPostReviewButton();
+                .clickOnNextButton(7)
+                .clickOnNextButton(8)
+                .clickOnNextButton(9)
+                .clickOnNextButton(10)
+                .clickOnNextButton(11)
+                .clickOnNextButton(12)
+                .clickOnNextButton(13)
+                .clickOnPostReviewButton(14);
 
     }
 

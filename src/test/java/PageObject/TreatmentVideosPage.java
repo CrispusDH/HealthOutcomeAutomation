@@ -5,23 +5,13 @@ import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import utility.BaseClass;
-import utility.HeaderFooter;
 
 import java.util.List;
 
-public class TreatmentVideosPage extends HeaderFooter {
+public class TreatmentVideosPage extends BaseClass {
 
-    //<editor-fold desc="Finding page Elements">
-
-
-
-    //</editor-fold>
-
-    //<editor-fold desc="Private methods">
-
-
-
-    //</editor-fold>
+    private final Header header = new Header();
+    private final Footer footer = new Footer();
 
     //<editor-fold desc="Public methods">
 
@@ -32,6 +22,14 @@ public class TreatmentVideosPage extends HeaderFooter {
 
         return this;
 
+    }
+
+    public Header getHeader() {
+        return header;
+    }
+
+    public Footer getFooter() {
+        return footer;
     }
 
     //</editor-fold>

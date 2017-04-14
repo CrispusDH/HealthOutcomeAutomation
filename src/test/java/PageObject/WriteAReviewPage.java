@@ -20,19 +20,16 @@ public class WriteAReviewPage extends BaseClass {
     private By button_PostReview(final int currentStep){
         return By.cssSelector("div.review-form.body-content > div > div > div > div > div:nth-child(" + currentStep + ") > section > div.buttons > button");
     }
+
+    private By commonOptionLocator(final int currentStep, final int chooseOption){
+
+        return By.cssSelector(".form-content > div > div > div:nth-child(" + currentStep + ") > section > div > ul > li.option-" + chooseOption + "");
+
+    }
+
     private By text_GroupTitleLocator = By.cssSelector(".group-title");
     private By li_InjuryBodyAreaLocator = By.cssSelector(".parts-list li");
     private By li_ConditionLocator = By.cssSelector(".conditions ul li");
-    private By li_GenderMaleLocator = By.cssSelector(".form-content > div > div > div:nth-child(3) > section > div > ul > li.option-1");
-    private By li_GenderFemaleLocator = By.cssSelector(".form-content > div > div > div:nth-child(3) > section > div > ul > li.option-2");
-    private By li_SufferedTime0_6Locator = By.cssSelector(".form-content > div > div > div:nth-child(4) > section > div > ul > li.option-1");
-    private By li_SufferedTime6_18Locator = By.cssSelector(".form-content > div > div > div:nth-child(4) > section > div > ul > li.option-2");
-    private By li_SufferedTime18_Locator = By.cssSelector(".form-content > div > div > div:nth-child(4) > section > div > ul > li.option-3");
-    private By li_PhysicalActivity0_4Locator = By.cssSelector(".form-content > div > div > div:nth-child(5) > section > div > ul > li.option-1");
-    private By li_PhysicalActivity4_8Locator = By.cssSelector(".form-content > div > div > div:nth-child(5) > section > div > ul > li.option-2");
-    private By li_PhysicalActivity8_Locator = By.cssSelector(".form-content > div > div > div:nth-child(5) > section > div > ul > li.option-3");
-    private By li_isRepeatYes_Locator = By.cssSelector(".form-content > div > div > div:nth-child(6) > section > div > ul > li.option-1");
-    private By li_isRepeatNo_Locator = By.cssSelector(".form-content > div > div > div:nth-child(6) > section > div > ul > li.option-2");
 
     //find specific Body Area
     private WebElement li_InjuryBodyArea(String sInjuryBodyArea){
@@ -89,16 +86,16 @@ public class WriteAReviewPage extends BaseClass {
     }
 
     //click on gender
-    private WriteAReviewPage clickOnGender(String sGender){
+    private WriteAReviewPage clickOnGender(String sGender, final int currentStep){
 
         switch (sGender){
 
             case "Male":
-                click(li_GenderMaleLocator);
+                click(commonOptionLocator(currentStep, 1));
                 return new WriteAReviewPage();
 
             case "Female":
-                click(li_GenderFemaleLocator);
+                click(commonOptionLocator(currentStep, 2));
                 return new WriteAReviewPage();
 
         }
@@ -108,20 +105,20 @@ public class WriteAReviewPage extends BaseClass {
     }
 
     //choose suffered time option
-    private WriteAReviewPage chooseSufferedTimeOption(String sOption){
+    private WriteAReviewPage chooseSufferedTimeOption(String sOption, final int currentStep){
 
         switch (sOption){
 
             case "0 - 6 Months":
-                click(li_SufferedTime0_6Locator);
+                click(commonOptionLocator(currentStep, 1));
                 return new WriteAReviewPage();
 
             case "6 - 18 Months":
-                click(li_SufferedTime6_18Locator);
+                click(commonOptionLocator(currentStep, 2));
                 return new WriteAReviewPage();
 
             case "18+ Months":
-                click(li_SufferedTime18_Locator);
+                click(commonOptionLocator(currentStep, 3));
                 return new WriteAReviewPage();
 
         }
@@ -131,16 +128,16 @@ public class WriteAReviewPage extends BaseClass {
     }
 
     //choose is this a repeat injury or condition
-    private WriteAReviewPage chooseIsRepeatOption(String sOption){
+    private WriteAReviewPage chooseIsRepeatOption(String sOption, final int currentStep){
 
         switch (sOption){
 
             case "Yes":
-                click(li_isRepeatYes_Locator);
+                click(commonOptionLocator(currentStep, 1));
                 return new WriteAReviewPage();
 
             case "No":
-                click(li_isRepeatNo_Locator);
+                click(commonOptionLocator(currentStep, 2));
                 return new WriteAReviewPage();
 
         }
@@ -151,20 +148,20 @@ public class WriteAReviewPage extends BaseClass {
 
 
     //choose level of physical activity
-    private WriteAReviewPage choosePhysicalActivity(String sOption){
+    private WriteAReviewPage choosePhysicalActivity(String sOption, final int currentStep){
 
         switch (sOption){
 
             case "0 - 4 hours":
-                click(li_PhysicalActivity0_4Locator);
+                click(commonOptionLocator(currentStep, 1));
                 return new WriteAReviewPage();
 
             case "4 - 8 hours":
-                click(li_PhysicalActivity4_8Locator);
+                click(commonOptionLocator(currentStep, 2));
                 return new WriteAReviewPage();
 
             case "8+ hours":
-                click(li_PhysicalActivity8_Locator);
+                click(commonOptionLocator(currentStep, 3));
                 return new WriteAReviewPage();
 
         }
@@ -218,10 +215,10 @@ public class WriteAReviewPage extends BaseClass {
 
         return clickOnSpecificBodyArea(sBodyArea)
                 .clickOnSpecificCondition(sCondition)
-                .clickOnGender(sGender)
-                .chooseSufferedTimeOption(sSufferedTimeOption)
-                .choosePhysicalActivity(sPhysicalActivityOption)
-                .chooseIsRepeatOption(sIsRepeatOption)
+                .clickOnGender(sGender, 3)
+                .chooseSufferedTimeOption(sSufferedTimeOption,4)
+                .choosePhysicalActivity(sPhysicalActivityOption,5)
+                .chooseIsRepeatOption(sIsRepeatOption,6)
                 .clickOnNextButton(7)
                 .clickOnNextButton(8)
                 .clickOnNextButton(9)

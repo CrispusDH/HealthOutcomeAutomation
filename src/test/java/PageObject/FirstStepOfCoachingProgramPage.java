@@ -13,7 +13,6 @@ public class FirstStepOfCoachingProgramPage extends BaseClass {
 
         return By.cssSelector(".form-wrapper > div > div > div > div:nth-child(" + currentStep + ") > section > div > ul > li.option-" + chooseOption + "");
 
-
     }
 
     private By commonButtonLocator(final int currentStep){

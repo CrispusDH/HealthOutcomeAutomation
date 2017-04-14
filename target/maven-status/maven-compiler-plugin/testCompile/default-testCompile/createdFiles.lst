@@ -1,7 +1,6 @@
 PageObject\ResourcesPage.class
 utility\WaitConditionForWebElements.class
 PageObject\ForgotPasswordPage.class
-utility\HeaderFooter.class
 automationFramework\Plot_TestCase.class
 PageObject\TwitterPage.class
 PageObject\BlogPage.class
@@ -9,6 +8,7 @@ PageObject\HomePage.class
 PageObject\WriteAReviewConfirmationPage.class
 utility\WaitConditionForWebElement.class
 PageObject\ContactUsPage.class
+PageObject\CreateAPrivateAccount.class
 utility\WaitConditionForUrl.class
 PageObject\Header.class
 PageObject\FirstStepOfCoachingProgramPage.class

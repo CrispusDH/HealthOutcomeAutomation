@@ -11,7 +11,6 @@ import static utility.WaitConditionForWebElement.enabled;
 import static utility.WaitConditionForWebElement.visible;
 import static utility.WebDriverProvider.getDriver;
 
-//improve find elements mechanism
 public abstract class BaseClass {
 
     private final WebDriver driver;

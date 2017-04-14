@@ -114,4 +114,15 @@ public class Plot_TestCase extends WebDriverProvider {
 
     }
 
+    //Write a Treatment History
+    @Test
+    public void writeATreatmentHistory(){
+
+        homePage.goToTreatmentRatingsConditionPage()
+                .goToFirstStepOfCoachingProgramPage()
+                .writeAReview()
+                .checkGetStartedButtonIsExist();
+
+    }
+
 }

@@ -5,7 +5,6 @@ D:\HealthOutcome\src\test\java\automationFramework\Plot_TestCase.java
 D:\HealthOutcome\src\test\java\PageObject\ContactUsPage.java
 D:\HealthOutcome\src\test\java\utility\ReadXMLFile.java
 D:\HealthOutcome\src\test\java\PageObject\SingleReviewPage.java
-D:\HealthOutcome\src\test\java\utility\HeaderFooter.java
 D:\HealthOutcome\src\test\java\automationFramework\Navigation_TestCase.java
 D:\HealthOutcome\src\test\java\utility\Configuration.java
 D:\HealthOutcome\src\test\java\PageObject\ForgotPasswordPage.java
@@ -13,6 +12,7 @@ D:\HealthOutcome\src\test\java\PageObject\FacebookPage.java
 D:\HealthOutcome\src\test\java\utility\RandomNumber.java
 D:\HealthOutcome\src\test\java\PageObject\WriteAReviewConfirmationPage.java
 D:\HealthOutcome\src\test\java\PageObject\SpecificTreatmentVideosPage.java
+D:\HealthOutcome\src\test\java\PageObject\CreateAPrivateAccount.java
 D:\HealthOutcome\src\test\java\PageObject\TreatmentRatingsConditionPage.java
 D:\HealthOutcome\src\test\java\PageObject\TreatmentVideosPage.java
 D:\HealthOutcome\src\test\java\PageObject\DetailedBlogPage.java

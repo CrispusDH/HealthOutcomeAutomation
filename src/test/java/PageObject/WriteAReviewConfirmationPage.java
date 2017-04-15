@@ -6,8 +6,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import utility.BaseClass;
 
-import static utility.WaitConditionForWebElement.visible;
-import static utility.WaitConditionForWebElements.allPresence;
+import static utility.WaitConditions.allPresence;
+import static utility.WaitConditions.visible;
 
 public class WriteAReviewConfirmationPage extends BaseClass {
 
@@ -35,7 +35,7 @@ public class WriteAReviewConfirmationPage extends BaseClass {
 
     public void isSignUpFormVisible(){
 
-        Assert.assertTrue(waitFor(form_SignUpLocator, visible).isDisplayed());
+        Assert.assertTrue(((WebElement) waitFor(form_SignUpLocator, visible)).isDisplayed());
 
     }
 

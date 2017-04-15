@@ -3,8 +3,9 @@ package PageObject;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import utility.BaseClass;
-import static utility.WaitConditionForWebElement.visible;
-import static utility.WaitConditionForWebElements.allPresence;
+
+import static utility.WaitConditions.allPresence;
+import static utility.WaitConditions.visible;
 
 public class HomePage extends BaseClass {
 
@@ -153,14 +154,14 @@ public class HomePage extends BaseClass {
     //get Featured Condition url
     public String getFeaturedConditionUrl(){
 
-        return waitFor(link_FeaturedConditionLocator, visible).getAttribute("href");
+        return ((WebElement) waitFor(link_FeaturedConditionLocator, visible)).getAttribute("href");
 
     }
 
     //get Get Started button url
     public String getGetStartedButtonUrl(){
 
-        return waitFor(button_GetStartedLocator, visible).getAttribute("href");
+        return ((WebElement) waitFor(button_GetStartedLocator, visible)).getAttribute("href");
 
     }
 

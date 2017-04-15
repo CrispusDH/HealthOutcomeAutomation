@@ -7,8 +7,9 @@ import org.openqa.selenium.WebElement;
 import utility.BaseClass;
 import utility.ReadXMLFile;
 
-import static utility.WaitConditionForWebElement.visible;
-import static utility.WaitConditionForWebElements.allPresence;
+import static utility.WaitConditionForUrl.urlToBe;
+import static utility.WaitConditions.allPresence;
+import static utility.WaitConditions.visible;
 
 public class WriteAReviewPage extends BaseClass {
 
@@ -177,7 +178,7 @@ public class WriteAReviewPage extends BaseClass {
     //check page url
     public WriteAReviewPage checkURLBasic(){
 
-        Assert.assertTrue(ReadXMLFile.takeConstantFromXML("URL", "Write a Review Page", "fromBlogPage" ).equals(getURL()));
+        checkUrlToBe(ReadXMLFile.takeConstantFromXML("URL", "Write a Review Page", "fromBlogPage" ), urlToBe);
 
         return this;
 
@@ -186,7 +187,7 @@ public class WriteAReviewPage extends BaseClass {
     //check Write a Review page URL from Treatment Ratings Condition
     public WriteAReviewPage checkURLFromTreatmentRatingsCondition(){
 
-        Assert.assertEquals(ReadXMLFile.takeConstantFromXML("URL", "Write a Review page from Treatment Ratings Condition", "url"), getURL());
+        checkUrlToBe(ReadXMLFile.takeConstantFromXML("URL", "Write a Review page from Treatment Ratings Condition", "url"), urlToBe);
 
         return this;
 
@@ -195,7 +196,7 @@ public class WriteAReviewPage extends BaseClass {
     //check Write a Review page URL from Treatment Reviews
     public WriteAReviewPage checkURLFromTreatmentsReviews(){
 
-        Assert.assertEquals(ReadXMLFile.takeConstantFromXML("URL", "Write a Review page from Treatment Reviews", "url"), getURL());
+        checkUrlToBe(ReadXMLFile.takeConstantFromXML("URL", "Write a Review page from Treatment Reviews", "url"), urlToBe);
 
         return this;
 
@@ -204,7 +205,7 @@ public class WriteAReviewPage extends BaseClass {
     //check group title in case of navigation to Write a Review page from Treatment Reviews page
     public WriteAReviewPage checkGroupTitleInCaseOfFromTreatmentReviewsPage(){
 
-        Assert.assertEquals("What is your gender?", waitFor(text_GroupTitleLocator, visible).getText());
+        Assert.assertEquals("What is your gender?", ((WebElement) waitFor(text_GroupTitleLocator, visible)).getText());
 
         return this;
 

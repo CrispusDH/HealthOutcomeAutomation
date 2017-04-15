@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="automationFramework.Plot_TestCase" time="85.862" tests="5" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="automationFramework.Plot_TestCase" time="84.877" tests="5" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_91\jre\bin"/>
@@ -62,9 +62,9 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="writeATreatmentHistory" classname="automationFramework.Plot_TestCase" time="16.629"/>
-  <testcase name="writeAReviewLoggedOutUserConditionIsUnknown" classname="automationFramework.Plot_TestCase" time="25.132"/>
-  <testcase name="logIn" classname="automationFramework.Plot_TestCase" time="14.661"/>
-  <testcase name="forgotPasswordFlow" classname="automationFramework.Plot_TestCase" time="15.547"/>
-  <testcase name="signUpWithoutReview" classname="automationFramework.Plot_TestCase" time="13.877"/>
+  <testcase name="writeATreatmentHistory" classname="automationFramework.Plot_TestCase" time="17.808"/>
+  <testcase name="writeAReviewLoggedOutUserConditionIsUnknown" classname="automationFramework.Plot_TestCase" time="20.53"/>
+  <testcase name="logIn" classname="automationFramework.Plot_TestCase" time="15.636"/>
+  <testcase name="forgotPasswordFlow" classname="automationFramework.Plot_TestCase" time="16.496"/>
+  <testcase name="signUpWithoutReview" classname="automationFramework.Plot_TestCase" time="14.377"/>
 </testsuite>

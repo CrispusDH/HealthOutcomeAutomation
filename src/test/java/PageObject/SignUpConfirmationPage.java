@@ -6,7 +6,8 @@ import org.openqa.selenium.WebElement;
 import utility.BaseClass;
 import utility.ReadXMLFile;
 
-import static utility.WaitConditionForWebElements.allPresence;
+import static utility.WaitConditionForUrl.urlToBe;
+import static utility.WaitConditions.allPresence;
 
 public class SignUpConfirmationPage extends BaseClass {
 
@@ -28,7 +29,7 @@ public class SignUpConfirmationPage extends BaseClass {
     //check page url
     public SignUpConfirmationPage checkUrl(){
 
-        Assert.assertTrue(ReadXMLFile.takeConstantFromXML("URL", "SignUp Confirmation Page", "url").equals(getURL()));
+        checkUrlToBe(ReadXMLFile.takeConstantFromXML("URL", "SignUp Confirmation Page", "url"), urlToBe);
 
         return this;
 

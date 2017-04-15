@@ -7,8 +7,7 @@ import java.util.List;
 import java.util.Objects;
 
 import static utility.Configuration.CoreConstants.WAIT_TIMEOUT;
-import static utility.WaitConditionForWebElement.enabled;
-import static utility.WaitConditionForWebElement.visible;
+import static utility.WaitConditions.*;
 import static utility.WebDriverProvider.getDriver;
 
 public abstract class BaseClass {
@@ -23,26 +22,26 @@ public abstract class BaseClass {
 
     }
 
-    protected WebElement waitFor(By locator, WaitConditionForWebElement condition) {
-        return wait.until(condition.getType().apply(locator));
+    @SuppressWarnings("unchecked")
+    protected <T> T waitFor(By locator, WaitConditions condition) {
+        return (T) wait.until(condition.getType().apply(locator));
     }
 
-    protected List<WebElement> waitForElements(By locator, WaitConditionForWebElements condition){
-
-        return wait.until(condition.getType().apply(locator));
-
+    @SuppressWarnings("unchecked")
+    protected <T> T waitForElements(By locator, WaitConditions condition){
+        return (T) wait.until(condition.getType().apply(locator));
     }
 
     protected void click(By locator) {
         click(locator, enabled);
     }
 
-    protected void click(By locator, WaitConditionForWebElement condition) {
-        waitFor(locator, condition).click();
+    protected void click(By locator, WaitConditions condition) {
+        ((WebElement) waitFor(locator, condition)).click();
     }
 
     protected void type(By locator, CharSequence text) {
-        waitFor(locator, visible).sendKeys(text);
+        ((WebElement) waitFor(locator, visible)).sendKeys(text);
     }
 
     protected void click(WebElement webElement){
@@ -61,7 +60,7 @@ public abstract class BaseClass {
 
     protected String getURL(){
 
-        return driver.getCurrentUrl();
+        return this.driver.getCurrentUrl();
 
     }
 

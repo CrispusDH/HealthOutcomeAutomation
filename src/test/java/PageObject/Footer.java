@@ -5,10 +5,9 @@ import static javaslang.API.*;
 import org.openqa.selenium.WebElement;
 import utility.BaseClass;
 import utility.ReadXMLFile;
-
 import java.util.List;
 
-import static utility.WaitConditionForWebElements.allPresence;
+import static utility.WaitConditions.allPresence;
 
 public class Footer extends BaseClass {
 

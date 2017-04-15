@@ -5,10 +5,10 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import utility.BaseClass;
 import utility.ReadXMLFile;
-
 import java.util.List;
 
-import static utility.WaitConditionForWebElements.allPresence;
+import static utility.WaitConditionForUrl.urlToBe;
+import static utility.WaitConditions.allPresence;
 
 public class TermsOfServicePage extends BaseClass {
 
@@ -45,7 +45,7 @@ public class TermsOfServicePage extends BaseClass {
     //check page url
     public TermsOfServicePage checkUrl(){
 
-        Assert.assertTrue(ReadXMLFile.takeConstantFromXML("URL", "Terms of Service", "url").equals(getURL()));
+        checkUrlToBe(ReadXMLFile.takeConstantFromXML("URL", "Terms of Service", "url"), urlToBe);
 
         return this;
 

@@ -7,7 +7,8 @@ import utility.BaseClass;
 
 import java.util.concurrent.TimeUnit;
 
-import static utility.WaitConditionForWebElements.allPresence;
+import static utility.WaitConditionForUrl.urlToBe;
+import static utility.WaitConditions.allPresence;
 
 public class ConditionSelectionPage extends BaseClass {
 
@@ -80,7 +81,7 @@ public class ConditionSelectionPage extends BaseClass {
     //check URL
     public ConditionSelectionPage checkURL(String sExpectedURL){
 
-        Assert.assertEquals(sExpectedURL, getURL());
+        checkUrlToBe(sExpectedURL, urlToBe);
 
         return this;
 

@@ -7,8 +7,9 @@ import utility.BaseClass;
 import utility.ReadXMLFile;
 import java.util.List;
 
-import static utility.WaitConditionForWebElement.visible;
-import static utility.WaitConditionForWebElements.allPresence;
+import static utility.WaitConditionForUrl.urlToBe;
+import static utility.WaitConditions.allPresence;
+import static utility.WaitConditions.visible;
 
 public class ContactUsPage extends BaseClass {
 
@@ -34,7 +35,7 @@ public class ContactUsPage extends BaseClass {
     //check that Contact Form on the page
     public ContactUsPage checkIsBodyEmpty(){
 
-        Assert.assertTrue(waitFor(div_ContactFormLocator, visible).isDisplayed());
+        Assert.assertTrue(((WebElement) waitFor(div_ContactFormLocator, visible)).isDisplayed());
 
         return this;
 
@@ -52,7 +53,7 @@ public class ContactUsPage extends BaseClass {
     //check page url
     public ContactUsPage checkUrl(){
 
-        Assert.assertTrue(ReadXMLFile.takeConstantFromXML("URL", "Contact Us", "url").equals(getURL()));
+        checkUrlToBe(ReadXMLFile.takeConstantFromXML("URL", "Contact Us", "url"), urlToBe);
 
         return this;
 

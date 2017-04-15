@@ -7,8 +7,8 @@ import utility.BaseClass;
 import utility.RandomNumber;
 import utility.ReadXMLFile;
 
-import static utility.WaitConditionForWebElement.visible;
-import static utility.WaitConditionForWebElements.allPresence;
+import static utility.WaitConditions.allPresence;
+import static utility.WaitConditions.visible;
 
 public class Header extends BaseClass {
 
@@ -70,7 +70,7 @@ public class Header extends BaseClass {
     //check username
     public Header checkUserName(){
 
-        Assert.assertEquals(ReadXMLFile.takeConstantFromXML("Account", "Main", "userName"), waitFor(link_ProfileLocator, visible).getText());
+        Assert.assertEquals(ReadXMLFile.takeConstantFromXML("Account", "Main", "userName"), ((WebElement) waitFor(link_ProfileLocator, visible)).getText());
 
         return this;
 
@@ -79,7 +79,7 @@ public class Header extends BaseClass {
     //check User Name for Random created user
     public Header checkUserNameForRandomCreatedUser(){
 
-        Assert.assertTrue(waitFor(link_ProfileLocator, visible).getText().equals(String.valueOf(RandomNumber.currentRandomNumber())));
+        Assert.assertTrue(((WebElement) waitFor(link_ProfileLocator, visible)).getText().equals(String.valueOf(RandomNumber.currentRandomNumber())));
 
         return this;
 

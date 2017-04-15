@@ -1,12 +1,10 @@
 PageObject\ResourcesPage.class
-utility\WaitConditionForWebElements.class
 PageObject\ForgotPasswordPage.class
 automationFramework\Plot_TestCase.class
 PageObject\TwitterPage.class
 PageObject\BlogPage.class
 PageObject\HomePage.class
 PageObject\WriteAReviewConfirmationPage.class
-utility\WaitConditionForWebElement.class
 PageObject\ContactUsPage.class
 PageObject\CreateAPrivateAccount.class
 utility\WaitConditionForUrl.class
@@ -31,6 +29,7 @@ utility\RetryRule$1.class
 PageObject\SignUpConfirmationPage.class
 PageObject\FAQPage.class
 utility\RandomNumber.class
+utility\WaitConditions.class
 PageObject\Footer.class
 utility\CustomExpectedCondition.class
 utility\WebDriverProvider.class

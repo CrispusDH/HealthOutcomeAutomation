@@ -1,12 +1,8 @@
 package PageObject;
 
-
-import org.junit.Assert;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import utility.BaseClass;
 
-import java.util.List;
+import static utility.WaitConditionForUrl.urlToBe;
 
 public class TreatmentVideosPage extends BaseClass {
 
@@ -18,7 +14,7 @@ public class TreatmentVideosPage extends BaseClass {
     //check URL
     public TreatmentVideosPage checkURL(){
 
-        Assert.assertEquals(TreatmentRatingsConditionPage.expectedVideosURL, getURL());
+        checkUrlToBe(TreatmentRatingsConditionPage.expectedVideosURL, urlToBe);
 
         return this;
 

@@ -7,15 +7,16 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
-import java.util.List;
 import java.util.function.Function;
 
 import static java.util.Optional.ofNullable;
 
 @Getter
 @RequiredArgsConstructor
-public enum WaitConditionForWebElements {
+public enum WaitConditions {
 
+    visible(ExpectedConditions::visibilityOfElementLocated),
+    enabled(ExpectedConditions::elementToBeClickable),
     allPresence(ExpectedConditions::presenceOfAllElementsLocatedBy),
     allPresenceExtended(CustomExpectedCondition::moreThanOne),
     isNotEmpty(locator -> driver -> ofNullable(driver)
@@ -23,6 +24,8 @@ public enum WaitConditionForWebElements {
             .filter(list -> !list.isEmpty())
             .orElse(null));
 
-    private final Function<By, ExpectedCondition<List<WebElement>>> type;
+    private final Function<By, ExpectedCondition<?>> type;
 
 }
+
+

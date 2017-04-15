@@ -1,11 +1,7 @@
 package PageObject;
 
-import org.junit.Assert;
 import utility.BaseClass;
 import utility.ReadXMLFile;
-import utility.WaitConditionForUrl;
-
-import java.util.concurrent.TimeUnit;
 
 import static utility.WaitConditionForUrl.urlToBe;
 

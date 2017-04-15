@@ -3,7 +3,8 @@ package PageObject;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import utility.BaseClass;
-import static utility.WaitConditionForWebElements.allPresence;
+
+import static utility.WaitConditions.allPresence;
 
 public class DetailedBlogPage extends BaseClass {
 

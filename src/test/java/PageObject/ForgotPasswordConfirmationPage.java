@@ -1,8 +1,9 @@
 package PageObject;
 
-import org.junit.Assert;
 import utility.BaseClass;
 import utility.ReadXMLFile;
+
+import static utility.WaitConditionForUrl.urlToBe;
 
 public class ForgotPasswordConfirmationPage extends BaseClass {
 
@@ -11,7 +12,7 @@ public class ForgotPasswordConfirmationPage extends BaseClass {
     //check page url
     public ForgotPasswordConfirmationPage checkUrl(){
 
-        Assert.assertTrue(ReadXMLFile.takeConstantFromXML("URL", "Forgot Password Confirm", "url").equals(getURL()));
+        checkUrlToBe(ReadXMLFile.takeConstantFromXML("URL", "Forgot Password Confirm", "url"), urlToBe);
 
         return this;
 

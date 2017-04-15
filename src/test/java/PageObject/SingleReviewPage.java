@@ -2,9 +2,10 @@ package PageObject;
 
 import org.junit.Assert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import utility.BaseClass;
 
-import static utility.WaitConditionForWebElement.visible;
+import static utility.WaitConditions.visible;
 
 public class SingleReviewPage extends BaseClass {
 
@@ -25,7 +26,7 @@ public class SingleReviewPage extends BaseClass {
     //check that div_ReviewInfo element is displayed
     public SingleReviewPage isReviewInfoOnPage(){
 
-        Assert.assertTrue(waitFor(div_ReviewInfoLocator, visible).isDisplayed());
+        Assert.assertTrue(((WebElement) waitFor(div_ReviewInfoLocator, visible)).isDisplayed());
 
         return this;
 

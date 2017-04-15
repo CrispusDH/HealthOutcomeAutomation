@@ -7,7 +7,8 @@ import utility.BaseClass;
 import utility.ReadXMLFile;
 import java.util.List;
 
-import static utility.WaitConditionForWebElements.allPresence;
+import static utility.WaitConditionForUrl.urlToBe;
+import static utility.WaitConditions.allPresence;
 
 public class TestimonialsPage extends BaseClass {
 
@@ -44,7 +45,7 @@ public class TestimonialsPage extends BaseClass {
     //check page url
     public TestimonialsPage checkUrl(){
 
-        Assert.assertTrue(ReadXMLFile.takeConstantFromXML("URL", "Testimonials", "url").equals(getURL()));
+        checkUrlToBe(ReadXMLFile.takeConstantFromXML("URL", "Testimonials", "url"), urlToBe);
 
         return this;
 

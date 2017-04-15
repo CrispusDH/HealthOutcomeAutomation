@@ -5,6 +5,8 @@ import org.openqa.selenium.By;
 import utility.BaseClass;
 import utility.ReadXMLFile;
 
+import static utility.WaitConditionForUrl.urlToBe;
+
 public class FirstStepOfCoachingProgramPage extends BaseClass {
 
     //<editor-fold desc="Finding page Elements">
@@ -211,7 +213,7 @@ public class FirstStepOfCoachingProgramPage extends BaseClass {
     //check page url
     public FirstStepOfCoachingProgramPage checkUrl(){
 
-        Assert.assertTrue(ReadXMLFile.takeConstantFromXML("URL", "First Step Of Coaching Program", "url" ).equals(getURL()));
+        checkUrlToBe(ReadXMLFile.takeConstantFromXML("URL", "First Step Of Coaching Program", "url" ), urlToBe);
 
         return this;
 

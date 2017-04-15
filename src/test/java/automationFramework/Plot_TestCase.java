@@ -12,6 +12,9 @@ import org.junit.runners.JUnit4;
 import utility.ReadXMLFile;
 import utility.RetryRule;
 import utility.WebDriverProvider;
+import utility.WriteAReviewEnum;
+
+import static utility.WriteAReviewEnum.GenderOptions.*;
 
 @RunWith(JUnit4.class)
 public class Plot_TestCase extends WebDriverProvider {
@@ -106,7 +109,7 @@ public class Plot_TestCase extends WebDriverProvider {
                 .writeAReview(
                         ReadXMLFile.takeConstantFromXML("BodyArea", "Neck", "name"),
                         ReadXMLFile.takeConstantFromXML("Condition", "Neck pain with radiculopathy", "name"),
-                        "Male",
+                        MALE,
                         "0 - 6 Months",
                         "0 - 4 hours",
                         "Yes")

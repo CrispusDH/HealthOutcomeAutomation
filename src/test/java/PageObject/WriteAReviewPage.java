@@ -1,11 +1,11 @@
 package PageObject;
 
-
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import utility.BaseClass;
 import utility.ReadXMLFile;
+import utility.WriteAReviewEnum.*;
 
 import static utility.WaitConditionForUrl.urlToBe;
 import static utility.WaitConditions.allPresence;
@@ -87,15 +87,15 @@ public class WriteAReviewPage extends BaseClass {
     }
 
     //click on gender
-    private WriteAReviewPage clickOnGender(String sGender, final int currentStep){
+    private WriteAReviewPage clickOnGender(final GenderOptions genderOptions, final int currentStep){
 
-        switch (sGender){
+        switch (genderOptions){
 
-            case "Male":
+            case MALE:
                 click(commonOptionLocator(currentStep, 1));
                 return new WriteAReviewPage();
 
-            case "Female":
+            case FEMALE:
                 click(commonOptionLocator(currentStep, 2));
                 return new WriteAReviewPage();
 
@@ -212,11 +212,11 @@ public class WriteAReviewPage extends BaseClass {
     }
 
 
-    public WriteAReviewConfirmationPage writeAReview(String sBodyArea, String sCondition, String sGender, String sSufferedTimeOption, String sPhysicalActivityOption, String sIsRepeatOption){
+    public WriteAReviewConfirmationPage writeAReview(String sBodyArea, String sCondition, final GenderOptions genderOptions, String sSufferedTimeOption, String sPhysicalActivityOption, String sIsRepeatOption){
 
         return clickOnSpecificBodyArea(sBodyArea)
                 .clickOnSpecificCondition(sCondition)
-                .clickOnGender(sGender, 3)
+                .clickOnGender(genderOptions, 3)
                 .chooseSufferedTimeOption(sSufferedTimeOption,4)
                 .choosePhysicalActivity(sPhysicalActivityOption,5)
                 .chooseIsRepeatOption(sIsRepeatOption,6)

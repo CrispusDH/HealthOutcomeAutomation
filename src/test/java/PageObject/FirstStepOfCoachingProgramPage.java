@@ -1,11 +1,12 @@
 package PageObject;
 
-import org.junit.Assert;
 import org.openqa.selenium.By;
 import utility.BaseClass;
 import utility.ReadXMLFile;
+import utility.WriteAReviewEnum.*;
 
 import static utility.WaitConditionForUrl.urlToBe;
+import static utility.WriteAReviewEnum.GenderOptions.MALE;
 
 public class FirstStepOfCoachingProgramPage extends BaseClass {
 
@@ -29,15 +30,15 @@ public class FirstStepOfCoachingProgramPage extends BaseClass {
     //<editor-fold desc="Private methods">
 
     //click on gender
-    private FirstStepOfCoachingProgramPage clickOnGender(String sGender, final int currentStep){
+    private FirstStepOfCoachingProgramPage clickOnGender(final GenderOptions genderOptions, final int currentStep){
 
-        switch (sGender){
+        switch (genderOptions){
 
-            case "Male":
+            case MALE:
                 click(commonOptionLocator(currentStep, 1));
                 return new FirstStepOfCoachingProgramPage();
 
-            case "Female":
+            case FEMALE:
                 click(commonOptionLocator(currentStep, 2));
                 return new FirstStepOfCoachingProgramPage();
 
@@ -221,7 +222,7 @@ public class FirstStepOfCoachingProgramPage extends BaseClass {
 
     public CreateAPrivateAccount writeAReview(){
 
-        return clickOnGender("Male", 1)
+        return clickOnGender(MALE, 1)
                 .clickOnAge("18-34", 2)
                 .clickOnPhysicalActivity("4-8", 3)
                 .clickOnStatus("Cured", 4)

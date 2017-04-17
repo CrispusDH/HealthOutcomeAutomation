@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:test-suite start="1492459836920" stop="1492460264243" version="1.5.2" xmlns:ns2="urn:model.allure.qatools.yandex.ru">
+    <name>tests.Navigation_TestCase</name>
+    <test-cases>
+        <test-case start="1492459837140" stop="1492459879591" status="passed">
+            <name>checkFooterLinkTestimonials</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Crispus-PC"/>
+                <label name="thread" value="6808@Crispus-PC.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1492459879722" stop="1492459895227" status="passed">
+            <name>goToConditionSelectionPageFromTreatmentRatingsConditionPage</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Crispus-PC"/>
+                <label name="thread" value="6808@Crispus-PC.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1492459895229" stop="1492459912619" status="passed">
+            <name>goToTwitterPageFromFooter</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Crispus-PC"/>
+                <label name="thread" value="6808@Crispus-PC.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1492459912622" stop="1492459926370" status="passed">
+            <name>checkFooterCopyrightPrivacyPolicy</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Crispus-PC"/>
+                <label name="thread" value="6808@Crispus-PC.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1492459926374" stop="1492459937428" status="passed">
+            <name>goToMailServiceFromFooter</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Crispus-PC"/>
+                <label name="thread" value="6808@Crispus-PC.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1492459937430" stop="1492459960632" status="passed">
+            <name>goToWriteAReviewPageFromTreatmentReviewsPage</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Crispus-PC"/>
+                <label name="thread" value="6808@Crispus-PC.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1492459960634" stop="1492459975569" status="passed">
+            <name>checkFooterLinkBlog</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Crispus-PC"/>
+                <label name="thread" value="6808@Crispus-PC.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1492459975575" stop="1492459986852" status="passed">
+            <name>goToSignUpPageFromVideosAndGuidesConditionPage</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Crispus-PC"/>
+                <label name="thread" value="6808@Crispus-PC.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1492459986854" stop="1492459999344" status="passed">
+            <name>goToSingleReviewPage</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Crispus-PC"/>
+                <label name="thread" value="6808@Crispus-PC.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1492459999346" stop="1492460011754" status="passed">
+            <name>goToWriteAReviewPageFromTreatmentRatingsConditionPage</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Crispus-PC"/>
+                <label name="thread" value="6808@Crispus-PC.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1492460011756" stop="1492460023097" status="passed">
+            <name>checkFooterLinkFAQ</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Crispus-PC"/>
+                <label name="thread" value="6808@Crispus-PC.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1492460023100" stop="1492460037832" status="passed">
+            <name>goToWriteAReviewPageFromDetailedBlogPage</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Crispus-PC"/>
+                <label name="thread" value="6808@Crispus-PC.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1492460037834" stop="1492460048990" status="passed">
+            <name>goToTreatmentReviewsPageFromTreatmentRatingsConditionPage</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Crispus-PC"/>
+                <label name="thread" value="6808@Crispus-PC.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1492460048995" stop="1492460061123" status="passed">
+            <name>goToTreatmentRatingsConditionPageFromConditionSelectionPage</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Crispus-PC"/>
+                <label name="thread" value="6808@Crispus-PC.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1492460061125" stop="1492460074972" status="passed">
+            <name>checkFooterLinkResources</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Crispus-PC"/>
+                <label name="thread" value="6808@Crispus-PC.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1492460074978" stop="1492460087991" status="passed">
+            <name>goToSpecificVideosAndGuidesPageFromSpecificTreatmentReviewPage</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Crispus-PC"/>
+                <label name="thread" value="6808@Crispus-PC.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1492460087994" stop="1492460101056" status="passed">
+            <name>checkFooterCopyrightTermsOfService</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Crispus-PC"/>
+                <label name="thread" value="6808@Crispus-PC.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1492460101058" stop="1492460112685" status="passed">
+            <name>checkFooterLinkAbout</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Crispus-PC"/>
+                <label name="thread" value="6808@Crispus-PC.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1492460112686" stop="1492460123630" status="passed">
+            <name>goToVideosAndGuidesConditionPageFromTreatmentRatingsConditionPage</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Crispus-PC"/>
+                <label name="thread" value="6808@Crispus-PC.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1492460123631" stop="1492460138362" status="passed">
+            <name>goToWriteAReviewPageFromBlogPage</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Crispus-PC"/>
+                <label name="thread" value="6808@Crispus-PC.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1492460138364" stop="1492460147401" status="passed">
+            <name>checkLinkedinUrl</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Crispus-PC"/>
+                <label name="thread" value="6808@Crispus-PC.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1492460147403" stop="1492460163289" status="passed">
+            <name>goToFacebookPageFromFooter</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Crispus-PC"/>
+                <label name="thread" value="6808@Crispus-PC.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1492460163291" stop="1492460174939" status="passed">
+            <name>checkFooterLinkContactUs</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Crispus-PC"/>
+                <label name="thread" value="6808@Crispus-PC.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1492460174941" stop="1492460185369" status="passed">
+            <name>goToFirstStepOfCoachingProgramFromTreatmentRatingsConditionPage</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Crispus-PC"/>
+                <label name="thread" value="6808@Crispus-PC.main(1)"/>
+            </labels>
+        </test-case>
+    </test-cases>
+    <labels>
+        <label name="framework" value="JUnit"/>
+        <label name="language" value="JAVA"/>
+    </labels>
+</ns2:test-suite>

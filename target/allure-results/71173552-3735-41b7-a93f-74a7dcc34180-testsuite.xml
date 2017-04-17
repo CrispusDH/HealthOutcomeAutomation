@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:test-suite start="1492460185373" stop="1492460263614" version="1.5.2" xmlns:ns2="urn:model.allure.qatools.yandex.ru">
+    <name>tests.Plot_TestCase</name>
+    <test-cases>
+        <test-case start="1492460185374" stop="1492460201782" status="passed">
+            <name>writeATreatmentHistory</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Crispus-PC"/>
+                <label name="thread" value="6808@Crispus-PC.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1492460201784" stop="1492460220992" status="passed">
+            <name>writeAReviewLoggedOutUserConditionIsUnknown</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Crispus-PC"/>
+                <label name="thread" value="6808@Crispus-PC.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1492460220994" stop="1492460234336" status="passed">
+            <name>logIn</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Crispus-PC"/>
+                <label name="thread" value="6808@Crispus-PC.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1492460234339" stop="1492460249856" status="passed">
+            <name>forgotPasswordFlow</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Crispus-PC"/>
+                <label name="thread" value="6808@Crispus-PC.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1492460249859" stop="1492460263610" status="passed">
+            <name>signUpWithoutReview</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Crispus-PC"/>
+                <label name="thread" value="6808@Crispus-PC.main(1)"/>
+            </labels>
+        </test-case>
+    </test-cases>
+    <labels>
+        <label name="framework" value="JUnit"/>
+        <label name="language" value="JAVA"/>
+    </labels>
+</ns2:test-suite>

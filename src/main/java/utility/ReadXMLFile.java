@@ -12,7 +12,6 @@ public class ReadXMLFile {
     private static String neededConstant;
 
     public static String takeConstantFromXML(String TagName, String Name, String InnerTagName) {
-
         try {
             File fXmlFile = new File("constant.xml");
             DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
@@ -23,7 +22,6 @@ public class ReadXMLFile {
             int temp =0;
             boolean statement = true;
             //System.out.println(TagName + " " + Name + " " + InnerTagName );
-
             do {
                 Node nNode = nList.item(temp);
                 temp +=1;
@@ -36,13 +34,9 @@ public class ReadXMLFile {
                     }
                 }
             }while (statement);
-
         } catch (Exception e) {
             e.printStackTrace();
         }
-
         return neededConstant;
     }
 }
-
-

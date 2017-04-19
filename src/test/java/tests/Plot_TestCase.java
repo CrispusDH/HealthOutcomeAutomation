@@ -18,7 +18,6 @@ public class Plot_TestCase extends BaseTest {
     @Rule
     public Timeout globalTimeout = Timeout.seconds(300);
 
-
     //Rerun failed tests 3 times
     @Rule
     public RetryRule retryRule = new RetryRule(3);

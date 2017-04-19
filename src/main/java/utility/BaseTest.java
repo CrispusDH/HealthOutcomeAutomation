@@ -29,10 +29,9 @@ public abstract class BaseTest {
         DRIVER_CONTAINER.remove();
     }
 
-    public HomePage openHomePage(){
+    protected HomePage openHomePage(){
         getDriver().get(ReadXMLFile.takeConstantFromXML("URL", "Landing Page", "url"));
         return new HomePage();
     }
-
 
 }

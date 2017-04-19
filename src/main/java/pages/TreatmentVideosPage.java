@@ -1,23 +1,18 @@
 package pages;
 
-import utility.BaseClass;
+import utility.BasePage;
 
 import static utility.WaitConditionForUrl.urlToBe;
 
-public class TreatmentVideosPage extends BaseClass {
+public class TreatmentVideosPage extends BasePage {
 
     private Header header = new Header();
     private Footer footer = new Footer();
 
-    //<editor-fold desc="Public methods">
-
     //check URL
     public TreatmentVideosPage checkURL(){
-
         checkUrlToBe(TreatmentRatingsConditionPage.expectedVideosURL, urlToBe);
-
         return this;
-
     }
 
     public Header getHeader() {
@@ -28,5 +23,4 @@ public class TreatmentVideosPage extends BaseClass {
         return footer;
     }
 
-    //</editor-fold>
 }

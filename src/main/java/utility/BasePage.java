@@ -10,16 +10,14 @@ import static utility.Configuration.CoreConstants.WAIT_TIMEOUT;
 import static utility.WaitConditions.*;
 import static utility.BaseTest.getDriver;
 
-public abstract class BaseClass {
+public abstract class BasePage {
 
     private final WebDriver driver;
     private final WebDriverWait wait;
 
-    public BaseClass(){
-
+    public BasePage(){
         this.driver = getDriver();
         this.wait = new WebDriverWait(driver, WAIT_TIMEOUT);
-
     }
 
     @SuppressWarnings("unchecked")
@@ -45,9 +43,7 @@ public abstract class BaseClass {
     }
 
     protected void click(WebElement webElement){
-
         webElement.click();
-
     }
 
     protected WebElement findElementByText(List<WebElement> webElements, String text) {
@@ -59,40 +55,27 @@ public abstract class BaseClass {
     }
 
     protected String getURL(){
-
         return this.driver.getCurrentUrl();
-
     }
 
     protected boolean checkUrlToBe(String sExpectedUrl, WaitConditionForUrl condition){
-
         return wait.until(condition.getType().apply(sExpectedUrl));
-
     }
 
     protected void scrollUp(){
-
         JavascriptExecutor jse = (JavascriptExecutor)driver;
         jse.executeScript("scroll(250, 0)");
-
     }
 
     protected void safeSwitchTab(){
-
         ArrayList<String> currentTab;
         int counter = 1;
         do {
-
             currentTab = new ArrayList<>(driver.getWindowHandles());
-
             //System.out.println(currentTab.size());
-
             counter++;
-
         } while ((currentTab.size() == 1) && (counter < 30));
-
         driver.switchTo().window(currentTab.get(1));
-
     }
 
 }

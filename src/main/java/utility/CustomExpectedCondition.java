@@ -16,8 +16,6 @@ public class CustomExpectedCondition {
             List<WebElement> elements = getDriver().findElements(locator);
             return elements.size() > 1 ? elements : null;
         };
-
     }
 
 }
-

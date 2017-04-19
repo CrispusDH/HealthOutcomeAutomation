@@ -27,5 +27,3 @@ public enum WaitConditions {
     private final Function<By, ExpectedCondition<?>> type;
 
 }
-
-

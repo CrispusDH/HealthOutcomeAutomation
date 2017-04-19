@@ -23,7 +23,6 @@ public class RetryRule implements TestRule {
             @Override
             public void evaluate() throws Throwable {
                 Throwable caughtThrowable = null;
-
                 // implement retry logic here
                 for (int i = 0; i < retryCount; i++) {
                     try {
@@ -40,4 +39,5 @@ public class RetryRule implements TestRule {
             }
         };
     }
+
 }

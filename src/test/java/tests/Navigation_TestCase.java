@@ -137,7 +137,6 @@ public class Navigation_TestCase extends BaseTest {
                 .goToTermsOfServicePage()
                 .checkAmountOfParagraphs()
                 .checkUrl();
-
     }
 /*
     //Navigation to Treatment Ratings Condition page from Home page

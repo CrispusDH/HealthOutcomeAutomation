@@ -5,6 +5,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import utility.BasePage;
 
+import static enums.ConditionTabsEnum.SPECIFIC_TREATMENT_VIDEOS_AND_GUIDES;
 import static enums.ConditionTabsEnum.TREATMENT_REVIEWS;
 import static enums.ConditionTabsEnum.VIDEOS_AND_GUIDES;
 import static utility.WaitConditions.allPresence;
@@ -39,7 +40,7 @@ public class SpecificTreatmentReviewsPage extends BasePage {
 
     //go to Treatment Videos & Guides tab in Specific Treatment
     public SpecificTreatmentVideosPage goToSpecificTreatmentVideosPage(){
-        return clickOnSpecificTab(VIDEOS_AND_GUIDES, tabLocator);
+        return clickOnSpecificTab(SPECIFIC_TREATMENT_VIDEOS_AND_GUIDES, tabLocator);
     }
 
     //get temporary expected specific Treatment Videos page URL

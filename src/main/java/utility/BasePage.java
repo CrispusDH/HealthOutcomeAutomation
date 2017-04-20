@@ -3,6 +3,7 @@ package utility;
 import enums.ConditionTabsEnum;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import pages.SpecificTreatmentReviewsPage;
 import pages.TreatmentRatingsConditionPage;
 import pages.TreatmentReviewsPage;
 import pages.TreatmentVideosPage;
@@ -11,9 +12,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
-import static enums.ConditionTabsEnum.TREATMENT_RATINGS;
-import static enums.ConditionTabsEnum.TREATMENT_REVIEWS;
-import static enums.ConditionTabsEnum.VIDEOS_AND_GUIDES;
+import static enums.ConditionTabsEnum.*;
 import static javaslang.API.$;
 import static javaslang.API.Case;
 import static javaslang.API.Match;
@@ -112,7 +111,8 @@ public abstract class BasePage {
         return (T) Match(conditionTabsEnum).of(
                 Case($(TREATMENT_RATINGS), n -> selectTab(n, tabLocator, TreatmentRatingsConditionPage.class)),
                 Case($(TREATMENT_REVIEWS), n -> selectTab(n, tabLocator, TreatmentReviewsPage.class)),
-                Case($(VIDEOS_AND_GUIDES), n -> selectTab(n, tabLocator, TreatmentVideosPage.class))
+                Case($(VIDEOS_AND_GUIDES), n -> selectTab(n, tabLocator, TreatmentVideosPage.class)),
+                Case($(SPECIFIC_TREATMENT_VIDEOS_AND_GUIDES), n -> selectTab(n, tabLocator, SpecificTreatmentReviewsPage.class))
         );
     }
 

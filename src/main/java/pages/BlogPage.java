@@ -12,7 +12,7 @@ import static utility.WaitConditions.allPresence;
 
 public class BlogPage extends BasePage {
 
-    private By blogsLocator = By.cssSelector(".blog-roll li");
+    private By blogsLocator = By.cssSelector(".blog-roll ul li a");
     private By button_StartHereLocator = By.cssSelector(".button-cta span");
     private By button_FindOutMoreLocator = By.cssSelector(".button-cta span");
 
@@ -39,7 +39,7 @@ public class BlogPage extends BasePage {
 
     //click on Specific Blog
     private DetailedBlogPage clickOnSpecificBlog(Integer blogNumber){
-        blogs().get(blogNumber);
+        click(blogs().get(blogNumber));
         return new DetailedBlogPage();
     }
 

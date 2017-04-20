@@ -1,13 +1,10 @@
 package tests;
 
 import org.junit.Assert;
-import org.junit.Rule;
 import org.junit.Test;
-import org.junit.rules.Timeout;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 import utility.ReadXMLFile;
-import utility.RetryRule;
 import utility.BaseTest;
 
 @RunWith(JUnit4.class)
@@ -229,7 +226,7 @@ public class Navigation_TestCase extends BaseTest {
                 .getFooter()
                 .goToBlogPage()
                 .goToWriteAReviewPage()
-                .checkURLBasic();
+                .checkURLFromBlogPage();
 
     }
 
@@ -237,13 +234,12 @@ public class Navigation_TestCase extends BaseTest {
     @Test
     public void goToWriteAReviewPageFromDetailedBlogPage(){
 
-
         openHomePage()
                 .getFooter()
                 .goToBlogPage()
                 .goToDetailedBlogPage(1)    //go to Detailed Blog page
                 .goToWriteAReviewPage()
-                .checkURLBasic();
+                .checkURLFromDetailedBlogPage();
 
     }
 

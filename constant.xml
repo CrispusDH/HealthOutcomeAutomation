@@ -67,9 +67,12 @@
 			<href>https://www.linkedin.com/company/health-outcome</href>
 		</URL>
 		
-		<URL name="Write a Review Page">
-			<fromBlogPage>https://dev.healthoutcome.org/user/writereview?heroId=BLOG</fromBlogPage>
-			<fromDetailedBlogPage>https://dev.healthoutcome.org/user/writereview</fromDetailedBlogPage>
+		<URL name="Write a Review Page from Blog page">
+			<url>https://dev.healthoutcome.org/user/writereview?heroId=BLOG</url>
+		</URL>
+		
+		<URL name="Write a Review Page from Detailed Blog page">
+			<url>https://dev.healthoutcome.org/user/writereview</url>
 		</URL>
 		
 		<URL name="First Step Of Coaching Program">

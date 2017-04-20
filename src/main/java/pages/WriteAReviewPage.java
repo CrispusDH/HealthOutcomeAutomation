@@ -120,9 +120,15 @@ public class WriteAReviewPage extends BasePage {
         return new WriteAReviewPage();
     }
 
-    //check page url
-    public WriteAReviewPage checkURLBasic(){
-        checkUrlToBe("Write a Review Page");
+    //check page url from Blog page
+    public WriteAReviewPage checkURLFromBlogPage(){
+        checkUrlToBe("Write a Review Page from Blog page");
+        return this;
+    }
+
+    //check page url from Detailed Blog page
+    public WriteAReviewPage checkURLFromDetailedBlogPage(){
+        checkUrlToBe("Write a Review Page from Detailed Blog page");
         return this;
     }
 

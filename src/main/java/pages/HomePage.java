@@ -1,5 +1,7 @@
 package pages;
 
+import components.Footer;
+import components.Header;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import utility.BasePage;

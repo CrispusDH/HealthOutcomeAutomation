@@ -1,8 +1,10 @@
-package pages;
+package components;
 
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import pages.HomePage;
+import pages.SignUpPage;
 import utility.BasePage;
 import utility.RandomNumber;
 import utility.ReadXMLFile;

@@ -1,5 +1,7 @@
 package pages;
 
+import components.Footer;
+import components.Header;
 import utility.BasePage;
 
 import static utility.WaitConditionForUrl.urlToBe;

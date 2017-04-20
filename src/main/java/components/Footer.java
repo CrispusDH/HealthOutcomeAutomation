@@ -1,8 +1,9 @@
-package pages;
+package components;
 
 import org.openqa.selenium.By;
 import static javaslang.API.*;
 import org.openqa.selenium.WebElement;
+import pages.*;
 import utility.BasePage;
 import utility.ReadXMLFile;
 import java.util.List;

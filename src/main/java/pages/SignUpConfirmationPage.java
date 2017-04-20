@@ -25,7 +25,7 @@ public class SignUpConfirmationPage extends BasePage {
 
     //check page url
     public SignUpConfirmationPage checkUrl(){
-        checkUrlToBe(ReadXMLFile.takeConstantFromXML("URL", "SignUp Confirmation Page", "url"), urlToBe);
+        checkUrlToBe("SignUp Confirmation Page");
         return this;
     }
 

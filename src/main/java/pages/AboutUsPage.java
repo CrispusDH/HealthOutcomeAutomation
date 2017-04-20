@@ -21,7 +21,7 @@ public class AboutUsPage extends BasePage {
 
     //check page url
     public AboutUsPage checkUrl(){
-        checkUrlToBe(ReadXMLFile.takeConstantFromXML("URL", "About Us", "url"), urlToBe);
+        checkUrlToBe("About Us");
         return this;
     }
 

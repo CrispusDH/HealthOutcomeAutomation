@@ -9,7 +9,7 @@ public class FacebookPage extends BasePage {
 
     //check page url
     public FacebookPage checkUrl(){
-        checkUrlToBe(ReadXMLFile.takeConstantFromXML("URL", "Facebook", "url" ), urlToBe);
+        checkUrlToBe("Facebook");
         return this;
     }
 

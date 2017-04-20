@@ -122,19 +122,19 @@ public class WriteAReviewPage extends BasePage {
 
     //check page url
     public WriteAReviewPage checkURLBasic(){
-        checkUrlToBe(ReadXMLFile.takeConstantFromXML("URL", "Write a Review Page", "fromBlogPage" ), urlToBe);
+        checkUrlToBe("Write a Review Page");
         return this;
     }
 
     //check Write a Review page URL from Treatment Ratings Condition
     public WriteAReviewPage checkURLFromTreatmentRatingsCondition(){
-        checkUrlToBe(ReadXMLFile.takeConstantFromXML("URL", "Write a Review page from Treatment Ratings Condition", "url"), urlToBe);
+        checkUrlToBe("Write a Review page from Treatment Ratings Condition");
         return this;
     }
 
     //check Write a Review page URL from Treatment Reviews
     public WriteAReviewPage checkURLFromTreatmentsReviews(){
-        checkUrlToBe(ReadXMLFile.takeConstantFromXML("URL", "Write a Review page from Treatment Reviews", "url"), urlToBe);
+        checkUrlToBe("Write a Review page from Treatment Reviews");
         return this;
     }
 

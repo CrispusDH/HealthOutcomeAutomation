@@ -33,7 +33,7 @@ public class FAQPage extends BasePage {
 
     //check page url
     public FAQPage checkUrl(){
-        checkUrlToBe(ReadXMLFile.takeConstantFromXML("URL", "FAQ", "url"), urlToBe);
+        checkUrlToBe("FAQ");
         return this;
     }
 

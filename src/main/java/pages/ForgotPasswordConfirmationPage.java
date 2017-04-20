@@ -9,7 +9,7 @@ public class ForgotPasswordConfirmationPage extends BasePage {
 
     //check page url
     public ForgotPasswordConfirmationPage checkUrl(){
-        checkUrlToBe(ReadXMLFile.takeConstantFromXML("URL", "Forgot Password Confirm", "url"), urlToBe);
+        checkUrlToBe("Forgot Password Confirm");
         return this;
     }
 

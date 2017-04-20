@@ -27,7 +27,7 @@ public class TermsOfServicePage extends BasePage {
 
     //check page url
     public TermsOfServicePage checkUrl(){
-        checkUrlToBe(ReadXMLFile.takeConstantFromXML("URL", "Terms of Service", "url"), urlToBe);
+        checkUrlToBe("Terms of Service");
         return this;
     }
 

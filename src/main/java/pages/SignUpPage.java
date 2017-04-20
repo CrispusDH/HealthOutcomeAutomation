@@ -45,7 +45,7 @@ public class SignUpPage extends BasePage {
 
     //check page url
     public SignUpPage checkUrl(){
-        checkUrlToBe(ReadXMLFile.takeConstantFromXML("URL", "SignUp Page from Videos&Guides Page", "url"), urlToBe);
+        checkUrlToBe("SignUp Page from Videos&Guides Page");
         return this;
     }
 

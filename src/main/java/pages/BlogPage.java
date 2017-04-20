@@ -65,7 +65,7 @@ public class BlogPage extends BasePage {
 
     //check page url
     public BlogPage checkUrl(){
-        checkUrlToBe(ReadXMLFile.takeConstantFromXML("URL", "Blog", "url"), urlToBe);
+        checkUrlToBe("Blog");
         return this;
     }
 

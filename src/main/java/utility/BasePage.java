@@ -18,6 +18,7 @@ import static javaslang.API.$;
 import static javaslang.API.Case;
 import static javaslang.API.Match;
 import static utility.Configuration.CoreConstants.WAIT_TIMEOUT;
+import static utility.WaitConditionForUrl.urlToBe;
 import static utility.WaitConditions.*;
 import static utility.BaseTest.getDriver;
 import static org.joor.Reflect.*;
@@ -72,6 +73,10 @@ public abstract class BasePage {
 
     protected boolean checkUrlToBe(String sExpectedUrl, WaitConditionForUrl condition){
         return wait.until(condition.getType().apply(sExpectedUrl));
+    }
+
+    protected boolean checkUrlToBe(String sPageName){
+        return checkUrlToBe(ReadXMLFile.takeConstantFromXML("URL", sPageName, "url"), urlToBe);
     }
 
     protected void scrollUp(){

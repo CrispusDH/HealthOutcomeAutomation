@@ -31,7 +31,7 @@ public class TestimonialsPage extends BasePage {
 
     //check page url
     public TestimonialsPage checkUrl(){
-        checkUrlToBe(ReadXMLFile.takeConstantFromXML("URL", "Testimonials", "url"), urlToBe);
+        checkUrlToBe("Testimonials");
         return this;
     }
 

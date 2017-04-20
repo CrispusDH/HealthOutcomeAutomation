@@ -27,7 +27,7 @@ public class PrivacyPolicyPage extends BasePage {
 
     //check page url
     public PrivacyPolicyPage checkUrl(){
-        checkUrlToBe(ReadXMLFile.takeConstantFromXML("URL", "Privacy Policy", "url"), urlToBe);
+        checkUrlToBe("Privacy Policy");
         return this;
     }
 

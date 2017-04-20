@@ -145,7 +145,7 @@ public class FirstStepOfCoachingProgramPage extends BasePage {
 
     //check page url
     public FirstStepOfCoachingProgramPage checkUrl(){
-        checkUrlToBe(ReadXMLFile.takeConstantFromXML("URL", "First Step Of Coaching Program", "url" ), urlToBe);
+        checkUrlToBe("First Step Of Coaching Program");
         return this;
     }
 

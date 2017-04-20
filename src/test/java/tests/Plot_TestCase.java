@@ -14,14 +14,6 @@ import static utility.WriteAReviewEnum.GenderOptions.*;
 @RunWith(JUnit4.class)
 public class Plot_TestCase extends BaseTest {
 
-    //Timeout Rule that applies to all test cases in the test class
-    @Rule
-    public Timeout globalTimeout = Timeout.seconds(300);
-
-    //Rerun failed tests 3 times
-    @Rule
-    public RetryRule retryRule = new RetryRule(3);
-
     //log in
     @Test
     public void logIn(){

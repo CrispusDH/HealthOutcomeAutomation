@@ -13,13 +13,6 @@ import utility.BaseTest;
 @RunWith(JUnit4.class)
 public class Navigation_TestCase extends BaseTest {
 
-    @Rule
-    public Timeout globalTimeout = Timeout.seconds(300);
-
-    //Rerun failed tests 3 times
-    @Rule
-    public RetryRule retryRule = new RetryRule(3);
-
     //Navigation to Single Review page from Home page
     @Test
     public void goToSingleReviewPage(){

@@ -4,6 +4,9 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import utility.BasePage;
 
+import static enums.ConditionTabsEnum.TREATMENT_RATINGS;
+import static enums.ConditionTabsEnum.TREATMENT_REVIEWS;
+import static enums.ConditionTabsEnum.VIDEOS_AND_GUIDES;
 import static utility.WaitConditionForUrl.urlToBe;
 import static utility.WaitConditions.allPresence;
 import static utility.WaitConditions.allPresenceExtended;
@@ -29,11 +32,6 @@ public class TreatmentRatingsConditionPage extends BasePage {
         return findElementByText(waitForElements(button_ShareYourExperienceLocator, allPresence), "SHARE YOUR EXPERIENCE");
     }
 
-    //Find tab
-    private WebElement tab(String sTabName){
-        return findElementByText(waitForElements(tabLocator, allPresence), sTabName);
-    }
-
     //find specific Treatment
     private WebElement li_Treatment(String sTreatmentName){
         return findElementByText(waitForElements(li_TreatmentLocator, allPresence), sTreatmentName);
@@ -55,22 +53,6 @@ public class TreatmentRatingsConditionPage extends BasePage {
     private WriteAReviewPage clickOnShareYourExperienceButton(){
         click(button_ShareYourExperience());
         return new WriteAReviewPage();
-    }
-
-    //click on Specific tab
-    private BasePage clickOnSpecificTab(String sTabNames){
-        switch (sTabNames) {
-            case "Treatment Ratings":
-                click(tab("TREATMENT RATINGS"));
-                return new TreatmentRatingsConditionPage();
-            case "Treatment Reviews":
-                click(tab("TREATMENT REVIEWS"));
-                return new TreatmentReviewsPage();
-            case "Videos & Guides":
-                click(tab("VIDEOS & GUIDES"));
-                return new TreatmentVideosPage();
-        }
-        return null;
     }
 
     //click on Specific Treatment block
@@ -113,17 +95,17 @@ public class TreatmentRatingsConditionPage extends BasePage {
 
     //go to Treatment Ratings Condition page
     public TreatmentRatingsConditionPage goToTreatmentRatingsConditionPage(){
-        return (TreatmentRatingsConditionPage) clickOnSpecificTab("Treatment Ratings");
+        return clickOnSpecificTab(TREATMENT_RATINGS, tabLocator);
     }
 
     //go to Treatment Reviews page
     public TreatmentReviewsPage goToTreatmentReviewsPage(){
-        return (TreatmentReviewsPage) clickOnSpecificTab("Treatment Reviews");
+        return clickOnSpecificTab(TREATMENT_REVIEWS, tabLocator);
     }
 
     //go to Treatment Videos & Guides page
     public TreatmentVideosPage goToTreatmentVideosPage(){
-        return (TreatmentVideosPage) clickOnSpecificTab("Videos & Guides");
+        return clickOnSpecificTab(VIDEOS_AND_GUIDES, tabLocator);
     }
 
     //check url

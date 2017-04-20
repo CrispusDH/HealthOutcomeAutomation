@@ -1,6 +1,6 @@
-package utility;
+package enums;
 
-public class WriteAReviewEnum {
+public class WriteAReviewEnums {
 
     public enum GenderOptions{
         MALE,

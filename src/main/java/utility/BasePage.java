@@ -1,14 +1,26 @@
 package utility;
 
+import enums.ConditionTabsEnum;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import pages.TreatmentRatingsConditionPage;
+import pages.TreatmentReviewsPage;
+import pages.TreatmentVideosPage;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
+import static enums.ConditionTabsEnum.TREATMENT_RATINGS;
+import static enums.ConditionTabsEnum.TREATMENT_REVIEWS;
+import static enums.ConditionTabsEnum.VIDEOS_AND_GUIDES;
+import static javaslang.API.$;
+import static javaslang.API.Case;
+import static javaslang.API.Match;
 import static utility.Configuration.CoreConstants.WAIT_TIMEOUT;
 import static utility.WaitConditions.*;
 import static utility.BaseTest.getDriver;
+import static org.joor.Reflect.*;
 
 public abstract class BasePage {
 
@@ -76,6 +88,27 @@ public abstract class BasePage {
             counter++;
         } while ((currentTab.size() == 1) && (counter < 30));
         driver.switchTo().window(currentTab.get(1));
+    }
+
+    //find tab web element
+    private WebElement tab(ConditionTabsEnum conditionTabsEnum, By tabLocator){
+        return findElementByText(waitForElements(tabLocator, allPresence), conditionTabsEnum.getsConditionName());
+    }
+
+    //click on tab and return specific Page class
+    private <T extends BasePage> T selectTab(ConditionTabsEnum conditionTabsEnum, By tabLocator, Class<T> pageClass){
+        tab(conditionTabsEnum, tabLocator).click();
+        return on(pageClass).create().get();
+    }
+
+    //return specific (T) Page class using tabLocator and Matching by condition tabs enum value
+    @SuppressWarnings("unchecked")
+    protected <T extends BasePage> T clickOnSpecificTab(ConditionTabsEnum conditionTabsEnum, By tabLocator){
+        return (T) Match(conditionTabsEnum).of(
+                Case($(TREATMENT_RATINGS), n -> selectTab(n, tabLocator, TreatmentRatingsConditionPage.class)),
+                Case($(TREATMENT_REVIEWS), n -> selectTab(n, tabLocator, TreatmentReviewsPage.class)),
+                Case($(VIDEOS_AND_GUIDES), n -> selectTab(n, tabLocator, TreatmentVideosPage.class))
+        );
     }
 
 }

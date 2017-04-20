@@ -5,7 +5,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import utility.BasePage;
 import utility.ReadXMLFile;
-import utility.WriteAReviewEnum.*;
+import enums.WriteAReviewEnums.*;
 
 import static utility.WaitConditionForUrl.urlToBe;
 import static utility.WaitConditions.allPresence;

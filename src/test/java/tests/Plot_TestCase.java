@@ -1,15 +1,12 @@
 package tests;
 
-import org.junit.Rule;
 import org.junit.Test;
-import org.junit.rules.Timeout;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 import utility.BaseTest;
 import utility.ReadXMLFile;
-import utility.RetryRule;
 
-import static utility.WriteAReviewEnum.GenderOptions.*;
+import static enums.WriteAReviewEnums.GenderOptions.*;
 
 @RunWith(JUnit4.class)
 public class Plot_TestCase extends BaseTest {

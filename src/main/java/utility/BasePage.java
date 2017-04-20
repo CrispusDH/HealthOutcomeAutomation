@@ -3,10 +3,7 @@ package utility;
 import enums.ConditionTabsEnum;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import pages.SpecificTreatmentReviewsPage;
-import pages.TreatmentRatingsConditionPage;
-import pages.TreatmentReviewsPage;
-import pages.TreatmentVideosPage;
+import pages.*;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -112,7 +109,7 @@ public abstract class BasePage {
                 Case($(TREATMENT_RATINGS), n -> selectTab(n, tabLocator, TreatmentRatingsConditionPage.class)),
                 Case($(TREATMENT_REVIEWS), n -> selectTab(n, tabLocator, TreatmentReviewsPage.class)),
                 Case($(VIDEOS_AND_GUIDES), n -> selectTab(n, tabLocator, TreatmentVideosPage.class)),
-                Case($(SPECIFIC_TREATMENT_VIDEOS_AND_GUIDES), n -> selectTab(n, tabLocator, SpecificTreatmentReviewsPage.class))
+                Case($(SPECIFIC_TREATMENT_VIDEOS_AND_GUIDES), n -> selectTab(n, tabLocator, SpecificTreatmentVideosPage.class))
         );
     }
 

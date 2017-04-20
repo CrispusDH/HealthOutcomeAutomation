@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4ca991d3-ec18-4ace-b08d-b16c63f24db2" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/constant.xml" afterPath="$PROJECT_DIR$/constant.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/enums/ConditionTabsEnum.java" afterPath="$PROJECT_DIR$/src/main/java/enums/ConditionTabsEnum.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pages/BlogPage.java" afterPath="$PROJECT_DIR$/src/main/java/pages/BlogPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pages/DetailedBlogPage.java" afterPath="$PROJECT_DIR$/src/main/java/pages/DetailedBlogPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pages/SpecificTreatmentReviewsPage.java" afterPath="$PROJECT_DIR$/src/main/java/pages/SpecificTreatmentReviewsPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pages/WriteAReviewPage.java" afterPath="$PROJECT_DIR$/src/main/java/pages/WriteAReviewPage.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/utility/BasePage.java" afterPath="$PROJECT_DIR$/src/main/java/utility/BasePage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/tests/Navigation_TestCase.java" afterPath="$PROJECT_DIR$/src/test/java/tests/Navigation_TestCase.java" />
     </list>
     <ignored path="HealthOutcome.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -42,11 +35,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Navigation_TestCase.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Navigation_TestCase.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/tests/Navigation_TestCase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="240" column="29" lean-forward="false" selection-start-line="240" selection-start-column="29" selection-end-line="240" selection-end-column="29" />
+            <state relative-caret-position="113">
+              <caret line="324" column="34" lean-forward="false" selection-start-line="324" selection-start-column="16" selection-end-line="324" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -80,11 +73,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BaseTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="BaseTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/utility/BaseTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+            <state relative-caret-position="272">
+              <caret line="47" column="1" lean-forward="true" selection-start-line="47" selection-start-column="1" selection-end-line="47" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -94,7 +87,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/pages/SpecificTreatmentReviewsPage.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="167">
-              <caret line="42" column="70" lean-forward="false" selection-start-line="42" selection-start-column="70" selection-end-line="42" selection-end-column="70" />
+              <caret line="42" column="23" lean-forward="false" selection-start-line="42" selection-start-column="23" selection-end-line="42" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -103,8 +96,8 @@
       <file leaf-file-name="BasePage.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/utility/BasePage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="113" column="101" lean-forward="false" selection-start-line="113" selection-start-column="101" selection-end-line="113" selection-end-column="101" />
+            <state relative-caret-position="207">
+              <caret line="111" column="119" lean-forward="false" selection-start-line="111" selection-start-column="119" selection-end-line="111" selection-end-column="119" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -134,7 +127,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>footer</find>
       <find>clickOnFooterLink</find>
       <find>clickOnFooterCopyright</find>
       <find>link_Connect</find>
@@ -163,6 +155,7 @@
       <find>gotowriteareview</find>
       <find>gotospecifi</find>
       <find>gotowrite</find>
+      <find>gotospecificvideos</find>
       <find>gotospecifictreatmentv</find>
     </findStrings>
   </component>
@@ -226,8 +219,8 @@
         <option value="$PROJECT_DIR$/src/main/java/pages/DetailedBlogPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/enums/ConditionTabsEnum.java" />
         <option value="$PROJECT_DIR$/src/main/java/pages/SpecificTreatmentReviewsPage.java" />
-        <option value="$PROJECT_DIR$/src/main/java/utility/BasePage.java" />
         <option value="$PROJECT_DIR$/src/main/java/utility/BaseTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/utility/BasePage.java" />
       </list>
     </option>
   </component>
@@ -480,33 +473,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.Navigation_TestCase.goToWriteAReviewPageFromDetailedBlogPage">
-    <configuration default="false" name="Navigation_TestCase.goToSingleReviewPage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="HealthOutcome" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.Navigation_TestCase" />
-      <option name="METHOD_NAME" value="goToSingleReviewPage" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JUnit.Navigation_TestCase.goToSpecificVideosAndGuidesPageFromSpecificTreatmentReviewPage">
     <configuration default="false" name="Navigation_TestCase.checkFooterLinkAbout" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -598,6 +565,32 @@
       <option name="PACKAGE_NAME" value="tests" />
       <option name="MAIN_CLASS_NAME" value="tests.Navigation_TestCase" />
       <option name="METHOD_NAME" value="goToWriteAReviewPageFromDetailedBlogPage" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="Navigation_TestCase.goToSpecificVideosAndGuidesPageFromSpecificTreatmentReviewPage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="HealthOutcome" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.Navigation_TestCase" />
+      <option name="METHOD_NAME" value="goToSpecificVideosAndGuidesPageFromSpecificTreatmentReviewPage" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -829,19 +822,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.Navigation_TestCase.goToSingleReviewPage" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.Navigation_TestCase.checkFooterLinkAbout" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.Navigation_TestCase.goToTreatmentReviewsPageFromTreatmentRatingsConditionPage" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.Navigation_TestCase.goToWriteAReviewPageFromBlogPage" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.Navigation_TestCase.goToWriteAReviewPageFromDetailedBlogPage" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.Navigation_TestCase.checkFooterLinkAbout" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.Navigation_TestCase.goToTreatmentReviewsPageFromTreatmentRatingsConditionPage" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.Navigation_TestCase.goToWriteAReviewPageFromBlogPage" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.Navigation_TestCase.goToWriteAReviewPageFromDetailedBlogPage" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.Navigation_TestCase.goToSpecificVideosAndGuidesPageFromSpecificTreatmentReviewPage" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.Navigation_TestCase.goToWriteAReviewPageFromDetailedBlogPage" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.Navigation_TestCase.goToWriteAReviewPageFromBlogPage" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.Navigation_TestCase.goToTreatmentReviewsPageFromTreatmentRatingsConditionPage" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.Navigation_TestCase.checkFooterLinkAbout" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.Navigation_TestCase.goToSingleReviewPage" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.Navigation_TestCase.goToSpecificVideosAndGuidesPageFromSpecificTreatmentReviewPage" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.Navigation_TestCase.goToWriteAReviewPageFromDetailedBlogPage" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.Navigation_TestCase.goToWriteAReviewPageFromBlogPage" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.Navigation_TestCase.goToTreatmentReviewsPageFromTreatmentRatingsConditionPage" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.Navigation_TestCase.checkFooterLinkAbout" />
       </list>
     </recent_temporary>
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
@@ -886,11 +879,11 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Navigation_TestCase_goToWriteAReviewPageFromBlogPage - 2017.04.20 at 16h 33m 22s.xml">
-      <configuration name="Navigation_TestCase.goToWriteAReviewPageFromBlogPage" configurationId="JUnit" />
+    <history-entry file="Navigation_TestCase_goToSpecificVideosAndGuidesPageFromSpecificTreatmentReviewPage - 2017.04.20 at 19h 09m 33s.xml">
+      <configuration name="Navigation_TestCase.goToSpecificVideosAndGuidesPageFromSpecificTreatmentReviewPage" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Navigation_TestCase_goToWriteAReviewPageFromBlogPage - 2017.04.20 at 16h 54m 52s.xml">
-      <configuration name="Navigation_TestCase.goToWriteAReviewPageFromBlogPage" configurationId="JUnit" />
+    <history-entry file="Navigation_TestCase_goToSpecificVideosAndGuidesPageFromSpecificTreatmentReviewPage - 2017.04.20 at 19h 11m 44s.xml">
+      <configuration name="Navigation_TestCase.goToSpecificVideosAndGuidesPageFromSpecificTreatmentReviewPage" configurationId="JUnit" />
     </history-entry>
     <history-entry file="Navigation_TestCase_goToWriteAReviewPageFromDetailedBlogPage - 2017.04.20 at 16h 57m 56s.xml">
       <configuration name="Navigation_TestCase.goToWriteAReviewPageFromDetailedBlogPage" configurationId="JUnit" />
@@ -1375,14 +1368,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/tests/Navigation_TestCase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="240" column="29" lean-forward="false" selection-start-line="240" selection-start-column="29" selection-end-line="240" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/enums/ConditionTabsEnum.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -1391,28 +1376,36 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/utility/BaseTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="47" column="1" lean-forward="true" selection-start-line="47" selection-start-column="1" selection-end-line="47" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pages/SpecificTreatmentReviewsPage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="167">
-          <caret line="42" column="70" lean-forward="false" selection-start-line="42" selection-start-column="70" selection-end-line="42" selection-end-column="70" />
+          <caret line="42" column="23" lean-forward="false" selection-start-line="42" selection-start-column="23" selection-end-line="42" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/utility/BasePage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="113" column="101" lean-forward="false" selection-start-line="113" selection-start-column="101" selection-end-line="113" selection-end-column="101" />
+        <state relative-caret-position="207">
+          <caret line="111" column="119" lean-forward="false" selection-start-line="111" selection-start-column="119" selection-end-line="111" selection-end-column="119" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/utility/BaseTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/tests/Navigation_TestCase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+        <state relative-caret-position="113">
+          <caret line="324" column="34" lean-forward="false" selection-start-line="324" selection-start-column="16" selection-end-line="324" selection-end-column="34" />
           <folding />
         </state>
       </provider>

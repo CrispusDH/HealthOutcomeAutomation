@@ -5,7 +5,7 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 import utility.ReadXMLFile;
-import utility.BaseTest;
+import wrappers.BaseTest;
 
 @RunWith(JUnit4.class)
 public class Navigation_TestCase extends BaseTest {
@@ -128,13 +128,13 @@ public class Navigation_TestCase extends BaseTest {
                 .checkAmountOfParagraphs()
                 .checkUrl();
     }
-/*
+
     //Navigation to Treatment Ratings Condition page from Home page
     @Test
     public void goToTreatmentRatingsConditionPage(){
 
         //get Featured Condition url and set it as expected url
-        String expectedUrl = .getFeaturedConditionUrl();
+        String expectedUrl = openHomePage().getFeaturedConditionUrl();
 
         //go to Treatment Ratings Condition page
         openHomePage().goToTreatmentRatingsConditionPage()
@@ -147,14 +147,14 @@ public class Navigation_TestCase extends BaseTest {
     public void goToConditionSelectionPage() {
 
         //find and save expected URL
-        String expectedURL  = homePage.getGetStartedButtonUrl();
+        String expectedURL  = openHomePage().getGetStartedButtonUrl();
 
         //go to Condition Selection page
         openHomePage().goToConditionSelectionPage()
                 .checkURL(expectedURL);
 
     }
-*/
+
     //Navigation to Treatment Ratings Condition page from the Condition Selection page
     @Test
     public void goToTreatmentRatingsConditionPageFromConditionSelectionPage() {

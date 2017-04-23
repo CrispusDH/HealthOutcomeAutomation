@@ -1,4 +1,4 @@
-package utility;
+package waiters;
 
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;

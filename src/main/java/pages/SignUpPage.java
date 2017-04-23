@@ -3,12 +3,11 @@ package pages;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import utility.BasePage;
+import wrappers.BasePage;
 import utility.RandomNumber;
 import utility.ReadXMLFile;
 
-import static utility.WaitConditionForUrl.urlToBe;
-import static utility.WaitConditions.visible;
+import static waiters.WaitConditions.visible;
 
 
 public class SignUpPage extends BasePage {

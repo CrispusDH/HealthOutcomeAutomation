@@ -5,11 +5,10 @@ import components.Header;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import utility.BasePage;
+import wrappers.BasePage;
 import utility.ReadXMLFile;
 
-import static utility.WaitConditionForUrl.urlToBe;
-import static utility.WaitConditions.allPresence;
+import static waiters.WaitConditions.allPresence;
 
 public class SignUpConfirmationPage extends BasePage {
 

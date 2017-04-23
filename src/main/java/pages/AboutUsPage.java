@@ -3,12 +3,11 @@ package pages;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import utility.BasePage;
-import utility.ReadXMLFile;
+import wrappers.BasePage;
+
 import java.util.List;
 
-import static utility.WaitConditionForUrl.urlToBe;
-import static utility.WaitConditions.allPresence;
+import static waiters.WaitConditions.allPresence;
 
 public class AboutUsPage extends BasePage {
 

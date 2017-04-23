@@ -1,8 +1,8 @@
 package pages;
 
-import utility.BasePage;
+import wrappers.BasePage;
 
-import static utility.WaitConditionForUrl.urlToBe;
+import static waiters.WaitConditionForUrl.urlToBe;
 
 public class SpecificTreatmentVideosPage extends BasePage {
 

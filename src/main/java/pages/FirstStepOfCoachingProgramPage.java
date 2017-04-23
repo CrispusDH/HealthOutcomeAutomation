@@ -1,11 +1,9 @@
 package pages;
 
 import org.openqa.selenium.By;
-import utility.BasePage;
-import utility.ReadXMLFile;
+import wrappers.BasePage;
 import enums.WriteAReviewEnums.*;
 
-import static utility.WaitConditionForUrl.urlToBe;
 import static enums.WriteAReviewEnums.GenderOptions.MALE;
 
 public class FirstStepOfCoachingProgramPage extends BasePage {

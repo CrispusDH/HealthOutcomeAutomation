@@ -1,9 +1,6 @@
 package pages;
 
-import utility.BasePage;
-import utility.ReadXMLFile;
-
-import static utility.WaitConditionForUrl.urlToBe;
+import wrappers.BasePage;
 
 public class TwitterPage extends BasePage {
 

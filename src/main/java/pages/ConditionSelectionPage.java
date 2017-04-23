@@ -2,12 +2,12 @@ package pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import utility.BasePage;
+import wrappers.BasePage;
 
 import java.util.concurrent.TimeUnit;
 
-import static utility.WaitConditionForUrl.urlToBe;
-import static utility.WaitConditions.allPresence;
+import static waiters.WaitConditionForUrl.urlToBe;
+import static waiters.WaitConditions.allPresence;
 
 public class ConditionSelectionPage extends BasePage {
 

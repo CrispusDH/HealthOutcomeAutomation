@@ -3,9 +3,9 @@ package pages;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import utility.BasePage;
+import wrappers.BasePage;
 
-import static utility.WaitConditions.visible;
+import static waiters.WaitConditions.visible;
 
 public class SingleReviewPage extends BasePage {
 

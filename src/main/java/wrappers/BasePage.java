@@ -1,9 +1,12 @@
-package utility;
+package wrappers;
 
 import enums.ConditionTabsEnum;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import pages.*;
+import utility.ReadXMLFile;
+import waiters.WaitConditionForUrl;
+import waiters.WaitConditions;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -14,9 +17,8 @@ import static javaslang.API.$;
 import static javaslang.API.Case;
 import static javaslang.API.Match;
 import static utility.Configuration.CoreConstants.WAIT_TIMEOUT;
-import static utility.WaitConditionForUrl.urlToBe;
-import static utility.WaitConditions.*;
-import static utility.BaseTest.getDriver;
+import static waiters.WaitConditionForUrl.urlToBe;
+import static waiters.WaitConditions.*;
 import static org.joor.Reflect.*;
 
 public abstract class BasePage {
@@ -25,7 +27,7 @@ public abstract class BasePage {
     private final WebDriverWait wait;
 
     public BasePage(){
-        this.driver = getDriver();
+        this.driver = BaseTest.getDriver();
         this.wait = new WebDriverWait(driver, WAIT_TIMEOUT);
     }
 

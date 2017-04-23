@@ -1,4 +1,4 @@
-package utility;
+package wrappers;
 
 import io.github.bonigarcia.wdm.ChromeDriverManager;
 import org.junit.After;
@@ -8,6 +8,8 @@ import org.junit.rules.Timeout;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import pages.HomePage;
+import utility.ReadXMLFile;
+import utility.RetryRule;
 
 import static java.util.Optional.ofNullable;
 

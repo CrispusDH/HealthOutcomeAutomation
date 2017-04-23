@@ -5,12 +5,12 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import pages.HomePage;
 import pages.SignUpPage;
-import utility.BasePage;
+import wrappers.BasePage;
 import utility.RandomNumber;
 import utility.ReadXMLFile;
 
-import static utility.WaitConditions.allPresence;
-import static utility.WaitConditions.visible;
+import static waiters.WaitConditions.allPresence;
+import static waiters.WaitConditions.visible;
 
 public class Header extends BasePage {
 

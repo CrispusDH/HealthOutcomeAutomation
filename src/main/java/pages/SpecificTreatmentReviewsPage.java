@@ -1,14 +1,12 @@
 package pages;
 
-import enums.ConditionTabsEnum;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import utility.BasePage;
+import wrappers.BasePage;
 
 import static enums.ConditionTabsEnum.SPECIFIC_TREATMENT_VIDEOS_AND_GUIDES;
 import static enums.ConditionTabsEnum.TREATMENT_REVIEWS;
-import static enums.ConditionTabsEnum.VIDEOS_AND_GUIDES;
-import static utility.WaitConditions.allPresence;
+import static waiters.WaitConditions.allPresence;
 
 public class SpecificTreatmentReviewsPage extends BasePage {
 

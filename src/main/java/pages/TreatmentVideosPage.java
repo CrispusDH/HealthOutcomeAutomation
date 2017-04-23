@@ -2,9 +2,9 @@ package pages;
 
 import components.Footer;
 import components.Header;
-import utility.BasePage;
+import wrappers.BasePage;
 
-import static utility.WaitConditionForUrl.urlToBe;
+import static waiters.WaitConditionForUrl.urlToBe;
 
 public class TreatmentVideosPage extends BasePage {
 

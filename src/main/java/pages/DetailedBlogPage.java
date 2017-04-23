@@ -2,10 +2,9 @@ package pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import utility.BasePage;
+import wrappers.BasePage;
 
-import static utility.WaitConditions.allPresence;
-import static utility.WaitConditions.enabled;
+import static waiters.WaitConditions.allPresence;
 
 public class DetailedBlogPage extends BasePage {
 

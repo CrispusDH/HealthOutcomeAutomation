@@ -1,4 +1,4 @@
-package utility;
+package waiters;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -6,7 +6,7 @@ import org.openqa.selenium.support.ui.ExpectedCondition;
 
 import java.util.List;
 
-import static utility.BaseTest.getDriver;
+import static wrappers.BaseTest.getDriver;
 
 public class CustomExpectedCondition {
 

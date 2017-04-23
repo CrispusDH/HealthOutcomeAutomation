@@ -1,7 +1,7 @@
 package pages;
 
 import org.openqa.selenium.By;
-import utility.BasePage;
+import wrappers.BasePage;
 
 public class ForgotPasswordPage extends BasePage {
 

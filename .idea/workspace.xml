@@ -2,81 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4ca991d3-ec18-4ace-b08d-b16c63f24db2" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/utility/BasePage.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/utility/BaseTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/utility/CustomExpectedCondition.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/utility/WaitConditionForUrl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/utility/WaitConditions.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/components/Footer.class" afterPath="$PROJECT_DIR$/target/classes/components/Footer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/components/Header.class" afterPath="$PROJECT_DIR$/target/classes/components/Header.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/pages/AboutUsPage.class" afterPath="$PROJECT_DIR$/target/classes/pages/AboutUsPage.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/pages/BlogPage.class" afterPath="$PROJECT_DIR$/target/classes/pages/BlogPage.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/pages/ConditionSelectionPage.class" afterPath="$PROJECT_DIR$/target/classes/pages/ConditionSelectionPage.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/pages/ContactUsPage.class" afterPath="$PROJECT_DIR$/target/classes/pages/ContactUsPage.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/pages/CreateAPrivateAccount.class" afterPath="$PROJECT_DIR$/target/classes/pages/CreateAPrivateAccount.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/pages/DetailedBlogPage.class" afterPath="$PROJECT_DIR$/target/classes/pages/DetailedBlogPage.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/pages/FAQPage.class" afterPath="$PROJECT_DIR$/target/classes/pages/FAQPage.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/pages/FacebookPage.class" afterPath="$PROJECT_DIR$/target/classes/pages/FacebookPage.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/pages/FirstStepOfCoachingProgramPage$1.class" afterPath="$PROJECT_DIR$/target/classes/pages/FirstStepOfCoachingProgramPage$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/pages/FirstStepOfCoachingProgramPage.class" afterPath="$PROJECT_DIR$/target/classes/pages/FirstStepOfCoachingProgramPage.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/pages/ForgotPasswordConfirmationPage.class" afterPath="$PROJECT_DIR$/target/classes/pages/ForgotPasswordConfirmationPage.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/pages/ForgotPasswordPage.class" afterPath="$PROJECT_DIR$/target/classes/pages/ForgotPasswordPage.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/pages/HomePage.class" afterPath="$PROJECT_DIR$/target/classes/pages/HomePage.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/pages/PrivacyPolicyPage.class" afterPath="$PROJECT_DIR$/target/classes/pages/PrivacyPolicyPage.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/pages/ResourcesPage.class" afterPath="$PROJECT_DIR$/target/classes/pages/ResourcesPage.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/pages/SignUpConfirmationPage.class" afterPath="$PROJECT_DIR$/target/classes/pages/SignUpConfirmationPage.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/pages/SignUpPage.class" afterPath="$PROJECT_DIR$/target/classes/pages/SignUpPage.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/pages/SingleReviewPage.class" afterPath="$PROJECT_DIR$/target/classes/pages/SingleReviewPage.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/pages/SpecificTreatmentReviewsPage.class" afterPath="$PROJECT_DIR$/target/classes/pages/SpecificTreatmentReviewsPage.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/pages/SpecificTreatmentVideosPage.class" afterPath="$PROJECT_DIR$/target/classes/pages/SpecificTreatmentVideosPage.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/pages/TermsOfServicePage.class" afterPath="$PROJECT_DIR$/target/classes/pages/TermsOfServicePage.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/pages/TestimonialsPage.class" afterPath="$PROJECT_DIR$/target/classes/pages/TestimonialsPage.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/pages/TreatmentRatingsConditionPage.class" afterPath="$PROJECT_DIR$/target/classes/pages/TreatmentRatingsConditionPage.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/pages/TreatmentReviewsPage.class" afterPath="$PROJECT_DIR$/target/classes/pages/TreatmentReviewsPage.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/pages/TreatmentVideosPage.class" afterPath="$PROJECT_DIR$/target/classes/pages/TreatmentVideosPage.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/pages/TwitterPage.class" afterPath="$PROJECT_DIR$/target/classes/pages/TwitterPage.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/pages/WriteAReviewConfirmationPage.class" afterPath="$PROJECT_DIR$/target/classes/pages/WriteAReviewConfirmationPage.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/pages/WriteAReviewPage$1.class" afterPath="$PROJECT_DIR$/target/classes/pages/WriteAReviewPage$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/pages/WriteAReviewPage.class" afterPath="$PROJECT_DIR$/target/classes/pages/WriteAReviewPage.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/tests/Navigation_TestCase.class" afterPath="$PROJECT_DIR$/target/test-classes/tests/Navigation_TestCase.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/tests/Plot_TestCase.class" afterPath="$PROJECT_DIR$/target/test-classes/tests/Plot_TestCase.class" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/allure-results/475abb7f-73d6-435e-bff3-96e03ba8d009-testsuite.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/allure-results/71173552-3735-41b7-a93f-74a7dcc34180-testsuite.xml" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/components/Footer.java" afterPath="$PROJECT_DIR$/src/main/java/components/Footer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/components/Header.java" afterPath="$PROJECT_DIR$/src/main/java/components/Header.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pages/AboutUsPage.java" afterPath="$PROJECT_DIR$/src/main/java/pages/AboutUsPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pages/BlogPage.java" afterPath="$PROJECT_DIR$/src/main/java/pages/BlogPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pages/ConditionSelectionPage.java" afterPath="$PROJECT_DIR$/src/main/java/pages/ConditionSelectionPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pages/ContactUsPage.java" afterPath="$PROJECT_DIR$/src/main/java/pages/ContactUsPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pages/CreateAPrivateAccount.java" afterPath="$PROJECT_DIR$/src/main/java/pages/CreateAPrivateAccount.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pages/DetailedBlogPage.java" afterPath="$PROJECT_DIR$/src/main/java/pages/DetailedBlogPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pages/FAQPage.java" afterPath="$PROJECT_DIR$/src/main/java/pages/FAQPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pages/FacebookPage.java" afterPath="$PROJECT_DIR$/src/main/java/pages/FacebookPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pages/FirstStepOfCoachingProgramPage.java" afterPath="$PROJECT_DIR$/src/main/java/pages/FirstStepOfCoachingProgramPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pages/ForgotPasswordConfirmationPage.java" afterPath="$PROJECT_DIR$/src/main/java/pages/ForgotPasswordConfirmationPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pages/ForgotPasswordPage.java" afterPath="$PROJECT_DIR$/src/main/java/pages/ForgotPasswordPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" afterPath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pages/PrivacyPolicyPage.java" afterPath="$PROJECT_DIR$/src/main/java/pages/PrivacyPolicyPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pages/ResourcesPage.java" afterPath="$PROJECT_DIR$/src/main/java/pages/ResourcesPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pages/SignUpConfirmationPage.java" afterPath="$PROJECT_DIR$/src/main/java/pages/SignUpConfirmationPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pages/SignUpPage.java" afterPath="$PROJECT_DIR$/src/main/java/pages/SignUpPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pages/SingleReviewPage.java" afterPath="$PROJECT_DIR$/src/main/java/pages/SingleReviewPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pages/SpecificTreatmentReviewsPage.java" afterPath="$PROJECT_DIR$/src/main/java/pages/SpecificTreatmentReviewsPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pages/SpecificTreatmentVideosPage.java" afterPath="$PROJECT_DIR$/src/main/java/pages/SpecificTreatmentVideosPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pages/TermsOfServicePage.java" afterPath="$PROJECT_DIR$/src/main/java/pages/TermsOfServicePage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pages/TestimonialsPage.java" afterPath="$PROJECT_DIR$/src/main/java/pages/TestimonialsPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pages/TreatmentRatingsConditionPage.java" afterPath="$PROJECT_DIR$/src/main/java/pages/TreatmentRatingsConditionPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pages/TreatmentReviewsPage.java" afterPath="$PROJECT_DIR$/src/main/java/pages/TreatmentReviewsPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pages/TreatmentVideosPage.java" afterPath="$PROJECT_DIR$/src/main/java/pages/TreatmentVideosPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pages/TwitterPage.java" afterPath="$PROJECT_DIR$/src/main/java/pages/TwitterPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pages/WriteAReviewConfirmationPage.java" afterPath="$PROJECT_DIR$/src/main/java/pages/WriteAReviewConfirmationPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pages/WriteAReviewPage.java" afterPath="$PROJECT_DIR$/src/main/java/pages/WriteAReviewPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/tests/Navigation_TestCase.java" afterPath="$PROJECT_DIR$/src/test/java/tests/Navigation_TestCase.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/tests/Plot_TestCase.java" afterPath="$PROJECT_DIR$/src/test/java/tests/Plot_TestCase.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/utility/BasePage.java" afterPath="$PROJECT_DIR$/src/main/java/wrappers/BasePage.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/utility/BaseTest.java" afterPath="$PROJECT_DIR$/src/main/java/wrappers/BaseTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/utility/CustomExpectedCondition.java" afterPath="$PROJECT_DIR$/src/main/java/waiters/CustomExpectedCondition.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/utility/WaitConditionForUrl.java" afterPath="$PROJECT_DIR$/src/main/java/waiters/WaitConditionForUrl.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/utility/WaitConditions.java" afterPath="$PROJECT_DIR$/src/main/java/waiters/WaitConditions.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-tests.Navigation_TestCase.xml" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-tests.Navigation_TestCase.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-tests.Plot_TestCase.xml" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-tests.Plot_TestCase.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/tests.Navigation_TestCase.txt" afterPath="$PROJECT_DIR$/target/surefire-reports/tests.Navigation_TestCase.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/tests.Plot_TestCase.txt" afterPath="$PROJECT_DIR$/target/surefire-reports/tests.Plot_TestCase.txt" />
     </list>
     <ignored path="HealthOutcome.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -119,7 +53,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/pages/TreatmentReviewsPage.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="319">
-              <caret line="34" column="55" lean-forward="true" selection-start-line="34" selection-start-column="55" selection-end-line="34" selection-end-column="55" />
+              <caret line="34" column="55" lean-forward="false" selection-start-line="34" selection-start-column="55" selection-end-line="34" selection-end-column="55" />
               <folding>
                 <marker date="1492938783008" expanded="false" signature="1102:1112" ph=" { " />
                 <marker date="1492938783008" expanded="false" signature="1154:1160" ph=" }" />
@@ -164,7 +98,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/pages/TreatmentRatingsConditionPage.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="199">
-              <caret line="101" column="44" lean-forward="true" selection-start-line="101" selection-start-column="44" selection-end-line="101" selection-end-column="44" />
+              <caret line="101" column="44" lean-forward="false" selection-start-line="101" selection-start-column="44" selection-end-line="101" selection-end-column="44" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <marker date="1492938783070" expanded="false" signature="2876:2886" ph=" { " />
@@ -195,7 +129,7 @@
       <file leaf-file-name="Navigation_TestCase.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/tests/Navigation_TestCase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="128">
+            <state relative-caret-position="5083">
               <caret line="304" column="17" lean-forward="false" selection-start-line="304" selection-start-column="17" selection-end-line="304" selection-end-column="17" />
               <folding>
                 <marker date="1492938669487" expanded="true" signature="9349:9600" ph="{...}" />
@@ -208,9 +142,12 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/wrappers/BasePage.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="343">
-              <caret line="108" column="43" lean-forward="true" selection-start-line="108" selection-start-column="43" selection-end-line="108" selection-end-column="43" />
+              <caret line="108" column="43" lean-forward="false" selection-start-line="108" selection-start-column="43" selection-end-line="108" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#903#933#0" expanded="false" />
+                <element signature="e#1080#1110#0" expanded="false" />
+                <element signature="e#3579#3609#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -968,8 +905,8 @@
     <history-entry file="Navigation_TestCase_goToTreatmentReviewsPageFromTreatmentRatingsConditionPage - 2017.04.23 at 12h 15m 10s.xml">
       <configuration name="Navigation_TestCase.goToTreatmentReviewsPageFromTreatmentRatingsConditionPage" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Navigation_TestCase_goToWriteAReviewPageFromDetailedBlogPage - 2017.04.20 at 17h 04m 00s.xml">
-      <configuration name="Navigation_TestCase.goToWriteAReviewPageFromDetailedBlogPage" configurationId="JUnit" />
+    <history-entry file="Navigation_TestCase_goToTreatmentReviewsPageFromTreatmentRatingsConditionPage - 2017.04.23 at 12h 28m 46s.xml">
+      <configuration name="Navigation_TestCase.goToTreatmentReviewsPageFromTreatmentRatingsConditionPage" configurationId="JUnit" />
     </history-entry>
     <history-entry file="Navigation_TestCase_goToWriteAReviewPageFromDetailedBlogPage - 2017.04.20 at 17h 07m 36s.xml">
       <configuration name="Navigation_TestCase.goToWriteAReviewPageFromDetailedBlogPage" configurationId="JUnit" />
@@ -988,7 +925,7 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="784" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1419,9 +1356,12 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/wrappers/BasePage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="343">
-          <caret line="108" column="43" lean-forward="true" selection-start-line="108" selection-start-column="43" selection-end-line="108" selection-end-column="43" />
+          <caret line="108" column="43" lean-forward="false" selection-start-line="108" selection-start-column="43" selection-end-line="108" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#903#933#0" expanded="false" />
+            <element signature="e#1080#1110#0" expanded="false" />
+            <element signature="e#3579#3609#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1429,7 +1369,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/pages/TreatmentReviewsPage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="319">
-          <caret line="34" column="55" lean-forward="true" selection-start-line="34" selection-start-column="55" selection-end-line="34" selection-end-column="55" />
+          <caret line="34" column="55" lean-forward="false" selection-start-line="34" selection-start-column="55" selection-end-line="34" selection-end-column="55" />
           <folding>
             <marker date="1492938783008" expanded="false" signature="1102:1112" ph=" { " />
             <marker date="1492938783008" expanded="false" signature="1154:1160" ph=" }" />
@@ -1444,7 +1384,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/pages/TreatmentRatingsConditionPage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="199">
-          <caret line="101" column="44" lean-forward="true" selection-start-line="101" selection-start-column="44" selection-end-line="101" selection-end-column="44" />
+          <caret line="101" column="44" lean-forward="false" selection-start-line="101" selection-start-column="44" selection-end-line="101" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
             <marker date="1492938783070" expanded="false" signature="2876:2886" ph=" { " />
@@ -1463,7 +1403,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/tests/Navigation_TestCase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
+        <state relative-caret-position="5083">
           <caret line="304" column="17" lean-forward="false" selection-start-line="304" selection-start-column="17" selection-end-line="304" selection-end-column="17" />
           <folding>
             <marker date="1492938669487" expanded="true" signature="9349:9600" ph="{...}" />

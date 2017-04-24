@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="tests.Navigation_TestCase" time="366.137" tests="26" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="tests.Navigation_TestCase" time="474.897" tests="26" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_91\jre\bin"/>
@@ -44,7 +44,7 @@
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_91\jre"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean test"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean install"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="en"/>
     <property name="user.language.format" value="uk"/>
@@ -62,30 +62,30 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="checkFooterLinkTestimonials" classname="tests.Navigation_TestCase" time="39.832"/>
-  <testcase name="goToConditionSelectionPageFromTreatmentRatingsConditionPage" classname="tests.Navigation_TestCase" time="11.296"/>
-  <testcase name="goToConditionSelectionPage" classname="tests.Navigation_TestCase" time="13.433"/>
-  <testcase name="goToTwitterPageFromFooter" classname="tests.Navigation_TestCase" time="14.789"/>
-  <testcase name="checkFooterCopyrightPrivacyPolicy" classname="tests.Navigation_TestCase" time="12.054"/>
-  <testcase name="goToMailServiceFromFooter" classname="tests.Navigation_TestCase" time="9.343"/>
-  <testcase name="goToWriteAReviewPageFromTreatmentReviewsPage" classname="tests.Navigation_TestCase" time="20.281"/>
-  <testcase name="checkFooterLinkBlog" classname="tests.Navigation_TestCase" time="15.382"/>
-  <testcase name="goToSignUpPageFromVideosAndGuidesConditionPage" classname="tests.Navigation_TestCase" time="10.916"/>
-  <testcase name="goToSingleReviewPage" classname="tests.Navigation_TestCase" time="12.266"/>
-  <testcase name="goToWriteAReviewPageFromTreatmentRatingsConditionPage" classname="tests.Navigation_TestCase" time="13.379"/>
-  <testcase name="checkFooterLinkFAQ" classname="tests.Navigation_TestCase" time="13.585"/>
-  <testcase name="goToWriteAReviewPageFromDetailedBlogPage" classname="tests.Navigation_TestCase" time="15.012"/>
-  <testcase name="goToTreatmentReviewsPageFromTreatmentRatingsConditionPage" classname="tests.Navigation_TestCase" time="11.061"/>
-  <testcase name="goToTreatmentRatingsConditionPageFromConditionSelectionPage" classname="tests.Navigation_TestCase" time="11.832"/>
-  <testcase name="checkFooterLinkResources" classname="tests.Navigation_TestCase" time="14.032"/>
-  <testcase name="goToSpecificVideosAndGuidesPageFromSpecificTreatmentReviewPage" classname="tests.Navigation_TestCase" time="15.809"/>
-  <testcase name="checkFooterCopyrightTermsOfService" classname="tests.Navigation_TestCase" time="12.066"/>
-  <testcase name="checkFooterLinkAbout" classname="tests.Navigation_TestCase" time="10.951"/>
-  <testcase name="goToVideosAndGuidesConditionPageFromTreatmentRatingsConditionPage" classname="tests.Navigation_TestCase" time="10.953"/>
-  <testcase name="goToTreatmentRatingsConditionPage" classname="tests.Navigation_TestCase" time="13.148"/>
-  <testcase name="goToWriteAReviewPageFromBlogPage" classname="tests.Navigation_TestCase" time="15.528"/>
-  <testcase name="checkLinkedinUrl" classname="tests.Navigation_TestCase" time="10.365"/>
-  <testcase name="goToFacebookPageFromFooter" classname="tests.Navigation_TestCase" time="16.513"/>
-  <testcase name="checkFooterLinkContactUs" classname="tests.Navigation_TestCase" time="11.121"/>
-  <testcase name="goToFirstStepOfCoachingProgramFromTreatmentRatingsConditionPage" classname="tests.Navigation_TestCase" time="10.818"/>
+  <testcase name="checkFooterLinkTestimonials" classname="tests.Navigation_TestCase" time="74.797"/>
+  <testcase name="goToConditionSelectionPageFromTreatmentRatingsConditionPage" classname="tests.Navigation_TestCase" time="15.756"/>
+  <testcase name="goToConditionSelectionPage" classname="tests.Navigation_TestCase" time="20.697"/>
+  <testcase name="goToTwitterPageFromFooter" classname="tests.Navigation_TestCase" time="26.834"/>
+  <testcase name="checkFooterCopyrightPrivacyPolicy" classname="tests.Navigation_TestCase" time="16.964"/>
+  <testcase name="goToMailServiceFromFooter" classname="tests.Navigation_TestCase" time="15.529"/>
+  <testcase name="goToWriteAReviewPageFromTreatmentReviewsPage" classname="tests.Navigation_TestCase" time="36.767"/>
+  <testcase name="checkFooterLinkBlog" classname="tests.Navigation_TestCase" time="16.807"/>
+  <testcase name="goToSignUpPageFromVideosAndGuidesConditionPage" classname="tests.Navigation_TestCase" time="13.228"/>
+  <testcase name="goToSingleReviewPage" classname="tests.Navigation_TestCase" time="12.915"/>
+  <testcase name="goToWriteAReviewPageFromTreatmentRatingsConditionPage" classname="tests.Navigation_TestCase" time="15.371"/>
+  <testcase name="checkFooterLinkFAQ" classname="tests.Navigation_TestCase" time="13.014"/>
+  <testcase name="goToWriteAReviewPageFromDetailedBlogPage" classname="tests.Navigation_TestCase" time="17.89"/>
+  <testcase name="goToTreatmentReviewsPageFromTreatmentRatingsConditionPage" classname="tests.Navigation_TestCase" time="12.177"/>
+  <testcase name="goToTreatmentRatingsConditionPageFromConditionSelectionPage" classname="tests.Navigation_TestCase" time="12.668"/>
+  <testcase name="checkFooterLinkResources" classname="tests.Navigation_TestCase" time="12.146"/>
+  <testcase name="goToSpecificVideosAndGuidesPageFromSpecificTreatmentReviewPage" classname="tests.Navigation_TestCase" time="13.11"/>
+  <testcase name="checkFooterCopyrightTermsOfService" classname="tests.Navigation_TestCase" time="15.186"/>
+  <testcase name="checkFooterLinkAbout" classname="tests.Navigation_TestCase" time="13.136"/>
+  <testcase name="goToVideosAndGuidesConditionPageFromTreatmentRatingsConditionPage" classname="tests.Navigation_TestCase" time="11.944"/>
+  <testcase name="goToTreatmentRatingsConditionPage" classname="tests.Navigation_TestCase" time="14.666"/>
+  <testcase name="goToWriteAReviewPageFromBlogPage" classname="tests.Navigation_TestCase" time="16.134"/>
+  <testcase name="checkLinkedinUrl" classname="tests.Navigation_TestCase" time="9.701"/>
+  <testcase name="goToFacebookPageFromFooter" classname="tests.Navigation_TestCase" time="19.146"/>
+  <testcase name="checkFooterLinkContactUs" classname="tests.Navigation_TestCase" time="12.715"/>
+  <testcase name="goToFirstStepOfCoachingProgramFromTreatmentRatingsConditionPage" classname="tests.Navigation_TestCase" time="11.253"/>
 </testsuite>

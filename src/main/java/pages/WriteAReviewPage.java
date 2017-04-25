@@ -6,6 +6,13 @@ import org.openqa.selenium.WebElement;
 import wrappers.BasePage;
 import enums.WriteAReviewEnums.*;
 
+import static enums.WriteAReviewEnums.GenderOptions.*;
+import static enums.WriteAReviewEnums.PhysicalActivityOptions.*;
+import static enums.WriteAReviewEnums.RepeatOptions.*;
+import static enums.WriteAReviewEnums.SufferedOptions.*;
+import static javaslang.API.$;
+import static javaslang.API.Case;
+import static javaslang.API.Match;
 import static waiters.WaitConditions.allPresence;
 import static waiters.WaitConditions.visible;
 
@@ -61,61 +68,67 @@ public class WriteAReviewPage extends BasePage {
     }
 
     //click on gender
-    private WriteAReviewPage clickOnGender(final GenderOptions genderOptions, final int currentStep){
-        switch (genderOptions){
-            case MALE:
-                click(commonOptionLocator(currentStep, 1));
-                return new WriteAReviewPage();
-            case FEMALE:
-                click(commonOptionLocator(currentStep, 2));
-                return new WriteAReviewPage();
-        }
-        return new WriteAReviewPage();
+    private WriteAReviewPage clickOnGender(
+            final GenderOptions genderOptions,
+            final int currentStep){
+        return Match(genderOptions).of(
+                Case($(MALE),
+                        () -> clickOnOption(commonOptionLocator(currentStep, 1),
+                                WriteAReviewPage.class)),
+                Case($(FEMALE),
+                        () -> clickOnOption(commonOptionLocator(currentStep, 2),
+                                WriteAReviewPage.class))
+        );
     }
 
-    //choose suffered time option
-    private WriteAReviewPage chooseSufferedTimeOption(String sOption, final int currentStep){
-        switch (sOption){
-            case "0 - 6 Months":
-                click(commonOptionLocator(currentStep, 1));
-                return new WriteAReviewPage();
-            case "6 - 18 Months":
-                click(commonOptionLocator(currentStep, 2));
-                return new WriteAReviewPage();
-            case "18+ Months":
-                click(commonOptionLocator(currentStep, 3));
-                return new WriteAReviewPage();
-        }
-        return new WriteAReviewPage();
+    private WriteAReviewPage clickOnSuffered(
+            final SufferedOptions sufferedOptions,
+            final int currentStep
+    ){
+        return Match(sufferedOptions).of(
+                Case($(ZERO_TO_SIX),
+                        () -> clickOnOption(commonOptionLocator(currentStep, 1),
+                                WriteAReviewPage.class)),
+                Case($(SIX_TO_EIGHTEEN),
+                        () -> clickOnOption(commonOptionLocator(currentStep, 2),
+                                WriteAReviewPage.class)),
+                Case($(MORE_EIGHTEEN),
+                        () -> clickOnOption(commonOptionLocator(currentStep, 3),
+                                WriteAReviewPage.class))
+        );
     }
 
-    //choose is this a repeat injury or condition
-    private WriteAReviewPage chooseIsRepeatOption(String sOption, final int currentStep){
-        switch (sOption){
-            case "Yes":
-                click(commonOptionLocator(currentStep, 1));
-                return new WriteAReviewPage();
-            case "No":
-                click(commonOptionLocator(currentStep, 2));
-                return new WriteAReviewPage();
-        }
-        return new WriteAReviewPage();
+    //click on repeat
+    private WriteAReviewPage clickOnRepeat(
+            final RepeatOptions repeatOptions,
+            final int currentStep
+    ){
+        return Match(repeatOptions).of(
+                Case($(YES),
+                        () -> clickOnOption(commonOptionLocator(currentStep, 1),
+                                WriteAReviewPage.class)),
+                Case($(NO),
+                        () -> clickOnOption(commonOptionLocator(currentStep, 2),
+                                WriteAReviewPage.class))
+        );
     }
 
     //choose level of physical activity
-    private WriteAReviewPage choosePhysicalActivity(String sOption, final int currentStep){
-        switch (sOption){
-            case "0 - 4 hours":
-                click(commonOptionLocator(currentStep, 1));
-                return new WriteAReviewPage();
-            case "4 - 8 hours":
-                click(commonOptionLocator(currentStep, 2));
-                return new WriteAReviewPage();
-            case "8+ hours":
-                click(commonOptionLocator(currentStep, 3));
-                return new WriteAReviewPage();
-        }
-        return new WriteAReviewPage();
+    private WriteAReviewPage clickOnPhysicalActivity(
+            final PhysicalActivityOptions physicalActivityOptions,
+            final int currentStep
+    ) {
+        return Match(physicalActivityOptions).of(
+                Case($(ZERO_TO_FOUR),
+                        () -> clickOnOption(commonOptionLocator(currentStep, 1),
+                                WriteAReviewPage.class)),
+                Case($(FOUR_TO_EIGHT),
+                        () -> clickOnOption(commonOptionLocator(currentStep, 2),
+                                WriteAReviewPage.class)),
+                Case($(MORE_EIGHT),
+                        () -> clickOnOption(commonOptionLocator(currentStep, 3),
+                                WriteAReviewPage.class))
+        );
     }
 
     //check page url from Blog page
@@ -148,13 +161,21 @@ public class WriteAReviewPage extends BasePage {
         return this;
     }
 
-    public WriteAReviewConfirmationPage writeAReview(String sBodyArea, String sCondition, final GenderOptions genderOptions, String sSufferedTimeOption, String sPhysicalActivityOption, String sIsRepeatOption){
+    public WriteAReviewConfirmationPage writeAReview(
+            String sBodyArea,
+            String sCondition,
+            final GenderOptions genderOptions,
+            SufferedOptions sufferedOptions,
+            PhysicalActivityOptions physicalActivityOptions,
+            RepeatOptions repeatOptions
+    )
+    {
         return clickOnSpecificBodyArea(sBodyArea)
                 .clickOnSpecificCondition(sCondition)
                 .clickOnGender(genderOptions, 3)
-                .chooseSufferedTimeOption(sSufferedTimeOption,4)
-                .choosePhysicalActivity(sPhysicalActivityOption,5)
-                .chooseIsRepeatOption(sIsRepeatOption,6)
+                .clickOnSuffered(sufferedOptions,4)
+                .clickOnPhysicalActivity(physicalActivityOptions,5)
+                .clickOnRepeat(repeatOptions,6)
                 .clickOnNextButton(7)
                 .clickOnNextButton(8)
                 .clickOnNextButton(9)

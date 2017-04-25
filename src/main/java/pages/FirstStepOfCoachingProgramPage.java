@@ -1,10 +1,17 @@
 package pages;
 
+import enums.WriteAReviewEnums.*;
 import org.openqa.selenium.By;
 import wrappers.BasePage;
-import enums.WriteAReviewEnums.*;
 
-import static enums.WriteAReviewEnums.GenderOptions.MALE;
+import static enums.WriteAReviewEnums.AgeOptions.*;
+import static enums.WriteAReviewEnums.GenderOptions.*;
+import static enums.WriteAReviewEnums.PainInterfereOptions.*;
+import static enums.WriteAReviewEnums.PhysicalActivityOptions.*;
+import static enums.WriteAReviewEnums.RepeatOptions.*;
+import static enums.WriteAReviewEnums.StatusOptions.*;
+import static enums.WriteAReviewEnums.SufferedOptions.*;
+import static javaslang.API.*;
 
 public class FirstStepOfCoachingProgramPage extends BasePage {
 
@@ -16,119 +23,128 @@ public class FirstStepOfCoachingProgramPage extends BasePage {
         return By.cssSelector(".form-wrapper > div > div > div > div:nth-child("+ currentStep + ") > section > div.buttons > button");
     }
 
-    //click on gender
-    private FirstStepOfCoachingProgramPage clickOnGender(final GenderOptions genderOptions, final int currentStep){
-        switch (genderOptions){
-            case MALE:
-                click(commonOptionLocator(currentStep, 1));
-                return new FirstStepOfCoachingProgramPage();
-            case FEMALE:
-                click(commonOptionLocator(currentStep, 2));
-                return new FirstStepOfCoachingProgramPage();
-        }
-        return new FirstStepOfCoachingProgramPage();
+    private FirstStepOfCoachingProgramPage clickOnGender(
+            final GenderOptions genderOptions,
+            final int currentStep){
+        return Match(genderOptions).of(
+                Case($(MALE),
+                        () -> clickOnOption(commonOptionLocator(currentStep, 1),
+                                FirstStepOfCoachingProgramPage.class)),
+                Case($(FEMALE),
+                        () -> clickOnOption(commonOptionLocator(currentStep, 2),
+                                FirstStepOfCoachingProgramPage.class))
+        );
     }
 
-    //click on age
-    private FirstStepOfCoachingProgramPage clickOnAge(String sAge, final int currentStep){
-        switch (sAge){
-            case "< 18":
-                click(commonOptionLocator(currentStep, 1));
-                return new FirstStepOfCoachingProgramPage();
-            case "18-34":
-                click(commonOptionLocator(currentStep, 2));
-                return new FirstStepOfCoachingProgramPage();
-            case "35-54":
-                click(commonOptionLocator(currentStep, 3));
-                return new FirstStepOfCoachingProgramPage();
-            case "55+":
-                click(commonOptionLocator(currentStep, 4));
-                return new FirstStepOfCoachingProgramPage();
-        }
-        return new FirstStepOfCoachingProgramPage();
+    private FirstStepOfCoachingProgramPage clickOnAge(
+            final AgeOptions ageOptions,
+            final int currentStep
+    ){
+        return Match(ageOptions).of(
+                Case($(LESS_EIGHTEEN),
+                        () -> clickOnOption(commonOptionLocator(currentStep, 1),
+                                FirstStepOfCoachingProgramPage.class)),
+                Case($(EIGHTEEN_TO_THIRTY_FOUR),
+                        () -> clickOnOption(commonOptionLocator(currentStep, 2),
+                                FirstStepOfCoachingProgramPage.class)),
+                Case($(THIRTY_FIVE_TO_FIFTY_FOUR),
+                        () -> clickOnOption(commonOptionLocator(currentStep, 3),
+                                FirstStepOfCoachingProgramPage.class)),
+                Case($(MORE_FIFTY_FIVE),
+                        () -> clickOnOption(commonOptionLocator(currentStep, 4),
+                                FirstStepOfCoachingProgramPage.class))
+        );
     }
 
-    //click on Physical Activity
-    private FirstStepOfCoachingProgramPage clickOnPhysicalActivity(String sLevel, final int currentStep){
-        switch (sLevel){
-            case "0-4":
-                click(commonOptionLocator(currentStep, 1));
-                return new FirstStepOfCoachingProgramPage();
-            case "4-8":
-                click(commonOptionLocator(currentStep, 2));
-                return new FirstStepOfCoachingProgramPage();
-            case "8+":
-                click(commonOptionLocator(currentStep, 3));
-                return new FirstStepOfCoachingProgramPage();
-        }
-        return new FirstStepOfCoachingProgramPage();
+    private FirstStepOfCoachingProgramPage clickOnPhysicalActivity(
+            final PhysicalActivityOptions physicalActivityOptions,
+            final int currentStep
+    ) {
+                return Match(physicalActivityOptions).of(
+                Case($(ZERO_TO_FOUR),
+                        () -> clickOnOption(commonOptionLocator(currentStep, 1),
+                                FirstStepOfCoachingProgramPage.class)),
+                Case($(FOUR_TO_EIGHT),
+                        () -> clickOnOption(commonOptionLocator(currentStep, 2),
+                                FirstStepOfCoachingProgramPage.class)),
+                Case($(MORE_EIGHT),
+                        () -> clickOnOption(commonOptionLocator(currentStep, 3),
+                                FirstStepOfCoachingProgramPage.class))
+        );
+    }
+
+    private FirstStepOfCoachingProgramPage clickOnStatus(
+            final StatusOptions statusOptions,
+            final int currentStep
+    ){
+                return Match(statusOptions).of(
+                        Case($(IN_PAIN),
+                                () -> clickOnOption(commonOptionLocator(currentStep, 1),
+                                        FirstStepOfCoachingProgramPage.class)),
+                        Case($(RECOVERING),
+                                () -> clickOnOption(commonOptionLocator(currentStep, 2),
+                                        FirstStepOfCoachingProgramPage.class)),
+                        Case($(CURED),
+                                () -> clickOnOption(commonOptionLocator(currentStep, 3),
+                                        FirstStepOfCoachingProgramPage.class))
+                );
     }
 
     //click on Status
-    private FirstStepOfCoachingProgramPage clickOnStatus(String sStatus, final int currentStep) {
-        switch (sStatus) {
-            case "In Pain":
-                click(commonOptionLocator(currentStep, 1));
-                return new FirstStepOfCoachingProgramPage();
-            case "Recovering":
-                click(commonOptionLocator(currentStep, 2));
-                return new FirstStepOfCoachingProgramPage();
-            case "Cured":
-                click(commonOptionLocator(currentStep, 3));
-                return new FirstStepOfCoachingProgramPage();
-        }
-        return new FirstStepOfCoachingProgramPage();
-    }
-
-    //click on Status
-    private FirstStepOfCoachingProgramPage clickOnPainInterfere(String sPainInterfere, final int currentStep){
-        switch (sPainInterfere){
-            case "Not at all":
-                click(commonOptionLocator(currentStep, 1));
-                return new FirstStepOfCoachingProgramPage();
-            case "A little bit":
-                click(commonOptionLocator(currentStep, 2));
-                return new FirstStepOfCoachingProgramPage();
-            case "Somewhat":
-                click(commonOptionLocator(currentStep, 3));
-                return new FirstStepOfCoachingProgramPage();
-            case "Quite a bit":
-                click(commonOptionLocator(currentStep, 4));
-                return new FirstStepOfCoachingProgramPage();
-            case "All the time":
-                click(commonOptionLocator(currentStep, 5));
-                return new FirstStepOfCoachingProgramPage();
-        }
-        return new FirstStepOfCoachingProgramPage();
+    private FirstStepOfCoachingProgramPage clickOnPainInterfere(
+            final PainInterfereOptions painInterfereOptions,
+            final int currentStep
+    ){
+        return Match(painInterfereOptions).of(
+                Case($(NOT_AT_ALL),
+                        () -> clickOnOption(commonOptionLocator(currentStep, 1),
+                                FirstStepOfCoachingProgramPage.class)),
+                Case($(A_LITTLE_BIT),
+                        () -> clickOnOption(commonOptionLocator(currentStep, 2),
+                                FirstStepOfCoachingProgramPage.class)),
+                Case($(SOMEWHAT),
+                        () -> clickOnOption(commonOptionLocator(currentStep, 3),
+                                FirstStepOfCoachingProgramPage.class)),
+                Case($(QUITE_A_BIT),
+                        () -> clickOnOption(commonOptionLocator(currentStep, 4),
+                                FirstStepOfCoachingProgramPage.class)),
+                Case($(ALL_THE_TIME),
+                        () -> clickOnOption(commonOptionLocator(currentStep, 5),
+                                FirstStepOfCoachingProgramPage.class))
+        );
     }
 
     //click on how long have you suffered
-    private FirstStepOfCoachingProgramPage clickOnSuffered(String sSuffered, final int currentStep) {
-        switch (sSuffered) {
-            case "0-6":
-                click(commonOptionLocator(currentStep, 1));
-                return new FirstStepOfCoachingProgramPage();
-            case "6-18":
-                click(commonOptionLocator(currentStep, 2));
-                return new FirstStepOfCoachingProgramPage();
-            case "18+":
-                click(commonOptionLocator(currentStep, 3));
-                return new FirstStepOfCoachingProgramPage();
-        }
-        return new FirstStepOfCoachingProgramPage();
+    private FirstStepOfCoachingProgramPage clickOnSuffered(
+            final SufferedOptions sufferedOptions,
+            final int currentStep
+    ){
+        return Match(sufferedOptions).of(
+                Case($(ZERO_TO_SIX),
+                        () -> clickOnOption(commonOptionLocator(currentStep, 1),
+                                FirstStepOfCoachingProgramPage.class)),
+                Case($(SIX_TO_EIGHTEEN),
+                        () -> clickOnOption(commonOptionLocator(currentStep, 2),
+                                FirstStepOfCoachingProgramPage.class)),
+                Case($(MORE_EIGHTEEN),
+                        () -> clickOnOption(commonOptionLocator(currentStep, 3),
+                                FirstStepOfCoachingProgramPage.class))
+        );
     }
 
     //click on repeat
-    private FirstStepOfCoachingProgramPage clickOnRepeat(String sRepeat, final int currentStep) {
-        switch (sRepeat) {
-            case "Yes":
-                click(commonOptionLocator(currentStep, 1));
-                return new FirstStepOfCoachingProgramPage();
-            case "No":
-                click(commonOptionLocator(currentStep, 2));
-                return new FirstStepOfCoachingProgramPage();
-        }
-        return new FirstStepOfCoachingProgramPage();
+    private FirstStepOfCoachingProgramPage clickOnRepeat(
+            final RepeatOptions repeatOptions,
+            final int currentStep
+    ){
+        return Match(repeatOptions).of(
+                Case($(YES),
+                        () -> clickOnOption(commonOptionLocator(currentStep, 1),
+                                FirstStepOfCoachingProgramPage.class)),
+                Case($(NO),
+                        () -> clickOnOption(commonOptionLocator(currentStep, 2),
+                                FirstStepOfCoachingProgramPage.class))
+        );
     }
 
     private FirstStepOfCoachingProgramPage clickOnNextButton(final int currentStep){
@@ -149,12 +165,12 @@ public class FirstStepOfCoachingProgramPage extends BasePage {
 
     public CreateAPrivateAccount writeAReview(){
         return clickOnGender(MALE, 1)
-                .clickOnAge("18-34", 2)
-                .clickOnPhysicalActivity("4-8", 3)
-                .clickOnStatus("Cured", 4)
-                .clickOnPainInterfere("Somewhat", 5)
-                .clickOnSuffered("6-18", 6)
-                .clickOnRepeat("Yes", 7)
+                .clickOnAge(EIGHTEEN_TO_THIRTY_FOUR, 2)
+                .clickOnPhysicalActivity(FOUR_TO_EIGHT, 3)
+                .clickOnStatus(CURED, 4)
+                .clickOnPainInterfere(SOMEWHAT, 5)
+                .clickOnSuffered(SIX_TO_EIGHTEEN, 6)
+                .clickOnRepeat(YES, 7)
                 .clickOnNextButton(8)
                 .clickOnNextButton(9)
                 .clickOnNextButton(10)

@@ -104,6 +104,11 @@ public abstract class BasePage {
         return on(pageClass).create().get();
     }
 
+    protected <T extends BasePage> T clickOnOption(By by, Class<T> pageClass){
+        click((WebElement) waitFor(by, enabled));
+        return on(pageClass).create().get();
+    }
+
     //return specific (T) Page class using tabLocator and Matching by condition tabs enum value
     @SuppressWarnings("unchecked")
     protected <T extends BasePage> T clickOnSpecificTab(ConditionTabsEnum conditionTabsEnum, By tabLocator){

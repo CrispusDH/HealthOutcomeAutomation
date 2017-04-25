@@ -3,10 +3,13 @@ package tests;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
-import wrappers.BaseTest;
 import utility.ReadXMLFile;
+import wrappers.BaseTest;
 
 import static enums.WriteAReviewEnums.GenderOptions.*;
+import static enums.WriteAReviewEnums.PhysicalActivityOptions.*;
+import static enums.WriteAReviewEnums.RepeatOptions.*;
+import static enums.WriteAReviewEnums.SufferedOptions.*;
 
 @RunWith(JUnit4.class)
 public class Plot_TestCase extends BaseTest {
@@ -63,9 +66,9 @@ public class Plot_TestCase extends BaseTest {
                         ReadXMLFile.takeConstantFromXML("BodyArea", "Neck", "name"),
                         ReadXMLFile.takeConstantFromXML("Condition", "Neck pain with radiculopathy", "name"),
                         MALE,
-                        "0 - 6 Months",
-                        "0 - 4 hours",
-                        "Yes")
+                        ZERO_TO_SIX,
+                        ZERO_TO_FOUR,
+                        YES)
                 .isSignUpFormVisible();
 
     }

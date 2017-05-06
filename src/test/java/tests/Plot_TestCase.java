@@ -3,6 +3,7 @@ package tests;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
+import pages.RegistrationVerifyPage;
 import utility.ReadXMLFile;
 import wrappers.BaseTest;
 
@@ -83,6 +84,22 @@ public class Plot_TestCase extends BaseTest {
                 .writeAReview()
                 .checkGetStartedButtonIsExist();
 
+    }
+
+    //Fill your Free private account and go to Registration Verify page
+    @Test
+    public void fillFormForFreePrivateAccount(){
+        openHomePage()
+                .goToTreatmentRatingsConditionPage()
+                .goToFirstStepOfCoachingProgramPage()
+                .writeAReview()
+                .fillForm(
+                        "Oleksii Ihnatiuk",
+                        "aignatiuk@archer-soft.com",
+                        "aignatiuk@archer-soft.com",
+                        "lytghjgtnhjdcr");
+        new RegistrationVerifyPage()
+                .checkEmail();
     }
 
 }

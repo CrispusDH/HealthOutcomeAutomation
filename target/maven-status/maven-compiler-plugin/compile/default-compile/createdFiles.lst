@@ -11,6 +11,7 @@ pages\TestimonialsPage.class
 utility\RetryRule.class
 pages\HomePage.class
 pages\PrivacyPolicyPage.class
+pages\RegistrationVerifyPage.class
 pages\ForgotPasswordPage.class
 pages\ContactUsPage.class
 utility\RandomNumber.class

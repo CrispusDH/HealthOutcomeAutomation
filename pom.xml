@@ -9,8 +9,9 @@
     <version>1.0</version>
 
     <properties>
-        <aspectj.version>1.7.4</aspectj.version>
+        <aspectj.version>1.8.10</aspectj.version>
         <allure.version>1.5.2</allure.version>
+        <compiler.version>1.8</compiler.version>
     </properties>
 
     <dependencies>

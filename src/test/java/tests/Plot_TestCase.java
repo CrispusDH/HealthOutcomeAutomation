@@ -95,8 +95,8 @@ public class Plot_TestCase extends BaseTest {
                 .writeAReview()
                 .fillForm(
                         "Oleksii Ihnatiuk",
-                        "aignatiuk@archer-soft.com",
-                        "aignatiuk@archer-soft.com",
+                        "qacrispus@gmail.com",
+                        "qacrispus@gmail.com",
                         "lytghjgtnhjdcr");
         new RegistrationVerifyPage()
                 .checkEmail();

@@ -12,7 +12,7 @@ public class RegistrationVerifyPage extends BasePage{
     private By emailLocator = By.cssSelector(".registration-verify-form b");
 
     public RegistrationVerifyPage checkEmail(){
-        Assert.assertEquals("aignatiuk@archer-soft.com",((WebElement) waitFor(emailLocator, visible)).getText());
+        Assert.assertEquals("qacrispus@gmail.com",((WebElement) waitFor(emailLocator, visible)).getText());
         return this;
     }
 

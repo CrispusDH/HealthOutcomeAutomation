@@ -7,6 +7,7 @@ import wrappers.BasePage;
 import static enums.WriteAReviewEnums.AgeOptions.*;
 import static enums.WriteAReviewEnums.GenderOptions.*;
 import static enums.WriteAReviewEnums.PainInterfereOptions.*;
+import static enums.WriteAReviewEnums.PainLevelOptions.*;
 import static enums.WriteAReviewEnums.PhysicalActivityOptions.*;
 import static enums.WriteAReviewEnums.RepeatOptions.*;
 import static enums.WriteAReviewEnums.StatusOptions.*;
@@ -21,6 +22,10 @@ public class FirstStepOfCoachingProgramPage extends BasePage {
 
     private By commonButtonLocator(final int currentStep){
         return By.cssSelector(".form-wrapper > div > div > div > div:nth-child("+ currentStep + ") > section > div.buttons > button");
+    }
+
+    private By nextButtonForLastScreen() {
+        return By.cssSelector(".submit-buttons > button");
     }
 
     private FirstStepOfCoachingProgramPage clickOnGender(
@@ -90,7 +95,7 @@ public class FirstStepOfCoachingProgramPage extends BasePage {
                 );
     }
 
-    //click on Status
+    //click on Pain Interfere
     private FirstStepOfCoachingProgramPage clickOnPainInterfere(
             final PainInterfereOptions painInterfereOptions,
             final int currentStep
@@ -110,6 +115,33 @@ public class FirstStepOfCoachingProgramPage extends BasePage {
                                 FirstStepOfCoachingProgramPage.class)),
                 Case($(ALL_THE_TIME),
                         () -> clickOnOption(commonOptionLocator(currentStep, 5),
+                                FirstStepOfCoachingProgramPage.class))
+        );
+    }
+
+    //click on Pain Level
+    private FirstStepOfCoachingProgramPage clickOnPainLevel(
+            final PainLevelOptions painLevelOptions,
+            final int currentStep
+    ){
+        return Match(painLevelOptions).of(
+                Case($(NO_PAIN),
+                        () -> clickOnOption(commonOptionLocator(currentStep, 1),
+                                FirstStepOfCoachingProgramPage.class)),
+                Case($(MILD),
+                        () -> clickOnOption(commonOptionLocator(currentStep, 2),
+                                FirstStepOfCoachingProgramPage.class)),
+                Case($(DISCOMFORTING),
+                        () -> clickOnOption(commonOptionLocator(currentStep, 3),
+                                FirstStepOfCoachingProgramPage.class)),
+                Case($(DISTRESSING),
+                        () -> clickOnOption(commonOptionLocator(currentStep, 4),
+                                FirstStepOfCoachingProgramPage.class)),
+                Case($(HORRIBLE),
+                        () -> clickOnOption(commonOptionLocator(currentStep, 5),
+                                FirstStepOfCoachingProgramPage.class)),
+                Case($(EXCRUCIATING),
+                        () -> clickOnOption(commonOptionLocator(currentStep, 6),
                                 FirstStepOfCoachingProgramPage.class))
         );
     }
@@ -152,8 +184,8 @@ public class FirstStepOfCoachingProgramPage extends BasePage {
         return new FirstStepOfCoachingProgramPage();
     }
 
-    private CreateAPrivateAccount clickOnNextButtonLast(final int currentStep){
-        click(commonButtonLocator(currentStep));
+    private CreateAPrivateAccount clickOnNextButtonLast(){
+        click(nextButtonForLastScreen());
         return new CreateAPrivateAccount();
     }
 
@@ -169,15 +201,18 @@ public class FirstStepOfCoachingProgramPage extends BasePage {
                 .clickOnPhysicalActivity(FOUR_TO_EIGHT, 3)
                 .clickOnStatus(CURED, 4)
                 .clickOnPainInterfere(SOMEWHAT, 5)
-                .clickOnSuffered(SIX_TO_EIGHTEEN, 6)
-                .clickOnRepeat(YES, 7)
-                .clickOnNextButton(8)
-                .clickOnNextButton(9)
-                .clickOnNextButton(10)
+                .clickOnPainInterfere(SOMEWHAT, 6)
+                .clickOnPainLevel(DISCOMFORTING, 7)
+                .clickOnSuffered(SIX_TO_EIGHTEEN, 8)
+                .clickOnRepeat(YES, 9)
+                .clickOnRepeat(YES, 10)
                 .clickOnNextButton(11)
                 .clickOnNextButton(12)
                 .clickOnNextButton(13)
-                .clickOnNextButtonLast(14);
+                .clickOnNextButton(14)
+                .clickOnNextButton(15)
+                .clickOnNextButton(16)
+                .clickOnNextButtonLast();
     }
 
 }

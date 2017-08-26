@@ -34,6 +34,15 @@ public class WriteAReviewEnums {
         ALL_THE_TIME
     }
 
+    public enum PainLevelOptions{
+        NO_PAIN,
+        MILD,
+        DISCOMFORTING,
+        DISTRESSING,
+        HORRIBLE,
+        EXCRUCIATING
+    }
+
     public enum SufferedOptions{
         ZERO_TO_SIX,
         SIX_TO_EIGHTEEN,

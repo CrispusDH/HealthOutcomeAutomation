@@ -1,1 +1,10 @@
 ChromeDriverPath.xml
+
+# Intellij
+.idea/
+*.iml
+*.iws
+
+# Maven
+log/
+target/

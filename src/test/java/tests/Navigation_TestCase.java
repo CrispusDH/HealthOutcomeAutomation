@@ -162,7 +162,15 @@ public class Navigation_TestCase extends BaseTest {
         //go to Condition Selection page
         openHomePage()
                 .goToConditionSelectionPage()
-                .goToTreatmentRatingsConditionPage(ReadXMLFile.takeConstantFromXML("BodyArea", "Neck", "name"), ReadXMLFile.takeConstantFromXML("Condition", "Neck pain with radiculopathy", "name"));
+                .goToTreatmentRatingsConditionPage(
+                        ReadXMLFile.takeConstantFromXML(
+                                "BodyArea",
+                                "Neck",
+                                "name"),
+                        ReadXMLFile.takeConstantFromXML(
+                                "Condition",
+                                "Neck pain with radiculopathy",
+                                "name"));
 
     }
 
@@ -288,7 +296,15 @@ public class Navigation_TestCase extends BaseTest {
 
         openHomePage()
                 .goToConditionSelectionPage()
-                .goToTreatmentRatingsConditionPage( ReadXMLFile.takeConstantFromXML("BodyArea", "Neck", "name"), ReadXMLFile.takeConstantFromXML("Condition", "Neck pain with radiculopathy", "name")) //go to Treatment Ratings Condition page
+                .goToTreatmentRatingsConditionPage(
+                        ReadXMLFile.takeConstantFromXML(
+                                "BodyArea",
+                                "Neck",
+                                "name"),
+                        ReadXMLFile.takeConstantFromXML(
+                                "Condition",
+                                "Neck pain with radiculopathy",
+                                "name")) //go to Treatment Ratings Condition page
                 .goToWriteAReviewPage()
                 .checkURLFromTreatmentRatingsCondition();
 

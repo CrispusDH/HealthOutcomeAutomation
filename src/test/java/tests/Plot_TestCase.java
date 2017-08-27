@@ -23,7 +23,8 @@ public class Plot_TestCase extends BaseTest {
         openHomePage()
                 .getHeader()
                 .openLogInForm()
-                .loginAs(ReadXMLFile.takeConstantFromXML("Account", "Main", "emailAddress"), ReadXMLFile.takeConstantFromXML("Account", "Main", "password"))
+                .loginAs(ReadXMLFile.takeConstantFromXML("Account", "Main", "emailAddress"),
+                        ReadXMLFile.takeConstantFromXML("Account", "Main", "password"))
                 .getHeader()
                 .checkUserName();
 
@@ -37,7 +38,10 @@ public class Plot_TestCase extends BaseTest {
                 .getHeader()
                 .openLogInForm()
                 .goToForgotPasswordPage()
-                .goToForgotPasswordConfirmationPage(ReadXMLFile.takeConstantFromXML("Account", "Main", "emailAddress"))  //type email and click on Forgot password button
+                .goToForgotPasswordConfirmationPage(ReadXMLFile.takeConstantFromXML(
+                        "Account",
+                        "Main",
+                        "emailAddress"))  //type email and click on Forgot password button
                 .checkUrl();
     }
 

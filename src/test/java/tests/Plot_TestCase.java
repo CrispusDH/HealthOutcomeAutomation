@@ -4,6 +4,7 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 import pages.RegistrationVerifyPage;
+import utility.RandomNumber;
 import utility.ReadXMLFile;
 import wrappers.BaseTest;
 
@@ -99,8 +100,12 @@ public class Plot_TestCase extends BaseTest {
                 .writeAReview()
                 .fillForm(
                         "Oleksii Ihnatiuk",
-                        "qacrispus@gmail.com",
-                        "qacrispus@gmail.com",
+                    RandomNumber.createRandomNumber
+                        (
+                            0,
+                            999999999
+                        ) + "@gmail.com",
+                    String.valueOf(RandomNumber.currentRandomNumber()) + "@gmail.com",
                         "lytghjgtnhjdcr");
         new RegistrationVerifyPage()
                 .checkEmail();

@@ -165,9 +165,9 @@ public class WriteAReviewPage extends BasePage {
             String sBodyArea,
             String sCondition,
             final GenderOptions genderOptions,
-            SufferedOptions sufferedOptions,
-            PhysicalActivityOptions physicalActivityOptions,
-            RepeatOptions repeatOptions
+            final SufferedOptions sufferedOptions,
+            final PhysicalActivityOptions physicalActivityOptions,
+            final RepeatOptions repeatOptions
     )
     {
         return clickOnSpecificBodyArea(sBodyArea)
@@ -176,14 +176,16 @@ public class WriteAReviewPage extends BasePage {
                 .clickOnSuffered(sufferedOptions,4)
                 .clickOnPhysicalActivity(physicalActivityOptions,5)
                 .clickOnRepeat(repeatOptions,6)
-                .clickOnNextButton(7)
-                .clickOnNextButton(8)
+                .clickOnSuffered(sufferedOptions, 7)
+                .clickOnRepeat(repeatOptions,8)
                 .clickOnNextButton(9)
                 .clickOnNextButton(10)
                 .clickOnNextButton(11)
                 .clickOnNextButton(12)
                 .clickOnNextButton(13)
-                .clickOnPostReviewButton(14);
+                .clickOnNextButton(14)
+                .clickOnNextButton(15)
+                .clickOnPostReviewButton(16);
     }
 
 }

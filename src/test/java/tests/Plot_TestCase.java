@@ -82,13 +82,11 @@ public class Plot_TestCase extends BaseTest {
     //Write a Treatment History
     @Test
     public void writeATreatmentHistory(){
-
         openHomePage()
                 .goToTreatmentRatingsConditionPage()
                 .goToFirstStepOfCoachingProgramPage()
                 .writeAReview()
                 .checkGetStartedButtonIsExist();
-
     }
 
     //Fill your Free private account and go to Registration Verify page

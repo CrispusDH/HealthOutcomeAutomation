@@ -196,22 +196,22 @@ public class FirstStepOfCoachingProgramPage extends BasePage {
     }
 
     public CreateAPrivateAccount writeAReview(){
-        return clickOnGender(MALE, 1)
-                .clickOnAge(EIGHTEEN_TO_THIRTY_FOUR, 2)
-                .clickOnPhysicalActivity(FOUR_TO_EIGHT, 3)
-                .clickOnStatus(CURED, 4)
-                .clickOnPainInterfere(SOMEWHAT, 5)
+        return clickOnGender(MALE, 2)
+                .clickOnAge(EIGHTEEN_TO_THIRTY_FOUR, 3)
+                .clickOnPhysicalActivity(FOUR_TO_EIGHT, 4)
+                .clickOnStatus(CURED, 5)
                 .clickOnPainInterfere(SOMEWHAT, 6)
-                .clickOnPainLevel(DISCOMFORTING, 7)
-                .clickOnSuffered(SIX_TO_EIGHTEEN, 8)
-                .clickOnRepeat(YES, 9)
+                .clickOnPainInterfere(SOMEWHAT, 7)
+                .clickOnPainLevel(DISCOMFORTING, 8)
+                .clickOnSuffered(SIX_TO_EIGHTEEN, 9)
                 .clickOnRepeat(YES, 10)
-                .clickOnNextButton(11)
+                .clickOnRepeat(YES, 11)
                 .clickOnNextButton(12)
                 .clickOnNextButton(13)
                 .clickOnNextButton(14)
                 .clickOnNextButton(15)
                 .clickOnNextButton(16)
+                .clickOnNextButton(17)
                 .clickOnNextButtonLast();
     }
 
